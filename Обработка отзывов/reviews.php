@@ -11,20 +11,17 @@ $container = Service\Container::getInstance();
 $Smart_Type_ID = 156;
 $title = 'Отзыв от ' . date("m.d.Y H.i.s");
 $factory = $container->getFactory($Smart_Type_ID);
-if (!$factory) {
-    echo 'factory not found';
-}
 
 $data = [
     'TITLE' => $title
 ];
 
-$item = $factory->createItem($data); //можем добавить пустой, далее заполнить минимальные поля. Многие поля сами подтянутся.
+$item = $factory->createItem($data);
 
-$res = $item->save(); // обязательно сохраним
+$res = $item->save();
 
 $item_id = $res->getId();
-$workflowTemplateId = 2077;
+$workflowTemplateId = 2071;
 $arErrorsTmp = array();
 CBPDocument::StartWorkflow(
     $workflowTemplateId,
