@@ -11,7 +11,12 @@ $by = "id";
 $order = "ASC";
 $ar_ids = [
     'clinic' => [344, 4551, 5073, 4967, 7676, 7389, 4959, 7371, 6531, 5377, 6381, 76777, 7678],
-    'finance' => [4982]
+    'finance' => [4982],
+    'sales department' => [376],
+    'teachers' =>[5241],
+    'it' => [4962],
+    'logistics' => [4962],
+    'marketing' =>[5271]
 ];
 foreach ($ar_ids as $dep_name => $ids) {
     foreach ($ids as $id) {
