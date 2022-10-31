@@ -39,7 +39,7 @@ foreach ($mergedIds as $depName => $arMergedId) {
     $arUniqueMergedId = array_unique($arMergedId);
     foreach ($arUniqueMergedId as $id) {
         $Smart_Type_ID = 168;
-        $title = 'Опрос @' . date('d-m-Y');
+        $title = 'Опрос @ ' . date('d-m-Y');
 
         $factory = $container->getFactory($Smart_Type_ID);
 
@@ -48,9 +48,9 @@ foreach ($mergedIds as $depName => $arMergedId) {
             'UF_CRM_74_1667223668' => $depName,
             'UF_CRM_74_1667224110' => $id
         ];
-        $item = $factory->createItem($data); //можем добавить пустой, далее заполнить минимальные поля. Многие поля сами подтянутся.
+        $item = $factory->createItem($data);
 
-        $res = $item->save(); // обязательно сохраним
+        $res = $item->save();
         $item_id = $res->getId();
         $workflowTemplateId = 2201;
         $arErrorsTmp = array();
