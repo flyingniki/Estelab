@@ -1,13 +1,20 @@
 <?php
 
+use Bitrix\Crm\Service;
+
+CModule::IncludeModule("crm");
+CModule::IncludeModule("workflow");
+CModule::IncludeModule("bizproc");
+$container = Service\Container::getInstance();
+
 $arDepartments = [
-    'store_clinic' => [4551, 7675, 5073, 4967, 7676, 4959, 7389, 4959, 7371, 6531, 5377, 6381],
-    'marketing_doctor_training' => [5271, 7409, 7381],
-    'logistics_cosmetics' => [4963, 5080],
-    'sales_department_cosmetics_studio_equipment' => [376, 5080, 4966, 7342, 6981, 4914],
-    'finance' => [4982],
+    'ИМ + Клиника' => [4551, 7675, 5073, 4967, 7676, 4959, 7389, 4959, 7371, 6531, 5377, 6381],
+    'Маркетинг + Поддержка Гл.Врача + Тренинг' => [5271, 7409, 7381],
+    'Логистика + Косметика и производство' => [4963, 5080],
+    'Отдел продаж + Косметика + Студия + Оборудование' => [376, 5080, 4966, 7342, 6981, 4914],
+    'Финансы' => [4982],
     // 'logistics_senior_administrator' => [4963, ], //внести id ст администратора
-    'it_finance_hr_scrum_master' => [4962, 4982, 6163, 346], //внести id скрам-мастера    
+    'IT + Финансы + HR + Scrum master' => [4962, 4982, 6163, 346], //внести id скрам-мастера    
 ];
 
 $arSelect = ['ID', 'NAME', 'LAST_NAME'];
@@ -27,7 +34,32 @@ foreach ($arDepartments as $depName => $depIds) {
 //print_r($managerIds);
 //print_r($usersIds);
 $mergedIds = array_merge_recursive($managerIds, $usersIds);
-foreach ($mergedIds as $depName => $mergedId) {
-    $resIds[$depName][] = array_unique($mergedId);
+foreach ($mergedIds as $depName => $arMergedId) {
+    $resIds[$depName][] = array_unique($arMergedId);
+    $arUniqueMergedId = array_unique($arMergedId);
+    foreach ($arUniqueMergedId as $id) {
+        $Smart_Type_ID = 168;
+        $title = 'Опрос @' . date('d-m-Y');
+
+        $factory = $container->getFactory($Smart_Type_ID);
+
+        $data = [
+            'TITLE' => $title,
+            'UF_CRM_74_1667223668' => $depName,
+            'UF_CRM_74_1667224110' => $id
+        ];
+        $item = $factory->createItem($data); //можем добавить пустой, далее заполнить минимальные поля. Многие поля сами подтянутся.
+
+        $res = $item->save(); // обязательно сохраним
+        $item_id = $res->getId();
+        $workflowTemplateId = 2201;
+        $arErrorsTmp = array();
+        CBPDocument::StartWorkflow(
+            $workflowTemplateId,
+            array("crm", "Bitrix\Crm\Integration\BizProc\Document\Dynamic", "DYNAMIC_" . $Smart_Type_ID . "_" . $item_id),
+            array(),
+            $arErrorsTmp
+        );
+    }
 }
 // print_r($resIds);
