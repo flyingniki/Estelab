@@ -35,7 +35,7 @@ foreach ($arDepartments as $depName => $depIds) {
 //print_r($usersIds);
 $mergedIds = array_merge_recursive($managerIds, $usersIds);
 foreach ($mergedIds as $depName => $arMergedId) {
-    $resIds[$depName][] = array_unique($arMergedId);
+    $resIds[$depName] = array_unique($arMergedId);
     $arUniqueMergedId = array_unique($arMergedId);
     foreach ($arUniqueMergedId as $id) {
         $Smart_Type_ID = 168;
