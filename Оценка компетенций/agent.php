@@ -35,11 +35,11 @@ foreach ($arDepartments as $depName => $depIds) {
 //print_r($usersIds);
 $mergedIds = array_merge_recursive($managerIds, $usersIds);
 foreach ($mergedIds as $depName => $arMergedId) {
-    $resIds[$depName] = array_unique($arMergedId);
     $arUniqueMergedId = array_unique($arMergedId);
+    $resIds[$depName] = $arUniqueMergedId;
     foreach ($arUniqueMergedId as $id) {
         $Smart_Type_ID = 168;
-        $title = 'Опрос @ ' . date('d-m-Y');
+        $title = 'Опрос 360 @ ' . date('d-m-Y');
 
         $factory = $container->getFactory($Smart_Type_ID);
 
