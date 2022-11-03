@@ -59,5 +59,33 @@ foreach ($mergedIds as $depName => $arMergedId) {
         array(),
         $arErrorsTmp
     );
+    foreach ($arUniqueMergedId as $id) {
+        $empIds[] = $id;
+    }
+}
+
+$empIds = array_unique($empIds);
+foreach ($empIds as $empId) {
+    $Smart_Type_ID = 158;
+    $title = "Личная оценка сотрудника {$empId} @ " . date('d-m-Y');
+
+    $factory = $container->getFactory($Smart_Type_ID);
+
+    $data = [
+        'TITLE' => $title,
+        'UF_CRM_75_1667471974' => $empId
+    ];
+    $item = $factory->createItem($data);
+    $res = $item->save();
+    $item_id = $res->getId();
+    $workflowTemplateId = 2207;
+    $arErrorsTmp = array();
+    CBPDocument::StartWorkflow(
+        $workflowTemplateId,
+        array("crm", "Bitrix\Crm\Integration\BizProc\Document\Dynamic", "DYNAMIC_" . $Smart_Type_ID . "_" . $item_id),
+        array(),
+        $arErrorsTmp
+    );
 }
 // print_r($resIds);
+// print_r($empIds);
