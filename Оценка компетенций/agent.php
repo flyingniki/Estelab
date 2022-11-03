@@ -39,7 +39,7 @@ foreach ($mergedIds as $depName => $arMergedId) {
     $resIds[$depName] = $arUniqueMergedId;
     foreach ($arUniqueMergedId as $id) {
         $Smart_Type_ID = 168;
-        $title = 'Опрос 360 @ ' . date('d-m-Y');
+        $title = 'Опрос 360 > оценка своих компетенций @ ' . date('d-m-Y');
 
         $factory = $container->getFactory($Smart_Type_ID);
 
