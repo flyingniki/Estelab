@@ -36,7 +36,8 @@ foreach ($arDepartments as $depName => $depIds) {
 $mergedIds = array_merge_recursive($managerIds, $usersIds);
 foreach ($mergedIds as $depName => $arMergedId) {
     $arUniqueMergedId = array_unique($arMergedId);
-    $resIds[$depName] = $arUniqueMergedId;
+    $arResIds[$depName] = $arUniqueMergedId;
+    // создаем элемент СП "Группы сотрудников"
     $Smart_Type_ID = 168;
     $title = "Сотрудники группы {$depName} @ " . date('d-m-Y');
 
@@ -50,29 +51,29 @@ foreach ($mergedIds as $depName => $arMergedId) {
     $item = $factory->createItem($data);
 
     $res = $item->save();
-    $item_id = $res->getId();
-    $workflowTemplateId = 2201;
-    $arErrorsTmp = array();
-    CBPDocument::StartWorkflow(
-        $workflowTemplateId,
-        array("crm", "Bitrix\Crm\Integration\BizProc\Document\Dynamic", "DYNAMIC_" . $Smart_Type_ID . "_" . $item_id),
-        array(),
-        $arErrorsTmp
-    );
+    $arEmpGroupIds = $item->getUfCrm_74_1667468637();
+    foreach ($arEmpGroupIds as $empId) {
+        // создаем элемент СП "Оценка компетенций (коллективная)"
+        $Smart_Type_ID = 130;
+        $factory = $container->getFactory($Smart_Type_ID);
+        $data = [
+            'TITLE' => $depName,
+            'UF_CRM_78_1667470176' => $empId
+        ];
+        $item = $factory->createItem($data);
+        $res = $item->save();
+    }
     foreach ($arUniqueMergedId as $id) {
-        $empIds[] = $id;
+        $arEmployeeIds[] = $id;
     }
 }
+$arEmployeeIds = array_unique($arEmployeeIds);
 
-$empIds = array_unique($empIds);
-foreach ($empIds as $empId) {
+foreach ($arEmployeeIds as $empId) {
+    // создаем элемент СП "Оценка компетенций (личная)"
     $Smart_Type_ID = 158;
-    $title = "Личная оценка сотрудника {$empId} @ " . date('d-m-Y');
-
     $factory = $container->getFactory($Smart_Type_ID);
-
     $data = [
-        'TITLE' => $title,
         'UF_CRM_75_1667471974' => $empId
     ];
     $item = $factory->createItem($data);
@@ -87,5 +88,5 @@ foreach ($empIds as $empId) {
         $arErrorsTmp
     );
 }
-// print_r($resIds);
-// print_r($empIds);
+// print_r($arResIds);
+// print_r($arEmployeeIds);
