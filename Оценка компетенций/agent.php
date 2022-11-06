@@ -1,6 +1,6 @@
 <?php
 
-uuse Bitrix\Crm\Service;
+use Bitrix\Crm\Service;
 
 CModule::IncludeModule("crm");
 CModule::IncludeModule("workflow");
@@ -51,30 +51,32 @@ foreach ($mergedIds as $depName => $arMergedId) {
     $item = $factory->createItem($data);
 
     $res = $item->save();
-    $arEmpGroupIds = $item->getUfCrm_74_1667468637();
-    foreach ($arEmpGroupIds as $key => $empId) {
+    // $arEmpGroupIds = $item->getUfCrm_74_1667468637();
+    foreach ($arUniqueMergedId as $key => $empId) {
         // получаем все ID сотрудников, кроме текущего
-        $arOtherIds = $arEmpGroupIds;
+        $arOtherIds = $arUniqueMergedId;
         unset($arOtherIds[$key]);
-        // создаем элемент СП "Оценка компетенций (коллективная)"
-        $Smart_Type_ID = 130;
-        $factory = $container->getFactory($Smart_Type_ID);
-        $data = [
-			'UF_CRM_78_1667640871' => $depName,
-            'UF_CRM_78_1667470176' => $empId,
-            'UF_CRM_78_1667640513' => $arOtherIds
-        ];
-        $item = $factory->createItem($data);
-        $res = $item->save();
-        $item_id = $res->getId();
-        $workflowTemplateId = 2212;
-        $arErrorsTmp = array();
-        CBPDocument::StartWorkflow(
-            $workflowTemplateId,
-            array("crm", "Bitrix\Crm\Integration\BizProc\Document\Dynamic", "DYNAMIC_" . $Smart_Type_ID . "_" . $item_id),
-            array(),
-            $arErrorsTmp
-        );
+        foreach ($arOtherIds as $otherId) {
+            // создаем элемент СП "Оценка компетенций (коллективная)"
+            $Smart_Type_ID = 130;
+            $factory = $container->getFactory($Smart_Type_ID);
+            $data = [
+                'UF_CRM_78_1667640871' => $depName,
+                'UF_CRM_78_1667470176' => $empId,
+                'UF_CRM_78_1667684711' => $otherId
+            ];
+            $item = $factory->createItem($data);
+            $res = $item->save();
+            $item_id = $res->getId();
+            $workflowTemplateId = 2212;
+            $arErrorsTmp = array();
+            CBPDocument::StartWorkflow(
+                $workflowTemplateId,
+                array("crm", "Bitrix\Crm\Integration\BizProc\Document\Dynamic", "DYNAMIC_" . $Smart_Type_ID . "_" . $item_id),
+                array(),
+                $arErrorsTmp
+            );
+        }
     }
     // массив ID всех сотрудников
     foreach ($arUniqueMergedId as $id) {
