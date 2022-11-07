@@ -1,7 +1,8 @@
 <?php
 
 require($_SERVER["DOCUMENT_ROOT"] . "/bitrix/header.php");
-$APPLICATION->SetTitle("Шкала развития компетенций"); ?>
+$APPLICATION->SetTitle("Шкала развития компетенций");
+?>
 
 <style>
     h1 {
