@@ -139,4 +139,4 @@ foreach ($result as $employee => $grades) {
     $xlsx->addSheet($grades, "Сотрудник {$userName}");
 }
 $title = 'Оценка компетенций ' . date("m.d.Y H.i.s");
-$xlsx->saveAs($title . '.xlsx');
+$xlsx->downloadAs($title . '.xlsx');
