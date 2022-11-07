@@ -32,7 +32,7 @@ $items = $factory->getItems();
     <?
     foreach ($items as $item) {
         $imgId = $item->getUfCrm_76_1667825809();
-        $img = CFile::ShowImage($imgId);
+        $img = CFile::ShowImage($imgId, 1000, 1000, "", "", false, false, 0, 0, "");
         ?><div class="question-item"><?= $img ?></div><?
     }
     ?>
