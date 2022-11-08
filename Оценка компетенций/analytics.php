@@ -140,3 +140,27 @@ foreach ($result as $employee => $grades) {
 }
 $title = 'Оценка компетенций ' . date("m.d.Y H.i.s");
 $xlsx->downloadAs($title . '.xlsx');
+
+foreach ($ownItems as $item) {
+    $itemId = $item->getId();
+    $workflowTemplateId = 2209;
+    $arErrorsTmp = array();
+    CBPDocument::StartWorkflow(
+        $workflowTemplateId,
+        array("crm", "Bitrix\Crm\Integration\BizProc\Document\Dynamic", "DYNAMIC_" . $Own_Smart_Type_ID . "_" . $itemId),
+        array(),
+        $arErrorsTmp
+    );
+}
+
+foreach ($groupItems as $item) {
+    $itemId = $item->getId();
+    $workflowTemplateId = 2214;
+    $arErrorsTmp = array();
+    CBPDocument::StartWorkflow(
+        $workflowTemplateId,
+        array("crm", "Bitrix\Crm\Integration\BizProc\Document\Dynamic", "DYNAMIC_" . $Group_Smart_Type_ID . "_" . $itemId),
+        array(),
+        $arErrorsTmp
+    );
+}
