@@ -5,7 +5,6 @@ $user_id = '{{Сотрудник > INT}}';
 $query_sort = array("DEADLINE" => "ASC");
 $query_filter = array("CHECK_PERMISSIONS" => "N");
 
-
 $deadline_list = [];
 $report_stopped_list = [];
 $control_list = [];
@@ -49,9 +48,9 @@ if ($stopped_count) {
 }
 
 // Подсчет текущих задач
-$res1 = CTasks::GetList($query_sort, array_merge($query_filter, array("RESPONSIBLE_ID" => $user_id, "REAL_STATUS" => 2)));
+$res_current = CTasks::GetList($query_sort, array_merge($query_filter, array("RESPONSIBLE_ID" => $user_id, "REAL_STATUS" => 2)));
 $check_id = [];
-while ($arTask = $res1->GetNext()) {
+while ($arTask = $res_current->GetNext()) {
     if (in_array($arTask['ID'], $check_id)) continue;
     $check_id[] = $arTask['ID'];
     $str = htmlspecialchars($arTask['TITLE'], ENT_QUOTES);
@@ -66,14 +65,40 @@ while ($arTask = $res1->GetNext()) {
     ];
 }
 
-// Подсчет задач которые необходимо проконтролировать
+// Просроченные задачи
+$res_overdue = CTasks::GetList($query_sort, array_merge($query_filter, array("RESPONSIBLE_ID" => $user_id, "STATUS" => -1)));
+$check_id = [];
+while ($arTask = $res_overdue->GetNext()) {
+    if (in_array($arTask['ID'], $check_id)) continue;
+    $check_id[] = $arTask['ID'];
+    $str = htmlspecialchars($arTask['TITLE'], ENT_QUOTES);
+    $str = str_replace(chr(38), "", $str);
+    $str = str_replace("#039;", "", $str);
+    $str = str_replace("quot;", "", $str);
+    $str = str_replace("amp;", "", $str);
+    $overdue_list[] = [
+        'title' => $str,
+        'url' => '/company/personal/user/' . $arTask['RESPONSIBLE_ID'] . '/tasks/task/view/' . $arTask['ID'] . '/',
+        'date' => $arTask['DEADLINE'],
+    ];
+}
 
-$res2 = CTasks::GetList(
+// Исколючаем из списка текущих задач просроченные
+foreach ($doing_list as $key => $cur_task) {
+    foreach ($overdue_list as $ov_task) {
+        if ($ov_task === $cur_task) {
+            unset($doing_list[$key]);
+        }
+    }
+}
+
+// Подсчет задач которые необходимо проконтролировать
+$res_control = CTasks::GetList(
     $query_sort,
     array_merge($query_filter, array("CREATED_BY" => $user_id, "STATUS" => 4))
 );
 $check_id = [];
-while ($arTask = $res2->GetNext()) {
+while ($arTask = $res_control->GetNext()) {
     if (in_array($arTask['ID'], $check_id)) continue;
     $check_id[] = $arTask['ID'];
     $str = htmlspecialchars($arTask['TITLE'], ENT_QUOTES);
@@ -87,6 +112,7 @@ while ($arTask = $res2->GetNext()) {
         'date' => $arTask['DEADLINE'],
     ];
 }
+
 $report_bb = '';
 $report_html = '';
 $items = array();
