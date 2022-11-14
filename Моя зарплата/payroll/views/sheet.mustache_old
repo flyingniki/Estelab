@@ -1,0 +1,85 @@
+<style type="text/css">
+.title-note { line-height: 2;  color: #777;}
+.row-indicator {
+	font-size: 10px;
+    padding: 1px 3px;
+    width: 100%;
+    text-align: center;
+}
+</style>
+
+<div class="uk-clearfix uk-background-default" uk-sticky>
+
+<form style="margin-top: 5px;" method="get" class="uk-inline">
+	<a onclick="window.location.href='?m={{prev_month}}';" class="uk-position-center-left uk-text-muted"  uk-icon="icon: arrow-left; ratio: 1.5"></a>
+	<span class="uk-text-large" style="margin: 0 40px;">{{month_name}}</span>
+	<a onclick="window.location.href='?m={{next_month}}';" class="uk-position-center-right uk-text-muted" uk-icon="icon: arrow-right; ratio: 1.5"></a>
+</form>
+<!--a onclick="window.location.href='?payroll_logout';" class="uk-float-right uk-button uk-button-primary" uk-icon="icon: lock; ratio: 1"></a--><!--href="?m={{next_month}}" href="?m={{prev_month}}"href="?payroll_logout"	<div class="uk-inline" style="width:0px; height:0px; visibility:hidden;"><input id="month_picker" name="m" onchange="this.form.submit();" type="month" class="uk-input" min="2017-01" max="{{max_month}}" value="{{cur_month}}" /></div>{{#initial_balance_negative}}uk-text-danger{{/initial_balance_negative}}{{^initial_balance_negative}}uk-text-success{{/initial_balance_negative}}{{#final_balance_negative}}uk-text-danger{{/final_balance_negative}}{{^final_balance_negative}}uk-text-success{{/final_balance_negative}}-->
+</div>
+<h3 class="uk-heading-divider uk-margin-small-top">Начисления и выплаты за месяц</h3>
+{{#have_data}}
+<div class="uk-child-width-1-4@s uk-grid-small uk-text-center uk-margin-top" uk-grid>
+    <div>
+        <div class="uk-tile uk-tile-muted  uk-padding-small">
+			<p style="margin-bottom:0;">Остаток на начало месяца<br/><small class="title-note">переходит с предыдущего месяца</small></p>
+            <p class="uk-h4 uk-text-muted" style="margin-top:0;">{{initial_balance}}</p>
+        </div>
+    </div>
+    <div>
+        <div class="uk-tile uk-tile-muted  uk-padding-small">
+			<p style="margin-bottom:0;">Сумма всех начислений<br/><small class="title-note">в течение месяца</small></p>
+            <p class="uk-h4 uk-text-success" style="margin-top:0;">{{income_sum}}</p>
+        </div>
+   </div>
+   <div>
+        <div class="uk-tile uk-tile-muted  uk-padding-small">
+			<p style="margin-bottom:0;">Сумма всех выплат и удержаний<br/><small class="title-note">в течение месяца</small></p>
+            <p class="uk-h4 uk-text-danger" style="margin-top:0;">{{outcome_sum}}</p>
+        </div>
+    </div>
+    <div>
+        <div class="uk-tile uk-tile-muted  uk-padding-small">
+			<p style="margin-bottom:0;">Сумма к выплате<br/><small class="title-note">остаток на конец месяца</small></p>
+            <p class="uk-h4 uk-text-warning" style="margin-top:0; font-weight:bold;">{{final_balance}}</p>
+        </div>
+    </div>
+</div>
+
+<table class="uk-table uk-table-responsive uk-table-hover uk-table-small uk-table-divider">
+    <tbody>
+		{{#rows}}
+        <tr class="uk-text-{{tr_class}}">
+			<td style="text-align:right; width:20px;"><span class="uk-label uk-label-{{tr_class}} row-indicator">{{indicator_text}}</span></td>
+            <td class="uk-width-small uk-text-nowrap" style="text-align:center; width:20px;"><!--span style="margin-right: 8px;" class="" uk-icon="icon: {{icon_name}}-circle"></span-->{{date}}</td>
+            <td class="uk-table-expand">
+				{{^have_extra_data}}
+				{{title}}
+				{{/have_extra_data}}
+				{{#have_extra_data}}
+				<div uk-toggle="target: #{{container_id}}; mode: {{#is_mobile}}hover{{/is_mobile}}{{^is_mobile}}click{{/is_mobile}};"><span style="border-bottom: 1px dotted; cursor:pointer;" >{{title}}</span><span style="margin-left: 8px;" class="" uk-icon="icon: info"></span></div>
+				<div id="{{container_id}}" hidden style="margin: 10px 0; border:1px solid #eaeaea;" class="uk-margin-small"><div style="padding-top: 0; padding-bottom: 0;" class="uk-padding-small uk-card uk-card-default"><table class="uk-table uk-table-divider uk-table-small uk-table-justify uk-margin-remove">
+				{{/have_extra_data}}
+				{{#extra_data}}
+					<tr>
+						<td class="uk-table-expand">{{title}}</td>
+						<td style="text-align:right;" class="uk-text-nowrap">{{value}}</td>
+					</tr>
+				{{/extra_data}}
+				{{#have_extra_data}}
+				</table></div></div>
+				{{/have_extra_data}}
+			</td>
+            <td align="right" class="uk-text-nowrap">{{income_value}}</td>
+            <td align="right" class="uk-text-nowrap">{{outcome_value}}</td>
+        </tr>
+		{{/rows}}
+    </tbody>
+</table>
+{{/have_data}}
+{{^have_data}}
+<div class="uk-alert-warning" uk-alert>
+    <p class="uk-text-medium">Нет данных за выбранный месяц</p>
+</div>
+{{/have_data}}
+{{#have_data}}<div class="uk-placeholder uk-text-center"><i class="uk-text-muted">Данные актуальны на {{export_date}}</i></div>{{/have_data}}

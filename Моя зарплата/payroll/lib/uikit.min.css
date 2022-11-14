@@ -71,6 +71,9 @@ sup {
 sub {
   bottom: -0.25em;
 }
+svg {
+color: red;
+}
 audio,
 canvas,
 iframe,
