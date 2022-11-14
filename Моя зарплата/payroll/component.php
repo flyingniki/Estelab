@@ -43,8 +43,6 @@ if (isset($_GET['m'])) {
 	$year = date('Y');
 }
 
-
-
 function prepare_number($num)
 {
 	return number_format($num, 2, ',', ' ');
@@ -86,6 +84,21 @@ function get_prev_month($month, $year)
 	return pad_month($new_m, $new_y);
 }
 
+function prev_month($month, $year)
+{
+	$new_m = intval($month) - 1;
+	$new_y = intval($year);
+
+	if ($new_m == 0) {
+		$new_m = 12;
+		$new_y--;
+	}
+
+	return $new_m;
+}
+
+$prev_month = prev_month($month, $year);
+
 $render_data = array(
 	'have_data' => false,
 	'cur_month' => pad_month($month, $year),
@@ -97,7 +110,8 @@ $render_data = array(
 );
 
 $m_results = $DB->Query('SELECT * FROM `estelab_payroll_sheet_month` WHERE `user_id`="' . $USER->GetID() . '" AND `month`="' . date("Y-m-d", mktime(0, 0, 0, $month, 1, $year)) . '"');
-
+$prev_m_results = $DB->Query('SELECT * FROM `estelab_payroll_sheet_month` WHERE `user_id`="' . $USER->GetID() . '" AND `month`="' . date("Y-m-d", mktime(0, 0, 0, $prev_month, 1, $year)) . '"');
+// current results
 if ($m_row = $m_results->Fetch()) {
 	//echo '<pre>'; print_r($m_row); echo '</pre>';
 
@@ -180,6 +194,98 @@ if ($m_row = $m_results->Fetch()) {
 	//$render_data['final_balance'] = prepare_number($m_row['final_balance']);
 
 	$render_data['final_balance'] = prepare_number($income_sum - $outcome_sum - $withheld_sum);
+
+	$render_data['initial_balance_negative'] = $m_row['initial_balance'] < 0;
+	//$render_data['final_balance_negative'] = $m_row['final_balance'] < 0;
+
+	$render_data['export_date'] = date('d.m.Y H:i:s', strtotime($m_row['export_date']));
+
+	$render_data['have_data'] = true;
+}
+
+if ($prev_m_row = $prev_m_results->Fetch()) {
+	//echo '<pre>'; print_r($m_row); echo '</pre>';
+
+	$prev_income_sum = 0;
+	$prev_outcome_sum = 0;
+	$prev_withheld_sum = 0;
+
+	$prev_results = $DB->Query('SELECT * FROM `estelab_payroll_sheet_doc` WHERE `parent_id`="' . $prev_m_row['id'] . '" ORDER BY `date` ASC');
+
+	while ($prev_row = $prev_results->Fetch()) {
+
+		$prev_row['str_value'] = prepare_number($prev_row['value']);
+
+		$prev_row['date'] = prepare_date($prev_row['date']);
+
+		if ($prev_row['type'] == 'income') {
+			$prev_row['indicator_text'] = 'начисление';
+			$prev_row['tr_class'] = 'success';
+			$prev_row['icon_name'] = 'plus';
+			$prev_row['income_value'] = $prev_row['str_value'];
+
+			$prev_income_sum +=  $prev_row['value'];
+		} elseif ($prev_row['type'] == 'outcome') {
+			if ($prev_row['title'] == 'Удержано за покупку/процедуру в компании' || $prev_row['title'] == 'прочие удержания') {
+				$prev_row['indicator_text'] = 'выплата';
+				$prev_row['tr_class'] = 'danger';
+				$prev_row['icon_name'] = 'minus';
+				$prev_row['outcome_value'] = $prev_row['str_value'];
+
+				$prev_withheld_sum +=  $prev_row['value'];
+			} else {
+				$prev_row['indicator_text'] = 'выплата';
+				$prev_row['tr_class'] = 'primary';
+				$prev_row['icon_name'] = 'minus';
+				$prev_row['income_value'] = $prev_row['str_value'];
+
+				$prev_outcome_sum +=  $prev_row['value'];
+			}
+		}
+
+		$prev_row['extra_data'] = json_decode($prev_row['extra_data'], true);
+		//if(isset($_GET['dev'])) var_dump($row['extra_data']);
+
+		if (!empty($prev_row['extra_data'])) {
+			foreach ($prev_row['extra_data'] as $prev_key => $prev_erow) {
+				if ($prev_erow['value'] !== '') {
+					$prev_row['extra_data'][$prev_key]['value'] = prepare_number(floatval($prev_erow['value']));
+				}
+
+				//echo '<pre>'; var_dump($erow); echo '</pre>';
+			}
+		}
+
+		$prev_row['have_extra_data'] = !empty($prev_row['extra_data']);
+
+		$prev_row['container_id'] = 'extra_' . $prev_row['id'] . '_wrap';
+
+		$prev_render_data['rows'][] = $prev_row;
+
+
+		//echo '<pre>'; print_r($row); echo '</pre>';
+	}
+
+	// $render_data['rows'][] = array(
+	// 	'indicator_text' => 'итого',
+	// 	'tr_class' => 'success',
+	// 	'icon_name' => '',
+	// 	'income_value' => prepare_number($income_sum),
+	// 	'outcome_value' => prepare_number($outcome_sum),
+
+	// );
+
+	//if($income_sum != 0) 
+	$render_data['income_sum'] = prepare_number($income_sum);
+	//if($outcome_sum != 0) 
+	$render_data['outcome_sum'] = prepare_number($outcome_sum);
+	$render_data['withheld_sum'] = prepare_number($withheld_sum);
+
+	$render_data['initial_balance'] = prepare_number($m_row['initial_balance']);
+	//$render_data['final_balance'] = prepare_number($m_row['final_balance']);
+
+	$render_data['final_balance'] = prepare_number($income_sum - $outcome_sum - $withheld_sum);
+	$render_data['start_balance'] = prepare_number($prev_income_sum - $prev_outcome_sum - $prev_withheld_sum);
 
 	$render_data['initial_balance_negative'] = $m_row['initial_balance'] < 0;
 	//$render_data['final_balance_negative'] = $m_row['final_balance'] < 0;

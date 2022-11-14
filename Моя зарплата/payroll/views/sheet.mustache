@@ -19,7 +19,13 @@
 </div>
 <h3 class="uk-heading-divider uk-margin-small-top">Начисления и выплаты за месяц</h3>
 {{#have_data}}
-<div class="uk-child-width-1-4@s uk-grid-small uk-text-center uk-margin-top" uk-grid>
+<div class="uk-child-width-1-5@s uk-grid-small uk-text-center uk-margin-top" uk-grid>
+    <div>
+        <div class="uk-tile uk-tile-muted  uk-padding-small">
+			<p style="margin-bottom:0;">Остаток на начало месяца</p>
+            <p class="uk-h4 uk-text-warning" style="margin-top:0; font-weight:bold;">{{start_balance}}</p>
+        </div>
+    </div>
     <div>
         <div class="uk-tile uk-tile-muted  uk-padding-small">
 			<p style="margin-bottom:0;">Зарплата за месяц</p>
@@ -41,7 +47,7 @@
     <div>
         <div class="uk-tile uk-tile-muted  uk-padding-small">
 			<p style="margin-bottom:0;">Остаток за месяц</p>
-            <p class="uk-h4 uk-text-primary" style="margin-top:0; font-weight:bold;">{{final_balance}}</p>
+            <p class="uk-h4 uk-text-warning" style="margin-top:0; font-weight:bold;">{{final_balance}}</p>
         </div>
     </div>
 </div>
