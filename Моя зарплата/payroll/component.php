@@ -202,7 +202,7 @@ if ($m_row = $m_results->Fetch()) {
 
 	$render_data['have_data'] = true;
 }
-
+// previous results
 if ($prev_m_row = $prev_m_results->Fetch()) {
 	//echo '<pre>'; print_r($m_row); echo '</pre>';
 
@@ -265,34 +265,7 @@ if ($prev_m_row = $prev_m_results->Fetch()) {
 
 		//echo '<pre>'; print_r($row); echo '</pre>';
 	}
-
-	// $render_data['rows'][] = array(
-	// 	'indicator_text' => 'итого',
-	// 	'tr_class' => 'success',
-	// 	'icon_name' => '',
-	// 	'income_value' => prepare_number($income_sum),
-	// 	'outcome_value' => prepare_number($outcome_sum),
-
-	// );
-
-	//if($income_sum != 0) 
-	$render_data['income_sum'] = prepare_number($income_sum);
-	//if($outcome_sum != 0) 
-	$render_data['outcome_sum'] = prepare_number($outcome_sum);
-	$render_data['withheld_sum'] = prepare_number($withheld_sum);
-
-	$render_data['initial_balance'] = prepare_number($m_row['initial_balance']);
-	//$render_data['final_balance'] = prepare_number($m_row['final_balance']);
-
-	$render_data['final_balance'] = prepare_number($income_sum - $outcome_sum - $withheld_sum);
 	$render_data['start_balance'] = prepare_number($prev_income_sum - $prev_outcome_sum - $prev_withheld_sum);
-
-	$render_data['initial_balance_negative'] = $m_row['initial_balance'] < 0;
-	//$render_data['final_balance_negative'] = $m_row['final_balance'] < 0;
-
-	$render_data['export_date'] = date('d.m.Y H:i:s', strtotime($m_row['export_date']));
-
-	$render_data['have_data'] = true;
 }
 
 $mustache = new Mustache_Engine(array('loader' => new Mustache_Loader_FilesystemLoader(dirname(__FILE__) . '/views'),));
