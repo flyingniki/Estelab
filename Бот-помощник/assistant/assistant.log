@@ -1,0 +1,185 @@
+
+------------------------
+2022.11.15 16:13:33
+ReportBot send data
+Array
+(
+    [URL] => https://corp.estelab.ru/rest/imbot.register
+    [PARAMS] => Array
+        (
+            [CODE] => AssistantBot
+            [TYPE] => B
+            [EVENT_MESSAGE_ADD] => https://corp.estelab.ru/estelab/bots/assistant/handler.php
+            [EVENT_WELCOME_MESSAGE] => https://corp.estelab.ru/estelab/bots/assistant/handler.php
+            [EVENT_BOT_DELETE] => https://corp.estelab.ru/estelab/bots/assistant/handler.php
+            [PROPERTIES] => Array
+                (
+                    [NAME] => Бот-помощник
+                    [LAST_NAME] => 
+                    [COLOR] => AZURE
+                    [EMAIL] => 
+                    [PERSONAL_BIRTHDAY] => 2022-11-11
+                    [WORK_POSITION] => Помогаю во многих вопросах
+                    [PERSONAL_WWW] => 
+                    [PERSONAL_GENDER] => M
+                    [PERSONAL_PHOTO] => 
+                )
+
+            [auth] => 8c9e7363005f274c0007ddab0001382600000793b5e60b3355525f3f5c4948174699f8
+        )
+
+)
+
+------------------------
+
+------------------------
+2022.11.15 16:13:33
+ReportBot send data
+Array
+(
+    [URL] => https://corp.estelab.ru/rest/imbot.command.register
+    [PARAMS] => Array
+        (
+            [BOT_ID] => 82490
+            [COMMAND] => echo
+            [COMMON] => Y
+            [HIDDEN] => N
+            [EXTRANET_SUPPORT] => N
+            [LANG] => Array
+                (
+                    [0] => Array
+                        (
+                            [LANGUAGE_ID] => en
+                            [TITLE] => Get echo message
+                            [PARAMS] => some text
+                        )
+
+                )
+
+            [EVENT_COMMAND_ADD] => https://corp.estelab.ru/estelab/bots/assistant/handler.php
+            [auth] => 8c9e7363005f274c0007ddab0001382600000793b5e60b3355525f3f5c4948174699f8
+        )
+
+)
+
+------------------------
+
+------------------------
+2022.11.15 16:13:33
+ReportBot send data
+Array
+(
+    [URL] => https://corp.estelab.ru/rest/imbot.command.register
+    [PARAMS] => Array
+        (
+            [BOT_ID] => 82490
+            [COMMAND] => echoList
+            [COMMON] => N
+            [HIDDEN] => N
+            [EXTRANET_SUPPORT] => N
+            [LANG] => Array
+                (
+                    [0] => Array
+                        (
+                            [LANGUAGE_ID] => en
+                            [TITLE] => Get list of colors
+                            [PARAMS] => 
+                        )
+
+                )
+
+            [EVENT_COMMAND_ADD] => https://corp.estelab.ru/estelab/bots/assistant/handler.php
+            [auth] => 8c9e7363005f274c0007ddab0001382600000793b5e60b3355525f3f5c4948174699f8
+        )
+
+)
+
+------------------------
+
+------------------------
+2022.11.15 16:13:33
+ReportBot send data
+Array
+(
+    [URL] => https://corp.estelab.ru/rest/imbot.command.register
+    [PARAMS] => Array
+        (
+            [BOT_ID] => 82490
+            [COMMAND] => help
+            [COMMON] => N
+            [HIDDEN] => N
+            [EXTRANET_SUPPORT] => N
+            [LANG] => Array
+                (
+                    [0] => Array
+                        (
+                            [LANGUAGE_ID] => en
+                            [TITLE] => Get help message
+                            [PARAMS] => some text
+                        )
+
+                )
+
+            [EVENT_COMMAND_ADD] => https://corp.estelab.ru/estelab/bots/assistant/handler.php
+            [auth] => 8c9e7363005f274c0007ddab0001382600000793b5e60b3355525f3f5c4948174699f8
+        )
+
+)
+
+------------------------
+
+------------------------
+2022.11.15 16:13:33
+ReportBot send data
+Array
+(
+    [URL] => https://corp.estelab.ru/rest/event.bind
+    [PARAMS] => Array
+        (
+            [EVENT] => OnAppUpdate
+            [HANDLER] => https://corp.estelab.ru/estelab/bots/assistant/handler.php
+            [auth] => 8c9e7363005f274c0007ddab0001382600000793b5e60b3355525f3f5c4948174699f8
+        )
+
+)
+
+------------------------
+
+------------------------
+2022.11.15 16:13:33
+Assistant register
+Array
+(
+    [0] => 82490
+    [1] => 141
+    [2] => 143
+    [3] => 142
+)
+
+------------------------
+
+------------------------
+2022.11.15 16:14:03
+ReportBot send data
+Array
+(
+    [URL] => https://corp.estelab.ru/rest/imbot.message.add
+    [PARAMS] => Array
+        (
+            [DIALOG_ID] => 79910
+            [MESSAGE] => Привет! Я проводник по этому порталу! 8-) Поехали :)
+            [ATTACH] => Array
+                (
+                    [0] => Array
+                        (
+                            [MESSAGE] => Спросите меня что-нибудь...
+                        )
+
+                )
+
+            [auth] => ab9e7363005f274c0007ddab00013826000007118ecdd597d2449f2506d270e459da75
+        )
+
+)
+
+------------------------
