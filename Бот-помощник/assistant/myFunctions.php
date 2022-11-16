@@ -8,40 +8,93 @@
  *
  * @return     array
  */
-function getAnswer($command = '', $user)
+function addMessage($message, $keyboard = null)
 {
-
-    switch (mb_strtolower($command)) {
+    switch (mb_strtolower($message)) {
         case 'привет':
+            $attach[] = array("MESSAGE" => 'Если хочешь узнать, что я могу, набери в сообщении или нажми [send=помощь]помощь[/send]');
             $arResult = array(
-                'title' => 'Я чат-бот помощник, создан для удобства в работе на нашем портале. Пока что мой функционал ограничен, но я учусь :)',
-                'report' => 'Для знакомства с моими возможностями напиши "помощь"',
+                'title' => '[b]Я чат-бот помощник, создан для удобства в работе на нашем портале. Пока что мой функционал ограничен, но я учусь :)[/b]',
+                'attach' => $attach,
             );
             break;
         case 'помощь':
             $arResult = array(
-                'title' => '',
-                'report' => '',
+                'title' => '[b]Мои функции[/b]',
+                'report' => 'Для вызова, нажми кнопку ниже',
+                'keyboard' => showKeyboard($keyboard),
             );
             break;
         default:
             $arResult = array(
-                'title' => 'Туплю-с',
+                'title' => '[b]Туплю-с[/b]',
                 'report'  => 'Не соображу, что вы хотите узнать. А может вообще не умею...',
             );
     }
-
-    return $arResult;
+    $answerParams = array(
+        "DIALOG_ID" => $_REQUEST['data']['PARAMS']['DIALOG_ID'],
+        "MESSAGE" => $arResult['title'] . "\n" . $arResult['report'] . "\n",
+        "KEYBOARD" => $arResult['keyboard'],
+        "ATTACH" => array_merge(
+            $arResult['attach']
+        ),
+    );
+    $result = restCommand('imbot.message.add', $answerParams, $_REQUEST["auth"]);
+    return $result;
 }
 
-function showActionList($command)
+/**
+ * Вызывает клавиатуру
+ * @param array массив с данными клавиатуры
+ * 
+ * @return array
+ */
+function showKeyboard($keyboard)
 {
-    $keyboard = array(
-        array("TEXT" => $command['COMMAND_PARAMS'] == 1 ? "· 1 ·" : "1", "COMMAND" => "actionList", "COMMAND_PARAMS" => "1", "DISPLAY" => "LINE", "BLOCK" => "Y"),
-        array("TEXT" => $command['COMMAND_PARAMS'] == 2 ? "· 2 ·" : "2", "COMMAND" => "actionList", "COMMAND_PARAMS" => "2", "DISPLAY" => "LINE", "BLOCK" => "Y"),
-        array("TEXT" => $command['COMMAND_PARAMS'] == 3 ? "· 3 ·" : "3", "COMMAND" => "actionList", "COMMAND_PARAMS" => "3", "DISPLAY" => "LINE", "BLOCK" => "Y"),
-        array("TEXT" => $command['COMMAND_PARAMS'] == 4 ? "· 4 ·" : "4", "COMMAND" => "actionList", "COMMAND_PARAMS" => "4", "DISPLAY" => "LINE", "BLOCK" => "Y"),
-        array("TEXT" => $command['COMMAND_PARAMS'] == 5 ? "· 5 ·" : "5", "COMMAND" => "actionList", "COMMAND_PARAMS" => "5", "DISPLAY" => "LINE", "BLOCK" => "Y"),
-    );
     return $keyboard;
+}
+
+function updateMessage($botId, $messageId, $messageText = '', $keyboard = null)
+{
+    $arFields = array(
+        'BOT_ID' => $botId,
+        "MESSAGE_ID" => $messageId,
+        "MESSAGE" => $messageText,
+        "KEYBOARD" => $keyboard,
+    );
+    $result = restCommand('imbot.message.update', $arFields, $_REQUEST["auth"]);
+    return $result;
+}
+
+function deleteMessage($botId, $messageId)
+{
+    $result = restCommand('imbot.message.delete', array(
+        'BOT_ID' => $botId,
+        'MESSAGE_ID' => $messageId,
+        'COMPLETE' => 'Y', //  If message is required to be deleted completely, without a trace, then specify 'Y' (optional parameter)
+    ), $_REQUEST["auth"]);
+    return $result;
+}
+
+/**
+ * Добавляем элемент инфоблока отсутствие и переработка
+ */
+function absenceAndProcessing($case, $dateBegin, $dateEnd, $employee, $type, $department)
+{
+    $iBlockParams = array(
+        'IBLOCK_TYPE_ID' => 'bitrix_processes',
+        'IBLOCK_ID' => 119,
+        "ELEMENT_CODE" => 'element_' . time(),
+        'FIELDS' => array(
+            'NAME' => $case,
+            'PROPERTY_608' => $dateBegin,
+            'PROPERTY_609' => $dateEnd,
+            'PROPERTY_853' => $employee,
+            'PROPERTY_854' => $type,
+            'PROPERTY_855' => $department
+        ),
+    );
+
+    $result = restCommand('lists.element.add', $iBlockParams, $_REQUEST["auth"]);
+    return $result['result'];
 }
