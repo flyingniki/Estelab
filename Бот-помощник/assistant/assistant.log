@@ -1,7 +1,210 @@
 
 ------------------------
-2022.11.15 16:13:33
-ReportBot send data
+2022.11.16 17:46:28
+AssistantBot send data
+Array
+(
+    [URL] => https://corp.estelab.ru/rest/imbot.message.add
+    [PARAMS] => Array
+        (
+            [DIALOG_ID] => 79910
+            [MESSAGE] => [b]Мои функции[/b]
+Для вызова, нажми кнопку ниже
+
+            [KEYBOARD] => Array
+                (
+                    [0] => Array
+                        (
+                            [TEXT] => Отсутствие и переработка
+                            [COMMAND] => absence
+                            [COMMAND_PARAMS] => absence and processing
+                            [BG_COLOR] => #00BFFF
+                            [TEXT_COLOR] => #fff
+                            [DISPLAY] => LINE
+                        )
+
+                    [1] => Array
+                        (
+                            [TEXT] => Оплата счета
+                            [COMMAND] => billPayment
+                            [COMMAND_PARAMS] => bill payment
+                            [BG_COLOR] => #7B68EE
+                            [TEXT_COLOR] => #fff
+                            [DISPLAY] => LINE
+                        )
+
+                )
+
+            [ATTACH] => 
+            [auth] => d4057563005f274c0007ddab00013826000007aaa2ea07934ae662a87aeda555d1316a
+        )
+
+)
+
+------------------------
+
+------------------------
+2022.11.16 17:50:58
+AssistantBot send data
+Array
+(
+    [URL] => https://corp.estelab.ru/rest/imbot.message.add
+    [PARAMS] => Array
+        (
+            [DIALOG_ID] => 79910
+            [MESSAGE] => [b]Я чат-бот помощник, создан для удобства в работе на нашем портале. Пока что мой функционал ограничен, но я учусь :)[/b]
+
+
+            [KEYBOARD] => 
+            [ATTACH] => Array
+                (
+                    [0] => Array
+                        (
+                            [MESSAGE] => Если хочешь узнать, что я могу, набери в сообщении или нажми [send=помощь]помощь[/send]
+                        )
+
+                )
+
+            [auth] => e2067563005f274c0007ddab000138260000073f63eb7ed5bb1810e3e319735d75b0bc
+        )
+
+)
+
+------------------------
+
+------------------------
+2022.11.16 17:51:01
+AssistantBot send data
+Array
+(
+    [URL] => https://corp.estelab.ru/rest/imbot.message.add
+    [PARAMS] => Array
+        (
+            [DIALOG_ID] => 79910
+            [MESSAGE] => [b]Мои функции[/b]
+Для вызова, нажми кнопку ниже
+
+            [KEYBOARD] => Array
+                (
+                    [0] => Array
+                        (
+                            [TEXT] => Отсутствие и переработка
+                            [COMMAND] => absence
+                            [COMMAND_PARAMS] => absence and processing
+                            [BG_COLOR] => #00BFFF
+                            [TEXT_COLOR] => #fff
+                            [DISPLAY] => LINE
+                        )
+
+                    [1] => Array
+                        (
+                            [TEXT] => Оплата счета
+                            [COMMAND] => billPayment
+                            [COMMAND_PARAMS] => bill payment
+                            [BG_COLOR] => #7B68EE
+                            [TEXT_COLOR] => #fff
+                            [DISPLAY] => LINE
+                        )
+
+                )
+
+            [ATTACH] => 
+            [auth] => e5067563005f274c0007ddab00013826000007191d2d3319027051f991ab5fb44155e9
+        )
+
+)
+
+------------------------
+
+------------------------
+2022.11.16 17:55:20
+AssistantBot send data
+Array
+(
+    [URL] => https://corp.estelab.ru/rest/imbot.message.add
+    [PARAMS] => Array
+        (
+            [DIALOG_ID] => 79910
+            [MESSAGE] => [b]Туплю-с[/b]
+Не соображу, что вы хотите узнать. А может вообще не умею...
+
+            [KEYBOARD] => 
+            [ATTACH] => 
+            [auth] => e8077563005f274c0007ddab000138260000076d5e9f5de581cccdc5ac588a84bea62d
+        )
+
+)
+
+------------------------
+
+------------------------
+2022.11.16 17:55:27
+AssistantBot send data
+Array
+(
+    [URL] => https://corp.estelab.ru/rest/imbot.message.add
+    [PARAMS] => Array
+        (
+            [DIALOG_ID] => 79910
+            [MESSAGE] => [b]Туплю-с[/b]
+Не соображу, что вы хотите узнать. А может вообще не умею...
+
+            [KEYBOARD] => 
+            [ATTACH] => 
+            [auth] => ef077563005f274c0007ddab0001382600000799320b7280251eead6a1969cccc5e9c3
+        )
+
+)
+
+------------------------
+
+------------------------
+2022.11.17 10:04:25
+AssistantBot send data
+Array
+(
+    [URL] => https://corp.estelab.ru/rest/imbot.message.add
+    [PARAMS] => Array
+        (
+            [DIALOG_ID] => 79910
+            [MESSAGE] => [b]Мои функции[/b]
+Для вызова, нажми кнопку ниже
+
+            [KEYBOARD] => Array
+                (
+                    [0] => Array
+                        (
+                            [TEXT] => Отсутствие и переработка
+                            [COMMAND] => absence
+                            [COMMAND_PARAMS] => absence and processing
+                            [BG_COLOR] => #00BFFF
+                            [TEXT_COLOR] => #fff
+                            [DISPLAY] => LINE
+                        )
+
+                    [1] => Array
+                        (
+                            [TEXT] => Оплата счета
+                            [COMMAND] => billPayment
+                            [COMMAND_PARAMS] => bill payment
+                            [BG_COLOR] => #7B68EE
+                            [TEXT_COLOR] => #fff
+                            [DISPLAY] => LINE
+                        )
+
+                )
+
+            [ATTACH] => 
+            [auth] => 09eb7563005f274c0007ddab00013826000007f4e733530e70f68b75ebf710e9acacbd
+        )
+
+)
+
+------------------------
+
+------------------------
+2022.11.17 10:08:38
+AssistantBot send data
 Array
 (
     [URL] => https://corp.estelab.ru/rest/imbot.register
@@ -25,7 +228,7 @@ Array
                     [PERSONAL_PHOTO] => 
                 )
 
-            [auth] => 8c9e7363005f274c0007ddab0001382600000793b5e60b3355525f3f5c4948174699f8
+            [auth] => 06ec7563005f274c0007ddab00013826000007e51f54bc5a9d30f116e4fba7fbaf916c
         )
 
 )
@@ -33,15 +236,15 @@ Array
 ------------------------
 
 ------------------------
-2022.11.15 16:13:33
-ReportBot send data
+2022.11.17 10:08:39
+AssistantBot send data
 Array
 (
     [URL] => https://corp.estelab.ru/rest/imbot.command.register
     [PARAMS] => Array
         (
             [BOT_ID] => 82490
-            [COMMAND] => echo
+            [COMMAND] => absence
             [COMMON] => Y
             [HIDDEN] => N
             [EXTRANET_SUPPORT] => N
@@ -50,14 +253,14 @@ Array
                     [0] => Array
                         (
                             [LANGUAGE_ID] => en
-                            [TITLE] => Get echo message
+                            [TITLE] => Процесс "Отсутствие и переработка"
                             [PARAMS] => some text
                         )
 
                 )
 
             [EVENT_COMMAND_ADD] => https://corp.estelab.ru/estelab/bots/assistant/handler.php
-            [auth] => 8c9e7363005f274c0007ddab0001382600000793b5e60b3355525f3f5c4948174699f8
+            [auth] => 06ec7563005f274c0007ddab00013826000007e51f54bc5a9d30f116e4fba7fbaf916c
         )
 
 )
@@ -65,16 +268,16 @@ Array
 ------------------------
 
 ------------------------
-2022.11.15 16:13:33
-ReportBot send data
+2022.11.17 10:08:39
+AssistantBot send data
 Array
 (
     [URL] => https://corp.estelab.ru/rest/imbot.command.register
     [PARAMS] => Array
         (
             [BOT_ID] => 82490
-            [COMMAND] => echoList
-            [COMMON] => N
+            [COMMAND] => billPayment
+            [COMMON] => Y
             [HIDDEN] => N
             [EXTRANET_SUPPORT] => N
             [LANG] => Array
@@ -82,46 +285,14 @@ Array
                     [0] => Array
                         (
                             [LANGUAGE_ID] => en
-                            [TITLE] => Get list of colors
-                            [PARAMS] => 
-                        )
-
-                )
-
-            [EVENT_COMMAND_ADD] => https://corp.estelab.ru/estelab/bots/assistant/handler.php
-            [auth] => 8c9e7363005f274c0007ddab0001382600000793b5e60b3355525f3f5c4948174699f8
-        )
-
-)
-
-------------------------
-
-------------------------
-2022.11.15 16:13:33
-ReportBot send data
-Array
-(
-    [URL] => https://corp.estelab.ru/rest/imbot.command.register
-    [PARAMS] => Array
-        (
-            [BOT_ID] => 82490
-            [COMMAND] => help
-            [COMMON] => N
-            [HIDDEN] => N
-            [EXTRANET_SUPPORT] => N
-            [LANG] => Array
-                (
-                    [0] => Array
-                        (
-                            [LANGUAGE_ID] => en
-                            [TITLE] => Get help message
+                            [TITLE] => Оплата счета
                             [PARAMS] => some text
                         )
 
                 )
 
             [EVENT_COMMAND_ADD] => https://corp.estelab.ru/estelab/bots/assistant/handler.php
-            [auth] => 8c9e7363005f274c0007ddab0001382600000793b5e60b3355525f3f5c4948174699f8
+            [auth] => 06ec7563005f274c0007ddab00013826000007e51f54bc5a9d30f116e4fba7fbaf916c
         )
 
 )
@@ -129,55 +300,888 @@ Array
 ------------------------
 
 ------------------------
-2022.11.15 16:13:33
-ReportBot send data
-Array
-(
-    [URL] => https://corp.estelab.ru/rest/event.bind
-    [PARAMS] => Array
-        (
-            [EVENT] => OnAppUpdate
-            [HANDLER] => https://corp.estelab.ru/estelab/bots/assistant/handler.php
-            [auth] => 8c9e7363005f274c0007ddab0001382600000793b5e60b3355525f3f5c4948174699f8
-        )
-
-)
-
-------------------------
-
-------------------------
-2022.11.15 16:13:33
+2022.11.17 10:08:39
 Assistant register
 Array
 (
     [0] => 82490
-    [1] => 141
-    [2] => 143
-    [3] => 142
+    [1] => 145
+    [2] => 146
 )
 
 ------------------------
 
 ------------------------
-2022.11.15 16:14:03
-ReportBot send data
+2022.11.17 10:13:02
+AssistantBot send data
+Array
+(
+    [URL] => https://corp.estelab.ru/rest/imbot.command.answer
+    [PARAMS] => Array
+        (
+            [COMMAND_ID] => 145
+            [MESSAGE_ID] => 13183602
+            [MESSAGE] => Отсутствие и переработка
+            [auth] => 0eed7563005f274c0007ddab00013826000007e9576ae96279b0765180791a2fa4db30
+        )
+
+)
+
+------------------------
+
+------------------------
+2022.11.17 10:13:02
+AssistantBot command add
+Array
+(
+    [145] => Array
+        (
+            [domain] => corp.estelab.ru
+            [member_id] => 124ff83138e5ff3838db5f0214c6284a
+            [application_token] => 16fc2b5f7189c9cfdf7586e4181433f1
+            [AUTH] => Array
+                (
+                    [domain] => corp.estelab.ru
+                    [member_id] => 124ff83138e5ff3838db5f0214c6284a
+                    [application_token] => 16fc2b5f7189c9cfdf7586e4181433f1
+                )
+
+            [BOT_ID] => 82490
+            [BOT_CODE] => AssistantBot
+            [COMMAND] => absence
+            [COMMAND_ID] => 145
+            [COMMAND_PARAMS] => absence and processing
+            [COMMAND_CONTEXT] => KEYBOARD
+            [MESSAGE_ID] => 13183602
+        )
+
+)
+
+------------------------
+
+------------------------
+2022.11.17 10:13:15
+AssistantBot command add
+Array
+(
+    [146] => Array
+        (
+            [domain] => corp.estelab.ru
+            [member_id] => 124ff83138e5ff3838db5f0214c6284a
+            [application_token] => 16fc2b5f7189c9cfdf7586e4181433f1
+            [AUTH] => Array
+                (
+                    [domain] => corp.estelab.ru
+                    [member_id] => 124ff83138e5ff3838db5f0214c6284a
+                    [application_token] => 16fc2b5f7189c9cfdf7586e4181433f1
+                )
+
+            [BOT_ID] => 82490
+            [BOT_CODE] => AssistantBot
+            [COMMAND] => billPayment
+            [COMMAND_ID] => 146
+            [COMMAND_PARAMS] => bill payment
+            [COMMAND_CONTEXT] => KEYBOARD
+            [MESSAGE_ID] => 13183602
+        )
+
+)
+
+------------------------
+
+------------------------
+2022.11.17 10:17:48
+AssistantBot send data
+Array
+(
+    [URL] => https://corp.estelab.ru/rest/imbot.command.answer
+    [PARAMS] => Array
+        (
+            [COMMAND_ID] => 145
+            [MESSAGE_ID] => 13183602
+            [MESSAGE] => Отсутствие и переработка
+            [auth] => 2cee7563005f274c0007ddab000138260000075e653c47deec467c479e218c785ea826
+        )
+
+)
+
+------------------------
+
+------------------------
+2022.11.17 10:17:49
+AssistantBot command add
+Array
+(
+    [145] => Array
+        (
+            [domain] => corp.estelab.ru
+            [member_id] => 124ff83138e5ff3838db5f0214c6284a
+            [application_token] => 16fc2b5f7189c9cfdf7586e4181433f1
+            [AUTH] => Array
+                (
+                    [domain] => corp.estelab.ru
+                    [member_id] => 124ff83138e5ff3838db5f0214c6284a
+                    [application_token] => 16fc2b5f7189c9cfdf7586e4181433f1
+                )
+
+            [BOT_ID] => 82490
+            [BOT_CODE] => AssistantBot
+            [COMMAND] => absence
+            [COMMAND_ID] => 145
+            [COMMAND_PARAMS] => absence and processing
+            [COMMAND_CONTEXT] => KEYBOARD
+            [MESSAGE_ID] => 13183602
+        )
+
+)
+
+------------------------
+
+------------------------
+2022.11.17 10:17:51
+AssistantBot send data
+Array
+(
+    [URL] => https://corp.estelab.ru/rest/imbot.command.answer
+    [PARAMS] => Array
+        (
+            [COMMAND_ID] => 146
+            [MESSAGE_ID] => 13183602
+            [MESSAGE] => Оплата счета
+            [auth] => 2fee7563005f274c0007ddab000138260000073e417bb59bf5aaee02c1422f80936487
+        )
+
+)
+
+------------------------
+
+------------------------
+2022.11.17 10:17:51
+AssistantBot command add
+Array
+(
+    [146] => Array
+        (
+            [domain] => corp.estelab.ru
+            [member_id] => 124ff83138e5ff3838db5f0214c6284a
+            [application_token] => 16fc2b5f7189c9cfdf7586e4181433f1
+            [AUTH] => Array
+                (
+                    [domain] => corp.estelab.ru
+                    [member_id] => 124ff83138e5ff3838db5f0214c6284a
+                    [application_token] => 16fc2b5f7189c9cfdf7586e4181433f1
+                )
+
+            [BOT_ID] => 82490
+            [BOT_CODE] => AssistantBot
+            [COMMAND] => billPayment
+            [COMMAND_ID] => 146
+            [COMMAND_PARAMS] => bill payment
+            [COMMAND_CONTEXT] => KEYBOARD
+            [MESSAGE_ID] => 13183602
+        )
+
+)
+
+------------------------
+
+------------------------
+2022.11.17 10:26:57
+AssistantBot send data
+Array
+(
+    [URL] => https://corp.estelab.ru/rest/imbot.command.answer
+    [PARAMS] => Array
+        (
+            [COMMAND_ID] => 145
+            [MESSAGE_ID] => 13183602
+            [MESSAGE] => Отсутствие и переработка
+            [auth] => 51f07563005f274c0007ddab000138260000070c66e6c1c2c1b24ddb565ac24ab8bbfd
+        )
+
+)
+
+------------------------
+
+------------------------
+2022.11.17 10:26:57
+AssistantBot command add
+Array
+(
+    [145] => Array
+        (
+            [domain] => corp.estelab.ru
+            [member_id] => 124ff83138e5ff3838db5f0214c6284a
+            [application_token] => 16fc2b5f7189c9cfdf7586e4181433f1
+            [AUTH] => Array
+                (
+                    [domain] => corp.estelab.ru
+                    [member_id] => 124ff83138e5ff3838db5f0214c6284a
+                    [application_token] => 16fc2b5f7189c9cfdf7586e4181433f1
+                )
+
+            [BOT_ID] => 82490
+            [BOT_CODE] => AssistantBot
+            [COMMAND] => absence
+            [COMMAND_ID] => 145
+            [COMMAND_PARAMS] => absence and processing
+            [COMMAND_CONTEXT] => KEYBOARD
+            [MESSAGE_ID] => 13183602
+        )
+
+)
+
+------------------------
+
+------------------------
+2022.11.17 10:26:59
+AssistantBot send data
+Array
+(
+    [URL] => https://corp.estelab.ru/rest/imbot.command.answer
+    [PARAMS] => Array
+        (
+            [COMMAND_ID] => 146
+            [MESSAGE_ID] => 13183602
+            [MESSAGE] => Оплата счета
+            [auth] => 53f07563005f274c0007ddab0001382600000775f604a2e5b6916d0fb3272b40f25d01
+        )
+
+)
+
+------------------------
+
+------------------------
+2022.11.17 10:26:59
+AssistantBot command add
+Array
+(
+    [146] => Array
+        (
+            [domain] => corp.estelab.ru
+            [member_id] => 124ff83138e5ff3838db5f0214c6284a
+            [application_token] => 16fc2b5f7189c9cfdf7586e4181433f1
+            [AUTH] => Array
+                (
+                    [domain] => corp.estelab.ru
+                    [member_id] => 124ff83138e5ff3838db5f0214c6284a
+                    [application_token] => 16fc2b5f7189c9cfdf7586e4181433f1
+                )
+
+            [BOT_ID] => 82490
+            [BOT_CODE] => AssistantBot
+            [COMMAND] => billPayment
+            [COMMAND_ID] => 146
+            [COMMAND_PARAMS] => bill payment
+            [COMMAND_CONTEXT] => KEYBOARD
+            [MESSAGE_ID] => 13183602
+        )
+
+)
+
+------------------------
+
+------------------------
+2022.11.17 10:51:07
+AssistantBot send data
+Array
+(
+    [URL] => https://corp.estelab.ru/rest/imbot.command.answer
+    [PARAMS] => Array
+        (
+            [COMMAND_ID] => 145
+            [MESSAGE_ID] => 13183602
+            [MESSAGE] => Отсутствие и переработка
+            [auth] => fbf57563005f274c0007ddab000138260000074d6017ec0b430be9b265c8a09ba04c16
+        )
+
+)
+
+------------------------
+
+------------------------
+2022.11.17 10:51:07
+AssistantBot command add
+Array
+(
+    [145] => Array
+        (
+            [domain] => corp.estelab.ru
+            [member_id] => 124ff83138e5ff3838db5f0214c6284a
+            [application_token] => 16fc2b5f7189c9cfdf7586e4181433f1
+            [AUTH] => Array
+                (
+                    [domain] => corp.estelab.ru
+                    [member_id] => 124ff83138e5ff3838db5f0214c6284a
+                    [application_token] => 16fc2b5f7189c9cfdf7586e4181433f1
+                )
+
+            [BOT_ID] => 82490
+            [BOT_CODE] => AssistantBot
+            [COMMAND] => absence
+            [COMMAND_ID] => 145
+            [COMMAND_PARAMS] => absence and processing
+            [COMMAND_CONTEXT] => KEYBOARD
+            [MESSAGE_ID] => 13183602
+        )
+
+)
+
+------------------------
+
+------------------------
+2022.11.17 10:55:44
+AssistantBot send data
+Array
+(
+    [URL] => https://corp.estelab.ru/rest/imbot.command.answer
+    [PARAMS] => Array
+        (
+            [COMMAND_ID] => 145
+            [MESSAGE_ID] => 13183602
+            [MESSAGE] => Внесите следующую информацию: 
+ [send=причина]Причина[/send]
+            [auth] => 10f77563005f274c0007ddab00013826000007f2bc4ce0aea73c9c368c8cd1a83cda3e
+        )
+
+)
+
+------------------------
+
+------------------------
+2022.11.17 10:55:44
+AssistantBot command add
+Array
+(
+    [145] => Array
+        (
+            [domain] => corp.estelab.ru
+            [member_id] => 124ff83138e5ff3838db5f0214c6284a
+            [application_token] => 16fc2b5f7189c9cfdf7586e4181433f1
+            [AUTH] => Array
+                (
+                    [domain] => corp.estelab.ru
+                    [member_id] => 124ff83138e5ff3838db5f0214c6284a
+                    [application_token] => 16fc2b5f7189c9cfdf7586e4181433f1
+                )
+
+            [BOT_ID] => 82490
+            [BOT_CODE] => AssistantBot
+            [COMMAND] => absence
+            [COMMAND_ID] => 145
+            [COMMAND_PARAMS] => absence and processing
+            [COMMAND_CONTEXT] => KEYBOARD
+            [MESSAGE_ID] => 13183602
+        )
+
+)
+
+------------------------
+
+------------------------
+2022.11.17 10:59:02
+AssistantBot send data
+Array
+(
+    [URL] => https://corp.estelab.ru/rest/imbot.command.answer
+    [PARAMS] => Array
+        (
+            [COMMAND_ID] => 145
+            [MESSAGE_ID] => 13183602
+            [MESSAGE] => Внесите следующую информацию:
+ Причина 
+ Дата начала 
+ Дата окончания 
+ Сотрудник 
+ Тип 
+ Подразделение
+            [auth] => d5f77563005f274c0007ddab0001382600000768267e026c85cb96f263510ff1302eb8
+        )
+
+)
+
+------------------------
+
+------------------------
+2022.11.17 10:59:02
+AssistantBot command add
+Array
+(
+    [145] => Array
+        (
+            [domain] => corp.estelab.ru
+            [member_id] => 124ff83138e5ff3838db5f0214c6284a
+            [application_token] => 16fc2b5f7189c9cfdf7586e4181433f1
+            [AUTH] => Array
+                (
+                    [domain] => corp.estelab.ru
+                    [member_id] => 124ff83138e5ff3838db5f0214c6284a
+                    [application_token] => 16fc2b5f7189c9cfdf7586e4181433f1
+                )
+
+            [BOT_ID] => 82490
+            [BOT_CODE] => AssistantBot
+            [COMMAND] => absence
+            [COMMAND_ID] => 145
+            [COMMAND_PARAMS] => absence and processing
+            [COMMAND_CONTEXT] => KEYBOARD
+            [MESSAGE_ID] => 13183602
+        )
+
+)
+
+------------------------
+
+------------------------
+2022.11.17 10:59:19
+AssistantBot send data
+Array
+(
+    [URL] => https://corp.estelab.ru/rest/imbot.command.answer
+    [PARAMS] => Array
+        (
+            [COMMAND_ID] => 145
+            [MESSAGE_ID] => 13183602
+            [MESSAGE] => [b]Внесите следующую информацию:[/b]
+ Причина 
+ Дата начала 
+ Дата окончания 
+ Сотрудник 
+ Тип 
+ Подразделение
+            [auth] => e7f77563005f274c0007ddab00013826000007581ea915696e1dc240c5dce0619c3ced
+        )
+
+)
+
+------------------------
+
+------------------------
+2022.11.17 10:59:20
+AssistantBot command add
+Array
+(
+    [145] => Array
+        (
+            [domain] => corp.estelab.ru
+            [member_id] => 124ff83138e5ff3838db5f0214c6284a
+            [application_token] => 16fc2b5f7189c9cfdf7586e4181433f1
+            [AUTH] => Array
+                (
+                    [domain] => corp.estelab.ru
+                    [member_id] => 124ff83138e5ff3838db5f0214c6284a
+                    [application_token] => 16fc2b5f7189c9cfdf7586e4181433f1
+                )
+
+            [BOT_ID] => 82490
+            [BOT_CODE] => AssistantBot
+            [COMMAND] => absence
+            [COMMAND_ID] => 145
+            [COMMAND_PARAMS] => absence and processing
+            [COMMAND_CONTEXT] => KEYBOARD
+            [MESSAGE_ID] => 13183602
+        )
+
+)
+
+------------------------
+
+------------------------
+2022.11.17 11:06:32
+AssistantBot send data
+Array
+(
+    [URL] => https://corp.estelab.ru/rest/imbot.command.answer
+    [PARAMS] => Array
+        (
+            [COMMAND_ID] => 145
+            [MESSAGE_ID] => 13183602
+            [MESSAGE] => [b]Внеси следующую информацию:[/b]
+ Причина 
+ Дата начала 
+ Дата окончания 
+ Сотрудник 
+ Тип 
+ Подразделение
+                
+ Как будеешь готов, жми кнопку!
+            [auth] => 98f97563005f274c0007ddab00013826000007294beb8f62ce9f5152278e7bb02cebac
+        )
+
+)
+
+------------------------
+
+------------------------
+2022.11.17 11:06:32
+AssistantBot command add
+Array
+(
+    [145] => Array
+        (
+            [domain] => corp.estelab.ru
+            [member_id] => 124ff83138e5ff3838db5f0214c6284a
+            [application_token] => 16fc2b5f7189c9cfdf7586e4181433f1
+            [AUTH] => Array
+                (
+                    [domain] => corp.estelab.ru
+                    [member_id] => 124ff83138e5ff3838db5f0214c6284a
+                    [application_token] => 16fc2b5f7189c9cfdf7586e4181433f1
+                )
+
+            [BOT_ID] => 82490
+            [BOT_CODE] => AssistantBot
+            [COMMAND] => absence
+            [COMMAND_ID] => 145
+            [COMMAND_PARAMS] => absence and processing
+            [COMMAND_CONTEXT] => KEYBOARD
+            [MESSAGE_ID] => 13183602
+        )
+
+)
+
+------------------------
+
+------------------------
+2022.11.17 11:07:41
+AssistantBot send data
+Array
+(
+    [URL] => https://corp.estelab.ru/rest/imbot.command.answer
+    [PARAMS] => Array
+        (
+            [COMMAND_ID] => 145
+            [MESSAGE_ID] => 13183602
+            [MESSAGE] => [b]Внеси следующую информацию:[/b]
+ Причина 
+ Дата начала 
+ Дата окончания 
+ Сотрудник 
+ Тип 
+ Подразделение
+                
+ Как будеешь готов, [send=absenceClick]кликай![/send]
+            [auth] => ddf97563005f274c0007ddab00013826000007b2d4fa0946e2fd649f620bd78b401b12
+        )
+
+)
+
+------------------------
+
+------------------------
+2022.11.17 11:07:41
+AssistantBot command add
+Array
+(
+    [145] => Array
+        (
+            [domain] => corp.estelab.ru
+            [member_id] => 124ff83138e5ff3838db5f0214c6284a
+            [application_token] => 16fc2b5f7189c9cfdf7586e4181433f1
+            [AUTH] => Array
+                (
+                    [domain] => corp.estelab.ru
+                    [member_id] => 124ff83138e5ff3838db5f0214c6284a
+                    [application_token] => 16fc2b5f7189c9cfdf7586e4181433f1
+                )
+
+            [BOT_ID] => 82490
+            [BOT_CODE] => AssistantBot
+            [COMMAND] => absence
+            [COMMAND_ID] => 145
+            [COMMAND_PARAMS] => absence and processing
+            [COMMAND_CONTEXT] => KEYBOARD
+            [MESSAGE_ID] => 13183602
+        )
+
+)
+
+------------------------
+
+------------------------
+2022.11.17 11:08:13
+AssistantBot send data
+Array
+(
+    [URL] => https://corp.estelab.ru/rest/imbot.command.answer
+    [PARAMS] => Array
+        (
+            [COMMAND_ID] => 145
+            [MESSAGE_ID] => 13183602
+            [MESSAGE] => [b]Тебе следует внести следующую информацию:[/b]
+ Причина 
+ Дата начала 
+ Дата окончания 
+ Сотрудник 
+ Тип 
+ Подразделение
+                
+ Как будешь готов, [send=absenceClick]кликай![/send]
+            [auth] => fdf97563005f274c0007ddab00013826000007309ac9c48f8615f2385a16cefa25e238
+        )
+
+)
+
+------------------------
+
+------------------------
+2022.11.17 11:08:13
+AssistantBot command add
+Array
+(
+    [145] => Array
+        (
+            [domain] => corp.estelab.ru
+            [member_id] => 124ff83138e5ff3838db5f0214c6284a
+            [application_token] => 16fc2b5f7189c9cfdf7586e4181433f1
+            [AUTH] => Array
+                (
+                    [domain] => corp.estelab.ru
+                    [member_id] => 124ff83138e5ff3838db5f0214c6284a
+                    [application_token] => 16fc2b5f7189c9cfdf7586e4181433f1
+                )
+
+            [BOT_ID] => 82490
+            [BOT_CODE] => AssistantBot
+            [COMMAND] => absence
+            [COMMAND_ID] => 145
+            [COMMAND_PARAMS] => absence and processing
+            [COMMAND_CONTEXT] => KEYBOARD
+            [MESSAGE_ID] => 13183602
+        )
+
+)
+
+------------------------
+
+------------------------
+2022.11.17 11:12:17
+AssistantBot send data
 Array
 (
     [URL] => https://corp.estelab.ru/rest/imbot.message.add
     [PARAMS] => Array
         (
             [DIALOG_ID] => 79910
-            [MESSAGE] => Привет! Я проводник по этому порталу! 8-) Поехали :)
+            [MESSAGE] => [b]Туплю-с[/b]
+Не соображу, что вы хотите узнать. А может вообще не умею...
+
+            [KEYBOARD] => 
+            [ATTACH] => 
+            [auth] => f1fa7563005f274c0007ddab00013826000007cea194400526ea4d85f97457f4e8bd0b
+        )
+
+)
+
+------------------------
+
+------------------------
+2022.11.17 11:12:43
+AssistantBot send data
+Array
+(
+    [URL] => https://corp.estelab.ru/rest/imbot.message.add
+    [PARAMS] => Array
+        (
+            [DIALOG_ID] => 79910
+            [MESSAGE] => [b]Туплю-с[/b]
+Не соображу, что вы хотите узнать. А может вообще не умею...
+
+            [KEYBOARD] => 
+            [ATTACH] => 
+            [auth] => 0bfb7563005f274c0007ddab00013826000007eeed30efb6679462fdfb205cd8cec4b5
+        )
+
+)
+
+------------------------
+
+------------------------
+2022.11.17 11:14:19
+AssistantBot send data
+Array
+(
+    [URL] => https://corp.estelab.ru/rest/imbot.message.add
+    [PARAMS] => Array
+        (
+            [DIALOG_ID] => 79910
+            [MESSAGE] => [b]Туплю-с[/b]
+Не соображу, что вы хотите узнать. А может вообще не умею...
+
+            [KEYBOARD] => 
+            [ATTACH] => 
+            [auth] => 6bfb7563005f274c0007ddab00013826000007d9e0b6653855736acaef4209ce31ec46
+        )
+
+)
+
+------------------------
+
+------------------------
+2022.11.17 11:14:45
+AssistantBot send data
+Array
+(
+    [URL] => https://corp.estelab.ru/rest/imbot.message.add
+    [PARAMS] => Array
+        (
+            [DIALOG_ID] => 79910
+            [MESSAGE] => [b]Туплю-с[/b]
+Не соображу, что вы хотите узнать. А может вообще не умею...
+
+            [KEYBOARD] => 
+            [ATTACH] => 
+            [auth] => 85fb7563005f274c0007ddab00013826000007ccae24b630435c2540fcc4d8d53e2c84
+        )
+
+)
+
+------------------------
+
+------------------------
+2022.11.17 11:43:56
+AssistantBot send data
+Array
+(
+    [URL] => https://corp.estelab.ru/rest/imbot.message.add
+    [PARAMS] => Array
+        (
+            [DIALOG_ID] => 79910
+            [MESSAGE] => [b]Я чат-бот помощник, создан для удобства в работе на нашем портале. Пока что мой функционал ограничен, но я учусь :)[/b]
+
+
+            [KEYBOARD] => 
             [ATTACH] => Array
                 (
                     [0] => Array
                         (
-                            [MESSAGE] => Спросите меня что-нибудь...
+                            [MESSAGE] => Если хочешь узнать, что я могу, набери в сообщении или нажми [send=помощь]помощь[/send]
                         )
 
                 )
 
-            [auth] => ab9e7363005f274c0007ddab00013826000007118ecdd597d2449f2506d270e459da75
+            [auth] => 5c027663005f274c0007ddab00013826000007f4e70e425f6da2bebc3406ce2254626e
+        )
+
+)
+
+------------------------
+
+------------------------
+2022.11.17 11:44:00
+AssistantBot send data
+Array
+(
+    [URL] => https://corp.estelab.ru/rest/imbot.message.add
+    [PARAMS] => Array
+        (
+            [DIALOG_ID] => 79910
+            [MESSAGE] => [b]Мои функции[/b]
+Для вызова, нажми кнопку ниже
+
+            [KEYBOARD] => Array
+                (
+                    [0] => Array
+                        (
+                            [TEXT] => Отсутствие и переработка
+                            [COMMAND] => absence
+                            [COMMAND_PARAMS] => absence and processing
+                            [BG_COLOR] => #00BFFF
+                            [TEXT_COLOR] => #fff
+                            [DISPLAY] => LINE
+                        )
+
+                    [1] => Array
+                        (
+                            [TEXT] => Оплата счета
+                            [COMMAND] => billPayment
+                            [COMMAND_PARAMS] => bill payment
+                            [BG_COLOR] => #7B68EE
+                            [TEXT_COLOR] => #fff
+                            [DISPLAY] => LINE
+                        )
+
+                )
+
+            [ATTACH] => 
+            [auth] => 60027663005f274c0007ddab0001382600000783d71d991a300cb790cb256e5240f306
+        )
+
+)
+
+------------------------
+
+------------------------
+2022.11.17 11:44:02
+AssistantBot send data
+Array
+(
+    [URL] => https://corp.estelab.ru/rest/imbot.command.answer
+    [PARAMS] => Array
+        (
+            [COMMAND_ID] => 145
+            [MESSAGE_ID] => 13185287
+            [MESSAGE] => [b]Тебе следует внести следующую информацию:[/b]
+ Причина 
+ Дата начала 
+ Дата окончания 
+ Сотрудник 
+ Тип 
+ Подразделение
+                
+ Как будешь готов, [send=absenceClick]кликай![/send]
+            [auth] => 62027663005f274c0007ddab00013826000007b2b13063bac79007db717b94c2129a4c
+        )
+
+)
+
+------------------------
+
+------------------------
+2022.11.17 11:44:02
+AssistantBot command add
+Array
+(
+    [145] => Array
+        (
+            [domain] => corp.estelab.ru
+            [member_id] => 124ff83138e5ff3838db5f0214c6284a
+            [application_token] => 16fc2b5f7189c9cfdf7586e4181433f1
+            [AUTH] => Array
+                (
+                    [domain] => corp.estelab.ru
+                    [member_id] => 124ff83138e5ff3838db5f0214c6284a
+                    [application_token] => 16fc2b5f7189c9cfdf7586e4181433f1
+                )
+
+            [BOT_ID] => 82490
+            [BOT_CODE] => AssistantBot
+            [COMMAND] => absence
+            [COMMAND_ID] => 145
+            [COMMAND_PARAMS] => absence and processing
+            [COMMAND_CONTEXT] => KEYBOARD
+            [MESSAGE_ID] => 13185287
+        )
+
+)
+
+------------------------
+
+------------------------
+2022.11.17 11:44:04
+AssistantBot send data
+Array
+(
+    [URL] => https://corp.estelab.ru/rest/imbot.message.add
+    [PARAMS] => Array
+        (
+            [DIALOG_ID] => 79910
+            [MESSAGE] => [b]Туплю-с[/b]
+Не соображу, что вы хотите узнать. А может вообще не умею...
+
+            [KEYBOARD] => 
+            [ATTACH] => 
+            [auth] => 64027663005f274c0007ddab0001382600000706995bf2b09ceb31002f80ecaeaee3ee
         )
 
 )

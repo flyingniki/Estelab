@@ -98,3 +98,20 @@ function absenceAndProcessing($case, $dateBegin, $dateEnd, $employee, $type, $de
     $result = restCommand('lists.element.add', $iBlockParams, $_REQUEST["auth"]);
     return $result['result'];
 }
+
+function regCommand($botId, $handlerBackUrl, $commandName, $title, $params)
+{
+    $result = restCommand('imbot.command.register', array(
+        'BOT_ID' => $botId,
+        'COMMAND' => $commandName,
+        'COMMON' => 'Y',
+        'HIDDEN' => 'N',
+        'EXTRANET_SUPPORT' => 'N',
+        'LANG' => array(
+            array('LANGUAGE_ID' => 'en', 'TITLE' => $title, 'PARAMS' => $params),
+        ),
+        'EVENT_COMMAND_ADD' => $handlerBackUrl,
+    ), $_REQUEST["auth"]);
+
+    return $result['result'];
+}
