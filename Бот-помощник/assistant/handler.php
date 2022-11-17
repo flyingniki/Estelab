@@ -21,7 +21,7 @@ if ($_REQUEST['event'] == 'ONIMBOTMESSAGEADD') {
     }
     // writeToLog($_REQUEST, '$_REQUEST');
     // writeToLog($_REQUEST['data']['PARAMS']['DIALOG_ID'], $title = 'DIALOG_ID');
-    addMessage($_REQUEST['data']['PARAMS']['MESSAGE'], $keyboardMain);
+    addMessageOnStart($_REQUEST['data']['PARAMS']['MESSAGE'], $keyboardMain);
 } elseif ($_REQUEST['event'] == 'ONIMCOMMANDADD') {
     // check the event - authorize this event or not
     if (!isset($appsConfig[$_REQUEST['auth']['application_token']]))
@@ -35,13 +35,13 @@ if ($_REQUEST['event'] == 'ONIMBOTMESSAGEADD') {
                 "COMMAND_ID" => $command['COMMAND_ID'],
                 "MESSAGE_ID" => $command['MESSAGE_ID'],
                 "MESSAGE" => "[b]Тебе следует внести следующую информацию:[/b]\n Причина \n Дата начала \n Дата окончания \n Сотрудник \n Тип \n Подразделение
-                \n Как будешь готов, [send=absenceClick]кликай![/send]",
+                \n Как будешь готов, [send=Заполняем отсутствие:]кликай![/send]",
             ), $_REQUEST["auth"]);
         } elseif ($command['COMMAND'] == 'billPayment') {
             $result = restCommand('imbot.command.answer', array(
                 "COMMAND_ID" => $command['COMMAND_ID'],
                 "MESSAGE_ID" => $command['MESSAGE_ID'],
-                "MESSAGE" => "Оплата счета",
+                "MESSAGE" => "Оплата счета \n [send=Вносим данные:]кликай![/send]",
             ), $_REQUEST["auth"]);
         }
 

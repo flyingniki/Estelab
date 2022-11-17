@@ -13,15 +13,20 @@ $entity = restCommand('entity.add', array(
 ), $_REQUEST["auth"]);
 
 $arProperty = [
-    ['create_task', 'Шаг действия', 'Y'],
-    ['delete', 'Удаление диалога', 'N'], //Тип свойства (S - строка, N - число, F - файл)
+    ['case', 'Причина', 'S'],
+    ['dateBegin', 'Дата начала', 'S'],
+    ['dateEnd', 'Дата окончания', 'S'],
+    ['employee', 'Сотрудник', 'N'],
+    ['type', 'Тип', 'S'],
+    ['department', 'Подразделение', 'S'],
 ];
 
 foreach ($arProperty as $property) {
-    restCommand('entity.item.property.add', array(
+    $entityProperty = restCommand('entity.item.property.add', array(
         "ENTITY" => $entityCode, // кодовое имя хранилища, в которое добавляется свойство
         'PROPERTY' => $property[0], // кодовое имя свойства
         'NAME' => $property[1], // человеческое название
-        'TYPE' => $property[2], // Тип
-    ), $_REQUEST["auth"]);
+        'TYPE' => $property[2], //Тип свойства (S - строка, N - число, F - файл)
+    ));
+    writeToLog($entityProperty, 'Entity Property');
 }

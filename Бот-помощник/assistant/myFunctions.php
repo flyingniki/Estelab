@@ -8,21 +8,35 @@
  *
  * @return     array
  */
-function addMessage($message, $keyboard = null)
+function addMessageOnStart($message, $keyboard = null)
 {
     switch (mb_strtolower($message)) {
         case 'привет':
-            $attach[] = array("MESSAGE" => 'Если хочешь узнать, что я могу, набери в сообщении или нажми [send=помощь]помощь[/send]');
+            $attach[] = array("MESSAGE" => 'Если хочешь узнать, что я могу, набери в сообщении или нажми [send=меню]меню[/send]');
             $arResult = array(
                 'title' => '[b]Я чат-бот помощник, создан для удобства в работе на нашем портале. Пока что мой функционал ограничен, но я учусь :)[/b]',
                 'attach' => $attach,
             );
             break;
-        case 'помощь':
+        case 'меню':
             $arResult = array(
                 'title' => '[b]Мои функции[/b]',
                 'report' => 'Для вызова, нажми кнопку ниже',
                 'keyboard' => showKeyboard($keyboard),
+            );
+            break;
+        case 'заполняем отсутствие:':
+            $attach[] = array("MESSAGE" => '[send=меню]Вернуться в начало[/send]');
+            $arResult = array(
+                'title' => '[b]Всегда можно вернуться в начало[/b]',
+                'attach' => $attach,
+            );
+            break;
+        case 'вносим данные:':
+            $attach[] = array("MESSAGE" => '[send=меню]Вернуться в начало[/send]');
+            $arResult = array(
+                'title' => '[b]Всегда можно вернуться в начало[/b]',
+                'attach' => $attach,
             );
             break;
         default:
@@ -99,7 +113,7 @@ function absenceAndProcessing($case, $dateBegin, $dateEnd, $employee, $type, $de
     return $result['result'];
 }
 
-function regCommand($botId, $handlerBackUrl, $commandName, $title, $params)
+function registerCommand($botId, $handlerBackUrl, $commandName, $title, $params)
 {
     $result = restCommand('imbot.command.register', array(
         'BOT_ID' => $botId,
@@ -114,4 +128,53 @@ function regCommand($botId, $handlerBackUrl, $commandName, $title, $params)
     ), $_REQUEST["auth"]);
 
     return $result['result'];
+}
+
+function entityItemAdd($entityCode, $entityName, $elemProperty, $elemPropValue)
+{
+    $result = restCommand('entity.item.add', array(
+        "ENTITY" => $entityCode,
+        'NAME' => $entityName,
+        'PROPERTY_VALUES' => array(
+            $elemProperty => $elemPropValue,
+        ),
+    ));
+
+    return $result;
+}
+
+function entityItemGet($entityCode, $entityName)
+{
+    $result = restCommand('entity.item.get', array(
+        'ENTITY' => $entityCode,
+        'SORT' => array('ID' => 'DESC'),
+        'FILTER' => array(
+            // '=NAME' => $entityName
+        ),
+    ), $_REQUEST["auth"]);
+
+    return $result;
+}
+
+function entityItemUpdate($entityCode, $elementId, $elemProperty, $elemPropValue)
+{
+    $result = restCommand('entity.item.update', array(
+        "ENTITY" => $entityCode,
+        "ID" => $elementId,
+        "PROPERTY_VALUES" => array(
+            $elemProperty => $elemPropValue,
+        ),
+    ), $_REQUEST["auth"]);
+
+    return $result;
+}
+
+function getEntityItemProperty($entityCode, $entityProperty = '*')
+{
+    $result = restCommand('entity.item.property.get', array(
+        'ENTITY' => $entityCode,
+        'PROPERTY' => $entityProperty,
+    ), $_REQUEST["auth"]);
+
+    return $result;
 }

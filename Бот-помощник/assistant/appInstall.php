@@ -1,5 +1,7 @@
 <?php
 
+require_once __DIR__ . '/entity.php';
+
 // handler for events
 $handlerBackUrl = ($_SERVER['SERVER_PORT'] == 443 ? 'https' : 'http') . '://' . $_SERVER['SERVER_NAME'] . (in_array(
     $_SERVER['SERVER_PORT'],
@@ -43,8 +45,8 @@ $result = restCommand('imbot.register', array(
 
 $botId = $result['result'];
 
-$commandAbsenceId = regCommand($botId, $handlerBackUrl, 'absence', 'Отсутствие и переработка', 'some text');
-$commandBillPaymentId = regCommand($botId, $handlerBackUrl, 'billPayment', 'Оплата счета', 'some text');
+$commandAbsenceId = registerCommand($botId, $handlerBackUrl, 'absence', 'Отсутствие и переработка', 'some text');
+$commandBillPaymentId = registerCommand($botId, $handlerBackUrl, 'billPayment', 'Оплата счета', 'some text');
 
 // save params
 $appsConfig[$_REQUEST['auth']['application_token']] = array(
