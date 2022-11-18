@@ -1,5 +1,8 @@
 <?php
 
+require($_SERVER["DOCUMENT_ROOT"] . "/bitrix/header.php");
+$APPLICATION->SetTitle("Оценка компетенций");
+
 require($_SERVER['DOCUMENT_ROOT'] . '/php2excel/simplexlsxgen-master/src/SimpleXLSXGen.php');
 
 use Bitrix\Crm\Service;
@@ -17,7 +20,7 @@ $ownItems = $ownFactory->getItems();
 foreach ($ownItems as $item) {
     $stageId = $item->getStageId();
     // print_r($stageId);
-    if ($stageId === 'DT158_116:CLIENT') {
+    if ($stageId === 'DT158_116:SUCCESS') {
         $employee = $item->getUfCrm_75_1667471974();
         $strategy = $item->getUfCrm_75_1667472508();
         $innovation = $item->getUfCrm_75_1667472574();
@@ -46,7 +49,7 @@ $groupItems = $groupFactory->getItems();
 foreach ($groupItems as $item) {
     $stageId = $item->getStageId();
     // print_r($stageId);
-    if ($stageId === 'DT130_119:CLIENT') {
+    if ($stageId === 'DT130_119:SUCCESS') {
         $employee = $item->getUfCrm_78_1667470176();
         $strategy = $item->getUfCrm_78_1667726390();
         $innovation = $item->getUfCrm_78_1667726419();
@@ -141,26 +144,15 @@ foreach ($result as $employee => $grades) {
 $title = 'Оценка компетенций ' . date("m.d.Y H.i.s");
 $xlsx->downloadAs($title . '.xlsx');
 
-foreach ($ownItems as $item) {
-    $itemId = $item->getId();
-    $workflowTemplateId = 2209;
-    $arErrorsTmp = array();
-    CBPDocument::StartWorkflow(
-        $workflowTemplateId,
-        array("crm", "Bitrix\Crm\Integration\BizProc\Document\Dynamic", "DYNAMIC_" . $Own_Smart_Type_ID . "_" . $itemId),
-        array(),
-        $arErrorsTmp
-    );
-}
+?>
 
-foreach ($groupItems as $item) {
-    $itemId = $item->getId();
-    $workflowTemplateId = 2214;
-    $arErrorsTmp = array();
-    CBPDocument::StartWorkflow(
-        $workflowTemplateId,
-        array("crm", "Bitrix\Crm\Integration\BizProc\Document\Dynamic", "DYNAMIC_" . $Group_Smart_Type_ID . "_" . $itemId),
-        array(),
-        $arErrorsTmp
-    );
-}
+<style>
+    h1 {
+        text-align: center;
+        color: green;
+    }
+</style>
+
+<h1>Файл загружен</h1>
+
+<? require($_SERVER["DOCUMENT_ROOT"] . "/bitrix/footer.php"); ?>
