@@ -81,26 +81,23 @@ function registerCommand($botId, $handlerBackUrl, $commandName, $title, $params)
     return $result['result'];
 }
 
-function addEntityItem($entityCode, $itemName, $elemProperty, $elemPropValue)
+function addEntityItem($entityCode, $itemName)
 {
     $result = restCommand('entity.item.add', array(
         "ENTITY" => $entityCode,
         'NAME' => $itemName,
-        'PROPERTY_VALUES' => array(
-            $elemProperty => $elemPropValue,
-        ),
     ), $_REQUEST["auth"]);
 
     return $result;
 }
 
-function updateEntityItem($entityCode, $elementId, $elemProperty, $elemPropValue)
+function updateEntityItem($entityCode, $itemId, $itemProperty, $itemPropValue)
 {
     $result = restCommand('entity.item.update', array(
         "ENTITY" => $entityCode,
-        "ID" => $elementId,
+        "ID" => $itemId,
         "PROPERTY_VALUES" => array(
-            $elemProperty => $elemPropValue,
+            $itemProperty => $itemPropValue,
         ),
     ), $_REQUEST["auth"]);
 

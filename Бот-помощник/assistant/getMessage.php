@@ -1,5 +1,16 @@
 <?php
 
+/**
+$item = addEntityItem($entityCode, $itemName);
+$itemId = $item['result'];    
+
+$arItemsInfo = getEntityItems($entityCode);
+$itemsInfo = $arItemsInfo['result'];
+
+$arItemProperties = getEntityItemProperties($entityCode);
+$itemProperties = $arItemProperties['result'];
+ */
+
 // check the event - register this application or not
 if (!isset($appsConfig[$_REQUEST['auth']['application_token']])) {
     return false;
@@ -68,13 +79,6 @@ if ($messageFromUser == 'привет') {
         'title' => '[b]Всегда можно вернуться в начало[/b]',
         'attach' => $attach,
     );
-} elseif ($messageFromUser == 'причина') {
-    $attach[] = array("MESSAGE" => '[send=меню]Вернуться в начало[/send]');
-    $arResult = array(
-        'title' => '[b]Всегда можно вернуться в начало[/b]',
-        'attach' => $attach,
-    );
-    addEntityItem($entityCode, 'number 1', 'case', 'ЛО');
 } else {
     $arResult = array(
         'title' => '[b]Туплю-с[/b]',
@@ -91,9 +95,3 @@ $answerParams = array(
     ),
 );
 $result = restCommand('imbot.message.add', $answerParams, $_REQUEST["auth"]);
-
-$itemsInfo = getEntityItems($entityCode);
-writeToLog($itemsInfo, 'Items Info');
-
-$itemProperties = getEntityItemProperties($entityCode);
-writeToLog($itemProperties, 'Item Properties');
