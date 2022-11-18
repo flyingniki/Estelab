@@ -10,6 +10,7 @@ $entity = restCommand('entity.add', array(
 ), $_REQUEST["auth"]);
 
 $arProperty = [
+    ['step','Шаг действия','S'],
     ['case', 'Причина', 'S'],
     ['dateBegin', 'Дата начала', 'S'],
     ['dateEnd', 'Дата окончания', 'S'],

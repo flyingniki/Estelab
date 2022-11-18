@@ -40,6 +40,11 @@ switch ($messageFromUser) {
             'title' => '[b]Всегда можно вернуться в начало[/b]',
             'attach' => $attach,
         );
+        // $item = addEntityItem($entityCode, $messageFromUser);
+        // $itemId = $item['result'];
+        $arItemsInfo = getEntityItems($entityCode);
+        $itemsInfo = $arItemsInfo['result'];
+        writeToLog($arItemsInfo, 'Item');
         break;
     case 'вносим данные на оплату счета:':
         $attach[] = array("MESSAGE" => '[send=меню]Вернуться в начало[/send]');

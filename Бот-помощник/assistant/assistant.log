@@ -1,6 +1,86 @@
 
 ------------------------
-2022.11.18 15:45:13
+2022.11.18 17:50:52
+AssistantBot send data
+Array
+(
+    [URL] => https://corp.estelab.ru/rest/entity.item.get
+    [PARAMS] => Array
+        (
+            [ENTITY] => bot_assistant
+            [SORT] => Array
+                (
+                    [ID] => DESC
+                )
+
+            [FILTER] => Array
+                (
+                )
+
+            [auth] => dca97763005f274c0007ddab00013826000007ce6a1187c1cf944faabe4e66d3c2411b
+        )
+
+)
+
+------------------------
+
+------------------------
+2022.11.18 17:50:52
+Item
+Array
+(
+    [result] => Array
+        (
+            [0] => Array
+                (
+                    [ID] => 465549
+                    [TIMESTAMP_X] => 2022-11-18T17:47:23+03:00
+                    [MODIFIED_BY] => 79910
+                    [DATE_CREATE] => 2022-11-18T17:47:23+03:00
+                    [CREATED_BY] => 79910
+                    [ACTIVE] => Y
+                    [DATE_ACTIVE_FROM] => 
+                    [DATE_ACTIVE_TO] => 
+                    [SORT] => 500
+                    [NAME] => заполняем отсутствие:
+                    [PREVIEW_PICTURE] => 
+                    [PREVIEW_TEXT] => 
+                    [DETAIL_PICTURE] => 
+                    [DETAIL_TEXT] => 
+                    [CODE] => 
+                    [ENTITY] => bot_assistant
+                    [SECTION] => 
+                    [PROPERTY_VALUES] => Array
+                        (
+                            [case] => 
+                            [dateBegin] => 
+                            [dateEnd] => 
+                            [employee] => 
+                            [type] => 
+                            [department] => 
+                        )
+
+                )
+
+        )
+
+    [total] => 1
+    [time] => Array
+        (
+            [start] => 1668783052.6438
+            [finish] => 1668783052.8062
+            [duration] => 0.16241598129272
+            [processing] => 0.016565799713135
+            [date_start] => 2022-11-18T17:50:52+03:00
+            [date_finish] => 2022-11-18T17:50:52+03:00
+        )
+
+)
+
+------------------------
+
+------------------------
+2022.11.18 17:50:52
 AssistantBot send data
 Array
 (
@@ -8,7 +88,7 @@ Array
     [PARAMS] => Array
         (
             [DIALOG_ID] => 79910
-            [MESSAGE] => [b]Я чат-бот помощник, создан для удобства в работе на нашем портале. Пока что мой функционал ограничен, но я учусь :)[/b]
+            [MESSAGE] => [b]Всегда можно вернуться в начало[/b]
 
 
             [KEYBOARD] => 
@@ -16,412 +96,14 @@ Array
                 (
                     [0] => Array
                         (
-                            [MESSAGE] => Если хочешь узнать, что я могу, набери в сообщении или нажми [send=меню]меню[/send]
+                            [MESSAGE] => [send=меню]Вернуться в начало[/send]
                         )
 
                 )
 
-            [auth] => 698c7763005f274c0007ddab00013826000007f3b5d16db80fde5a60f448ec7af4425e
+            [auth] => dca97763005f274c0007ddab00013826000007ce6a1187c1cf944faabe4e66d3c2411b
         )
 
-)
-
-------------------------
-
-------------------------
-2022.11.18 15:45:13
-AssistantBot send data
-Array
-(
-    [URL] => https://corp.estelab.ru/rest/entity.item.get
-    [PARAMS] => Array
-        (
-            [ENTITY] => bot_assistant
-            [SORT] => Array
-                (
-                    [ID] => DESC
-                )
-
-            [FILTER] => Array
-                (
-                )
-
-            [auth] => 698c7763005f274c0007ddab00013826000007f3b5d16db80fde5a60f448ec7af4425e
-        )
-
-)
-
-------------------------
-
-------------------------
-2022.11.18 15:45:15
-AssistantBot send data
-Array
-(
-    [URL] => https://corp.estelab.ru/rest/imbot.message.add
-    [PARAMS] => Array
-        (
-            [DIALOG_ID] => 79910
-            [MESSAGE] => [b]Мои функции[/b]
-Для вызова, нажми кнопку ниже
-
-            [KEYBOARD] => Array
-                (
-                    [0] => Array
-                        (
-                            [TEXT] => Отсутствие и переработка
-                            [COMMAND] => absence
-                            [COMMAND_PARAMS] => absence and processing
-                            [BG_COLOR] => #00BFFF
-                            [TEXT_COLOR] => #fff
-                            [DISPLAY] => LINE
-                        )
-
-                    [1] => Array
-                        (
-                            [TEXT] => Оплата счета
-                            [COMMAND] => billPayment
-                            [COMMAND_PARAMS] => bill payment
-                            [BG_COLOR] => #7B68EE
-                            [TEXT_COLOR] => #fff
-                            [DISPLAY] => LINE
-                        )
-
-                )
-
-            [ATTACH] => 
-            [auth] => 6b8c7763005f274c0007ddab00013826000007c6bb05b0874f4da67fd9e1c8e38df9a8
-        )
-
-)
-
-------------------------
-
-------------------------
-2022.11.18 15:45:15
-AssistantBot send data
-Array
-(
-    [URL] => https://corp.estelab.ru/rest/entity.item.get
-    [PARAMS] => Array
-        (
-            [ENTITY] => bot_assistant
-            [SORT] => Array
-                (
-                    [ID] => DESC
-                )
-
-            [FILTER] => Array
-                (
-                )
-
-            [auth] => 6b8c7763005f274c0007ddab00013826000007c6bb05b0874f4da67fd9e1c8e38df9a8
-        )
-
-)
-
-------------------------
-
-------------------------
-2022.11.18 15:45:33
-AssistantBot send data
-Array
-(
-    [URL] => https://corp.estelab.ru/rest/entity.item.get
-    [PARAMS] => Array
-        (
-            [ENTITY] => bot_assistant
-            [SORT] => Array
-                (
-                    [ID] => DESC
-                )
-
-            [FILTER] => Array
-                (
-                )
-
-            [auth] => 7d8c7763005f274c0007ddab00013826000007b2aaee01442e4c615421a8aeca65e86c
-        )
-
-)
-
-------------------------
-
-------------------------
-2022.11.18 15:45:33
-AssistantBot send data
-Array
-(
-    [URL] => https://corp.estelab.ru/rest/entity.item.delete
-    [PARAMS] => Array
-        (
-            [ENTITY] => bot_assistant
-            [ID] => 465542
-            [auth] => 7d8c7763005f274c0007ddab00013826000007b2aaee01442e4c615421a8aeca65e86c
-        )
-
-)
-
-------------------------
-
-------------------------
-2022.11.18 15:45:33
-AssistantBot send data
-Array
-(
-    [URL] => https://corp.estelab.ru/rest/entity.item.delete
-    [PARAMS] => Array
-        (
-            [ENTITY] => bot_assistant
-            [ID] => 465541
-            [auth] => 7d8c7763005f274c0007ddab00013826000007b2aaee01442e4c615421a8aeca65e86c
-        )
-
-)
-
-------------------------
-
-------------------------
-2022.11.18 15:45:33
-AssistantBot send data
-Array
-(
-    [URL] => https://corp.estelab.ru/rest/entity.item.delete
-    [PARAMS] => Array
-        (
-            [ENTITY] => bot_assistant
-            [ID] => 465540
-            [auth] => 7d8c7763005f274c0007ddab00013826000007b2aaee01442e4c615421a8aeca65e86c
-        )
-
-)
-
-------------------------
-
-------------------------
-2022.11.18 15:45:33
-AssistantBot send data
-Array
-(
-    [URL] => https://corp.estelab.ru/rest/entity.item.delete
-    [PARAMS] => Array
-        (
-            [ENTITY] => bot_assistant
-            [ID] => 465539
-            [auth] => 7d8c7763005f274c0007ddab00013826000007b2aaee01442e4c615421a8aeca65e86c
-        )
-
-)
-
-------------------------
-
-------------------------
-2022.11.18 15:45:33
-AssistantBot send data
-Array
-(
-    [URL] => https://corp.estelab.ru/rest/entity.item.delete
-    [PARAMS] => Array
-        (
-            [ENTITY] => bot_assistant
-            [ID] => 465538
-            [auth] => 7d8c7763005f274c0007ddab00013826000007b2aaee01442e4c615421a8aeca65e86c
-        )
-
-)
-
-------------------------
-
-------------------------
-2022.11.18 15:45:33
-AssistantBot send data
-Array
-(
-    [URL] => https://corp.estelab.ru/rest/entity.item.delete
-    [PARAMS] => Array
-        (
-            [ENTITY] => bot_assistant
-            [ID] => 465537
-            [auth] => 7d8c7763005f274c0007ddab00013826000007b2aaee01442e4c615421a8aeca65e86c
-        )
-
-)
-
-------------------------
-
-------------------------
-2022.11.18 15:45:34
-AssistantBot send data
-Array
-(
-    [URL] => https://corp.estelab.ru/rest/entity.item.delete
-    [PARAMS] => Array
-        (
-            [ENTITY] => bot_assistant
-            [ID] => 465536
-            [auth] => 7d8c7763005f274c0007ddab00013826000007b2aaee01442e4c615421a8aeca65e86c
-        )
-
-)
-
-------------------------
-
-------------------------
-2022.11.18 15:45:34
-AssistantBot send data
-Array
-(
-    [URL] => https://corp.estelab.ru/rest/entity.item.delete
-    [PARAMS] => Array
-        (
-            [ENTITY] => bot_assistant
-            [ID] => 465535
-            [auth] => 7d8c7763005f274c0007ddab00013826000007b2aaee01442e4c615421a8aeca65e86c
-        )
-
-)
-
-------------------------
-
-------------------------
-2022.11.18 15:45:34
-AssistantBot send data
-Array
-(
-    [URL] => https://corp.estelab.ru/rest/entity.item.delete
-    [PARAMS] => Array
-        (
-            [ENTITY] => bot_assistant
-            [ID] => 465534
-            [auth] => 7d8c7763005f274c0007ddab00013826000007b2aaee01442e4c615421a8aeca65e86c
-        )
-
-)
-
-------------------------
-
-------------------------
-2022.11.18 15:45:34
-AssistantBot send data
-Array
-(
-    [URL] => https://corp.estelab.ru/rest/imbot.message.add
-    [PARAMS] => Array
-        (
-            [DIALOG_ID] => 79910
-            [MESSAGE] => [b]Туплю-с[/b]
-Не соображу, что вы хотите узнать. А может вообще не умею...
-
-            [KEYBOARD] => 
-            [ATTACH] => 
-            [auth] => 7d8c7763005f274c0007ddab00013826000007b2aaee01442e4c615421a8aeca65e86c
-        )
-
-)
-
-------------------------
-
-------------------------
-2022.11.18 15:45:34
-AssistantBot send data
-Array
-(
-    [URL] => https://corp.estelab.ru/rest/entity.item.get
-    [PARAMS] => Array
-        (
-            [ENTITY] => bot_assistant
-            [SORT] => Array
-                (
-                    [ID] => DESC
-                )
-
-            [FILTER] => Array
-                (
-                )
-
-            [auth] => 7d8c7763005f274c0007ddab00013826000007b2aaee01442e4c615421a8aeca65e86c
-        )
-
-)
-
-------------------------
-
-------------------------
-2022.11.18 15:47:35
-AssistantBot send data
-Array
-(
-    [URL] => https://corp.estelab.ru/rest/entity.item.get
-    [PARAMS] => Array
-        (
-            [ENTITY] => bot_assistant
-            [SORT] => Array
-                (
-                    [ID] => DESC
-                )
-
-            [FILTER] => Array
-                (
-                )
-
-            [auth] => f78c7763005f274c0007ddab000138260000076d1caf3cb4b6ab1b42c6386481d6fce3
-        )
-
-)
-
-------------------------
-
-------------------------
-2022.11.18 15:47:35
-AssistantBot send data
-Array
-(
-    [URL] => https://corp.estelab.ru/rest/imbot.message.add
-    [PARAMS] => Array
-        (
-            [DIALOG_ID] => 79910
-            [MESSAGE] => [b]Туплю-с[/b]
-Не соображу, что вы хотите узнать. А может вообще не умею...
-
-            [KEYBOARD] => 
-            [ATTACH] => 
-            [auth] => f78c7763005f274c0007ddab000138260000076d1caf3cb4b6ab1b42c6386481d6fce3
-        )
-
-)
-
-------------------------
-
-------------------------
-2022.11.18 15:47:35
-AssistantBot send data
-Array
-(
-    [URL] => https://corp.estelab.ru/rest/entity.item.get
-    [PARAMS] => Array
-        (
-            [ENTITY] => bot_assistant
-            [SORT] => Array
-                (
-                    [ID] => DESC
-                )
-
-            [FILTER] => Array
-                (
-                )
-
-            [auth] => f78c7763005f274c0007ddab000138260000076d1caf3cb4b6ab1b42c6386481d6fce3
-        )
-
-)
-
-------------------------
-
-------------------------
-2022.11.18 15:47:36
-Items Info
-Array
-(
 )
 
 ------------------------
