@@ -1,23 +1,6 @@
 
 ------------------------
-2022.11.18 15:00:12
-AssistantBot send data
-Array
-(
-    [URL] => https://corp.estelab.ru/rest/entity.item.add
-    [PARAMS] => Array
-        (
-            [ENTITY] => bot_assistant
-            [NAME] => number 3
-            [auth] => dc817763005f274c0007ddab000138260000075591ac7c1afec8fa1cb56f96d21a232b
-        )
-
-)
-
-------------------------
-
-------------------------
-2022.11.18 15:00:12
+2022.11.18 15:45:13
 AssistantBot send data
 Array
 (
@@ -25,7 +8,7 @@ Array
     [PARAMS] => Array
         (
             [DIALOG_ID] => 79910
-            [MESSAGE] => [b]Всегда можно вернуться в начало[/b]
+            [MESSAGE] => [b]Я чат-бот помощник, создан для удобства в работе на нашем портале. Пока что мой функционал ограничен, но я учусь :)[/b]
 
 
             [KEYBOARD] => 
@@ -33,12 +16,12 @@ Array
                 (
                     [0] => Array
                         (
-                            [MESSAGE] => [send=меню]Вернуться в начало[/send]
+                            [MESSAGE] => Если хочешь узнать, что я могу, набери в сообщении или нажми [send=меню]меню[/send]
                         )
 
                 )
 
-            [auth] => dc817763005f274c0007ddab000138260000075591ac7c1afec8fa1cb56f96d21a232b
+            [auth] => 698c7763005f274c0007ddab00013826000007f3b5d16db80fde5a60f448ec7af4425e
         )
 
 )
@@ -46,7 +29,7 @@ Array
 ------------------------
 
 ------------------------
-2022.11.18 15:00:12
+2022.11.18 15:45:13
 AssistantBot send data
 Array
 (
@@ -63,7 +46,7 @@ Array
                 (
                 )
 
-            [auth] => dc817763005f274c0007ddab000138260000075591ac7c1afec8fa1cb56f96d21a232b
+            [auth] => 698c7763005f274c0007ddab00013826000007f3b5d16db80fde5a60f448ec7af4425e
         )
 
 )
@@ -71,389 +54,7 @@ Array
 ------------------------
 
 ------------------------
-2022.11.18 15:00:12
-Items Info
-Array
-(
-    [result] => Array
-        (
-            [0] => Array
-                (
-                    [ID] => 465541
-                    [TIMESTAMP_X] => 2022-11-18T15:00:12+03:00
-                    [MODIFIED_BY] => 79910
-                    [DATE_CREATE] => 2022-11-18T15:00:12+03:00
-                    [CREATED_BY] => 79910
-                    [ACTIVE] => Y
-                    [DATE_ACTIVE_FROM] => 
-                    [DATE_ACTIVE_TO] => 
-                    [SORT] => 500
-                    [NAME] => number 3
-                    [PREVIEW_PICTURE] => 
-                    [PREVIEW_TEXT] => 
-                    [DETAIL_PICTURE] => 
-                    [DETAIL_TEXT] => 
-                    [CODE] => 
-                    [ENTITY] => bot_assistant
-                    [SECTION] => 
-                    [PROPERTY_VALUES] => Array
-                        (
-                            [case] => 
-                            [dateBegin] => 
-                            [dateEnd] => 
-                            [employee] => 
-                            [type] => 
-                            [department] => 
-                        )
-
-                )
-
-            [1] => Array
-                (
-                    [ID] => 465540
-                    [TIMESTAMP_X] => 2022-11-18T14:54:33+03:00
-                    [MODIFIED_BY] => 79910
-                    [DATE_CREATE] => 2022-11-18T14:54:33+03:00
-                    [CREATED_BY] => 79910
-                    [ACTIVE] => Y
-                    [DATE_ACTIVE_FROM] => 
-                    [DATE_ACTIVE_TO] => 
-                    [SORT] => 500
-                    [NAME] => number 3
-                    [PREVIEW_PICTURE] => 
-                    [PREVIEW_TEXT] => 
-                    [DETAIL_PICTURE] => 
-                    [DETAIL_TEXT] => 
-                    [CODE] => 
-                    [ENTITY] => bot_assistant
-                    [SECTION] => 
-                    [PROPERTY_VALUES] => Array
-                        (
-                            [case] => 
-                            [dateBegin] => 
-                            [dateEnd] => 
-                            [employee] => 
-                            [type] => 
-                            [department] => 
-                        )
-
-                )
-
-            [2] => Array
-                (
-                    [ID] => 465539
-                    [TIMESTAMP_X] => 2022-11-18T14:50:48+03:00
-                    [MODIFIED_BY] => 79910
-                    [DATE_CREATE] => 2022-11-18T14:50:48+03:00
-                    [CREATED_BY] => 79910
-                    [ACTIVE] => Y
-                    [DATE_ACTIVE_FROM] => 
-                    [DATE_ACTIVE_TO] => 
-                    [SORT] => 500
-                    [NAME] => number 1
-                    [PREVIEW_PICTURE] => 
-                    [PREVIEW_TEXT] => 
-                    [DETAIL_PICTURE] => 
-                    [DETAIL_TEXT] => 
-                    [CODE] => 
-                    [ENTITY] => bot_assistant
-                    [SECTION] => 
-                    [PROPERTY_VALUES] => Array
-                        (
-                            [case] => 
-                            [dateBegin] => 
-                            [dateEnd] => 20.11.2022
-                            [employee] => 
-                            [type] => 
-                            [department] => 
-                        )
-
-                )
-
-            [3] => Array
-                (
-                    [ID] => 465538
-                    [TIMESTAMP_X] => 2022-11-18T14:50:48+03:00
-                    [MODIFIED_BY] => 79910
-                    [DATE_CREATE] => 2022-11-18T14:50:48+03:00
-                    [CREATED_BY] => 79910
-                    [ACTIVE] => Y
-                    [DATE_ACTIVE_FROM] => 
-                    [DATE_ACTIVE_TO] => 
-                    [SORT] => 500
-                    [NAME] => number 1
-                    [PREVIEW_PICTURE] => 
-                    [PREVIEW_TEXT] => 
-                    [DETAIL_PICTURE] => 
-                    [DETAIL_TEXT] => 
-                    [CODE] => 
-                    [ENTITY] => bot_assistant
-                    [SECTION] => 
-                    [PROPERTY_VALUES] => Array
-                        (
-                            [case] => 
-                            [dateBegin] => 18.11.2022
-                            [dateEnd] => 
-                            [employee] => 
-                            [type] => 
-                            [department] => 
-                        )
-
-                )
-
-            [4] => Array
-                (
-                    [ID] => 465537
-                    [TIMESTAMP_X] => 2022-11-18T14:50:48+03:00
-                    [MODIFIED_BY] => 79910
-                    [DATE_CREATE] => 2022-11-18T14:50:48+03:00
-                    [CREATED_BY] => 79910
-                    [ACTIVE] => Y
-                    [DATE_ACTIVE_FROM] => 
-                    [DATE_ACTIVE_TO] => 
-                    [SORT] => 500
-                    [NAME] => number 1
-                    [PREVIEW_PICTURE] => 
-                    [PREVIEW_TEXT] => 
-                    [DETAIL_PICTURE] => 
-                    [DETAIL_TEXT] => 
-                    [CODE] => 
-                    [ENTITY] => bot_assistant
-                    [SECTION] => 
-                    [PROPERTY_VALUES] => Array
-                        (
-                            [case] => ЛО
-                            [dateBegin] => 
-                            [dateEnd] => 
-                            [employee] => 
-                            [type] => 
-                            [department] => 
-                        )
-
-                )
-
-            [5] => Array
-                (
-                    [ID] => 465536
-                    [TIMESTAMP_X] => 2022-11-18T14:14:54+03:00
-                    [MODIFIED_BY] => 79910
-                    [DATE_CREATE] => 2022-11-18T14:14:54+03:00
-                    [CREATED_BY] => 79910
-                    [ACTIVE] => Y
-                    [DATE_ACTIVE_FROM] => 
-                    [DATE_ACTIVE_TO] => 
-                    [SORT] => 500
-                    [NAME] => number 1
-                    [PREVIEW_PICTURE] => 
-                    [PREVIEW_TEXT] => 
-                    [DETAIL_PICTURE] => 
-                    [DETAIL_TEXT] => 
-                    [CODE] => 
-                    [ENTITY] => bot_assistant
-                    [SECTION] => 
-                    [PROPERTY_VALUES] => Array
-                        (
-                            [case] => ЛО
-                            [dateBegin] => 
-                            [dateEnd] => 
-                            [employee] => 
-                            [type] => 
-                            [department] => 
-                        )
-
-                )
-
-            [6] => Array
-                (
-                    [ID] => 465535
-                    [TIMESTAMP_X] => 2022-11-18T14:05:20+03:00
-                    [MODIFIED_BY] => 79910
-                    [DATE_CREATE] => 2022-11-18T14:05:20+03:00
-                    [CREATED_BY] => 79910
-                    [ACTIVE] => Y
-                    [DATE_ACTIVE_FROM] => 
-                    [DATE_ACTIVE_TO] => 
-                    [SORT] => 500
-                    [NAME] => number 1
-                    [PREVIEW_PICTURE] => 
-                    [PREVIEW_TEXT] => 
-                    [DETAIL_PICTURE] => 
-                    [DETAIL_TEXT] => 
-                    [CODE] => 
-                    [ENTITY] => bot_assistant
-                    [SECTION] => 
-                    [PROPERTY_VALUES] => Array
-                        (
-                            [case] => ЛО
-                            [dateBegin] => 
-                            [dateEnd] => 
-                            [employee] => 
-                            [type] => 
-                            [department] => 
-                        )
-
-                )
-
-            [7] => Array
-                (
-                    [ID] => 465534
-                    [TIMESTAMP_X] => 2022-11-18T13:53:01+03:00
-                    [MODIFIED_BY] => 79910
-                    [DATE_CREATE] => 2022-11-18T13:53:01+03:00
-                    [CREATED_BY] => 79910
-                    [ACTIVE] => Y
-                    [DATE_ACTIVE_FROM] => 
-                    [DATE_ACTIVE_TO] => 
-                    [SORT] => 500
-                    [NAME] => причина
-                    [PREVIEW_PICTURE] => 
-                    [PREVIEW_TEXT] => 
-                    [DETAIL_PICTURE] => 
-                    [DETAIL_TEXT] => 
-                    [CODE] => 
-                    [ENTITY] => bot_assistant
-                    [SECTION] => 
-                    [PROPERTY_VALUES] => Array
-                        (
-                            [case] => причина
-                            [dateBegin] => 
-                            [dateEnd] => 
-                            [employee] => 
-                            [type] => 
-                            [department] => 
-                        )
-
-                )
-
-        )
-
-    [total] => 8
-    [time] => Array
-        (
-            [start] => 1668772812.9096
-            [finish] => 1668772812.9573
-            [duration] => 0.047753810882568
-            [processing] => 0.019067049026489
-            [date_start] => 2022-11-18T15:00:12+03:00
-            [date_finish] => 2022-11-18T15:00:12+03:00
-        )
-
-)
-
-------------------------
-
-------------------------
-2022.11.18 15:00:12
-AssistantBot send data
-Array
-(
-    [URL] => https://corp.estelab.ru/rest/entity.item.property.get
-    [PARAMS] => Array
-        (
-            [ENTITY] => bot_assistant
-            [PROPERTY] => *
-            [auth] => dc817763005f274c0007ddab000138260000075591ac7c1afec8fa1cb56f96d21a232b
-        )
-
-)
-
-------------------------
-
-------------------------
-2022.11.18 15:00:13
-Item Properties
-Array
-(
-    [result] => Array
-        (
-            [0] => Array
-                (
-                    [PROPERTY] => case
-                    [NAME] => Причина
-                    [TYPE] => S
-                    [SORT] => 500
-                )
-
-            [1] => Array
-                (
-                    [PROPERTY] => dateBegin
-                    [NAME] => Дата начала
-                    [TYPE] => S
-                    [SORT] => 500
-                )
-
-            [2] => Array
-                (
-                    [PROPERTY] => dateEnd
-                    [NAME] => Дата окончания
-                    [TYPE] => S
-                    [SORT] => 500
-                )
-
-            [3] => Array
-                (
-                    [PROPERTY] => employee
-                    [NAME] => Сотрудник
-                    [TYPE] => N
-                    [SORT] => 500
-                )
-
-            [4] => Array
-                (
-                    [PROPERTY] => type
-                    [NAME] => Тип
-                    [TYPE] => S
-                    [SORT] => 500
-                )
-
-            [5] => Array
-                (
-                    [PROPERTY] => department
-                    [NAME] => Подразделение
-                    [TYPE] => S
-                    [SORT] => 500
-                )
-
-        )
-
-    [time] => Array
-        (
-            [start] => 1668772812.9862
-            [finish] => 1668772813.0153
-            [duration] => 0.029084920883179
-            [processing] => 0.001533031463623
-            [date_start] => 2022-11-18T15:00:12+03:00
-            [date_finish] => 2022-11-18T15:00:13+03:00
-        )
-
-)
-
-------------------------
-
-------------------------
-2022.11.18 15:00:49
-AssistantBot send data
-Array
-(
-    [URL] => https://corp.estelab.ru/rest/entity.item.update
-    [PARAMS] => Array
-        (
-            [ENTITY] => bot_assistant
-            [ID] => 
-            [PROPERTY_VALUES] => Array
-                (
-                    [dateBegin] => 18.11
-                )
-
-            [auth] => 01827763005f274c0007ddab0001382600000719396c020bd95d96aa4a7a89bb975ab4
-        )
-
-)
-
-------------------------
-
-------------------------
-2022.11.18 15:00:49
+2022.11.18 15:45:15
 AssistantBot send data
 Array
 (
@@ -461,12 +62,35 @@ Array
     [PARAMS] => Array
         (
             [DIALOG_ID] => 79910
-            [MESSAGE] => [b]Туплю-с[/b]
-Не соображу, что вы хотите узнать. А может вообще не умею...
+            [MESSAGE] => [b]Мои функции[/b]
+Для вызова, нажми кнопку ниже
 
-            [KEYBOARD] => 
+            [KEYBOARD] => Array
+                (
+                    [0] => Array
+                        (
+                            [TEXT] => Отсутствие и переработка
+                            [COMMAND] => absence
+                            [COMMAND_PARAMS] => absence and processing
+                            [BG_COLOR] => #00BFFF
+                            [TEXT_COLOR] => #fff
+                            [DISPLAY] => LINE
+                        )
+
+                    [1] => Array
+                        (
+                            [TEXT] => Оплата счета
+                            [COMMAND] => billPayment
+                            [COMMAND_PARAMS] => bill payment
+                            [BG_COLOR] => #7B68EE
+                            [TEXT_COLOR] => #fff
+                            [DISPLAY] => LINE
+                        )
+
+                )
+
             [ATTACH] => 
-            [auth] => 01827763005f274c0007ddab0001382600000719396c020bd95d96aa4a7a89bb975ab4
+            [auth] => 6b8c7763005f274c0007ddab00013826000007c6bb05b0874f4da67fd9e1c8e38df9a8
         )
 
 )
@@ -474,7 +98,7 @@ Array
 ------------------------
 
 ------------------------
-2022.11.18 15:00:49
+2022.11.18 15:45:15
 AssistantBot send data
 Array
 (
@@ -491,7 +115,7 @@ Array
                 (
                 )
 
-            [auth] => 01827763005f274c0007ddab0001382600000719396c020bd95d96aa4a7a89bb975ab4
+            [auth] => 6b8c7763005f274c0007ddab00013826000007c6bb05b0874f4da67fd9e1c8e38df9a8
         )
 
 )
@@ -499,288 +123,24 @@ Array
 ------------------------
 
 ------------------------
-2022.11.18 15:00:49
-Items Info
-Array
-(
-    [result] => Array
-        (
-            [0] => Array
-                (
-                    [ID] => 465541
-                    [TIMESTAMP_X] => 2022-11-18T15:00:12+03:00
-                    [MODIFIED_BY] => 79910
-                    [DATE_CREATE] => 2022-11-18T15:00:12+03:00
-                    [CREATED_BY] => 79910
-                    [ACTIVE] => Y
-                    [DATE_ACTIVE_FROM] => 
-                    [DATE_ACTIVE_TO] => 
-                    [SORT] => 500
-                    [NAME] => number 3
-                    [PREVIEW_PICTURE] => 
-                    [PREVIEW_TEXT] => 
-                    [DETAIL_PICTURE] => 
-                    [DETAIL_TEXT] => 
-                    [CODE] => 
-                    [ENTITY] => bot_assistant
-                    [SECTION] => 
-                    [PROPERTY_VALUES] => Array
-                        (
-                            [case] => 
-                            [dateBegin] => 
-                            [dateEnd] => 
-                            [employee] => 
-                            [type] => 
-                            [department] => 
-                        )
-
-                )
-
-            [1] => Array
-                (
-                    [ID] => 465540
-                    [TIMESTAMP_X] => 2022-11-18T14:54:33+03:00
-                    [MODIFIED_BY] => 79910
-                    [DATE_CREATE] => 2022-11-18T14:54:33+03:00
-                    [CREATED_BY] => 79910
-                    [ACTIVE] => Y
-                    [DATE_ACTIVE_FROM] => 
-                    [DATE_ACTIVE_TO] => 
-                    [SORT] => 500
-                    [NAME] => number 3
-                    [PREVIEW_PICTURE] => 
-                    [PREVIEW_TEXT] => 
-                    [DETAIL_PICTURE] => 
-                    [DETAIL_TEXT] => 
-                    [CODE] => 
-                    [ENTITY] => bot_assistant
-                    [SECTION] => 
-                    [PROPERTY_VALUES] => Array
-                        (
-                            [case] => 
-                            [dateBegin] => 
-                            [dateEnd] => 
-                            [employee] => 
-                            [type] => 
-                            [department] => 
-                        )
-
-                )
-
-            [2] => Array
-                (
-                    [ID] => 465539
-                    [TIMESTAMP_X] => 2022-11-18T14:50:48+03:00
-                    [MODIFIED_BY] => 79910
-                    [DATE_CREATE] => 2022-11-18T14:50:48+03:00
-                    [CREATED_BY] => 79910
-                    [ACTIVE] => Y
-                    [DATE_ACTIVE_FROM] => 
-                    [DATE_ACTIVE_TO] => 
-                    [SORT] => 500
-                    [NAME] => number 1
-                    [PREVIEW_PICTURE] => 
-                    [PREVIEW_TEXT] => 
-                    [DETAIL_PICTURE] => 
-                    [DETAIL_TEXT] => 
-                    [CODE] => 
-                    [ENTITY] => bot_assistant
-                    [SECTION] => 
-                    [PROPERTY_VALUES] => Array
-                        (
-                            [case] => 
-                            [dateBegin] => 
-                            [dateEnd] => 20.11.2022
-                            [employee] => 
-                            [type] => 
-                            [department] => 
-                        )
-
-                )
-
-            [3] => Array
-                (
-                    [ID] => 465538
-                    [TIMESTAMP_X] => 2022-11-18T14:50:48+03:00
-                    [MODIFIED_BY] => 79910
-                    [DATE_CREATE] => 2022-11-18T14:50:48+03:00
-                    [CREATED_BY] => 79910
-                    [ACTIVE] => Y
-                    [DATE_ACTIVE_FROM] => 
-                    [DATE_ACTIVE_TO] => 
-                    [SORT] => 500
-                    [NAME] => number 1
-                    [PREVIEW_PICTURE] => 
-                    [PREVIEW_TEXT] => 
-                    [DETAIL_PICTURE] => 
-                    [DETAIL_TEXT] => 
-                    [CODE] => 
-                    [ENTITY] => bot_assistant
-                    [SECTION] => 
-                    [PROPERTY_VALUES] => Array
-                        (
-                            [case] => 
-                            [dateBegin] => 18.11.2022
-                            [dateEnd] => 
-                            [employee] => 
-                            [type] => 
-                            [department] => 
-                        )
-
-                )
-
-            [4] => Array
-                (
-                    [ID] => 465537
-                    [TIMESTAMP_X] => 2022-11-18T14:50:48+03:00
-                    [MODIFIED_BY] => 79910
-                    [DATE_CREATE] => 2022-11-18T14:50:48+03:00
-                    [CREATED_BY] => 79910
-                    [ACTIVE] => Y
-                    [DATE_ACTIVE_FROM] => 
-                    [DATE_ACTIVE_TO] => 
-                    [SORT] => 500
-                    [NAME] => number 1
-                    [PREVIEW_PICTURE] => 
-                    [PREVIEW_TEXT] => 
-                    [DETAIL_PICTURE] => 
-                    [DETAIL_TEXT] => 
-                    [CODE] => 
-                    [ENTITY] => bot_assistant
-                    [SECTION] => 
-                    [PROPERTY_VALUES] => Array
-                        (
-                            [case] => ЛО
-                            [dateBegin] => 
-                            [dateEnd] => 
-                            [employee] => 
-                            [type] => 
-                            [department] => 
-                        )
-
-                )
-
-            [5] => Array
-                (
-                    [ID] => 465536
-                    [TIMESTAMP_X] => 2022-11-18T14:14:54+03:00
-                    [MODIFIED_BY] => 79910
-                    [DATE_CREATE] => 2022-11-18T14:14:54+03:00
-                    [CREATED_BY] => 79910
-                    [ACTIVE] => Y
-                    [DATE_ACTIVE_FROM] => 
-                    [DATE_ACTIVE_TO] => 
-                    [SORT] => 500
-                    [NAME] => number 1
-                    [PREVIEW_PICTURE] => 
-                    [PREVIEW_TEXT] => 
-                    [DETAIL_PICTURE] => 
-                    [DETAIL_TEXT] => 
-                    [CODE] => 
-                    [ENTITY] => bot_assistant
-                    [SECTION] => 
-                    [PROPERTY_VALUES] => Array
-                        (
-                            [case] => ЛО
-                            [dateBegin] => 
-                            [dateEnd] => 
-                            [employee] => 
-                            [type] => 
-                            [department] => 
-                        )
-
-                )
-
-            [6] => Array
-                (
-                    [ID] => 465535
-                    [TIMESTAMP_X] => 2022-11-18T14:05:20+03:00
-                    [MODIFIED_BY] => 79910
-                    [DATE_CREATE] => 2022-11-18T14:05:20+03:00
-                    [CREATED_BY] => 79910
-                    [ACTIVE] => Y
-                    [DATE_ACTIVE_FROM] => 
-                    [DATE_ACTIVE_TO] => 
-                    [SORT] => 500
-                    [NAME] => number 1
-                    [PREVIEW_PICTURE] => 
-                    [PREVIEW_TEXT] => 
-                    [DETAIL_PICTURE] => 
-                    [DETAIL_TEXT] => 
-                    [CODE] => 
-                    [ENTITY] => bot_assistant
-                    [SECTION] => 
-                    [PROPERTY_VALUES] => Array
-                        (
-                            [case] => ЛО
-                            [dateBegin] => 
-                            [dateEnd] => 
-                            [employee] => 
-                            [type] => 
-                            [department] => 
-                        )
-
-                )
-
-            [7] => Array
-                (
-                    [ID] => 465534
-                    [TIMESTAMP_X] => 2022-11-18T13:53:01+03:00
-                    [MODIFIED_BY] => 79910
-                    [DATE_CREATE] => 2022-11-18T13:53:01+03:00
-                    [CREATED_BY] => 79910
-                    [ACTIVE] => Y
-                    [DATE_ACTIVE_FROM] => 
-                    [DATE_ACTIVE_TO] => 
-                    [SORT] => 500
-                    [NAME] => причина
-                    [PREVIEW_PICTURE] => 
-                    [PREVIEW_TEXT] => 
-                    [DETAIL_PICTURE] => 
-                    [DETAIL_TEXT] => 
-                    [CODE] => 
-                    [ENTITY] => bot_assistant
-                    [SECTION] => 
-                    [PROPERTY_VALUES] => Array
-                        (
-                            [case] => причина
-                            [dateBegin] => 
-                            [dateEnd] => 
-                            [employee] => 
-                            [type] => 
-                            [department] => 
-                        )
-
-                )
-
-        )
-
-    [total] => 8
-    [time] => Array
-        (
-            [start] => 1668772849.8847
-            [finish] => 1668772849.9287
-            [duration] => 0.04400110244751
-            [processing] => 0.017261028289795
-            [date_start] => 2022-11-18T15:00:49+03:00
-            [date_finish] => 2022-11-18T15:00:49+03:00
-        )
-
-)
-
-------------------------
-
-------------------------
-2022.11.18 15:00:49
+2022.11.18 15:45:33
 AssistantBot send data
 Array
 (
-    [URL] => https://corp.estelab.ru/rest/entity.item.property.get
+    [URL] => https://corp.estelab.ru/rest/entity.item.get
     [PARAMS] => Array
         (
             [ENTITY] => bot_assistant
-            [PROPERTY] => *
-            [auth] => 01827763005f274c0007ddab0001382600000719396c020bd95d96aa4a7a89bb975ab4
+            [SORT] => Array
+                (
+                    [ID] => DESC
+                )
+
+            [FILTER] => Array
+                (
+                )
+
+            [auth] => 7d8c7763005f274c0007ddab00013826000007b2aaee01442e4c615421a8aeca65e86c
         )
 
 )
@@ -788,92 +148,33 @@ Array
 ------------------------
 
 ------------------------
-2022.11.18 15:00:49
-Item Properties
-Array
-(
-    [result] => Array
-        (
-            [0] => Array
-                (
-                    [PROPERTY] => case
-                    [NAME] => Причина
-                    [TYPE] => S
-                    [SORT] => 500
-                )
-
-            [1] => Array
-                (
-                    [PROPERTY] => dateBegin
-                    [NAME] => Дата начала
-                    [TYPE] => S
-                    [SORT] => 500
-                )
-
-            [2] => Array
-                (
-                    [PROPERTY] => dateEnd
-                    [NAME] => Дата окончания
-                    [TYPE] => S
-                    [SORT] => 500
-                )
-
-            [3] => Array
-                (
-                    [PROPERTY] => employee
-                    [NAME] => Сотрудник
-                    [TYPE] => N
-                    [SORT] => 500
-                )
-
-            [4] => Array
-                (
-                    [PROPERTY] => type
-                    [NAME] => Тип
-                    [TYPE] => S
-                    [SORT] => 500
-                )
-
-            [5] => Array
-                (
-                    [PROPERTY] => department
-                    [NAME] => Подразделение
-                    [TYPE] => S
-                    [SORT] => 500
-                )
-
-        )
-
-    [time] => Array
-        (
-            [start] => 1668772849.956
-            [finish] => 1668772849.9828
-            [duration] => 0.026784896850586
-            [processing] => 0.0016331672668457
-            [date_start] => 2022-11-18T15:00:49+03:00
-            [date_finish] => 2022-11-18T15:00:49+03:00
-        )
-
-)
-
-------------------------
-
-------------------------
-2022.11.18 15:01:46
+2022.11.18 15:45:33
 AssistantBot send data
 Array
 (
-    [URL] => https://corp.estelab.ru/rest/entity.item.update
+    [URL] => https://corp.estelab.ru/rest/entity.item.delete
+    [PARAMS] => Array
+        (
+            [ENTITY] => bot_assistant
+            [ID] => 465542
+            [auth] => 7d8c7763005f274c0007ddab00013826000007b2aaee01442e4c615421a8aeca65e86c
+        )
+
+)
+
+------------------------
+
+------------------------
+2022.11.18 15:45:33
+AssistantBot send data
+Array
+(
+    [URL] => https://corp.estelab.ru/rest/entity.item.delete
     [PARAMS] => Array
         (
             [ENTITY] => bot_assistant
             [ID] => 465541
-            [PROPERTY_VALUES] => Array
-                (
-                    [dateBegin] => 18.11
-                )
-
-            [auth] => 3a827763005f274c0007ddab000138260000076cc3d743856ae78124e63de439e6185b
+            [auth] => 7d8c7763005f274c0007ddab00013826000007b2aaee01442e4c615421a8aeca65e86c
         )
 
 )
@@ -881,7 +182,126 @@ Array
 ------------------------
 
 ------------------------
-2022.11.18 15:01:46
+2022.11.18 15:45:33
+AssistantBot send data
+Array
+(
+    [URL] => https://corp.estelab.ru/rest/entity.item.delete
+    [PARAMS] => Array
+        (
+            [ENTITY] => bot_assistant
+            [ID] => 465540
+            [auth] => 7d8c7763005f274c0007ddab00013826000007b2aaee01442e4c615421a8aeca65e86c
+        )
+
+)
+
+------------------------
+
+------------------------
+2022.11.18 15:45:33
+AssistantBot send data
+Array
+(
+    [URL] => https://corp.estelab.ru/rest/entity.item.delete
+    [PARAMS] => Array
+        (
+            [ENTITY] => bot_assistant
+            [ID] => 465539
+            [auth] => 7d8c7763005f274c0007ddab00013826000007b2aaee01442e4c615421a8aeca65e86c
+        )
+
+)
+
+------------------------
+
+------------------------
+2022.11.18 15:45:33
+AssistantBot send data
+Array
+(
+    [URL] => https://corp.estelab.ru/rest/entity.item.delete
+    [PARAMS] => Array
+        (
+            [ENTITY] => bot_assistant
+            [ID] => 465538
+            [auth] => 7d8c7763005f274c0007ddab00013826000007b2aaee01442e4c615421a8aeca65e86c
+        )
+
+)
+
+------------------------
+
+------------------------
+2022.11.18 15:45:33
+AssistantBot send data
+Array
+(
+    [URL] => https://corp.estelab.ru/rest/entity.item.delete
+    [PARAMS] => Array
+        (
+            [ENTITY] => bot_assistant
+            [ID] => 465537
+            [auth] => 7d8c7763005f274c0007ddab00013826000007b2aaee01442e4c615421a8aeca65e86c
+        )
+
+)
+
+------------------------
+
+------------------------
+2022.11.18 15:45:34
+AssistantBot send data
+Array
+(
+    [URL] => https://corp.estelab.ru/rest/entity.item.delete
+    [PARAMS] => Array
+        (
+            [ENTITY] => bot_assistant
+            [ID] => 465536
+            [auth] => 7d8c7763005f274c0007ddab00013826000007b2aaee01442e4c615421a8aeca65e86c
+        )
+
+)
+
+------------------------
+
+------------------------
+2022.11.18 15:45:34
+AssistantBot send data
+Array
+(
+    [URL] => https://corp.estelab.ru/rest/entity.item.delete
+    [PARAMS] => Array
+        (
+            [ENTITY] => bot_assistant
+            [ID] => 465535
+            [auth] => 7d8c7763005f274c0007ddab00013826000007b2aaee01442e4c615421a8aeca65e86c
+        )
+
+)
+
+------------------------
+
+------------------------
+2022.11.18 15:45:34
+AssistantBot send data
+Array
+(
+    [URL] => https://corp.estelab.ru/rest/entity.item.delete
+    [PARAMS] => Array
+        (
+            [ENTITY] => bot_assistant
+            [ID] => 465534
+            [auth] => 7d8c7763005f274c0007ddab00013826000007b2aaee01442e4c615421a8aeca65e86c
+        )
+
+)
+
+------------------------
+
+------------------------
+2022.11.18 15:45:34
 AssistantBot send data
 Array
 (
@@ -894,7 +314,7 @@ Array
 
             [KEYBOARD] => 
             [ATTACH] => 
-            [auth] => 3a827763005f274c0007ddab000138260000076cc3d743856ae78124e63de439e6185b
+            [auth] => 7d8c7763005f274c0007ddab00013826000007b2aaee01442e4c615421a8aeca65e86c
         )
 
 )
@@ -902,7 +322,7 @@ Array
 ------------------------
 
 ------------------------
-2022.11.18 15:01:46
+2022.11.18 15:45:34
 AssistantBot send data
 Array
 (
@@ -919,7 +339,7 @@ Array
                 (
                 )
 
-            [auth] => 3a827763005f274c0007ddab000138260000076cc3d743856ae78124e63de439e6185b
+            [auth] => 7d8c7763005f274c0007ddab00013826000007b2aaee01442e4c615421a8aeca65e86c
         )
 
 )
@@ -927,288 +347,24 @@ Array
 ------------------------
 
 ------------------------
-2022.11.18 15:01:47
-Items Info
-Array
-(
-    [result] => Array
-        (
-            [0] => Array
-                (
-                    [ID] => 465541
-                    [TIMESTAMP_X] => 2022-11-18T15:01:46+03:00
-                    [MODIFIED_BY] => 79910
-                    [DATE_CREATE] => 2022-11-18T15:00:12+03:00
-                    [CREATED_BY] => 79910
-                    [ACTIVE] => Y
-                    [DATE_ACTIVE_FROM] => 
-                    [DATE_ACTIVE_TO] => 
-                    [SORT] => 500
-                    [NAME] => number 3
-                    [PREVIEW_PICTURE] => 
-                    [PREVIEW_TEXT] => 
-                    [DETAIL_PICTURE] => 
-                    [DETAIL_TEXT] => 
-                    [CODE] => 
-                    [ENTITY] => bot_assistant
-                    [SECTION] => 
-                    [PROPERTY_VALUES] => Array
-                        (
-                            [case] => 
-                            [dateBegin] => 18.11
-                            [dateEnd] => 
-                            [employee] => 
-                            [type] => 
-                            [department] => 
-                        )
-
-                )
-
-            [1] => Array
-                (
-                    [ID] => 465540
-                    [TIMESTAMP_X] => 2022-11-18T14:54:33+03:00
-                    [MODIFIED_BY] => 79910
-                    [DATE_CREATE] => 2022-11-18T14:54:33+03:00
-                    [CREATED_BY] => 79910
-                    [ACTIVE] => Y
-                    [DATE_ACTIVE_FROM] => 
-                    [DATE_ACTIVE_TO] => 
-                    [SORT] => 500
-                    [NAME] => number 3
-                    [PREVIEW_PICTURE] => 
-                    [PREVIEW_TEXT] => 
-                    [DETAIL_PICTURE] => 
-                    [DETAIL_TEXT] => 
-                    [CODE] => 
-                    [ENTITY] => bot_assistant
-                    [SECTION] => 
-                    [PROPERTY_VALUES] => Array
-                        (
-                            [case] => 
-                            [dateBegin] => 
-                            [dateEnd] => 
-                            [employee] => 
-                            [type] => 
-                            [department] => 
-                        )
-
-                )
-
-            [2] => Array
-                (
-                    [ID] => 465539
-                    [TIMESTAMP_X] => 2022-11-18T14:50:48+03:00
-                    [MODIFIED_BY] => 79910
-                    [DATE_CREATE] => 2022-11-18T14:50:48+03:00
-                    [CREATED_BY] => 79910
-                    [ACTIVE] => Y
-                    [DATE_ACTIVE_FROM] => 
-                    [DATE_ACTIVE_TO] => 
-                    [SORT] => 500
-                    [NAME] => number 1
-                    [PREVIEW_PICTURE] => 
-                    [PREVIEW_TEXT] => 
-                    [DETAIL_PICTURE] => 
-                    [DETAIL_TEXT] => 
-                    [CODE] => 
-                    [ENTITY] => bot_assistant
-                    [SECTION] => 
-                    [PROPERTY_VALUES] => Array
-                        (
-                            [case] => 
-                            [dateBegin] => 
-                            [dateEnd] => 20.11.2022
-                            [employee] => 
-                            [type] => 
-                            [department] => 
-                        )
-
-                )
-
-            [3] => Array
-                (
-                    [ID] => 465538
-                    [TIMESTAMP_X] => 2022-11-18T14:50:48+03:00
-                    [MODIFIED_BY] => 79910
-                    [DATE_CREATE] => 2022-11-18T14:50:48+03:00
-                    [CREATED_BY] => 79910
-                    [ACTIVE] => Y
-                    [DATE_ACTIVE_FROM] => 
-                    [DATE_ACTIVE_TO] => 
-                    [SORT] => 500
-                    [NAME] => number 1
-                    [PREVIEW_PICTURE] => 
-                    [PREVIEW_TEXT] => 
-                    [DETAIL_PICTURE] => 
-                    [DETAIL_TEXT] => 
-                    [CODE] => 
-                    [ENTITY] => bot_assistant
-                    [SECTION] => 
-                    [PROPERTY_VALUES] => Array
-                        (
-                            [case] => 
-                            [dateBegin] => 18.11.2022
-                            [dateEnd] => 
-                            [employee] => 
-                            [type] => 
-                            [department] => 
-                        )
-
-                )
-
-            [4] => Array
-                (
-                    [ID] => 465537
-                    [TIMESTAMP_X] => 2022-11-18T14:50:48+03:00
-                    [MODIFIED_BY] => 79910
-                    [DATE_CREATE] => 2022-11-18T14:50:48+03:00
-                    [CREATED_BY] => 79910
-                    [ACTIVE] => Y
-                    [DATE_ACTIVE_FROM] => 
-                    [DATE_ACTIVE_TO] => 
-                    [SORT] => 500
-                    [NAME] => number 1
-                    [PREVIEW_PICTURE] => 
-                    [PREVIEW_TEXT] => 
-                    [DETAIL_PICTURE] => 
-                    [DETAIL_TEXT] => 
-                    [CODE] => 
-                    [ENTITY] => bot_assistant
-                    [SECTION] => 
-                    [PROPERTY_VALUES] => Array
-                        (
-                            [case] => ЛО
-                            [dateBegin] => 
-                            [dateEnd] => 
-                            [employee] => 
-                            [type] => 
-                            [department] => 
-                        )
-
-                )
-
-            [5] => Array
-                (
-                    [ID] => 465536
-                    [TIMESTAMP_X] => 2022-11-18T14:14:54+03:00
-                    [MODIFIED_BY] => 79910
-                    [DATE_CREATE] => 2022-11-18T14:14:54+03:00
-                    [CREATED_BY] => 79910
-                    [ACTIVE] => Y
-                    [DATE_ACTIVE_FROM] => 
-                    [DATE_ACTIVE_TO] => 
-                    [SORT] => 500
-                    [NAME] => number 1
-                    [PREVIEW_PICTURE] => 
-                    [PREVIEW_TEXT] => 
-                    [DETAIL_PICTURE] => 
-                    [DETAIL_TEXT] => 
-                    [CODE] => 
-                    [ENTITY] => bot_assistant
-                    [SECTION] => 
-                    [PROPERTY_VALUES] => Array
-                        (
-                            [case] => ЛО
-                            [dateBegin] => 
-                            [dateEnd] => 
-                            [employee] => 
-                            [type] => 
-                            [department] => 
-                        )
-
-                )
-
-            [6] => Array
-                (
-                    [ID] => 465535
-                    [TIMESTAMP_X] => 2022-11-18T14:05:20+03:00
-                    [MODIFIED_BY] => 79910
-                    [DATE_CREATE] => 2022-11-18T14:05:20+03:00
-                    [CREATED_BY] => 79910
-                    [ACTIVE] => Y
-                    [DATE_ACTIVE_FROM] => 
-                    [DATE_ACTIVE_TO] => 
-                    [SORT] => 500
-                    [NAME] => number 1
-                    [PREVIEW_PICTURE] => 
-                    [PREVIEW_TEXT] => 
-                    [DETAIL_PICTURE] => 
-                    [DETAIL_TEXT] => 
-                    [CODE] => 
-                    [ENTITY] => bot_assistant
-                    [SECTION] => 
-                    [PROPERTY_VALUES] => Array
-                        (
-                            [case] => ЛО
-                            [dateBegin] => 
-                            [dateEnd] => 
-                            [employee] => 
-                            [type] => 
-                            [department] => 
-                        )
-
-                )
-
-            [7] => Array
-                (
-                    [ID] => 465534
-                    [TIMESTAMP_X] => 2022-11-18T13:53:01+03:00
-                    [MODIFIED_BY] => 79910
-                    [DATE_CREATE] => 2022-11-18T13:53:01+03:00
-                    [CREATED_BY] => 79910
-                    [ACTIVE] => Y
-                    [DATE_ACTIVE_FROM] => 
-                    [DATE_ACTIVE_TO] => 
-                    [SORT] => 500
-                    [NAME] => причина
-                    [PREVIEW_PICTURE] => 
-                    [PREVIEW_TEXT] => 
-                    [DETAIL_PICTURE] => 
-                    [DETAIL_TEXT] => 
-                    [CODE] => 
-                    [ENTITY] => bot_assistant
-                    [SECTION] => 
-                    [PROPERTY_VALUES] => Array
-                        (
-                            [case] => причина
-                            [dateBegin] => 
-                            [dateEnd] => 
-                            [employee] => 
-                            [type] => 
-                            [department] => 
-                        )
-
-                )
-
-        )
-
-    [total] => 8
-    [time] => Array
-        (
-            [start] => 1668772907.0104
-            [finish] => 1668772907.0583
-            [duration] => 0.047878980636597
-            [processing] => 0.022135019302368
-            [date_start] => 2022-11-18T15:01:47+03:00
-            [date_finish] => 2022-11-18T15:01:47+03:00
-        )
-
-)
-
-------------------------
-
-------------------------
-2022.11.18 15:01:47
+2022.11.18 15:47:35
 AssistantBot send data
 Array
 (
-    [URL] => https://corp.estelab.ru/rest/entity.item.property.get
+    [URL] => https://corp.estelab.ru/rest/entity.item.get
     [PARAMS] => Array
         (
             [ENTITY] => bot_assistant
-            [PROPERTY] => *
-            [auth] => 3a827763005f274c0007ddab000138260000076cc3d743856ae78124e63de439e6185b
+            [SORT] => Array
+                (
+                    [ID] => DESC
+                )
+
+            [FILTER] => Array
+                (
+                )
+
+            [auth] => f78c7763005f274c0007ddab000138260000076d1caf3cb4b6ab1b42c6386481d6fce3
         )
 
 )
@@ -1216,115 +372,7 @@ Array
 ------------------------
 
 ------------------------
-2022.11.18 15:01:47
-Item Properties
-Array
-(
-    [result] => Array
-        (
-            [0] => Array
-                (
-                    [PROPERTY] => case
-                    [NAME] => Причина
-                    [TYPE] => S
-                    [SORT] => 500
-                )
-
-            [1] => Array
-                (
-                    [PROPERTY] => dateBegin
-                    [NAME] => Дата начала
-                    [TYPE] => S
-                    [SORT] => 500
-                )
-
-            [2] => Array
-                (
-                    [PROPERTY] => dateEnd
-                    [NAME] => Дата окончания
-                    [TYPE] => S
-                    [SORT] => 500
-                )
-
-            [3] => Array
-                (
-                    [PROPERTY] => employee
-                    [NAME] => Сотрудник
-                    [TYPE] => N
-                    [SORT] => 500
-                )
-
-            [4] => Array
-                (
-                    [PROPERTY] => type
-                    [NAME] => Тип
-                    [TYPE] => S
-                    [SORT] => 500
-                )
-
-            [5] => Array
-                (
-                    [PROPERTY] => department
-                    [NAME] => Подразделение
-                    [TYPE] => S
-                    [SORT] => 500
-                )
-
-        )
-
-    [time] => Array
-        (
-            [start] => 1668772907.0846
-            [finish] => 1668772907.1188
-            [duration] => 0.034234046936035
-            [processing] => 0.0031709671020508
-            [date_start] => 2022-11-18T15:01:47+03:00
-            [date_finish] => 2022-11-18T15:01:47+03:00
-        )
-
-)
-
-------------------------
-
-------------------------
-2022.11.18 15:04:25
-AssistantBot send data
-Array
-(
-    [URL] => https://corp.estelab.ru/rest/entity.item.add
-    [PARAMS] => Array
-        (
-            [ENTITY] => bot_assistant
-            [NAME] => number 5
-            [auth] => d9827763005f274c0007ddab00013826000007fa11a4b0691d60d2aced05d86563a68c
-        )
-
-)
-
-------------------------
-
-------------------------
-2022.11.18 15:04:25
-Item
-Array
-(
-    [result] => 465542
-    [time] => Array
-        (
-            [start] => 1668773065.1844
-            [finish] => 1668773065.3527
-            [duration] => 0.16826796531677
-            [processing] => 0.039061069488525
-            [date_start] => 2022-11-18T15:04:25+03:00
-            [date_finish] => 2022-11-18T15:04:25+03:00
-        )
-
-)
-
-------------------------
-
-------------------------
-2022.11.18 15:04:25
+2022.11.18 15:47:35
 AssistantBot send data
 Array
 (
@@ -1332,20 +380,12 @@ Array
     [PARAMS] => Array
         (
             [DIALOG_ID] => 79910
-            [MESSAGE] => [b]Всегда можно вернуться в начало[/b]
-
+            [MESSAGE] => [b]Туплю-с[/b]
+Не соображу, что вы хотите узнать. А может вообще не умею...
 
             [KEYBOARD] => 
-            [ATTACH] => Array
-                (
-                    [0] => Array
-                        (
-                            [MESSAGE] => [send=меню]Вернуться в начало[/send]
-                        )
-
-                )
-
-            [auth] => d9827763005f274c0007ddab00013826000007fa11a4b0691d60d2aced05d86563a68c
+            [ATTACH] => 
+            [auth] => f78c7763005f274c0007ddab000138260000076d1caf3cb4b6ab1b42c6386481d6fce3
         )
 
 )
@@ -1353,7 +393,7 @@ Array
 ------------------------
 
 ------------------------
-2022.11.18 15:04:25
+2022.11.18 15:47:35
 AssistantBot send data
 Array
 (
@@ -1370,7 +410,7 @@ Array
                 (
                 )
 
-            [auth] => d9827763005f274c0007ddab00013826000007fa11a4b0691d60d2aced05d86563a68c
+            [auth] => f78c7763005f274c0007ddab000138260000076d1caf3cb4b6ab1b42c6386481d6fce3
         )
 
 )
@@ -1378,392 +418,10 @@ Array
 ------------------------
 
 ------------------------
-2022.11.18 15:04:25
+2022.11.18 15:47:36
 Items Info
 Array
 (
-    [result] => Array
-        (
-            [0] => Array
-                (
-                    [ID] => 465542
-                    [TIMESTAMP_X] => 2022-11-18T15:04:25+03:00
-                    [MODIFIED_BY] => 79910
-                    [DATE_CREATE] => 2022-11-18T15:04:25+03:00
-                    [CREATED_BY] => 79910
-                    [ACTIVE] => Y
-                    [DATE_ACTIVE_FROM] => 
-                    [DATE_ACTIVE_TO] => 
-                    [SORT] => 500
-                    [NAME] => number 5
-                    [PREVIEW_PICTURE] => 
-                    [PREVIEW_TEXT] => 
-                    [DETAIL_PICTURE] => 
-                    [DETAIL_TEXT] => 
-                    [CODE] => 
-                    [ENTITY] => bot_assistant
-                    [SECTION] => 
-                    [PROPERTY_VALUES] => Array
-                        (
-                            [case] => 
-                            [dateBegin] => 
-                            [dateEnd] => 
-                            [employee] => 
-                            [type] => 
-                            [department] => 
-                        )
-
-                )
-
-            [1] => Array
-                (
-                    [ID] => 465541
-                    [TIMESTAMP_X] => 2022-11-18T15:01:46+03:00
-                    [MODIFIED_BY] => 79910
-                    [DATE_CREATE] => 2022-11-18T15:00:12+03:00
-                    [CREATED_BY] => 79910
-                    [ACTIVE] => Y
-                    [DATE_ACTIVE_FROM] => 
-                    [DATE_ACTIVE_TO] => 
-                    [SORT] => 500
-                    [NAME] => number 3
-                    [PREVIEW_PICTURE] => 
-                    [PREVIEW_TEXT] => 
-                    [DETAIL_PICTURE] => 
-                    [DETAIL_TEXT] => 
-                    [CODE] => 
-                    [ENTITY] => bot_assistant
-                    [SECTION] => 
-                    [PROPERTY_VALUES] => Array
-                        (
-                            [case] => 
-                            [dateBegin] => 18.11
-                            [dateEnd] => 
-                            [employee] => 
-                            [type] => 
-                            [department] => 
-                        )
-
-                )
-
-            [2] => Array
-                (
-                    [ID] => 465540
-                    [TIMESTAMP_X] => 2022-11-18T14:54:33+03:00
-                    [MODIFIED_BY] => 79910
-                    [DATE_CREATE] => 2022-11-18T14:54:33+03:00
-                    [CREATED_BY] => 79910
-                    [ACTIVE] => Y
-                    [DATE_ACTIVE_FROM] => 
-                    [DATE_ACTIVE_TO] => 
-                    [SORT] => 500
-                    [NAME] => number 3
-                    [PREVIEW_PICTURE] => 
-                    [PREVIEW_TEXT] => 
-                    [DETAIL_PICTURE] => 
-                    [DETAIL_TEXT] => 
-                    [CODE] => 
-                    [ENTITY] => bot_assistant
-                    [SECTION] => 
-                    [PROPERTY_VALUES] => Array
-                        (
-                            [case] => 
-                            [dateBegin] => 
-                            [dateEnd] => 
-                            [employee] => 
-                            [type] => 
-                            [department] => 
-                        )
-
-                )
-
-            [3] => Array
-                (
-                    [ID] => 465539
-                    [TIMESTAMP_X] => 2022-11-18T14:50:48+03:00
-                    [MODIFIED_BY] => 79910
-                    [DATE_CREATE] => 2022-11-18T14:50:48+03:00
-                    [CREATED_BY] => 79910
-                    [ACTIVE] => Y
-                    [DATE_ACTIVE_FROM] => 
-                    [DATE_ACTIVE_TO] => 
-                    [SORT] => 500
-                    [NAME] => number 1
-                    [PREVIEW_PICTURE] => 
-                    [PREVIEW_TEXT] => 
-                    [DETAIL_PICTURE] => 
-                    [DETAIL_TEXT] => 
-                    [CODE] => 
-                    [ENTITY] => bot_assistant
-                    [SECTION] => 
-                    [PROPERTY_VALUES] => Array
-                        (
-                            [case] => 
-                            [dateBegin] => 
-                            [dateEnd] => 20.11.2022
-                            [employee] => 
-                            [type] => 
-                            [department] => 
-                        )
-
-                )
-
-            [4] => Array
-                (
-                    [ID] => 465538
-                    [TIMESTAMP_X] => 2022-11-18T14:50:48+03:00
-                    [MODIFIED_BY] => 79910
-                    [DATE_CREATE] => 2022-11-18T14:50:48+03:00
-                    [CREATED_BY] => 79910
-                    [ACTIVE] => Y
-                    [DATE_ACTIVE_FROM] => 
-                    [DATE_ACTIVE_TO] => 
-                    [SORT] => 500
-                    [NAME] => number 1
-                    [PREVIEW_PICTURE] => 
-                    [PREVIEW_TEXT] => 
-                    [DETAIL_PICTURE] => 
-                    [DETAIL_TEXT] => 
-                    [CODE] => 
-                    [ENTITY] => bot_assistant
-                    [SECTION] => 
-                    [PROPERTY_VALUES] => Array
-                        (
-                            [case] => 
-                            [dateBegin] => 18.11.2022
-                            [dateEnd] => 
-                            [employee] => 
-                            [type] => 
-                            [department] => 
-                        )
-
-                )
-
-            [5] => Array
-                (
-                    [ID] => 465537
-                    [TIMESTAMP_X] => 2022-11-18T14:50:48+03:00
-                    [MODIFIED_BY] => 79910
-                    [DATE_CREATE] => 2022-11-18T14:50:48+03:00
-                    [CREATED_BY] => 79910
-                    [ACTIVE] => Y
-                    [DATE_ACTIVE_FROM] => 
-                    [DATE_ACTIVE_TO] => 
-                    [SORT] => 500
-                    [NAME] => number 1
-                    [PREVIEW_PICTURE] => 
-                    [PREVIEW_TEXT] => 
-                    [DETAIL_PICTURE] => 
-                    [DETAIL_TEXT] => 
-                    [CODE] => 
-                    [ENTITY] => bot_assistant
-                    [SECTION] => 
-                    [PROPERTY_VALUES] => Array
-                        (
-                            [case] => ЛО
-                            [dateBegin] => 
-                            [dateEnd] => 
-                            [employee] => 
-                            [type] => 
-                            [department] => 
-                        )
-
-                )
-
-            [6] => Array
-                (
-                    [ID] => 465536
-                    [TIMESTAMP_X] => 2022-11-18T14:14:54+03:00
-                    [MODIFIED_BY] => 79910
-                    [DATE_CREATE] => 2022-11-18T14:14:54+03:00
-                    [CREATED_BY] => 79910
-                    [ACTIVE] => Y
-                    [DATE_ACTIVE_FROM] => 
-                    [DATE_ACTIVE_TO] => 
-                    [SORT] => 500
-                    [NAME] => number 1
-                    [PREVIEW_PICTURE] => 
-                    [PREVIEW_TEXT] => 
-                    [DETAIL_PICTURE] => 
-                    [DETAIL_TEXT] => 
-                    [CODE] => 
-                    [ENTITY] => bot_assistant
-                    [SECTION] => 
-                    [PROPERTY_VALUES] => Array
-                        (
-                            [case] => ЛО
-                            [dateBegin] => 
-                            [dateEnd] => 
-                            [employee] => 
-                            [type] => 
-                            [department] => 
-                        )
-
-                )
-
-            [7] => Array
-                (
-                    [ID] => 465535
-                    [TIMESTAMP_X] => 2022-11-18T14:05:20+03:00
-                    [MODIFIED_BY] => 79910
-                    [DATE_CREATE] => 2022-11-18T14:05:20+03:00
-                    [CREATED_BY] => 79910
-                    [ACTIVE] => Y
-                    [DATE_ACTIVE_FROM] => 
-                    [DATE_ACTIVE_TO] => 
-                    [SORT] => 500
-                    [NAME] => number 1
-                    [PREVIEW_PICTURE] => 
-                    [PREVIEW_TEXT] => 
-                    [DETAIL_PICTURE] => 
-                    [DETAIL_TEXT] => 
-                    [CODE] => 
-                    [ENTITY] => bot_assistant
-                    [SECTION] => 
-                    [PROPERTY_VALUES] => Array
-                        (
-                            [case] => ЛО
-                            [dateBegin] => 
-                            [dateEnd] => 
-                            [employee] => 
-                            [type] => 
-                            [department] => 
-                        )
-
-                )
-
-            [8] => Array
-                (
-                    [ID] => 465534
-                    [TIMESTAMP_X] => 2022-11-18T13:53:01+03:00
-                    [MODIFIED_BY] => 79910
-                    [DATE_CREATE] => 2022-11-18T13:53:01+03:00
-                    [CREATED_BY] => 79910
-                    [ACTIVE] => Y
-                    [DATE_ACTIVE_FROM] => 
-                    [DATE_ACTIVE_TO] => 
-                    [SORT] => 500
-                    [NAME] => причина
-                    [PREVIEW_PICTURE] => 
-                    [PREVIEW_TEXT] => 
-                    [DETAIL_PICTURE] => 
-                    [DETAIL_TEXT] => 
-                    [CODE] => 
-                    [ENTITY] => bot_assistant
-                    [SECTION] => 
-                    [PROPERTY_VALUES] => Array
-                        (
-                            [case] => причина
-                            [dateBegin] => 
-                            [dateEnd] => 
-                            [employee] => 
-                            [type] => 
-                            [department] => 
-                        )
-
-                )
-
-        )
-
-    [total] => 9
-    [time] => Array
-        (
-            [start] => 1668773065.4636
-            [finish] => 1668773065.5076
-            [duration] => 0.043970823287964
-            [processing] => 0.01751708984375
-            [date_start] => 2022-11-18T15:04:25+03:00
-            [date_finish] => 2022-11-18T15:04:25+03:00
-        )
-
-)
-
-------------------------
-
-------------------------
-2022.11.18 15:04:25
-AssistantBot send data
-Array
-(
-    [URL] => https://corp.estelab.ru/rest/entity.item.property.get
-    [PARAMS] => Array
-        (
-            [ENTITY] => bot_assistant
-            [PROPERTY] => *
-            [auth] => d9827763005f274c0007ddab00013826000007fa11a4b0691d60d2aced05d86563a68c
-        )
-
-)
-
-------------------------
-
-------------------------
-2022.11.18 15:04:25
-Item Properties
-Array
-(
-    [result] => Array
-        (
-            [0] => Array
-                (
-                    [PROPERTY] => case
-                    [NAME] => Причина
-                    [TYPE] => S
-                    [SORT] => 500
-                )
-
-            [1] => Array
-                (
-                    [PROPERTY] => dateBegin
-                    [NAME] => Дата начала
-                    [TYPE] => S
-                    [SORT] => 500
-                )
-
-            [2] => Array
-                (
-                    [PROPERTY] => dateEnd
-                    [NAME] => Дата окончания
-                    [TYPE] => S
-                    [SORT] => 500
-                )
-
-            [3] => Array
-                (
-                    [PROPERTY] => employee
-                    [NAME] => Сотрудник
-                    [TYPE] => N
-                    [SORT] => 500
-                )
-
-            [4] => Array
-                (
-                    [PROPERTY] => type
-                    [NAME] => Тип
-                    [TYPE] => S
-                    [SORT] => 500
-                )
-
-            [5] => Array
-                (
-                    [PROPERTY] => department
-                    [NAME] => Подразделение
-                    [TYPE] => S
-                    [SORT] => 500
-                )
-
-        )
-
-    [time] => Array
-        (
-            [start] => 1668773065.534
-            [finish] => 1668773065.5617
-            [duration] => 0.027675151824951
-            [processing] => 0.0017440319061279
-            [date_start] => 2022-11-18T15:04:25+03:00
-            [date_finish] => 2022-11-18T15:04:25+03:00
-        )
-
 )
 
 ------------------------
