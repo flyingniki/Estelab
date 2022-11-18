@@ -63,3 +63,67 @@ function writeToLog($data, $title = '')
     file_put_contents(__DIR__ . '/assistant.log', $log, FILE_APPEND);
     return true;
 }
+
+function registerCommand($botId, $handlerBackUrl, $commandName, $title, $params)
+{
+    $result = restCommand('imbot.command.register', array(
+        'BOT_ID' => $botId,
+        'COMMAND' => $commandName,
+        'COMMON' => 'Y',
+        'HIDDEN' => 'N',
+        'EXTRANET_SUPPORT' => 'N',
+        'LANG' => array(
+            array('LANGUAGE_ID' => 'en', 'TITLE' => $title, 'PARAMS' => $params),
+        ),
+        'EVENT_COMMAND_ADD' => $handlerBackUrl,
+    ), $_REQUEST["auth"]);
+
+    return $result['result'];
+}
+
+function addEntityItem($entityCode, $itemName, $elemProperty, $elemPropValue)
+{
+    $result = restCommand('entity.item.add', array(
+        "ENTITY" => $entityCode,
+        'NAME' => $itemName,
+        'PROPERTY_VALUES' => array(
+            $elemProperty => $elemPropValue,
+        ),
+    ), $_REQUEST["auth"]);
+
+    return $result;
+}
+
+function updateEntityItem($entityCode, $elementId, $elemProperty, $elemPropValue)
+{
+    $result = restCommand('entity.item.update', array(
+        "ENTITY" => $entityCode,
+        "ID" => $elementId,
+        "PROPERTY_VALUES" => array(
+            $elemProperty => $elemPropValue,
+        ),
+    ), $_REQUEST["auth"]);
+
+    return $result;
+}
+
+function getEntityItems($entityCode)
+{
+    $result = restCommand('entity.item.get', array(
+        'ENTITY' => $entityCode,
+        'SORT' => array('ID' => 'DESC'),
+        'FILTER' => array(),
+    ), $_REQUEST["auth"]);
+
+    return $result;
+}
+
+function getEntityItemProperties($entityCode, $entityProperty = '*')
+{
+    $result = restCommand('entity.item.property.get', array(
+        'ENTITY' => $entityCode,
+        'PROPERTY' => $entityProperty,
+    ), $_REQUEST["auth"]);
+
+    return $result;
+}

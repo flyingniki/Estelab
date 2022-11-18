@@ -8,6 +8,9 @@ require_once __DIR__ . '/defaultFunctions.php';
 require_once __DIR__ . '/myFunctions.php';
 require_once __DIR__ . '/keyboards.php';
 
+$entityCode = 'bot_assistant';
+$entityName = 'Assistant Bot';
+
 $appsConfig = array();
 $configFileName = '/config_' . trim(str_replace('.', '_', $_REQUEST['auth']['domain'])) . '.php';
 if (file_exists(__DIR__ . $configFileName)) {
@@ -15,39 +18,9 @@ if (file_exists(__DIR__ . $configFileName)) {
 }
 // receive event "new message for bot" after sending message from user
 if ($_REQUEST['event'] == 'ONIMBOTMESSAGEADD') {
-    // check the event - register this application or not
-    if (!isset($appsConfig[$_REQUEST['auth']['application_token']])) {
-        return false;
-    }
-    // writeToLog($_REQUEST, '$_REQUEST');
-    // writeToLog($_REQUEST['data']['PARAMS']['DIALOG_ID'], $title = 'DIALOG_ID');
-    addMessageOnStart($_REQUEST['data']['PARAMS']['MESSAGE'], $keyboardMain);
+    require_once __DIR__ . '/getMessage.php';
 } elseif ($_REQUEST['event'] == 'ONIMCOMMANDADD') {
-    // check the event - authorize this event or not
-    if (!isset($appsConfig[$_REQUEST['auth']['application_token']]))
-        return false;
-
-    $result = false;
-    // in case of some command
-    foreach ($_REQUEST['data']['COMMAND'] as $command) {
-        if ($command['COMMAND'] == 'absence') {
-            $result = restCommand('imbot.command.answer', array(
-                "COMMAND_ID" => $command['COMMAND_ID'],
-                "MESSAGE_ID" => $command['MESSAGE_ID'],
-                "MESSAGE" => "[b]Тебе следует внести следующую информацию:[/b]\n Причина \n Дата начала \n Дата окончания \n Сотрудник \n Тип \n Подразделение
-                \n Как будешь готов, [send=Заполняем отсутствие:]кликай![/send]",
-            ), $_REQUEST["auth"]);
-        } elseif ($command['COMMAND'] == 'billPayment') {
-            $result = restCommand('imbot.command.answer', array(
-                "COMMAND_ID" => $command['COMMAND_ID'],
-                "MESSAGE_ID" => $command['MESSAGE_ID'],
-                "MESSAGE" => "Оплата счета \n [send=Вносим данные:]кликай![/send]",
-            ), $_REQUEST["auth"]);
-        }
-
-        // write debug log
-        writeToLog($_REQUEST['data']['COMMAND'], 'AssistantBot command add');
-    }
+    require_once __DIR__ . '/getCommand.php';
 }
 // receive event "open private dialog with bot" or "join bot to group chat"
 else {

@@ -1,8 +1,5 @@
 <?php
 
-$entityCode = 'bot_assistant';
-$entityName = 'Assistant Bot';
-
 $entity = restCommand('entity.add', array(
     "ENTITY" => $entityCode, // уникальное в пределах бота кодовое имя (используется для обращения к хранилищу
     'NAME' => $entityName, // человеческое название
@@ -27,6 +24,5 @@ foreach ($arProperty as $property) {
         'PROPERTY' => $property[0], // кодовое имя свойства
         'NAME' => $property[1], // человеческое название
         'TYPE' => $property[2], //Тип свойства (S - строка, N - число, F - файл)
-    ));
-    writeToLog($entityProperty, 'Entity Property');
+    ), $_REQUEST["auth"]);
 }
