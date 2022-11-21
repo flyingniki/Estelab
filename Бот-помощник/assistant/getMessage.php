@@ -15,7 +15,7 @@ $itemProperties = $arItemProperties['result'];
 if (!isset($appsConfig[$_REQUEST['auth']['application_token']])) {
     return false;
 }
-// writeToLog($_REQUEST, '$_REQUEST');
+writeToLog($_REQUEST, '$_REQUEST');
 // writeToLog($_REQUEST['data']['PARAMS']['DIALOG_ID'], $title = 'DIALOG_ID');
 $messageFromUser = trim(mb_strtolower($_REQUEST['data']['PARAMS']['MESSAGE']));
 $userId = $_REQUEST['data']['USER']['ID'];
@@ -61,10 +61,10 @@ if ($messageFromUser == 'привет') {
         'keyboard' => $keyboardMain,
     );
 } elseif ($messageFromUser == 'заполняем процесс отсутствие:') {
-    $item = addEntityItem($entityCode, 'user_' . $userId . '_' . date('d_M_Y'));
+    $item = addEntityItem($entityCode, 'user_' . $userId . '_' . $messageFromUser);
     $itemId = $item['result'];
     updateEntityItem($entityCode, $itemId, 'step', '1');
-    writeToLog($item, 'EntityItem step 1');    
+    writeToLog($item, 'EntityItem step 1');
 
     $attach[] = array("MESSAGE" => '[send=меню]Вернуться в начало[/send]');
     $arResult = array(
@@ -72,9 +72,9 @@ if ($messageFromUser == 'привет') {
         'attach' => $attach,
     );
 
-    // $arItemsInfo = getEntityItems($entityCode);
-    // $itemsInfo = $arItemsInfo['result'];
-    // writeToLog($itemsInfo, 'itemsInfo');
+    $arItemsInfo = getEntityItems($entityCode);
+    $itemsInfo = $arItemsInfo['result'];
+    writeToLog($itemsInfo, 'itemsInfo');
 } elseif ($messageFromUser == 'вносим данные на оплату счета:') {
     $attach[] = array("MESSAGE" => '[send=меню]Вернуться в начало[/send]');
     $arResult = array(
@@ -82,6 +82,7 @@ if ($messageFromUser == 'привет') {
     );
 } elseif ($messageFromUser == 'вносим данные об отсутствии') {
     $arItemsInfo = getEntityItems($entityCode);
+    writeToLog($arItemsInfo, 'arItems Info');
     $itemsInfo = $arItemsInfo['result'];
     $case = $itemsInfo[0]['PROPERTY_VALUES']['case'];
     $dateBegin = $itemsInfo[0]['PROPERTY_VALUES']['dateBegin'];
@@ -109,7 +110,7 @@ if ($messageFromUser == 'привет') {
         'report'  => 'Не соображу, что вы хотите узнать. А может вообще не умею...',
     );
 
-    if ($step == 1) {       
+    if ($step == 1) {
         updateEntityItem($entityCode, $currentItemId, 'case', $messageFromUser);
         updateEntityItem($entityCode, $currentItemId, 'step', '2');
         $arItemsInfo = getEntityItems($entityCode);
