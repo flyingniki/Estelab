@@ -1,6 +1,40 @@
 
 ------------------------
-2022.11.18 17:50:52
+2022.11.21 15:22:49
+AssistantBot send data
+Array
+(
+    [URL] => https://corp.estelab.ru/rest/lists.field.get
+    [PARAMS] => Array
+        (
+            [IBLOCK_TYPE_ID] => bitrix_processes
+            [IBLOCK_ID] => 119
+            [auth] => a97b7b63005f274c0007ddab000138260000077d79fca8c6f34f358545ad1604ea06fd
+        )
+
+)
+
+------------------------
+
+------------------------
+2022.11.21 15:22:49
+AssistantBot send data
+Array
+(
+    [URL] => https://corp.estelab.ru/rest/lists.field.get
+    [PARAMS] => Array
+        (
+            [IBLOCK_TYPE_ID] => bitrix_processes
+            [IBLOCK_ID] => 119
+            [auth] => a97b7b63005f274c0007ddab000138260000077d79fca8c6f34f358545ad1604ea06fd
+        )
+
+)
+
+------------------------
+
+------------------------
+2022.11.21 15:22:49
 AssistantBot send data
 Array
 (
@@ -17,7 +51,7 @@ Array
                 (
                 )
 
-            [auth] => dca97763005f274c0007ddab00013826000007ce6a1187c1cf944faabe4e66d3c2411b
+            [auth] => a97b7b63005f274c0007ddab000138260000077d79fca8c6f34f358545ad1604ea06fd
         )
 
 )
@@ -25,54 +59,16 @@ Array
 ------------------------
 
 ------------------------
-2022.11.18 17:50:52
-Item
+2022.11.21 15:22:49
+AssistantBot send data
 Array
 (
-    [result] => Array
+    [URL] => https://corp.estelab.ru/rest/entity.item.delete
+    [PARAMS] => Array
         (
-            [0] => Array
-                (
-                    [ID] => 465549
-                    [TIMESTAMP_X] => 2022-11-18T17:47:23+03:00
-                    [MODIFIED_BY] => 79910
-                    [DATE_CREATE] => 2022-11-18T17:47:23+03:00
-                    [CREATED_BY] => 79910
-                    [ACTIVE] => Y
-                    [DATE_ACTIVE_FROM] => 
-                    [DATE_ACTIVE_TO] => 
-                    [SORT] => 500
-                    [NAME] => заполняем отсутствие:
-                    [PREVIEW_PICTURE] => 
-                    [PREVIEW_TEXT] => 
-                    [DETAIL_PICTURE] => 
-                    [DETAIL_TEXT] => 
-                    [CODE] => 
-                    [ENTITY] => bot_assistant
-                    [SECTION] => 
-                    [PROPERTY_VALUES] => Array
-                        (
-                            [case] => 
-                            [dateBegin] => 
-                            [dateEnd] => 
-                            [employee] => 
-                            [type] => 
-                            [department] => 
-                        )
-
-                )
-
-        )
-
-    [total] => 1
-    [time] => Array
-        (
-            [start] => 1668783052.6438
-            [finish] => 1668783052.8062
-            [duration] => 0.16241598129272
-            [processing] => 0.016565799713135
-            [date_start] => 2022-11-18T17:50:52+03:00
-            [date_finish] => 2022-11-18T17:50:52+03:00
+            [ENTITY] => bot_assistant
+            [ID] => 466009
+            [auth] => a97b7b63005f274c0007ddab000138260000077d79fca8c6f34f358545ad1604ea06fd
         )
 
 )
@@ -80,7 +76,7 @@ Array
 ------------------------
 
 ------------------------
-2022.11.18 17:50:52
+2022.11.21 15:22:49
 AssistantBot send data
 Array
 (
@@ -88,8 +84,201 @@ Array
     [PARAMS] => Array
         (
             [DIALOG_ID] => 79910
-            [MESSAGE] => [b]Всегда можно вернуться в начало[/b]
+            [MESSAGE] => [b]Мои функции[/b]
+Для вызова, нажми кнопку ниже
 
+            [KEYBOARD] => Array
+                (
+                    [0] => Array
+                        (
+                            [TEXT] => Отсутствие и переработка
+                            [COMMAND] => absence
+                            [COMMAND_PARAMS] => absence and processing
+                            [BG_COLOR] => #00BFFF
+                            [TEXT_COLOR] => #fff
+                            [DISPLAY] => LINE
+                        )
+
+                    [1] => Array
+                        (
+                            [TEXT] => Оплата счета
+                            [COMMAND] => billPayment
+                            [COMMAND_PARAMS] => bill payment
+                            [BG_COLOR] => #7B68EE
+                            [TEXT_COLOR] => #fff
+                            [DISPLAY] => LINE
+                        )
+
+                )
+
+            [ATTACH] => 
+            [auth] => a97b7b63005f274c0007ddab000138260000077d79fca8c6f34f358545ad1604ea06fd
+        )
+
+)
+
+------------------------
+
+------------------------
+2022.11.21 15:22:51
+AssistantBot send data
+Array
+(
+    [URL] => https://corp.estelab.ru/rest/imbot.command.answer
+    [PARAMS] => Array
+        (
+            [COMMAND_ID] => 145
+            [MESSAGE_ID] => 13222525
+            [MESSAGE] => [b]Тебе следует внести следующую информацию:[/b]
+ Причина 
+ Дата начала 
+ Дата окончания 
+ Сотрудник 
+ Тип 
+ Подразделение
+        
+ Как будешь готов, [send=заполняем процесс отсутствие:]кликай![/send]
+            [auth] => ab7b7b63005f274c0007ddab00013826000007948b996a1a2b4197cd4d88bccb01d354
+        )
+
+)
+
+------------------------
+
+------------------------
+2022.11.21 15:22:51
+AssistantBot command add
+Array
+(
+    [145] => Array
+        (
+            [domain] => corp.estelab.ru
+            [member_id] => 124ff83138e5ff3838db5f0214c6284a
+            [application_token] => 16fc2b5f7189c9cfdf7586e4181433f1
+            [AUTH] => Array
+                (
+                    [domain] => corp.estelab.ru
+                    [member_id] => 124ff83138e5ff3838db5f0214c6284a
+                    [application_token] => 16fc2b5f7189c9cfdf7586e4181433f1
+                )
+
+            [BOT_ID] => 82490
+            [BOT_CODE] => AssistantBot
+            [COMMAND] => absence
+            [COMMAND_ID] => 145
+            [COMMAND_PARAMS] => absence and processing
+            [COMMAND_CONTEXT] => KEYBOARD
+            [MESSAGE_ID] => 13222525
+        )
+
+)
+
+------------------------
+
+------------------------
+2022.11.21 15:22:53
+AssistantBot send data
+Array
+(
+    [URL] => https://corp.estelab.ru/rest/lists.field.get
+    [PARAMS] => Array
+        (
+            [IBLOCK_TYPE_ID] => bitrix_processes
+            [IBLOCK_ID] => 119
+            [auth] => ad7b7b63005f274c0007ddab000138260000077f4d85bbbe756bbe30cbf9ee137982a7
+        )
+
+)
+
+------------------------
+
+------------------------
+2022.11.21 15:22:53
+AssistantBot send data
+Array
+(
+    [URL] => https://corp.estelab.ru/rest/lists.field.get
+    [PARAMS] => Array
+        (
+            [IBLOCK_TYPE_ID] => bitrix_processes
+            [IBLOCK_ID] => 119
+            [auth] => ad7b7b63005f274c0007ddab000138260000077f4d85bbbe756bbe30cbf9ee137982a7
+        )
+
+)
+
+------------------------
+
+------------------------
+2022.11.21 15:22:53
+AssistantBot send data
+Array
+(
+    [URL] => https://corp.estelab.ru/rest/entity.item.add
+    [PARAMS] => Array
+        (
+            [ENTITY] => bot_assistant
+            [NAME] => user_79910_21_Nov_2022
+            [auth] => ad7b7b63005f274c0007ddab000138260000077f4d85bbbe756bbe30cbf9ee137982a7
+        )
+
+)
+
+------------------------
+
+------------------------
+2022.11.21 15:22:53
+AssistantBot send data
+Array
+(
+    [URL] => https://corp.estelab.ru/rest/entity.item.update
+    [PARAMS] => Array
+        (
+            [ENTITY] => bot_assistant
+            [ID] => 466010
+            [PROPERTY_VALUES] => Array
+                (
+                    [step] => 1
+                )
+
+            [auth] => ad7b7b63005f274c0007ddab000138260000077f4d85bbbe756bbe30cbf9ee137982a7
+        )
+
+)
+
+------------------------
+
+------------------------
+2022.11.21 15:22:54
+EntityItem step 1
+Array
+(
+    [result] => 466010
+    [time] => Array
+        (
+            [start] => 1669033373.92
+            [finish] => 1669033373.9782
+            [duration] => 0.058270931243896
+            [processing] => 0.034949064254761
+            [date_start] => 2022-11-21T15:22:53+03:00
+            [date_finish] => 2022-11-21T15:22:53+03:00
+        )
+
+)
+
+------------------------
+
+------------------------
+2022.11.21 15:22:54
+AssistantBot send data
+Array
+(
+    [URL] => https://corp.estelab.ru/rest/imbot.message.add
+    [PARAMS] => Array
+        (
+            [DIALOG_ID] => 79910
+            [MESSAGE] => 
+Введите причину:
 
             [KEYBOARD] => 
             [ATTACH] => Array
@@ -101,7 +290,1405 @@ Array
 
                 )
 
-            [auth] => dca97763005f274c0007ddab00013826000007ce6a1187c1cf944faabe4e66d3c2411b
+            [auth] => ad7b7b63005f274c0007ddab000138260000077f4d85bbbe756bbe30cbf9ee137982a7
+        )
+
+)
+
+------------------------
+
+------------------------
+2022.11.21 15:22:57
+AssistantBot send data
+Array
+(
+    [URL] => https://corp.estelab.ru/rest/lists.field.get
+    [PARAMS] => Array
+        (
+            [IBLOCK_TYPE_ID] => bitrix_processes
+            [IBLOCK_ID] => 119
+            [auth] => b17b7b63005f274c0007ddab00013826000007f5822346756489d430c4e73c00335537
+        )
+
+)
+
+------------------------
+
+------------------------
+2022.11.21 15:22:57
+AssistantBot send data
+Array
+(
+    [URL] => https://corp.estelab.ru/rest/lists.field.get
+    [PARAMS] => Array
+        (
+            [IBLOCK_TYPE_ID] => bitrix_processes
+            [IBLOCK_ID] => 119
+            [auth] => b17b7b63005f274c0007ddab00013826000007f5822346756489d430c4e73c00335537
+        )
+
+)
+
+------------------------
+
+------------------------
+2022.11.21 15:22:57
+AssistantBot send data
+Array
+(
+    [URL] => https://corp.estelab.ru/rest/entity.item.get
+    [PARAMS] => Array
+        (
+            [ENTITY] => bot_assistant
+            [SORT] => Array
+                (
+                    [ID] => DESC
+                )
+
+            [FILTER] => Array
+                (
+                )
+
+            [auth] => b17b7b63005f274c0007ddab00013826000007f5822346756489d430c4e73c00335537
+        )
+
+)
+
+------------------------
+
+------------------------
+2022.11.21 15:22:57
+currentItem
+Array
+(
+    [ID] => 466010
+    [TIMESTAMP_X] => 2022-11-21T15:22:54+03:00
+    [MODIFIED_BY] => 79910
+    [DATE_CREATE] => 2022-11-21T15:22:53+03:00
+    [CREATED_BY] => 79910
+    [ACTIVE] => Y
+    [DATE_ACTIVE_FROM] => 
+    [DATE_ACTIVE_TO] => 
+    [SORT] => 500
+    [NAME] => user_79910_21_Nov_2022
+    [PREVIEW_PICTURE] => 
+    [PREVIEW_TEXT] => 
+    [DETAIL_PICTURE] => 
+    [DETAIL_TEXT] => 
+    [CODE] => 
+    [ENTITY] => bot_assistant
+    [SECTION] => 
+    [PROPERTY_VALUES] => Array
+        (
+            [case] => 
+            [dateBegin] => 
+            [dateEnd] => 
+            [employee] => 
+            [type] => 
+            [department] => 
+            [step] => 1
+        )
+
+)
+
+------------------------
+
+------------------------
+2022.11.21 15:22:57
+AssistantBot send data
+Array
+(
+    [URL] => https://corp.estelab.ru/rest/entity.item.update
+    [PARAMS] => Array
+        (
+            [ENTITY] => bot_assistant
+            [ID] => 466010
+            [PROPERTY_VALUES] => Array
+                (
+                    [case] => test
+                )
+
+            [auth] => b17b7b63005f274c0007ddab00013826000007f5822346756489d430c4e73c00335537
+        )
+
+)
+
+------------------------
+
+------------------------
+2022.11.21 15:22:57
+AssistantBot send data
+Array
+(
+    [URL] => https://corp.estelab.ru/rest/entity.item.update
+    [PARAMS] => Array
+        (
+            [ENTITY] => bot_assistant
+            [ID] => 466010
+            [PROPERTY_VALUES] => Array
+                (
+                    [step] => 2
+                )
+
+            [auth] => b17b7b63005f274c0007ddab00013826000007f5822346756489d430c4e73c00335537
+        )
+
+)
+
+------------------------
+
+------------------------
+2022.11.21 15:22:57
+AssistantBot send data
+Array
+(
+    [URL] => https://corp.estelab.ru/rest/entity.item.get
+    [PARAMS] => Array
+        (
+            [ENTITY] => bot_assistant
+            [SORT] => Array
+                (
+                    [ID] => DESC
+                )
+
+            [FILTER] => Array
+                (
+                )
+
+            [auth] => b17b7b63005f274c0007ddab00013826000007f5822346756489d430c4e73c00335537
+        )
+
+)
+
+------------------------
+
+------------------------
+2022.11.21 15:22:58
+AssistantBot send data
+Array
+(
+    [URL] => https://corp.estelab.ru/rest/imbot.message.add
+    [PARAMS] => Array
+        (
+            [DIALOG_ID] => 79910
+            [MESSAGE] => 
+Причина: test. Далее заполните дату начала в формате 'дд.мм.гггг чч:мм:сс':
+
+            [KEYBOARD] => 
+            [ATTACH] => Array
+                (
+                    [0] => Array
+                        (
+                            [MESSAGE] => [send=меню]Вернуться в начало[/send]
+                        )
+
+                )
+
+            [auth] => b17b7b63005f274c0007ddab00013826000007f5822346756489d430c4e73c00335537
+        )
+
+)
+
+------------------------
+
+------------------------
+2022.11.21 15:23:01
+AssistantBot send data
+Array
+(
+    [URL] => https://corp.estelab.ru/rest/lists.field.get
+    [PARAMS] => Array
+        (
+            [IBLOCK_TYPE_ID] => bitrix_processes
+            [IBLOCK_ID] => 119
+            [auth] => b57b7b63005f274c0007ddab000138260000077134a279f5314c2b171e991910649b59
+        )
+
+)
+
+------------------------
+
+------------------------
+2022.11.21 15:23:01
+AssistantBot send data
+Array
+(
+    [URL] => https://corp.estelab.ru/rest/lists.field.get
+    [PARAMS] => Array
+        (
+            [IBLOCK_TYPE_ID] => bitrix_processes
+            [IBLOCK_ID] => 119
+            [auth] => b57b7b63005f274c0007ddab000138260000077134a279f5314c2b171e991910649b59
+        )
+
+)
+
+------------------------
+
+------------------------
+2022.11.21 15:23:01
+AssistantBot send data
+Array
+(
+    [URL] => https://corp.estelab.ru/rest/entity.item.get
+    [PARAMS] => Array
+        (
+            [ENTITY] => bot_assistant
+            [SORT] => Array
+                (
+                    [ID] => DESC
+                )
+
+            [FILTER] => Array
+                (
+                )
+
+            [auth] => b57b7b63005f274c0007ddab000138260000077134a279f5314c2b171e991910649b59
+        )
+
+)
+
+------------------------
+
+------------------------
+2022.11.21 15:23:02
+currentItem
+Array
+(
+    [ID] => 466010
+    [TIMESTAMP_X] => 2022-11-21T15:22:57+03:00
+    [MODIFIED_BY] => 79910
+    [DATE_CREATE] => 2022-11-21T15:22:53+03:00
+    [CREATED_BY] => 79910
+    [ACTIVE] => Y
+    [DATE_ACTIVE_FROM] => 
+    [DATE_ACTIVE_TO] => 
+    [SORT] => 500
+    [NAME] => user_79910_21_Nov_2022
+    [PREVIEW_PICTURE] => 
+    [PREVIEW_TEXT] => 
+    [DETAIL_PICTURE] => 
+    [DETAIL_TEXT] => 
+    [CODE] => 
+    [ENTITY] => bot_assistant
+    [SECTION] => 
+    [PROPERTY_VALUES] => Array
+        (
+            [case] => test
+            [dateBegin] => 
+            [dateEnd] => 
+            [employee] => 
+            [type] => 
+            [department] => 
+            [step] => 2
+        )
+
+)
+
+------------------------
+
+------------------------
+2022.11.21 15:23:02
+AssistantBot send data
+Array
+(
+    [URL] => https://corp.estelab.ru/rest/entity.item.update
+    [PARAMS] => Array
+        (
+            [ENTITY] => bot_assistant
+            [ID] => 466010
+            [PROPERTY_VALUES] => Array
+                (
+                    [dateBegin] => 20.11.2022
+                )
+
+            [auth] => b57b7b63005f274c0007ddab000138260000077134a279f5314c2b171e991910649b59
+        )
+
+)
+
+------------------------
+
+------------------------
+2022.11.21 15:23:02
+AssistantBot send data
+Array
+(
+    [URL] => https://corp.estelab.ru/rest/entity.item.update
+    [PARAMS] => Array
+        (
+            [ENTITY] => bot_assistant
+            [ID] => 466010
+            [PROPERTY_VALUES] => Array
+                (
+                    [step] => 3
+                )
+
+            [auth] => b57b7b63005f274c0007ddab000138260000077134a279f5314c2b171e991910649b59
+        )
+
+)
+
+------------------------
+
+------------------------
+2022.11.21 15:23:02
+AssistantBot send data
+Array
+(
+    [URL] => https://corp.estelab.ru/rest/entity.item.get
+    [PARAMS] => Array
+        (
+            [ENTITY] => bot_assistant
+            [SORT] => Array
+                (
+                    [ID] => DESC
+                )
+
+            [FILTER] => Array
+                (
+                )
+
+            [auth] => b57b7b63005f274c0007ddab000138260000077134a279f5314c2b171e991910649b59
+        )
+
+)
+
+------------------------
+
+------------------------
+2022.11.21 15:23:02
+AssistantBot send data
+Array
+(
+    [URL] => https://corp.estelab.ru/rest/imbot.message.add
+    [PARAMS] => Array
+        (
+            [DIALOG_ID] => 79910
+            [MESSAGE] => 
+Дата начала: 20.11.2022. Далее заполните дату окончания в формате 'дд.мм.гггг чч:мм:сс':
+
+            [KEYBOARD] => 
+            [ATTACH] => Array
+                (
+                    [0] => Array
+                        (
+                            [MESSAGE] => [send=меню]Вернуться в начало[/send]
+                        )
+
+                )
+
+            [auth] => b57b7b63005f274c0007ddab000138260000077134a279f5314c2b171e991910649b59
+        )
+
+)
+
+------------------------
+
+------------------------
+2022.11.21 15:23:06
+AssistantBot send data
+Array
+(
+    [URL] => https://corp.estelab.ru/rest/lists.field.get
+    [PARAMS] => Array
+        (
+            [IBLOCK_TYPE_ID] => bitrix_processes
+            [IBLOCK_ID] => 119
+            [auth] => b97b7b63005f274c0007ddab00013826000007ac6a1ebef5f7fa2883cb322be0badbb8
+        )
+
+)
+
+------------------------
+
+------------------------
+2022.11.21 15:23:06
+AssistantBot send data
+Array
+(
+    [URL] => https://corp.estelab.ru/rest/lists.field.get
+    [PARAMS] => Array
+        (
+            [IBLOCK_TYPE_ID] => bitrix_processes
+            [IBLOCK_ID] => 119
+            [auth] => b97b7b63005f274c0007ddab00013826000007ac6a1ebef5f7fa2883cb322be0badbb8
+        )
+
+)
+
+------------------------
+
+------------------------
+2022.11.21 15:23:06
+AssistantBot send data
+Array
+(
+    [URL] => https://corp.estelab.ru/rest/entity.item.get
+    [PARAMS] => Array
+        (
+            [ENTITY] => bot_assistant
+            [SORT] => Array
+                (
+                    [ID] => DESC
+                )
+
+            [FILTER] => Array
+                (
+                )
+
+            [auth] => b97b7b63005f274c0007ddab00013826000007ac6a1ebef5f7fa2883cb322be0badbb8
+        )
+
+)
+
+------------------------
+
+------------------------
+2022.11.21 15:23:06
+currentItem
+Array
+(
+    [ID] => 466010
+    [TIMESTAMP_X] => 2022-11-21T15:23:02+03:00
+    [MODIFIED_BY] => 79910
+    [DATE_CREATE] => 2022-11-21T15:22:53+03:00
+    [CREATED_BY] => 79910
+    [ACTIVE] => Y
+    [DATE_ACTIVE_FROM] => 
+    [DATE_ACTIVE_TO] => 
+    [SORT] => 500
+    [NAME] => user_79910_21_Nov_2022
+    [PREVIEW_PICTURE] => 
+    [PREVIEW_TEXT] => 
+    [DETAIL_PICTURE] => 
+    [DETAIL_TEXT] => 
+    [CODE] => 
+    [ENTITY] => bot_assistant
+    [SECTION] => 
+    [PROPERTY_VALUES] => Array
+        (
+            [case] => test
+            [dateBegin] => 20.11.2022
+            [dateEnd] => 
+            [employee] => 
+            [type] => 
+            [department] => 
+            [step] => 3
+        )
+
+)
+
+------------------------
+
+------------------------
+2022.11.21 15:23:06
+AssistantBot send data
+Array
+(
+    [URL] => https://corp.estelab.ru/rest/entity.item.update
+    [PARAMS] => Array
+        (
+            [ENTITY] => bot_assistant
+            [ID] => 466010
+            [PROPERTY_VALUES] => Array
+                (
+                    [dateEnd] => 22.11.2022
+                )
+
+            [auth] => b97b7b63005f274c0007ddab00013826000007ac6a1ebef5f7fa2883cb322be0badbb8
+        )
+
+)
+
+------------------------
+
+------------------------
+2022.11.21 15:23:06
+AssistantBot send data
+Array
+(
+    [URL] => https://corp.estelab.ru/rest/entity.item.update
+    [PARAMS] => Array
+        (
+            [ENTITY] => bot_assistant
+            [ID] => 466010
+            [PROPERTY_VALUES] => Array
+                (
+                    [step] => 4
+                )
+
+            [auth] => b97b7b63005f274c0007ddab00013826000007ac6a1ebef5f7fa2883cb322be0badbb8
+        )
+
+)
+
+------------------------
+
+------------------------
+2022.11.21 15:23:06
+AssistantBot send data
+Array
+(
+    [URL] => https://corp.estelab.ru/rest/entity.item.get
+    [PARAMS] => Array
+        (
+            [ENTITY] => bot_assistant
+            [SORT] => Array
+                (
+                    [ID] => DESC
+                )
+
+            [FILTER] => Array
+                (
+                )
+
+            [auth] => b97b7b63005f274c0007ddab00013826000007ac6a1ebef5f7fa2883cb322be0badbb8
+        )
+
+)
+
+------------------------
+
+------------------------
+2022.11.21 15:23:06
+AssistantBot send data
+Array
+(
+    [URL] => https://corp.estelab.ru/rest/imbot.message.add
+    [PARAMS] => Array
+        (
+            [DIALOG_ID] => 79910
+            [MESSAGE] => 
+Дата окончания: 22.11.2022. Далее заполните тип отсутствия:
+[send=758]Отсутствие за свой счет[/send] [BR][send=759]Архив (Запусти Командировку в Роботизации estelab.ru/rpa)[/send] [BR][send=760]Работа удаленно (на связи по рабочим вопросам)[/send] [BR][send=761]Отпуск[/send] [BR][send=762]Больничный[/send] [BR][send=763]Обучение (не доступен в рабочее время)[/send] [BR][send=1427]Переработка[/send] [BR][send=1571]Открыть запись[/send] [BR][send=1848]Закрыть запись[/send] [BR]
+
+            [KEYBOARD] => 
+            [ATTACH] => Array
+                (
+                    [0] => Array
+                        (
+                            [MESSAGE] => [send=меню]Вернуться в начало[/send]
+                        )
+
+                )
+
+            [auth] => b97b7b63005f274c0007ddab00013826000007ac6a1ebef5f7fa2883cb322be0badbb8
+        )
+
+)
+
+------------------------
+
+------------------------
+2022.11.21 15:23:09
+AssistantBot send data
+Array
+(
+    [URL] => https://corp.estelab.ru/rest/lists.field.get
+    [PARAMS] => Array
+        (
+            [IBLOCK_TYPE_ID] => bitrix_processes
+            [IBLOCK_ID] => 119
+            [auth] => bd7b7b63005f274c0007ddab000138260000076af84dfe18c1bb29b1fabd6a1de2e0d7
+        )
+
+)
+
+------------------------
+
+------------------------
+2022.11.21 15:23:09
+AssistantBot send data
+Array
+(
+    [URL] => https://corp.estelab.ru/rest/lists.field.get
+    [PARAMS] => Array
+        (
+            [IBLOCK_TYPE_ID] => bitrix_processes
+            [IBLOCK_ID] => 119
+            [auth] => bd7b7b63005f274c0007ddab000138260000076af84dfe18c1bb29b1fabd6a1de2e0d7
+        )
+
+)
+
+------------------------
+
+------------------------
+2022.11.21 15:23:09
+AssistantBot send data
+Array
+(
+    [URL] => https://corp.estelab.ru/rest/entity.item.get
+    [PARAMS] => Array
+        (
+            [ENTITY] => bot_assistant
+            [SORT] => Array
+                (
+                    [ID] => DESC
+                )
+
+            [FILTER] => Array
+                (
+                )
+
+            [auth] => bd7b7b63005f274c0007ddab000138260000076af84dfe18c1bb29b1fabd6a1de2e0d7
+        )
+
+)
+
+------------------------
+
+------------------------
+2022.11.21 15:23:09
+currentItem
+Array
+(
+    [ID] => 466010
+    [TIMESTAMP_X] => 2022-11-21T15:23:06+03:00
+    [MODIFIED_BY] => 79910
+    [DATE_CREATE] => 2022-11-21T15:22:53+03:00
+    [CREATED_BY] => 79910
+    [ACTIVE] => Y
+    [DATE_ACTIVE_FROM] => 
+    [DATE_ACTIVE_TO] => 
+    [SORT] => 500
+    [NAME] => user_79910_21_Nov_2022
+    [PREVIEW_PICTURE] => 
+    [PREVIEW_TEXT] => 
+    [DETAIL_PICTURE] => 
+    [DETAIL_TEXT] => 
+    [CODE] => 
+    [ENTITY] => bot_assistant
+    [SECTION] => 
+    [PROPERTY_VALUES] => Array
+        (
+            [case] => test
+            [dateBegin] => 20.11.2022
+            [dateEnd] => 22.11.2022
+            [employee] => 
+            [type] => 
+            [department] => 
+            [step] => 4
+        )
+
+)
+
+------------------------
+
+------------------------
+2022.11.21 15:23:09
+AssistantBot send data
+Array
+(
+    [URL] => https://corp.estelab.ru/rest/entity.item.update
+    [PARAMS] => Array
+        (
+            [ENTITY] => bot_assistant
+            [ID] => 466010
+            [PROPERTY_VALUES] => Array
+                (
+                    [type] => 761
+                )
+
+            [auth] => bd7b7b63005f274c0007ddab000138260000076af84dfe18c1bb29b1fabd6a1de2e0d7
+        )
+
+)
+
+------------------------
+
+------------------------
+2022.11.21 15:23:09
+AssistantBot send data
+Array
+(
+    [URL] => https://corp.estelab.ru/rest/entity.item.update
+    [PARAMS] => Array
+        (
+            [ENTITY] => bot_assistant
+            [ID] => 466010
+            [PROPERTY_VALUES] => Array
+                (
+                    [step] => 5
+                )
+
+            [auth] => bd7b7b63005f274c0007ddab000138260000076af84dfe18c1bb29b1fabd6a1de2e0d7
+        )
+
+)
+
+------------------------
+
+------------------------
+2022.11.21 15:23:09
+AssistantBot send data
+Array
+(
+    [URL] => https://corp.estelab.ru/rest/entity.item.get
+    [PARAMS] => Array
+        (
+            [ENTITY] => bot_assistant
+            [SORT] => Array
+                (
+                    [ID] => DESC
+                )
+
+            [FILTER] => Array
+                (
+                )
+
+            [auth] => bd7b7b63005f274c0007ddab000138260000076af84dfe18c1bb29b1fabd6a1de2e0d7
+        )
+
+)
+
+------------------------
+
+------------------------
+2022.11.21 15:23:09
+AssistantBot send data
+Array
+(
+    [URL] => https://corp.estelab.ru/rest/imbot.message.add
+    [PARAMS] => Array
+        (
+            [DIALOG_ID] => 79910
+            [MESSAGE] => 
+Тип отсутствия: 761.
+ Далее заполните подразделение:
+[send=765]Дистрибьюция[/send] [BR][send=3107]Студия[/send] [BR][send=766]Интернет-магазин[/send] [BR][send=767]Клиника[/send] [BR][send=768]Маркетинг[/send] [BR][send=769]Управление[/send] [BR][send=770]Производство[/send] [BR][send=771]Благотворительный проект[/send] [BR][send=772]Другое[/send] [BR][send=2214]ИТ[/send] [BR]
+
+            [KEYBOARD] => 
+            [ATTACH] => Array
+                (
+                    [0] => Array
+                        (
+                            [MESSAGE] => [send=меню]Вернуться в начало[/send]
+                        )
+
+                )
+
+            [auth] => bd7b7b63005f274c0007ddab000138260000076af84dfe18c1bb29b1fabd6a1de2e0d7
+        )
+
+)
+
+------------------------
+
+------------------------
+2022.11.21 15:23:11
+AssistantBot send data
+Array
+(
+    [URL] => https://corp.estelab.ru/rest/lists.field.get
+    [PARAMS] => Array
+        (
+            [IBLOCK_TYPE_ID] => bitrix_processes
+            [IBLOCK_ID] => 119
+            [auth] => bf7b7b63005f274c0007ddab000138260000070d679e4c534b8c6f1ea14a8aed446ab8
+        )
+
+)
+
+------------------------
+
+------------------------
+2022.11.21 15:23:11
+AssistantBot send data
+Array
+(
+    [URL] => https://corp.estelab.ru/rest/lists.field.get
+    [PARAMS] => Array
+        (
+            [IBLOCK_TYPE_ID] => bitrix_processes
+            [IBLOCK_ID] => 119
+            [auth] => bf7b7b63005f274c0007ddab000138260000070d679e4c534b8c6f1ea14a8aed446ab8
+        )
+
+)
+
+------------------------
+
+------------------------
+2022.11.21 15:23:12
+AssistantBot send data
+Array
+(
+    [URL] => https://corp.estelab.ru/rest/entity.item.get
+    [PARAMS] => Array
+        (
+            [ENTITY] => bot_assistant
+            [SORT] => Array
+                (
+                    [ID] => DESC
+                )
+
+            [FILTER] => Array
+                (
+                )
+
+            [auth] => bf7b7b63005f274c0007ddab000138260000070d679e4c534b8c6f1ea14a8aed446ab8
+        )
+
+)
+
+------------------------
+
+------------------------
+2022.11.21 15:23:12
+currentItem
+Array
+(
+    [ID] => 466010
+    [TIMESTAMP_X] => 2022-11-21T15:23:09+03:00
+    [MODIFIED_BY] => 79910
+    [DATE_CREATE] => 2022-11-21T15:22:53+03:00
+    [CREATED_BY] => 79910
+    [ACTIVE] => Y
+    [DATE_ACTIVE_FROM] => 
+    [DATE_ACTIVE_TO] => 
+    [SORT] => 500
+    [NAME] => user_79910_21_Nov_2022
+    [PREVIEW_PICTURE] => 
+    [PREVIEW_TEXT] => 
+    [DETAIL_PICTURE] => 
+    [DETAIL_TEXT] => 
+    [CODE] => 
+    [ENTITY] => bot_assistant
+    [SECTION] => 
+    [PROPERTY_VALUES] => Array
+        (
+            [case] => test
+            [dateBegin] => 20.11.2022
+            [dateEnd] => 22.11.2022
+            [employee] => 
+            [type] => 761
+            [department] => 
+            [step] => 5
+        )
+
+)
+
+------------------------
+
+------------------------
+2022.11.21 15:23:12
+AssistantBot send data
+Array
+(
+    [URL] => https://corp.estelab.ru/rest/entity.item.update
+    [PARAMS] => Array
+        (
+            [ENTITY] => bot_assistant
+            [ID] => 466010
+            [PROPERTY_VALUES] => Array
+                (
+                    [department] => 2214
+                )
+
+            [auth] => bf7b7b63005f274c0007ddab000138260000070d679e4c534b8c6f1ea14a8aed446ab8
+        )
+
+)
+
+------------------------
+
+------------------------
+2022.11.21 15:23:12
+AssistantBot send data
+Array
+(
+    [URL] => https://corp.estelab.ru/rest/entity.item.get
+    [PARAMS] => Array
+        (
+            [ENTITY] => bot_assistant
+            [SORT] => Array
+                (
+                    [ID] => DESC
+                )
+
+            [FILTER] => Array
+                (
+                )
+
+            [auth] => bf7b7b63005f274c0007ddab000138260000070d679e4c534b8c6f1ea14a8aed446ab8
+        )
+
+)
+
+------------------------
+
+------------------------
+2022.11.21 15:23:12
+itemsinfo
+Array
+(
+    [0] => Array
+        (
+            [ID] => 466010
+            [TIMESTAMP_X] => 2022-11-21T15:23:12+03:00
+            [MODIFIED_BY] => 79910
+            [DATE_CREATE] => 2022-11-21T15:22:53+03:00
+            [CREATED_BY] => 79910
+            [ACTIVE] => Y
+            [DATE_ACTIVE_FROM] => 
+            [DATE_ACTIVE_TO] => 
+            [SORT] => 500
+            [NAME] => user_79910_21_Nov_2022
+            [PREVIEW_PICTURE] => 
+            [PREVIEW_TEXT] => 
+            [DETAIL_PICTURE] => 
+            [DETAIL_TEXT] => 
+            [CODE] => 
+            [ENTITY] => bot_assistant
+            [SECTION] => 
+            [PROPERTY_VALUES] => Array
+                (
+                    [case] => test
+                    [dateBegin] => 20.11.2022
+                    [dateEnd] => 22.11.2022
+                    [employee] => 
+                    [type] => 761
+                    [department] => 2214
+                    [step] => 5
+                )
+
+        )
+
+)
+
+------------------------
+
+------------------------
+2022.11.21 15:23:12
+AssistantBot send data
+Array
+(
+    [URL] => https://corp.estelab.ru/rest/imbot.message.add
+    [PARAMS] => Array
+        (
+            [DIALOG_ID] => 79910
+            [MESSAGE] => 
+[b]Внесенные данные:[/b]
+
+            Причина: test
+
+            Дата начала: 20.11.2022
+
+            Дата окончания: 22.11.2022
+
+            Тип отсутствия: Отпуск
+
+            Отдел: ИТ
+
+            [b]Если все верно, [send=вносим данные об отсутствии]вносим[/send][/b]
+
+            [KEYBOARD] => 
+            [ATTACH] => Array
+                (
+                    [0] => Array
+                        (
+                            [MESSAGE] => [send=меню]Вернуться в начало[/send]
+                        )
+
+                )
+
+            [auth] => bf7b7b63005f274c0007ddab000138260000070d679e4c534b8c6f1ea14a8aed446ab8
+        )
+
+)
+
+------------------------
+
+------------------------
+2022.11.21 15:23:21
+AssistantBot send data
+Array
+(
+    [URL] => https://corp.estelab.ru/rest/lists.field.get
+    [PARAMS] => Array
+        (
+            [IBLOCK_TYPE_ID] => bitrix_processes
+            [IBLOCK_ID] => 119
+            [auth] => c97b7b63005f274c0007ddab00013826000007c30beb79741f7e14ef0c966df6b61521
+        )
+
+)
+
+------------------------
+
+------------------------
+2022.11.21 15:23:22
+AssistantBot send data
+Array
+(
+    [URL] => https://corp.estelab.ru/rest/lists.field.get
+    [PARAMS] => Array
+        (
+            [IBLOCK_TYPE_ID] => bitrix_processes
+            [IBLOCK_ID] => 119
+            [auth] => c97b7b63005f274c0007ddab00013826000007c30beb79741f7e14ef0c966df6b61521
+        )
+
+)
+
+------------------------
+
+------------------------
+2022.11.21 15:23:22
+AssistantBot send data
+Array
+(
+    [URL] => https://corp.estelab.ru/rest/entity.item.get
+    [PARAMS] => Array
+        (
+            [ENTITY] => bot_assistant
+            [SORT] => Array
+                (
+                    [ID] => DESC
+                )
+
+            [FILTER] => Array
+                (
+                )
+
+            [auth] => c97b7b63005f274c0007ddab00013826000007c30beb79741f7e14ef0c966df6b61521
+        )
+
+)
+
+------------------------
+
+------------------------
+2022.11.21 15:23:22
+userId
+79910
+------------------------
+
+------------------------
+2022.11.21 15:23:22
+AssistantBot send data
+Array
+(
+    [URL] => https://corp.estelab.ru/rest/lists.element.add
+    [PARAMS] => Array
+        (
+            [IBLOCK_TYPE_ID] => bitrix_processes
+            [IBLOCK_ID] => 119
+            [ELEMENT_CODE] => element_1669033402
+            [FIELDS] => Array
+                (
+                    [NAME] => test
+                    [PROPERTY_608] => 20.11.2022
+                    [PROPERTY_609] => 22.11.2022
+                    [PROPERTY_853] => 79910
+                    [PROPERTY_854] => 761
+                    [PROPERTY_855] => 2214
+                )
+
+            [auth] => c97b7b63005f274c0007ddab00013826000007c30beb79741f7e14ef0c966df6b61521
+        )
+
+)
+
+------------------------
+
+------------------------
+2022.11.21 15:23:22
+AssistantBot send data
+Array
+(
+    [URL] => https://corp.estelab.ru/rest/imbot.message.add
+    [PARAMS] => Array
+        (
+            [DIALOG_ID] => 79910
+            [MESSAGE] => 
+Данные успешно внесены!
+
+            [KEYBOARD] => 
+            [ATTACH] => Array
+                (
+                    [0] => Array
+                        (
+                            [MESSAGE] => [send=меню]Вернуться в начало[/send]
+                        )
+
+                )
+
+            [auth] => c97b7b63005f274c0007ddab00013826000007c30beb79741f7e14ef0c966df6b61521
+        )
+
+)
+
+------------------------
+
+------------------------
+2022.11.21 15:26:28
+AssistantBot send data
+Array
+(
+    [URL] => https://corp.estelab.ru/rest/lists.field.get
+    [PARAMS] => Array
+        (
+            [IBLOCK_TYPE_ID] => bitrix_processes
+            [IBLOCK_ID] => 119
+            [auth] => 837c7b63005f274c0007ddab00001060000007fe521d99e00776e1980d2b095b4f20d6
+        )
+
+)
+
+------------------------
+
+------------------------
+2022.11.21 15:26:28
+AssistantBot send data
+Array
+(
+    [URL] => https://corp.estelab.ru/rest/lists.field.get
+    [PARAMS] => Array
+        (
+            [IBLOCK_TYPE_ID] => bitrix_processes
+            [IBLOCK_ID] => 119
+            [auth] => 837c7b63005f274c0007ddab00001060000007fe521d99e00776e1980d2b095b4f20d6
+        )
+
+)
+
+------------------------
+
+------------------------
+2022.11.21 15:26:28
+AssistantBot send data
+Array
+(
+    [URL] => https://corp.estelab.ru/rest/entity.item.get
+    [PARAMS] => Array
+        (
+            [ENTITY] => bot_assistant
+            [SORT] => Array
+                (
+                    [ID] => DESC
+                )
+
+            [FILTER] => Array
+                (
+                )
+
+            [auth] => 837c7b63005f274c0007ddab00001060000007fe521d99e00776e1980d2b095b4f20d6
+        )
+
+)
+
+------------------------
+
+------------------------
+2022.11.21 15:26:28
+AssistantBot send data
+Array
+(
+    [URL] => https://corp.estelab.ru/rest/imbot.message.add
+    [PARAMS] => Array
+        (
+            [DIALOG_ID] => 4192
+            [MESSAGE] => [b]Мои функции[/b]
+Для вызова, нажми кнопку ниже
+
+            [KEYBOARD] => Array
+                (
+                    [0] => Array
+                        (
+                            [TEXT] => Отсутствие и переработка
+                            [COMMAND] => absence
+                            [COMMAND_PARAMS] => absence and processing
+                            [BG_COLOR] => #00BFFF
+                            [TEXT_COLOR] => #fff
+                            [DISPLAY] => LINE
+                        )
+
+                    [1] => Array
+                        (
+                            [TEXT] => Оплата счета
+                            [COMMAND] => billPayment
+                            [COMMAND_PARAMS] => bill payment
+                            [BG_COLOR] => #7B68EE
+                            [TEXT_COLOR] => #fff
+                            [DISPLAY] => LINE
+                        )
+
+                )
+
+            [ATTACH] => 
+            [auth] => 837c7b63005f274c0007ddab00001060000007fe521d99e00776e1980d2b095b4f20d6
+        )
+
+)
+
+------------------------
+
+------------------------
+2022.11.21 15:26:30
+AssistantBot send data
+Array
+(
+    [URL] => https://corp.estelab.ru/rest/imbot.command.answer
+    [PARAMS] => Array
+        (
+            [COMMAND_ID] => 145
+            [MESSAGE_ID] => 13222605
+            [MESSAGE] => [b]Тебе следует внести следующую информацию:[/b]
+ Причина 
+ Дата начала 
+ Дата окончания 
+ Сотрудник 
+ Тип 
+ Подразделение
+        
+ Как будешь готов, [send=заполняем процесс отсутствие:]кликай![/send]
+            [auth] => 867c7b63005f274c0007ddab000010600000074046f160ed4cddea0e3357dedf0cb8cf
+        )
+
+)
+
+------------------------
+
+------------------------
+2022.11.21 15:26:30
+AssistantBot command add
+Array
+(
+    [145] => Array
+        (
+            [domain] => corp.estelab.ru
+            [member_id] => 124ff83138e5ff3838db5f0214c6284a
+            [application_token] => 16fc2b5f7189c9cfdf7586e4181433f1
+            [AUTH] => Array
+                (
+                    [domain] => corp.estelab.ru
+                    [member_id] => 124ff83138e5ff3838db5f0214c6284a
+                    [application_token] => 16fc2b5f7189c9cfdf7586e4181433f1
+                )
+
+            [BOT_ID] => 82490
+            [BOT_CODE] => AssistantBot
+            [COMMAND] => absence
+            [COMMAND_ID] => 145
+            [COMMAND_PARAMS] => absence and processing
+            [COMMAND_CONTEXT] => KEYBOARD
+            [MESSAGE_ID] => 13222605
+        )
+
+)
+
+------------------------
+
+------------------------
+2022.11.21 15:26:32
+AssistantBot send data
+Array
+(
+    [URL] => https://corp.estelab.ru/rest/lists.field.get
+    [PARAMS] => Array
+        (
+            [IBLOCK_TYPE_ID] => bitrix_processes
+            [IBLOCK_ID] => 119
+            [auth] => 887c7b63005f274c0007ddab0000106000000750176a12aa589e0c15b921592bdcd270
+        )
+
+)
+
+------------------------
+
+------------------------
+2022.11.21 15:26:33
+AssistantBot send data
+Array
+(
+    [URL] => https://corp.estelab.ru/rest/lists.field.get
+    [PARAMS] => Array
+        (
+            [IBLOCK_TYPE_ID] => bitrix_processes
+            [IBLOCK_ID] => 119
+            [auth] => 887c7b63005f274c0007ddab0000106000000750176a12aa589e0c15b921592bdcd270
+        )
+
+)
+
+------------------------
+
+------------------------
+2022.11.21 15:26:33
+AssistantBot send data
+Array
+(
+    [URL] => https://corp.estelab.ru/rest/entity.item.add
+    [PARAMS] => Array
+        (
+            [ENTITY] => bot_assistant
+            [NAME] => user_4192_21_Nov_2022
+            [auth] => 887c7b63005f274c0007ddab0000106000000750176a12aa589e0c15b921592bdcd270
+        )
+
+)
+
+------------------------
+
+------------------------
+2022.11.21 15:26:33
+AssistantBot send data
+Array
+(
+    [URL] => https://corp.estelab.ru/rest/entity.item.update
+    [PARAMS] => Array
+        (
+            [ENTITY] => bot_assistant
+            [ID] => 
+            [PROPERTY_VALUES] => Array
+                (
+                    [step] => 1
+                )
+
+            [auth] => 887c7b63005f274c0007ddab0000106000000750176a12aa589e0c15b921592bdcd270
+        )
+
+)
+
+------------------------
+
+------------------------
+2022.11.21 15:26:33
+EntityItem step 1
+Array
+(
+    [error] => ACCESS_DENIED
+    [error_description] => Access denied!
+)
+
+------------------------
+
+------------------------
+2022.11.21 15:26:33
+AssistantBot send data
+Array
+(
+    [URL] => https://corp.estelab.ru/rest/imbot.message.add
+    [PARAMS] => Array
+        (
+            [DIALOG_ID] => 4192
+            [MESSAGE] => 
+Введите причину:
+
+            [KEYBOARD] => 
+            [ATTACH] => Array
+                (
+                    [0] => Array
+                        (
+                            [MESSAGE] => [send=меню]Вернуться в начало[/send]
+                        )
+
+                )
+
+            [auth] => 887c7b63005f274c0007ddab0000106000000750176a12aa589e0c15b921592bdcd270
         )
 
 )

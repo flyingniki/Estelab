@@ -15,7 +15,7 @@ $itemProperties = $arItemProperties['result'];
 if (!isset($appsConfig[$_REQUEST['auth']['application_token']])) {
     return false;
 }
-writeToLog($_REQUEST, '$_REQUEST');
+// writeToLog($_REQUEST, '$_REQUEST');
 // writeToLog($_REQUEST['data']['PARAMS']['DIALOG_ID'], $title = 'DIALOG_ID');
 $messageFromUser = trim(mb_strtolower($_REQUEST['data']['PARAMS']['MESSAGE']));
 $userId = $_REQUEST['data']['USER']['ID'];
@@ -45,31 +45,32 @@ foreach ($departments as $departmentId => $departmentValue) {
 }
 
 if ($messageFromUser == 'привет') {
-    deleteEntityItems($entityCode);
+    deleteEntityItem($entityCode, $userId);
+
     $attach[] = array("MESSAGE" => 'Если хочешь узнать, что я могу, набери в сообщении или нажми [send=меню]меню[/send]');
     $arResult = array(
         'title' => '[b]Я чат-бот помощник, создан для удобства в работе на нашем портале. Пока что мой функционал ограничен, но я учусь :)[/b]',
         'attach' => $attach,
     );
 } elseif ($messageFromUser == 'меню') {
-    deleteEntityItems($entityCode);
+    deleteEntityItem($entityCode, $userId);
+
     $arResult = array(
         'title' => '[b]Мои функции[/b]',
         'report' => 'Для вызова, нажми кнопку ниже',
         'keyboard' => $keyboardMain,
     );
-} elseif ($messageFromUser == 'заполняем отсутствие:') {
+} elseif ($messageFromUser == 'заполняем процесс отсутствие:') {
+    $item = addEntityItem($entityCode, 'user_' . $userId . '_' . date('d_M_Y'));
+    $itemId = $item['result'];
+    updateEntityItem($entityCode, $itemId, 'step', '1');
+    writeToLog($item, 'EntityItem step 1');    
+
     $attach[] = array("MESSAGE" => '[send=меню]Вернуться в начало[/send]');
     $arResult = array(
         'report' => 'Введите причину:',
         'attach' => $attach,
     );
-
-    $item = addEntityItem($entityCode, $messageFromUser);
-    $itemId = $item['result'];
-    // writeToLog($itemId, 'itemId');
-
-    updateEntityItem($entityCode, $itemId, 'step', '1');
 
     // $arItemsInfo = getEntityItems($entityCode);
     // $itemsInfo = $arItemsInfo['result'];
@@ -87,6 +88,7 @@ if ($messageFromUser == 'привет') {
     $dateEnd = $itemsInfo[0]['PROPERTY_VALUES']['dateEnd'];
     $type = $itemsInfo[0]['PROPERTY_VALUES']['type'];
     $department = $itemsInfo[0]['PROPERTY_VALUES']['department'];
+    writeToLog($userId, 'userId');
     absenceAndProcessing($case, $dateBegin, $dateEnd, $userId, $type, $department);
 
     $attach[] = array("MESSAGE" => '[send=меню]Вернуться в начало[/send]');
@@ -98,6 +100,7 @@ if ($messageFromUser == 'привет') {
     $arItemsInfo = getEntityItems($entityCode);
     $itemsInfo = $arItemsInfo['result'];
     $currentItem = $itemsInfo[0];
+    writeToLog($currentItem, 'currentItem');
     $currentItemId = $itemsInfo[0]['ID'];
     $step = $currentItem['PROPERTY_VALUES']['step'];
 
@@ -106,10 +109,7 @@ if ($messageFromUser == 'привет') {
         'report'  => 'Не соображу, что вы хотите узнать. А может вообще не умею...',
     );
 
-    if ($step == 1) {
-        // $arItemsInfo = getEntityItems($entityCode);
-        // $itemsInfo = $arItemsInfo['result'];
-        // writeToLog($itemsInfo, 'itemsInfo');        
+    if ($step == 1) {       
         updateEntityItem($entityCode, $currentItemId, 'case', $messageFromUser);
         updateEntityItem($entityCode, $currentItemId, 'step', '2');
         $arItemsInfo = getEntityItems($entityCode);
@@ -137,7 +137,6 @@ if ($messageFromUser == 'привет') {
         $arItemsInfo = getEntityItems($entityCode);
         $itemsInfo = $arItemsInfo['result'];
         // writeToLog($itemsInfo, 'itemsNewInfo');
-
         $attach[] = array("MESSAGE" => '[send=меню]Вернуться в начало[/send]');
         $arResult = array(
             'report' => "Дата окончания: {$messageFromUser}. Далее заполните тип отсутствия:\n{$typeInfo}",
@@ -149,7 +148,6 @@ if ($messageFromUser == 'привет') {
         $arItemsInfo = getEntityItems($entityCode);
         $itemsInfo = $arItemsInfo['result'];
         // writeToLog($itemsInfo, 'itemsNewInfo');
-
         $attach[] = array("MESSAGE" => '[send=меню]Вернуться в начало[/send]');
         $arResult = array(
             'report' => "Тип отсутствия: {$messageFromUser}.\n Далее заполните подразделение:\n{$departmentInfo}",
@@ -159,7 +157,7 @@ if ($messageFromUser == 'привет') {
         updateEntityItem($entityCode, $currentItemId, 'department', $messageFromUser);
         $arItemsInfo = getEntityItems($entityCode);
         $itemsInfo = $arItemsInfo['result'];
-        writeToLog($itemsInfo, 'itemsinfo');
+        // writeToLog($itemsInfo, 'itemsinfo');
         $case = $itemsInfo[0]['PROPERTY_VALUES']['case'];
         $dateBegin = $itemsInfo[0]['PROPERTY_VALUES']['dateBegin'];
         $dateEnd = $itemsInfo[0]['PROPERTY_VALUES']['dateEnd'];

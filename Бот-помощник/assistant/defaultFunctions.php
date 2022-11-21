@@ -115,14 +115,16 @@ function getEntityItems($entityCode)
     return $result;
 }
 
-function deleteEntityItems($entityCode)
+function deleteEntityItem($entityCode, $userId)
 {
     $arItemsInfo = getEntityItems($entityCode);
     foreach ($arItemsInfo['result'] as $itemInfo) {
-        restCommand('entity.item.delete', array(
-            "ENTITY" => $itemInfo['ENTITY'],
-            'ID' => $itemInfo['ID'],
-        ), $_REQUEST["auth"]);
+        if ($userId == $itemInfo['CREATED_BY']) {
+            restCommand('entity.item.delete', array(
+                "ENTITY" => $itemInfo['ENTITY'],
+                'ID' => $itemInfo['ID'],
+            ), $_REQUEST["auth"]);
+        }
     }
 }
 
