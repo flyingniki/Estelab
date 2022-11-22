@@ -92,8 +92,11 @@ foreach ($mergedIds as $depName => $arMergedId) {
     }
 }
 // print_r($openedIds);
-// создаем чат
-$chat->AddUser($chatId, $empId, null, true, true);
+// добавляем пользователей в чат
+foreach ($openedIds as $userId) {
+    $chat->AddUser($chatId, $userId, false, true, true);
+}
+
 $ar = array(
     "TO_CHAT_ID" => $chatId, // ID чата
     "FROM_USER_ID" => 0,
@@ -101,4 +104,8 @@ $ar = array(
     "MESSAGE"  => $message . $allActions . $actionsOneDay . $actionsHot, // Произвольный текст
 );
 CIMChat::AddMessage($ar);
-// print_r($arEmployeeIds);
+
+// удаляем пользователей из чата
+// foreach ($openedIds as $userId) {
+//     $chat->DeleteUser($chatId, $userId, false, true, true);
+// }
