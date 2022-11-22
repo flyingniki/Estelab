@@ -88,13 +88,9 @@ foreach ($mergedIds as $depName => $arMergedId) {
         // print_r($arInfo);
         if ($state == 'OPENED') {
             $openedIds[] = $empId;
+            $chat->AddUser($chatId, $empId, false, true, true);
         }
     }
-}
-// print_r($openedIds);
-// добавляем пользователей в чат
-foreach ($openedIds as $userId) {
-    $chat->AddUser($chatId, $userId, false, true, true);
 }
 
 $ar = array(
