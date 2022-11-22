@@ -47,12 +47,15 @@ foreach ($items as $item) {
     }
 }
 
+$pic = $_SERVER['DOCUMENT_ROOT'] . '/upload/sale/sale.png';
+$avatarId = \CFile::SaveFile(\CFile::MakeFileArray($pic), 'im');
 $chat = new \CIMChat;
 $chatId = $chat->Add(array(
     'TITLE' => 'Текущие акции',
     'DESCRIPTION' => 'Описание...',
     'COLOR' => 'AQUA', //цвет
     'TYPE' => IM_MESSAGE_OPEN, //тип чата
+    'AVATAR_ID' => $avatarId, //аватарка чата
 ));
 
 // ищем в нужном подразделении сотрудника с открытым рабочим днем в графике
