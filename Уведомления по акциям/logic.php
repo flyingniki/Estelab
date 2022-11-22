@@ -33,14 +33,14 @@ foreach ($items as $item) {
             // print_r($descriprion);
             //print_r(strtotime($startTime);
             //print_r($endTime);            
-            $allActions .= "[url=https://corp.estelab.ru/page/skram/m1_meropriyatiya/type/155/details/{$itemId}/]" . $title . "[/url][BR]";
+            $allActions .= $title . '[BR]';
             if (strtotime($start) == strtotime($end)) {
-                $actionsOneDay .= "[url=https://corp.estelab.ru/page/skram/m1_meropriyatiya/type/155/details/{$itemId}/]" . $title . "[/url][BR]";
-                $allActions = str_replace("[url=https://corp.estelab.ru/page/skram/m1_meropriyatiya/type/155/details/{$itemId}/]" . $title . "[/url][BR]", "", $allActions);
+                $actionsOneDay .= $title . '[BR]';
+                $allActions = str_replace($title, '', $allActions);
             }
             if (strtotime($end) == strtotime(date('d.m.Y'))) {
-                $actionsHot .= "[url=https://corp.estelab.ru/page/skram/m1_meropriyatiya/type/155/details/{$itemId}/]" . $title . "[/url][BR]";
-                $allActions = str_replace("[url=https://corp.estelab.ru/page/skram/m1_meropriyatiya/type/155/details/{$itemId}/]" . $title . "[/url][BR]", "", $allActions);
+                $actionsHot .= $title . '[BR]';
+                $allActions = str_replace($title, '', $allActions);
             }
         }
     }
