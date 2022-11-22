@@ -14,7 +14,7 @@ $message = '[b]Акции на ' . date('d.m.Y') . ':[/b] [BR][BR]';
 $allActions = '';
 $actionsOneDay = '[BR] [b]Действуют только сегодня:[/b] [BR] ';
 $actionsHot = '[BR] [b]Действуют последний день: [/b] [BR]';
-$link = '[url=https://www.estelab.ru/about/hot-offers/]Текущие акции на сайте Estelab.ru[/url]';
+$link = '[BR] [url=https://www.estelab.ru/about/hot-offers/]Текущие акции на сайте Estelab.ru[/url]';
 foreach ($items as $item) {
     $stageId = $item->getStageId();
     if ($stageId == 'DT155_28:2') {
@@ -40,7 +40,7 @@ foreach ($items as $item) {
                 $allActions = str_replace($title, '', $allActions);
             }
             if (strtotime($end) == strtotime(date('d.m.Y'))) {
-                $actionsHot .= $title . '[BR][BR]';
+                $actionsHot .= $title . '[BR]';
                 $allActions = str_replace($title, '', $allActions);
             }
         }
