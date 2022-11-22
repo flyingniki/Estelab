@@ -14,6 +14,7 @@ $message = '[b]Акции на ' . date('d.m.Y') . ':[/b] [BR][BR]';
 $allActions = '';
 $actionsOneDay = '[BR] [b]Действуют только сегодня:[/b] [BR] ';
 $actionsHot = '[BR] [b]Действуют последний день: [/b] [BR]';
+$link = '[url=https://www.estelab.ru/about/hot-offers/]Текущие акции на сайте Estelab.ru[/url]';
 foreach ($items as $item) {
     $stageId = $item->getStageId();
     if ($stageId == 'DT155_28:2') {
@@ -39,7 +40,7 @@ foreach ($items as $item) {
                 $allActions = str_replace($title, '', $allActions);
             }
             if (strtotime($end) == strtotime(date('d.m.Y'))) {
-                $actionsHot .= $title . '[BR]';
+                $actionsHot .= $title . '[BR][BR]';
                 $allActions = str_replace($title, '', $allActions);
             }
         }
@@ -97,7 +98,7 @@ $ar = array(
     "TO_CHAT_ID" => $chatId, // ID чата
     "FROM_USER_ID" => 0,
     "SYSTEM" => Y,
-    "MESSAGE"  => $message . $allActions . $actionsOneDay . $actionsHot, // Произвольный текст
+    "MESSAGE"  => $message . $allActions . $actionsOneDay . $actionsHot . $link, // Произвольный текст
 );
 CIMChat::AddMessage($ar);
 
