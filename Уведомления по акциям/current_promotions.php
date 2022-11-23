@@ -72,32 +72,38 @@ foreach ($mergedIds as $depName => $arMergedId) {
     //print_r($arUniqueMergedId);
     $arEmployeeIds[$depName] = $arUniqueMergedId;
     foreach ($arUniqueMergedId as $empId) {
-        $obUser = new CTimeManUser($empId);
+        // $obUser = new CTimeManUser($empId);
 
-        $state = $obUser->State(); // узнать статус рабочего дня сотрудника $USER_ID
+        // $state = $obUser->State(); // узнать статус рабочего дня сотрудника $USER_ID
         // $arInfo = $obUser->GetCurrentInfo(); // информация о рабочем дне сотрудника $USER_ID
         // echo '<pre>';
         // print_r($state);
         // print_r($arInfo);
-        if ($state == 'OPENED') {
-            $openedIds[] = $empId;
-        }
+        // if ($state == 'OPENED') {
+        $openedIds[] = $empId;
+        // }
     }
 }
 
 $pic = $_SERVER['DOCUMENT_ROOT'] . '/upload/sale/sale.png';
 $avatarId = \CFile::SaveFile(\CFile::MakeFileArray($pic), 'im');
 $chat = new \CIMChat;
-$chatId = $chat->Add(array(
-    'TITLE' => 'Текущие акции на сайте Estelab.ru',
-    'DESCRIPTION' => 'Описание...',
-    'COLOR' => 'AQUA', //цвет
-    'TYPE' => IM_MESSAGE_OPEN, //тип чата
-    'AVATAR_ID' => $avatarId, //аватарка чата
-));
+// сначала выполняем в консоли для создания чата, так как из агента не отрабатывает, затем получаем ID чата и подставляем в код
+// $chatId = $chat->Add(array(
+//     'TITLE' => 'Текущие акции на сайте Estelab.ru',
+//     'DESCRIPTION' => 'Описание...',
+//     'COLOR' => 'AQUA', //цвет
+//     'TYPE' => IM_MESSAGE_OPEN, //тип чата
+//     'AUTHOR_ID' => $openedIds[array_rand($openedIds, 1)], //владелец чата
+//     'AVATAR_ID' => $avatarId, //аватарка чата
+// ));
 
-$time = date('H:i');
-if ((strtotime($time) >= strtotime('9:00')) && (strtotime($time) <= strtotime('21:00'))) {
+$currentTime = strtotime(date('d.m.Y H:i:s'));
+$startWork = '09:00';
+$endWork = '21:00';
+$startDateTime = strtotime(date('d.m.Y') . ' ' . $startWork);
+$endDateTime = strtotime(date('d.m.Y') . ' ' . $endWork);
+if (($currentTime >= $startDateTime) && ($currentTime <= $endDateTime)) {
     foreach ($openedIds as $empId) {
         $chat->AddUser($chatId, $empId, false, true, true);
         $ar = array(
