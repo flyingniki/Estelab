@@ -14,7 +14,7 @@ $message = '[b]Акции на ' . date('d.m.Y') . ':[/b] [BR][BR]';
 $allActions = '';
 $actionsOneDay = '[BR] [b]Действуют только сегодня:[/b] [BR] ';
 $actionsHot = '[BR] [b]Действуют последний день: [/b] [BR]';
-$link = '[BR] [url=https://www.estelab.ru/about/hot-offers/]Текущие акции на сайте Estelab.ru[/url]';
+$link = '[BR][BR] [url=https://www.estelab.ru/about/hot-offers/]Текущие акции на сайте Estelab.ru[/url]';
 foreach ($items as $item) {
     $stageId = $item->getStageId();
     if ($stageId == 'DT155_28:2') {
@@ -46,17 +46,6 @@ foreach ($items as $item) {
         }
     }
 }
-
-$pic = $_SERVER['DOCUMENT_ROOT'] . '/upload/sale/sale.png';
-$avatarId = \CFile::SaveFile(\CFile::MakeFileArray($pic), 'im');
-$chat = new \CIMChat;
-$chatId = $chat->Add(array(
-    'TITLE' => 'Текущие акции',
-    'DESCRIPTION' => 'Описание...',
-    'COLOR' => 'AQUA', //цвет
-    'TYPE' => IM_MESSAGE_OPEN, //тип чата
-    'AVATAR_ID' => $avatarId, //аватарка чата
-));
 
 // ищем в нужном подразделении сотрудника с открытым рабочим днем в графике
 $arDepartments = [
@@ -92,20 +81,36 @@ foreach ($mergedIds as $depName => $arMergedId) {
         // print_r($arInfo);
         if ($state == 'OPENED') {
             $openedIds[] = $empId;
-            $chat->AddUser($chatId, $empId, false, true, true);
         }
     }
 }
 
-$ar = array(
-    "TO_CHAT_ID" => $chatId, // ID чата
-    "FROM_USER_ID" => 0,
-    "SYSTEM" => Y,
-    "MESSAGE"  => $message . $allActions . $actionsOneDay . $actionsHot . $link, // Произвольный текст
-);
-CIMChat::AddMessage($ar);
+$pic = $_SERVER['DOCUMENT_ROOT'] . '/upload/sale/sale.png';
+$avatarId = \CFile::SaveFile(\CFile::MakeFileArray($pic), 'im');
+$chat = new \CIMChat;
+$chatId = $chat->Add(array(
+    'TITLE' => 'Текущие акции',
+    'DESCRIPTION' => 'Описание...',
+    'COLOR' => 'AQUA', //цвет
+    'TYPE' => IM_MESSAGE_OPEN, //тип чата
+    'AVATAR_ID' => $avatarId, //аватарка чата
+));
 
-// удаляем пользователей из чата
-// foreach ($openedIds as $userId) {
-//     $chat->DeleteUser($chatId, $userId, false, true, true);
-// }
+$time = date('H:i');
+if ((strtotime($time) >= strtotime('9:00')) && (strtotime($time) <= strtotime('21:00'))) {
+    foreach ($openedIds as $empId) {
+        $chat->AddUser($chatId, $empId, false, true, true);
+        $ar = array(
+            "TO_CHAT_ID" => $chatId, // ID чата
+            "FROM_USER_ID" => 0,
+            "SYSTEM" => Y,
+            "MESSAGE"  => $message . $allActions . $actionsOneDay . $actionsHot . $link, // Произвольный текст
+        );
+    }
+    CIMChat::AddMessage($ar);
+} else {
+    // удаляем пользователей из чата
+    foreach ($openedIds as $empId) {
+        $chat->DeleteUser($chatId, $empId, false, true, true);
+    }
+}
