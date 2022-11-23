@@ -105,14 +105,14 @@ $startDateTime = strtotime(date('d.m.Y') . ' ' . $startWork);
 $endDateTime = strtotime(date('d.m.Y') . ' ' . $endWork);
 if (($currentTime >= $startDateTime) && ($currentTime <= $endDateTime)) {
     foreach ($openedIds as $empId) {
-        $chat->AddUser($chatId, $empId, false, true, true);
-        $ar = array(
-            "TO_CHAT_ID" => $chatId, // ID чата
-            "FROM_USER_ID" => 0,
-            "SYSTEM" => Y,
-            "MESSAGE"  => $message . $allActions . $actionsOneDay . $actionsHot . $link, // Произвольный текст
-        );
+        $chat->AddUser(129543, $empId, false, true, true);
     }
+    $ar = array(
+        "TO_CHAT_ID" => 129543, // ID чата
+        "FROM_USER_ID" => 0,
+        "SYSTEM" => Y,
+        "MESSAGE"  => $message . $allActions . $actionsOneDay . $actionsHot . $link, // Произвольный текст
+    );
     CIMChat::AddMessage($ar);
 } else {
     // удаляем пользователей из чата
