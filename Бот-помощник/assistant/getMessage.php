@@ -15,7 +15,7 @@ $itemProperties = $arItemProperties['result'];
 if (!isset($appsConfig[$_REQUEST['auth']['application_token']])) {
     return false;
 }
-writeToLog($_REQUEST, '$_REQUEST');
+// writeToLog($_REQUEST, '$_REQUEST');
 // writeToLog($_REQUEST['data']['PARAMS']['DIALOG_ID'], $title = 'DIALOG_ID');
 $messageFromUser = trim(mb_strtolower($_REQUEST['data']['PARAMS']['MESSAGE']));
 $userId = $_REQUEST['data']['USER']['ID'];
@@ -23,7 +23,6 @@ $userId = $_REQUEST['data']['USER']['ID'];
 $iBlockFields = restCommand('lists.field.get', array(
     'IBLOCK_TYPE_ID' => 'bitrix_processes',
     'IBLOCK_ID' => 119,
-
 ), $_REQUEST["auth"]);
 
 $types = $iBlockFields['result']['PROPERTY_854']['DISPLAY_VALUES_FORM'];
@@ -35,7 +34,6 @@ foreach ($types as $typeId => $typeValue) {
 $iBlockFields = restCommand('lists.field.get', array(
     'IBLOCK_TYPE_ID' => 'bitrix_processes',
     'IBLOCK_ID' => 119,
-
 ), $_REQUEST["auth"]);
 
 $departments = $iBlockFields['result']['PROPERTY_855']['DISPLAY_VALUES_FORM'];
@@ -60,11 +58,14 @@ if ($messageFromUser == 'привет') {
         'report' => 'Для вызова, нажми кнопку ниже',
         'keyboard' => $keyboardMain,
     );
+    $arItemsInfo = getEntityItems($entityCode);
+    $itemsInfo = $arItemsInfo['result'];
+    writeToLog($itemsInfo, 'itemsInfo After deleting');
 } elseif ($messageFromUser == 'заполняем процесс отсутствие:') {
     $item = addEntityItem($entityCode, 'user_' . $userId . '_' . $messageFromUser);
     $itemId = $item['result'];
     updateEntityItem($entityCode, $itemId, 'step', '1');
-    writeToLog($item, 'EntityItem step 1');
+    // writeToLog($item, 'EntityItem step 1');
 
     $attach[] = array("MESSAGE" => '[send=меню]Вернуться в начало[/send]');
     $arResult = array(
@@ -74,22 +75,22 @@ if ($messageFromUser == 'привет') {
 
     $arItemsInfo = getEntityItems($entityCode);
     $itemsInfo = $arItemsInfo['result'];
-    writeToLog($itemsInfo, 'itemsInfo');
-} elseif ($messageFromUser == 'вносим данные на оплату счета:') {
+    writeToLog($itemsInfo, 'заполняем процесс отсутствие:');
+} elseif ($messageFromUser == 'вношу данные на оплату счета:') {
     $attach[] = array("MESSAGE" => '[send=меню]Вернуться в начало[/send]');
     $arResult = array(
         'attach' => $attach,
     );
-} elseif ($messageFromUser == 'вносим данные об отсутствии') {
+} elseif ($messageFromUser == 'вношу данные об отсутствии') {
     $arItemsInfo = getEntityItems($entityCode);
-    writeToLog($arItemsInfo, 'arItems Info');
+    writeToLog($arItemsInfo, 'вношу данные об отсутствии');
     $itemsInfo = $arItemsInfo['result'];
     $case = $itemsInfo[0]['PROPERTY_VALUES']['case'];
     $dateBegin = $itemsInfo[0]['PROPERTY_VALUES']['dateBegin'];
     $dateEnd = $itemsInfo[0]['PROPERTY_VALUES']['dateEnd'];
     $type = $itemsInfo[0]['PROPERTY_VALUES']['type'];
     $department = $itemsInfo[0]['PROPERTY_VALUES']['department'];
-    writeToLog($userId, 'userId');
+    // writeToLog($userId, 'userId');
     absenceAndProcessing($case, $dateBegin, $dateEnd, $userId, $type, $department);
 
     $attach[] = array("MESSAGE" => '[send=меню]Вернуться в начало[/send]');
@@ -98,18 +99,21 @@ if ($messageFromUser == 'привет') {
         'attach' => $attach,
     );
 } else {
+    // получаем текущий элемент сущности для определенного пользователя
     $arItemsInfo = getEntityItems($entityCode);
     $itemsInfo = $arItemsInfo['result'];
-    $currentItem = $itemsInfo[0];
-    writeToLog($currentItem, 'currentItem');
-    $currentItemId = $itemsInfo[0]['ID'];
-    $step = $currentItem['PROPERTY_VALUES']['step'];
-
+    foreach ($itemsInfo as $itemInfo) {
+        if ($itemInfo['CREATED_BY'] == $userId) {
+            $currentItemId = $itemInfo['ID'];
+            $step = $itemInfo['PROPERTY_VALUES']['step'];
+        }
+    }
+    // по умолчанию при непрописанном сообщении
     $arResult = array(
         'title' => '[b]Туплю-с[/b]',
         'report'  => 'Не соображу, что вы хотите узнать. А может вообще не умею...',
     );
-
+    // по шагам
     if ($step == 1) {
         updateEntityItem($entityCode, $currentItemId, 'case', $messageFromUser);
         updateEntityItem($entityCode, $currentItemId, 'step', '2');
@@ -158,7 +162,7 @@ if ($messageFromUser == 'привет') {
         updateEntityItem($entityCode, $currentItemId, 'department', $messageFromUser);
         $arItemsInfo = getEntityItems($entityCode);
         $itemsInfo = $arItemsInfo['result'];
-        // writeToLog($itemsInfo, 'itemsinfo');
+        writeToLog($itemsInfo, 'Внесенные данные:');
         $case = $itemsInfo[0]['PROPERTY_VALUES']['case'];
         $dateBegin = $itemsInfo[0]['PROPERTY_VALUES']['dateBegin'];
         $dateEnd = $itemsInfo[0]['PROPERTY_VALUES']['dateEnd'];
