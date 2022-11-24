@@ -85,8 +85,8 @@ foreach ($mergedIds as $depName => $arMergedId) {
     }
 }
 
-$pic = $_SERVER['DOCUMENT_ROOT'] . '/upload/sale/sale.png';
-$avatarId = \CFile::SaveFile(\CFile::MakeFileArray($pic), 'im');
+// $pic = $_SERVER['DOCUMENT_ROOT'] . '/upload/sale/sale.png';
+// $avatarId = \CFile::SaveFile(\CFile::MakeFileArray($pic), 'im');
 $chat = new \CIMChat;
 // сначала выполняем в консоли для создания чата, так как из агента не отрабатывает, затем получаем ID чата и подставляем в код
 // $chatId = $chat->Add(array(
@@ -117,6 +117,6 @@ if (($currentTime >= $startDateTime) && ($currentTime <= $endDateTime)) {
 } else {
     // удаляем пользователей из чата
     foreach ($openedIds as $empId) {
-        $chat->DeleteUser($chatId, $empId, false, true, true);
+        $chat->DeleteUser(129543, $empId, false, true, true);
     }
 }
