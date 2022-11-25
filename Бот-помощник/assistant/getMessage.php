@@ -106,6 +106,23 @@ if ($messageFromUser == 'привет') {
         'report' => 'Данные успешно внесены!',
         'attach' => $attach,
     );
+} elseif ($messageFromUser == 'вношу данные о командировке') {
+    $arItemsInfo = getEntityItems($entityCode);
+    // writeToLog($arItemsInfo, 'вношу данные об отсутствии');
+    $itemsInfo = $arItemsInfo['result'];
+    $rpaTypeId = 7;
+    $where = $itemsInfo[0]['PROPERTY_VALUES']['where'];
+    $departingTime = $itemsInfo[0]['PROPERTY_VALUES']['departingTime'];
+    $arrivingTime = $itemsInfo[0]['PROPERTY_VALUES']['arrivingTime'];
+    $purpose = $itemsInfo[0]['PROPERTY_VALUES']['purpose'];
+    // writeToLog($userId, 'userId');
+    businessTrip($rpaTypeId, $userId, $where, $departingTime, $arrivingTime, $purpose);
+
+    $attach[] = array("MESSAGE" => '[send=меню]Вернуться в начало[/send]');
+    $arResult = array(
+        'report' => 'Данные успешно внесены!',
+        'attach' => $attach,
+    );
 } else {
     // получаем текущий элемент сущности для определенного пользователя
     $arItemsInfo = getEntityItems($entityCode);

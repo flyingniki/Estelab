@@ -1977,3 +1977,878 @@ Array
 )
 
 ------------------------
+
+------------------------
+2022.11.25 17:59:59
+AssistantBot command add
+Array
+(
+    [147] => Array
+        (
+            [domain] => corp.estelab.ru
+            [member_id] => 124ff83138e5ff3838db5f0214c6284a
+            [application_token] => 16fc2b5f7189c9cfdf7586e4181433f1
+            [AUTH] => Array
+                (
+                    [domain] => corp.estelab.ru
+                    [member_id] => 124ff83138e5ff3838db5f0214c6284a
+                    [application_token] => 16fc2b5f7189c9cfdf7586e4181433f1
+                )
+
+            [BOT_ID] => 82490
+            [BOT_CODE] => AssistantBot
+            [COMMAND] => businessTrip
+            [COMMAND_ID] => 147
+            [COMMAND_PARAMS] => fill business trip
+            [COMMAND_CONTEXT] => KEYBOARD
+            [MESSAGE_ID] => 13266620
+        )
+
+)
+
+------------------------
+
+------------------------
+2022.11.25 18:00:06
+itemsInfo
+Array
+(
+    [0] => Array
+        (
+            [ID] => 466662
+            [TIMESTAMP_X] => 2022-11-25T18:00:02+03:00
+            [MODIFIED_BY] => 79910
+            [DATE_CREATE] => 2022-11-25T18:00:02+03:00
+            [CREATED_BY] => 79910
+            [ACTIVE] => Y
+            [DATE_ACTIVE_FROM] => 
+            [DATE_ACTIVE_TO] => 
+            [SORT] => 500
+            [NAME] => user_79910_заполняем данные о предстоящей командировке:
+            [PREVIEW_PICTURE] => 
+            [PREVIEW_TEXT] => 
+            [DETAIL_PICTURE] => 
+            [DETAIL_TEXT] => 
+            [CODE] => 
+            [ENTITY] => bot_assistant
+            [SECTION] => 
+            [PROPERTY_VALUES] => Array
+                (
+                    [case] => 
+                    [dateBegin] => 
+                    [dateEnd] => 
+                    [employee] => 
+                    [type] => 
+                    [department] => 
+                    [step] => 1
+                    [where] => 
+                    [departingTime] => 
+                    [arrivingTime] => 
+                    [purpose] => 
+                    [tickets] => 
+                    [booking] => 
+                    [boardingTickets] => 
+                    [command] => businessTrip
+                )
+
+        )
+
+    [1] => Array
+        (
+            [ID] => 466625
+            [TIMESTAMP_X] => 2022-11-25T13:08:19+03:00
+            [MODIFIED_BY] => 74295
+            [DATE_CREATE] => 2022-11-25T13:07:17+03:00
+            [CREATED_BY] => 74295
+            [ACTIVE] => Y
+            [DATE_ACTIVE_FROM] => 
+            [DATE_ACTIVE_TO] => 
+            [SORT] => 500
+            [NAME] => user_74295_заполняем процесс отсутствие:
+            [PREVIEW_PICTURE] => 
+            [PREVIEW_TEXT] => 
+            [DETAIL_PICTURE] => 
+            [DETAIL_TEXT] => 
+            [CODE] => 
+            [ENTITY] => bot_assistant
+            [SECTION] => 
+            [PROPERTY_VALUES] => Array
+                (
+                    [case] => ропроро
+                    [dateBegin] => 11.11.2022
+                    [dateEnd] => 
+                    [employee] => 
+                    [type] => 
+                    [department] => 
+                    [step] => 3
+                    [where] => 
+                    [departingTime] => 
+                    [arrivingTime] => 
+                    [purpose] => 
+                    [tickets] => 
+                    [booking] => 
+                    [boardingTickets] => 
+                    [command] => 
+                )
+
+        )
+
+    [2] => Array
+        (
+            [ID] => 466623
+            [TIMESTAMP_X] => 2022-11-25T13:01:23+03:00
+            [MODIFIED_BY] => 81981
+            [DATE_CREATE] => 2022-11-25T13:00:19+03:00
+            [CREATED_BY] => 81981
+            [ACTIVE] => Y
+            [DATE_ACTIVE_FROM] => 
+            [DATE_ACTIVE_TO] => 
+            [SORT] => 500
+            [NAME] => user_81981_заполняем процесс отсутствие:
+            [PREVIEW_PICTURE] => 
+            [PREVIEW_TEXT] => 
+            [DETAIL_PICTURE] => 
+            [DETAIL_TEXT] => 
+            [CODE] => 
+            [ENTITY] => bot_assistant
+            [SECTION] => 
+            [PROPERTY_VALUES] => Array
+                (
+                    [case] => тест
+                    [dateBegin] => 11.10.2022
+                    [dateEnd] => 20.10.202
+                    [employee] => 
+                    [type] => 760
+                    [department] => 768
+                    [step] => 5
+                    [where] => 
+                    [departingTime] => 
+                    [arrivingTime] => 
+                    [purpose] => 
+                    [tickets] => 
+                    [booking] => 
+                    [boardingTickets] => 
+                    [command] => 
+                )
+
+        )
+
+    [3] => Array
+        (
+            [ID] => 466514
+            [TIMESTAMP_X] => 2022-11-25T10:12:53+03:00
+            [MODIFIED_BY] => 69643
+            [DATE_CREATE] => 2022-11-25T10:12:50+03:00
+            [CREATED_BY] => 69643
+            [ACTIVE] => Y
+            [DATE_ACTIVE_FROM] => 
+            [DATE_ACTIVE_TO] => 
+            [SORT] => 500
+            [NAME] => user_69643_заполняем процесс отсутствие:
+            [PREVIEW_PICTURE] => 
+            [PREVIEW_TEXT] => 
+            [DETAIL_PICTURE] => 
+            [DETAIL_TEXT] => 
+            [CODE] => 
+            [ENTITY] => bot_assistant
+            [SECTION] => 
+            [PROPERTY_VALUES] => Array
+                (
+                    [case] => йув
+                    [dateBegin] => 
+                    [dateEnd] => 
+                    [employee] => 
+                    [type] => 
+                    [department] => 
+                    [step] => 2
+                    [where] => 
+                    [departingTime] => 
+                    [arrivingTime] => 
+                    [purpose] => 
+                    [tickets] => 
+                    [booking] => 
+                    [boardingTickets] => 
+                    [command] => 
+                )
+
+        )
+
+)
+
+------------------------
+
+------------------------
+2022.11.25 18:00:10
+itemsInfo
+Array
+(
+    [0] => Array
+        (
+            [ID] => 466662
+            [TIMESTAMP_X] => 2022-11-25T18:00:07+03:00
+            [MODIFIED_BY] => 79910
+            [DATE_CREATE] => 2022-11-25T18:00:02+03:00
+            [CREATED_BY] => 79910
+            [ACTIVE] => Y
+            [DATE_ACTIVE_FROM] => 
+            [DATE_ACTIVE_TO] => 
+            [SORT] => 500
+            [NAME] => user_79910_заполняем данные о предстоящей командировке:
+            [PREVIEW_PICTURE] => 
+            [PREVIEW_TEXT] => 
+            [DETAIL_PICTURE] => 
+            [DETAIL_TEXT] => 
+            [CODE] => 
+            [ENTITY] => bot_assistant
+            [SECTION] => 
+            [PROPERTY_VALUES] => Array
+                (
+                    [case] => 
+                    [dateBegin] => 
+                    [dateEnd] => 
+                    [employee] => 
+                    [type] => 
+                    [department] => 
+                    [step] => 2
+                    [where] => питер
+                    [departingTime] => 
+                    [arrivingTime] => 
+                    [purpose] => 
+                    [tickets] => 
+                    [booking] => 
+                    [boardingTickets] => 
+                    [command] => businessTrip
+                )
+
+        )
+
+    [1] => Array
+        (
+            [ID] => 466625
+            [TIMESTAMP_X] => 2022-11-25T13:08:19+03:00
+            [MODIFIED_BY] => 74295
+            [DATE_CREATE] => 2022-11-25T13:07:17+03:00
+            [CREATED_BY] => 74295
+            [ACTIVE] => Y
+            [DATE_ACTIVE_FROM] => 
+            [DATE_ACTIVE_TO] => 
+            [SORT] => 500
+            [NAME] => user_74295_заполняем процесс отсутствие:
+            [PREVIEW_PICTURE] => 
+            [PREVIEW_TEXT] => 
+            [DETAIL_PICTURE] => 
+            [DETAIL_TEXT] => 
+            [CODE] => 
+            [ENTITY] => bot_assistant
+            [SECTION] => 
+            [PROPERTY_VALUES] => Array
+                (
+                    [case] => ропроро
+                    [dateBegin] => 11.11.2022
+                    [dateEnd] => 
+                    [employee] => 
+                    [type] => 
+                    [department] => 
+                    [step] => 3
+                    [where] => 
+                    [departingTime] => 
+                    [arrivingTime] => 
+                    [purpose] => 
+                    [tickets] => 
+                    [booking] => 
+                    [boardingTickets] => 
+                    [command] => 
+                )
+
+        )
+
+    [2] => Array
+        (
+            [ID] => 466623
+            [TIMESTAMP_X] => 2022-11-25T13:01:23+03:00
+            [MODIFIED_BY] => 81981
+            [DATE_CREATE] => 2022-11-25T13:00:19+03:00
+            [CREATED_BY] => 81981
+            [ACTIVE] => Y
+            [DATE_ACTIVE_FROM] => 
+            [DATE_ACTIVE_TO] => 
+            [SORT] => 500
+            [NAME] => user_81981_заполняем процесс отсутствие:
+            [PREVIEW_PICTURE] => 
+            [PREVIEW_TEXT] => 
+            [DETAIL_PICTURE] => 
+            [DETAIL_TEXT] => 
+            [CODE] => 
+            [ENTITY] => bot_assistant
+            [SECTION] => 
+            [PROPERTY_VALUES] => Array
+                (
+                    [case] => тест
+                    [dateBegin] => 11.10.2022
+                    [dateEnd] => 20.10.202
+                    [employee] => 
+                    [type] => 760
+                    [department] => 768
+                    [step] => 5
+                    [where] => 
+                    [departingTime] => 
+                    [arrivingTime] => 
+                    [purpose] => 
+                    [tickets] => 
+                    [booking] => 
+                    [boardingTickets] => 
+                    [command] => 
+                )
+
+        )
+
+    [3] => Array
+        (
+            [ID] => 466514
+            [TIMESTAMP_X] => 2022-11-25T10:12:53+03:00
+            [MODIFIED_BY] => 69643
+            [DATE_CREATE] => 2022-11-25T10:12:50+03:00
+            [CREATED_BY] => 69643
+            [ACTIVE] => Y
+            [DATE_ACTIVE_FROM] => 
+            [DATE_ACTIVE_TO] => 
+            [SORT] => 500
+            [NAME] => user_69643_заполняем процесс отсутствие:
+            [PREVIEW_PICTURE] => 
+            [PREVIEW_TEXT] => 
+            [DETAIL_PICTURE] => 
+            [DETAIL_TEXT] => 
+            [CODE] => 
+            [ENTITY] => bot_assistant
+            [SECTION] => 
+            [PROPERTY_VALUES] => Array
+                (
+                    [case] => йув
+                    [dateBegin] => 
+                    [dateEnd] => 
+                    [employee] => 
+                    [type] => 
+                    [department] => 
+                    [step] => 2
+                    [where] => 
+                    [departingTime] => 
+                    [arrivingTime] => 
+                    [purpose] => 
+                    [tickets] => 
+                    [booking] => 
+                    [boardingTickets] => 
+                    [command] => 
+                )
+
+        )
+
+)
+
+------------------------
+
+------------------------
+2022.11.25 18:00:12
+itemsInfo
+Array
+(
+    [0] => Array
+        (
+            [ID] => 466662
+            [TIMESTAMP_X] => 2022-11-25T18:00:10+03:00
+            [MODIFIED_BY] => 79910
+            [DATE_CREATE] => 2022-11-25T18:00:02+03:00
+            [CREATED_BY] => 79910
+            [ACTIVE] => Y
+            [DATE_ACTIVE_FROM] => 
+            [DATE_ACTIVE_TO] => 
+            [SORT] => 500
+            [NAME] => user_79910_заполняем данные о предстоящей командировке:
+            [PREVIEW_PICTURE] => 
+            [PREVIEW_TEXT] => 
+            [DETAIL_PICTURE] => 
+            [DETAIL_TEXT] => 
+            [CODE] => 
+            [ENTITY] => bot_assistant
+            [SECTION] => 
+            [PROPERTY_VALUES] => Array
+                (
+                    [case] => 
+                    [dateBegin] => 
+                    [dateEnd] => 
+                    [employee] => 
+                    [type] => 
+                    [department] => 
+                    [step] => 3
+                    [where] => питер
+                    [departingTime] => 21
+                    [arrivingTime] => 
+                    [purpose] => 
+                    [tickets] => 
+                    [booking] => 
+                    [boardingTickets] => 
+                    [command] => businessTrip
+                )
+
+        )
+
+    [1] => Array
+        (
+            [ID] => 466625
+            [TIMESTAMP_X] => 2022-11-25T13:08:19+03:00
+            [MODIFIED_BY] => 74295
+            [DATE_CREATE] => 2022-11-25T13:07:17+03:00
+            [CREATED_BY] => 74295
+            [ACTIVE] => Y
+            [DATE_ACTIVE_FROM] => 
+            [DATE_ACTIVE_TO] => 
+            [SORT] => 500
+            [NAME] => user_74295_заполняем процесс отсутствие:
+            [PREVIEW_PICTURE] => 
+            [PREVIEW_TEXT] => 
+            [DETAIL_PICTURE] => 
+            [DETAIL_TEXT] => 
+            [CODE] => 
+            [ENTITY] => bot_assistant
+            [SECTION] => 
+            [PROPERTY_VALUES] => Array
+                (
+                    [case] => ропроро
+                    [dateBegin] => 11.11.2022
+                    [dateEnd] => 
+                    [employee] => 
+                    [type] => 
+                    [department] => 
+                    [step] => 3
+                    [where] => 
+                    [departingTime] => 
+                    [arrivingTime] => 
+                    [purpose] => 
+                    [tickets] => 
+                    [booking] => 
+                    [boardingTickets] => 
+                    [command] => 
+                )
+
+        )
+
+    [2] => Array
+        (
+            [ID] => 466623
+            [TIMESTAMP_X] => 2022-11-25T13:01:23+03:00
+            [MODIFIED_BY] => 81981
+            [DATE_CREATE] => 2022-11-25T13:00:19+03:00
+            [CREATED_BY] => 81981
+            [ACTIVE] => Y
+            [DATE_ACTIVE_FROM] => 
+            [DATE_ACTIVE_TO] => 
+            [SORT] => 500
+            [NAME] => user_81981_заполняем процесс отсутствие:
+            [PREVIEW_PICTURE] => 
+            [PREVIEW_TEXT] => 
+            [DETAIL_PICTURE] => 
+            [DETAIL_TEXT] => 
+            [CODE] => 
+            [ENTITY] => bot_assistant
+            [SECTION] => 
+            [PROPERTY_VALUES] => Array
+                (
+                    [case] => тест
+                    [dateBegin] => 11.10.2022
+                    [dateEnd] => 20.10.202
+                    [employee] => 
+                    [type] => 760
+                    [department] => 768
+                    [step] => 5
+                    [where] => 
+                    [departingTime] => 
+                    [arrivingTime] => 
+                    [purpose] => 
+                    [tickets] => 
+                    [booking] => 
+                    [boardingTickets] => 
+                    [command] => 
+                )
+
+        )
+
+    [3] => Array
+        (
+            [ID] => 466514
+            [TIMESTAMP_X] => 2022-11-25T10:12:53+03:00
+            [MODIFIED_BY] => 69643
+            [DATE_CREATE] => 2022-11-25T10:12:50+03:00
+            [CREATED_BY] => 69643
+            [ACTIVE] => Y
+            [DATE_ACTIVE_FROM] => 
+            [DATE_ACTIVE_TO] => 
+            [SORT] => 500
+            [NAME] => user_69643_заполняем процесс отсутствие:
+            [PREVIEW_PICTURE] => 
+            [PREVIEW_TEXT] => 
+            [DETAIL_PICTURE] => 
+            [DETAIL_TEXT] => 
+            [CODE] => 
+            [ENTITY] => bot_assistant
+            [SECTION] => 
+            [PROPERTY_VALUES] => Array
+                (
+                    [case] => йув
+                    [dateBegin] => 
+                    [dateEnd] => 
+                    [employee] => 
+                    [type] => 
+                    [department] => 
+                    [step] => 2
+                    [where] => 
+                    [departingTime] => 
+                    [arrivingTime] => 
+                    [purpose] => 
+                    [tickets] => 
+                    [booking] => 
+                    [boardingTickets] => 
+                    [command] => 
+                )
+
+        )
+
+)
+
+------------------------
+
+------------------------
+2022.11.25 18:00:17
+itemsInfo
+Array
+(
+    [0] => Array
+        (
+            [ID] => 466662
+            [TIMESTAMP_X] => 2022-11-25T18:00:12+03:00
+            [MODIFIED_BY] => 79910
+            [DATE_CREATE] => 2022-11-25T18:00:02+03:00
+            [CREATED_BY] => 79910
+            [ACTIVE] => Y
+            [DATE_ACTIVE_FROM] => 
+            [DATE_ACTIVE_TO] => 
+            [SORT] => 500
+            [NAME] => user_79910_заполняем данные о предстоящей командировке:
+            [PREVIEW_PICTURE] => 
+            [PREVIEW_TEXT] => 
+            [DETAIL_PICTURE] => 
+            [DETAIL_TEXT] => 
+            [CODE] => 
+            [ENTITY] => bot_assistant
+            [SECTION] => 
+            [PROPERTY_VALUES] => Array
+                (
+                    [case] => 
+                    [dateBegin] => 
+                    [dateEnd] => 
+                    [employee] => 
+                    [type] => 
+                    [department] => 
+                    [step] => 4
+                    [where] => питер
+                    [departingTime] => 21
+                    [arrivingTime] => 23
+                    [purpose] => 
+                    [tickets] => 
+                    [booking] => 
+                    [boardingTickets] => 
+                    [command] => businessTrip
+                )
+
+        )
+
+    [1] => Array
+        (
+            [ID] => 466625
+            [TIMESTAMP_X] => 2022-11-25T13:08:19+03:00
+            [MODIFIED_BY] => 74295
+            [DATE_CREATE] => 2022-11-25T13:07:17+03:00
+            [CREATED_BY] => 74295
+            [ACTIVE] => Y
+            [DATE_ACTIVE_FROM] => 
+            [DATE_ACTIVE_TO] => 
+            [SORT] => 500
+            [NAME] => user_74295_заполняем процесс отсутствие:
+            [PREVIEW_PICTURE] => 
+            [PREVIEW_TEXT] => 
+            [DETAIL_PICTURE] => 
+            [DETAIL_TEXT] => 
+            [CODE] => 
+            [ENTITY] => bot_assistant
+            [SECTION] => 
+            [PROPERTY_VALUES] => Array
+                (
+                    [case] => ропроро
+                    [dateBegin] => 11.11.2022
+                    [dateEnd] => 
+                    [employee] => 
+                    [type] => 
+                    [department] => 
+                    [step] => 3
+                    [where] => 
+                    [departingTime] => 
+                    [arrivingTime] => 
+                    [purpose] => 
+                    [tickets] => 
+                    [booking] => 
+                    [boardingTickets] => 
+                    [command] => 
+                )
+
+        )
+
+    [2] => Array
+        (
+            [ID] => 466623
+            [TIMESTAMP_X] => 2022-11-25T13:01:23+03:00
+            [MODIFIED_BY] => 81981
+            [DATE_CREATE] => 2022-11-25T13:00:19+03:00
+            [CREATED_BY] => 81981
+            [ACTIVE] => Y
+            [DATE_ACTIVE_FROM] => 
+            [DATE_ACTIVE_TO] => 
+            [SORT] => 500
+            [NAME] => user_81981_заполняем процесс отсутствие:
+            [PREVIEW_PICTURE] => 
+            [PREVIEW_TEXT] => 
+            [DETAIL_PICTURE] => 
+            [DETAIL_TEXT] => 
+            [CODE] => 
+            [ENTITY] => bot_assistant
+            [SECTION] => 
+            [PROPERTY_VALUES] => Array
+                (
+                    [case] => тест
+                    [dateBegin] => 11.10.2022
+                    [dateEnd] => 20.10.202
+                    [employee] => 
+                    [type] => 760
+                    [department] => 768
+                    [step] => 5
+                    [where] => 
+                    [departingTime] => 
+                    [arrivingTime] => 
+                    [purpose] => 
+                    [tickets] => 
+                    [booking] => 
+                    [boardingTickets] => 
+                    [command] => 
+                )
+
+        )
+
+    [3] => Array
+        (
+            [ID] => 466514
+            [TIMESTAMP_X] => 2022-11-25T10:12:53+03:00
+            [MODIFIED_BY] => 69643
+            [DATE_CREATE] => 2022-11-25T10:12:50+03:00
+            [CREATED_BY] => 69643
+            [ACTIVE] => Y
+            [DATE_ACTIVE_FROM] => 
+            [DATE_ACTIVE_TO] => 
+            [SORT] => 500
+            [NAME] => user_69643_заполняем процесс отсутствие:
+            [PREVIEW_PICTURE] => 
+            [PREVIEW_TEXT] => 
+            [DETAIL_PICTURE] => 
+            [DETAIL_TEXT] => 
+            [CODE] => 
+            [ENTITY] => bot_assistant
+            [SECTION] => 
+            [PROPERTY_VALUES] => Array
+                (
+                    [case] => йув
+                    [dateBegin] => 
+                    [dateEnd] => 
+                    [employee] => 
+                    [type] => 
+                    [department] => 
+                    [step] => 2
+                    [where] => 
+                    [departingTime] => 
+                    [arrivingTime] => 
+                    [purpose] => 
+                    [tickets] => 
+                    [booking] => 
+                    [boardingTickets] => 
+                    [command] => 
+                )
+
+        )
+
+)
+
+------------------------
+
+------------------------
+2022.11.25 18:00:17
+Внесенные данные:
+Array
+(
+    [0] => Array
+        (
+            [ID] => 466662
+            [TIMESTAMP_X] => 2022-11-25T18:00:17+03:00
+            [MODIFIED_BY] => 79910
+            [DATE_CREATE] => 2022-11-25T18:00:02+03:00
+            [CREATED_BY] => 79910
+            [ACTIVE] => Y
+            [DATE_ACTIVE_FROM] => 
+            [DATE_ACTIVE_TO] => 
+            [SORT] => 500
+            [NAME] => user_79910_заполняем данные о предстоящей командировке:
+            [PREVIEW_PICTURE] => 
+            [PREVIEW_TEXT] => 
+            [DETAIL_PICTURE] => 
+            [DETAIL_TEXT] => 
+            [CODE] => 
+            [ENTITY] => bot_assistant
+            [SECTION] => 
+            [PROPERTY_VALUES] => Array
+                (
+                    [case] => 
+                    [dateBegin] => 
+                    [dateEnd] => 
+                    [employee] => 
+                    [type] => 
+                    [department] => 
+                    [step] => 4
+                    [where] => питер
+                    [departingTime] => 21
+                    [arrivingTime] => 23
+                    [purpose] => цель
+                    [tickets] => 
+                    [booking] => 
+                    [boardingTickets] => 
+                    [command] => businessTrip
+                )
+
+        )
+
+    [1] => Array
+        (
+            [ID] => 466625
+            [TIMESTAMP_X] => 2022-11-25T13:08:19+03:00
+            [MODIFIED_BY] => 74295
+            [DATE_CREATE] => 2022-11-25T13:07:17+03:00
+            [CREATED_BY] => 74295
+            [ACTIVE] => Y
+            [DATE_ACTIVE_FROM] => 
+            [DATE_ACTIVE_TO] => 
+            [SORT] => 500
+            [NAME] => user_74295_заполняем процесс отсутствие:
+            [PREVIEW_PICTURE] => 
+            [PREVIEW_TEXT] => 
+            [DETAIL_PICTURE] => 
+            [DETAIL_TEXT] => 
+            [CODE] => 
+            [ENTITY] => bot_assistant
+            [SECTION] => 
+            [PROPERTY_VALUES] => Array
+                (
+                    [case] => ропроро
+                    [dateBegin] => 11.11.2022
+                    [dateEnd] => 
+                    [employee] => 
+                    [type] => 
+                    [department] => 
+                    [step] => 3
+                    [where] => 
+                    [departingTime] => 
+                    [arrivingTime] => 
+                    [purpose] => 
+                    [tickets] => 
+                    [booking] => 
+                    [boardingTickets] => 
+                    [command] => 
+                )
+
+        )
+
+    [2] => Array
+        (
+            [ID] => 466623
+            [TIMESTAMP_X] => 2022-11-25T13:01:23+03:00
+            [MODIFIED_BY] => 81981
+            [DATE_CREATE] => 2022-11-25T13:00:19+03:00
+            [CREATED_BY] => 81981
+            [ACTIVE] => Y
+            [DATE_ACTIVE_FROM] => 
+            [DATE_ACTIVE_TO] => 
+            [SORT] => 500
+            [NAME] => user_81981_заполняем процесс отсутствие:
+            [PREVIEW_PICTURE] => 
+            [PREVIEW_TEXT] => 
+            [DETAIL_PICTURE] => 
+            [DETAIL_TEXT] => 
+            [CODE] => 
+            [ENTITY] => bot_assistant
+            [SECTION] => 
+            [PROPERTY_VALUES] => Array
+                (
+                    [case] => тест
+                    [dateBegin] => 11.10.2022
+                    [dateEnd] => 20.10.202
+                    [employee] => 
+                    [type] => 760
+                    [department] => 768
+                    [step] => 5
+                    [where] => 
+                    [departingTime] => 
+                    [arrivingTime] => 
+                    [purpose] => 
+                    [tickets] => 
+                    [booking] => 
+                    [boardingTickets] => 
+                    [command] => 
+                )
+
+        )
+
+    [3] => Array
+        (
+            [ID] => 466514
+            [TIMESTAMP_X] => 2022-11-25T10:12:53+03:00
+            [MODIFIED_BY] => 69643
+            [DATE_CREATE] => 2022-11-25T10:12:50+03:00
+            [CREATED_BY] => 69643
+            [ACTIVE] => Y
+            [DATE_ACTIVE_FROM] => 
+            [DATE_ACTIVE_TO] => 
+            [SORT] => 500
+            [NAME] => user_69643_заполняем процесс отсутствие:
+            [PREVIEW_PICTURE] => 
+            [PREVIEW_TEXT] => 
+            [DETAIL_PICTURE] => 
+            [DETAIL_TEXT] => 
+            [CODE] => 
+            [ENTITY] => bot_assistant
+            [SECTION] => 
+            [PROPERTY_VALUES] => Array
+                (
+                    [case] => йув
+                    [dateBegin] => 
+                    [dateEnd] => 
+                    [employee] => 
+                    [type] => 
+                    [department] => 
+                    [step] => 2
+                    [where] => 
+                    [departingTime] => 
+                    [arrivingTime] => 
+                    [purpose] => 
+                    [tickets] => 
+                    [booking] => 
+                    [boardingTickets] => 
+                    [command] => 
+                )
+
+        )
+
+)
+
+------------------------

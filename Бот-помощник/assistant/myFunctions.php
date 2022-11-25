@@ -48,6 +48,17 @@ function absenceAndProcessing($case, $dateBegin, $dateEnd, $employee, $type, $de
 /**
  * Добавляем элемент RPA Командировка
  */
-function businessTrip()
+function businessTrip($rpaTypeId, $userId, $where, $departingTime, $arrivingTime, $purpose)
 {
+    $result = restCommand('rpa.item.add', array(
+        'typeId' => $rpaTypeId,
+        'fields' => array(
+            'UF_RPA_7_1646576016' => $where,
+            'UF_RPA_7_1646576079452' => $departingTime,
+            'UF_RPA_7_1646576145747' => $arrivingTime,
+            'UF_RPA_7_1646576677121' => $purpose,
+            'UF_RPA_7_1646576967370' => $userId,
+        ),
+    ), $_REQUEST["auth"]);
+    return $result;
 }
