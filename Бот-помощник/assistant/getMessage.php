@@ -15,7 +15,7 @@ $itemProperties = $arItemProperties['result'];
 if (!isset($appsConfig[$_REQUEST['auth']['application_token']])) {
     return false;
 }
-// writeToLog($_REQUEST, '$_REQUEST');
+writeToLog($_REQUEST, '$_REQUEST');
 // writeToLog($_REQUEST['data']['PARAMS']['DIALOG_ID'], $title = 'DIALOG_ID');
 $messageFromUser = trim(mb_strtolower($_REQUEST['data']['PARAMS']['MESSAGE']));
 $userId = $_REQUEST['data']['USER']['ID'];
@@ -60,7 +60,7 @@ if ($messageFromUser == 'привет') {
     );
     $arItemsInfo = getEntityItems($entityCode);
     $itemsInfo = $arItemsInfo['result'];
-    writeToLog($itemsInfo, 'itemsInfo After deleting');
+    // writeToLog($itemsInfo, 'itemsInfo After deleting');
 } elseif ($messageFromUser == 'заполняем процесс отсутствие:') {
     $item = addEntityItem($entityCode, 'user_' . $userId . '_' . $messageFromUser);
     $itemId = $item['result'];
@@ -75,15 +75,16 @@ if ($messageFromUser == 'привет') {
 
     $arItemsInfo = getEntityItems($entityCode);
     $itemsInfo = $arItemsInfo['result'];
-    writeToLog($itemsInfo, 'заполняем процесс отсутствие:');
-} elseif ($messageFromUser == 'вношу данные на оплату счета:') {
+    // writeToLog($itemsInfo, 'заполняем процесс отсутствие:');
+} elseif ($messageFromUser == 'заполняем данные о предстоящей командировке:') {
     $attach[] = array("MESSAGE" => '[send=меню]Вернуться в начало[/send]');
     $arResult = array(
+        'report' => 'In process of developing...',
         'attach' => $attach,
     );
 } elseif ($messageFromUser == 'вношу данные об отсутствии') {
     $arItemsInfo = getEntityItems($entityCode);
-    writeToLog($arItemsInfo, 'вношу данные об отсутствии');
+    // writeToLog($arItemsInfo, 'вношу данные об отсутствии');
     $itemsInfo = $arItemsInfo['result'];
     $case = $itemsInfo[0]['PROPERTY_VALUES']['case'];
     $dateBegin = $itemsInfo[0]['PROPERTY_VALUES']['dateBegin'];
@@ -122,7 +123,7 @@ if ($messageFromUser == 'привет') {
         // writeToLog($itemsInfo, 'itemsNewInfo');
         $attach[] = array("MESSAGE" => '[send=меню]Вернуться в начало[/send]');
         $arResult = array(
-            'report' => "Причина: {$messageFromUser}. Далее заполните дату начала в формате 'дд.мм.гггг чч:мм:сс':",
+            'report' => "[b]Причина:[/b] {$messageFromUser}. Далее заполните дату начала в формате 'ДД.ММ.ГГГГ ЧЧ:ММ':",
             'attach' => $attach,
         );
     } elseif ($step == 2) {
@@ -133,7 +134,7 @@ if ($messageFromUser == 'привет') {
         // writeToLog($itemsInfo, 'itemsNewInfo');
         $attach[] = array("MESSAGE" => '[send=меню]Вернуться в начало[/send]');
         $arResult = array(
-            'report' => "Дата начала: {$messageFromUser}. Далее заполните дату окончания в формате 'дд.мм.гггг чч:мм:сс':",
+            'report' => "[b]Дата начала:[/b] {$messageFromUser}. Далее заполните дату окончания в формате 'ДД.ММ.ГГГГ ЧЧ:ММ':",
             'attach' => $attach,
         );
     } elseif ($step == 3) {
@@ -144,7 +145,7 @@ if ($messageFromUser == 'привет') {
         // writeToLog($itemsInfo, 'itemsNewInfo');
         $attach[] = array("MESSAGE" => '[send=меню]Вернуться в начало[/send]');
         $arResult = array(
-            'report' => "Дата окончания: {$messageFromUser}. Далее заполните тип отсутствия:\n{$typeInfo}",
+            'report' => "[b]Дата окончания:[/b] {$messageFromUser}. Далее заполните тип отсутствия:\n{$typeInfo}",
             'attach' => $attach,
         );
     } elseif ($step == 4) {
@@ -155,14 +156,14 @@ if ($messageFromUser == 'привет') {
         // writeToLog($itemsInfo, 'itemsNewInfo');
         $attach[] = array("MESSAGE" => '[send=меню]Вернуться в начало[/send]');
         $arResult = array(
-            'report' => "Тип отсутствия: {$messageFromUser}.\n Далее заполните подразделение:\n{$departmentInfo}",
+            'report' => "[b]Тип отсутствия:[/b] {$types[$messageFromUser]}.\n Далее заполните подразделение:\n{$departmentInfo}",
             'attach' => $attach,
         );
     } elseif ($step == 5) {
         updateEntityItem($entityCode, $currentItemId, 'department', $messageFromUser);
         $arItemsInfo = getEntityItems($entityCode);
         $itemsInfo = $arItemsInfo['result'];
-        writeToLog($itemsInfo, 'Внесенные данные:');
+        // writeToLog($itemsInfo, 'Внесенные данные:');
         $case = $itemsInfo[0]['PROPERTY_VALUES']['case'];
         $dateBegin = $itemsInfo[0]['PROPERTY_VALUES']['dateBegin'];
         $dateEnd = $itemsInfo[0]['PROPERTY_VALUES']['dateEnd'];
@@ -171,12 +172,12 @@ if ($messageFromUser == 'привет') {
         $attach[] = array("MESSAGE" => '[send=меню]Вернуться в начало[/send]');
         $arResult = array(
             'report' => "[b]Внесенные данные:[/b]\n
-            Причина: {$case}\n
-            Дата начала: {$dateBegin}\n
-            Дата окончания: {$dateEnd}\n
-            Тип отсутствия: {$type}\n
-            Отдел: {$department}\n
-            [b]Если все верно, [send=вносим данные об отсутствии]вносим[/send][/b]",
+            [b]Причина:[/b] {$case}\n
+            [b]Дата начала:[/b] {$dateBegin}\n
+            [b]Дата окончания:[/b] {$dateEnd}\n
+            [b]Тип отсутствия:[/b] {$type}\n
+            [b]Отдел:[/b] {$department}\n
+            [b]Если все верно, [send=вношу данные об отсутствии]вносим[/send][/b]",
             'attach' => $attach,
         );
     }

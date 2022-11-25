@@ -13,16 +13,17 @@ foreach ($_REQUEST['data']['COMMAND'] as $command) {
         $result = restCommand('imbot.command.answer', array(
             "COMMAND_ID" => $command['COMMAND_ID'],
             "MESSAGE_ID" => $command['MESSAGE_ID'],
-            "MESSAGE" => "[b]Тебе следует внести следующую информацию:[/b]\n Причина \n Дата начала \n Дата окончания \n Сотрудник \n Тип \n Подразделение
+            "MESSAGE" => "[b]Предстоит внести следующую информацию:[/b]\n Причина \n Дата начала \n Дата окончания \n Тип \n Подразделение
         \n Как будешь готов, [send={$commandText}]кликай![/send]",
         ), $_REQUEST["auth"]);
-    } elseif ($command['COMMAND'] == 'billPayment') {
-        $commandText = 'Вносим данные на оплату счета:';
+    } elseif ($command['COMMAND'] == 'businessTrip') {
+        $commandText = 'Заполняем данные о предстоящей командировке:';
         $commandText = mb_strtolower($commandText);
         $result = restCommand('imbot.command.answer', array(
             "COMMAND_ID" => $command['COMMAND_ID'],
             "MESSAGE_ID" => $command['MESSAGE_ID'],
-            "MESSAGE" => "Оплата счета \n [send={$commandText}]кликай![/send]",
+            "MESSAGE" => "[b]Внеси информацию о командировке[/b]
+             \n Если готов, [send={$commandText}]кликай![/send]",
         ), $_REQUEST["auth"]);
     }
 

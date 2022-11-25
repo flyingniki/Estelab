@@ -10,9 +10,9 @@ $keyboardMain = array(
         "DISPLAY" => "LINE",
     ),
     array(
-        "TEXT" => "Оплата счета",
-        'COMMAND' => 'billPayment',
-        "COMMAND_PARAMS" => "bill payment",
+        "TEXT" => "Командировка",
+        'COMMAND' => 'businessTrip',
+        "COMMAND_PARAMS" => "fill business trip",
         "BG_COLOR" => "#7B68EE",
         "TEXT_COLOR" => "#fff",
         "DISPLAY" => "LINE",
