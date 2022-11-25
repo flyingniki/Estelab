@@ -30,7 +30,7 @@ function restCommand($method, array $params = array(), array $auth = array())
 {
     $queryUrl  = 'https://' . $auth['domain'] . '/rest/' . $method;
     $queryData = http_build_query(array_merge($params, array('auth' => $auth['access_token'])));
-    writeToLog(array('URL' => $queryUrl, 'PARAMS' => array_merge($params, array("auth" => $auth["access_token"]))), 'AssistantBot send data');
+    // writeToLog(array('URL' => $queryUrl, 'PARAMS' => array_merge($params, array("auth" => $auth["access_token"]))), 'AssistantBot send data');
     $curl = curl_init();
     curl_setopt_array($curl, array(
         CURLOPT_POST           => 1,
