@@ -45,3 +45,9 @@ function absenceAndProcessing($case, $dateBegin, $dateEnd, $employee, $type, $de
     return $result['result'];
 }
 
+/**
+ * Добавляем элемент RPA Командировка
+ */
+function businessTrip()
+{
+}

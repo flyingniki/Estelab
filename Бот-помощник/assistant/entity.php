@@ -11,7 +11,8 @@ $entity = restCommand('entity.add', array(
 
 $arProperties = [
     'general' => [
-        ['step', 'Шаг действия', 'N']
+        ['step', 'Шаг действия', 'N'],
+        ['command', 'Команда', 'S'],
     ],
     'absence' => [
         ['case', 'Причина', 'S'],

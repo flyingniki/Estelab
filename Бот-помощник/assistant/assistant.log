@@ -1,458 +1,6 @@
 
 ------------------------
-2022.11.25 15:55:06
-Assistant register
-Array
-(
-    [0] => 82490
-    [1] => 145
-    [2] => 147
-)
-
-------------------------
-
-------------------------
-2022.11.25 15:55:31
-$_REQUEST
-Array
-(
-    [event] => ONIMBOTMESSAGEADD
-    [data] => Array
-        (
-            [BOT] => Array
-                (
-                    [82490] => Array
-                        (
-                            [domain] => corp.estelab.ru
-                            [member_id] => 124ff83138e5ff3838db5f0214c6284a
-                            [application_token] => 16fc2b5f7189c9cfdf7586e4181433f1
-                            [AUTH] => Array
-                                (
-                                    [domain] => corp.estelab.ru
-                                    [member_id] => 124ff83138e5ff3838db5f0214c6284a
-                                    [application_token] => 16fc2b5f7189c9cfdf7586e4181433f1
-                                )
-
-                            [BOT_ID] => 82490
-                            [BOT_CODE] => AssistantBot
-                        )
-
-                )
-
-            [PARAMS] => Array
-                (
-                    [FROM_USER_ID] => 79910
-                    [TO_USER_ID] => 82490
-                    [MESSAGE] => привет
-                    [TEMPLATE_ID] => temp69
-                    [MESSAGE_TYPE] => P
-                    [SKIP_COMMAND] => N
-                    [SKIP_CONNECTOR] => N
-                    [IMPORTANT_CONNECTOR] => N
-                    [SILENT_CONNECTOR] => N
-                    [AUTHOR_ID] => 79910
-                    [CHAT_ID] => 128859
-                    [COMMAND_CONTEXT] => TEXTAREA
-                    [DIALOG_ID] => 79910
-                    [MESSAGE_ID] => 13264520
-                    [CHAT_TYPE] => P
-                    [LANGUAGE] => ru
-                )
-
-            [USER] => Array
-                (
-                    [ID] => 79910
-                    [NAME] => Петр Никитин
-                    [FIRST_NAME] => Петр
-                    [LAST_NAME] => Никитин
-                    [WORK_POSITION] => PHP программист
-                    [GENDER] => M
-                    [IS_BOT] => N
-                    [IS_CONNECTOR] => N
-                    [IS_NETWORK] => N
-                    [IS_EXTRANET] => N
-                )
-
-        )
-
-    [ts] => 1669380930
-    [auth] => Array
-        (
-            [access_token] => 53c98063005f274c0007ddab000138260000079cbb617d28bb93fb3fd6cbf06273a1ac
-            [expires] => 1669384531
-            [expires_in] => 3600
-            [scope] => crm,im,imbot,catalog,landing,landing_cloud,placement,lists,forum,rpa,pull,pull_channel,mobile,telephony,call,delivery,messageservice,mailservice,cashbox,disk,pay_system,documentgenerator,bizproc,user,user_brief,user_basic,user.userfield,entity,imopenlines,userconsent,rating,smile,userfieldconfig,calendar,log,sonet_group,timeman,task,tasks_extended,department,contact_center,iblock,intranet,configuration.import,salescenter,socialnetwork,tasks,sale
-            [domain] => corp.estelab.ru
-            [server_endpoint] => https://oauth.bitrix.info/rest/
-            [status] => L
-            [client_endpoint] => https://corp.estelab.ru/rest/
-            [member_id] => 124ff83138e5ff3838db5f0214c6284a
-            [user_id] => 79910
-            [refresh_token] => 4348a863005f274c0007ddab000138260000075cef4553216c91a13be5fc561124ea9d
-            [application_token] => 16fc2b5f7189c9cfdf7586e4181433f1
-        )
-
-)
-
-------------------------
-
-------------------------
-2022.11.25 15:55:32
-properties
-Array
-(
-    [result] => Array
-        (
-            [0] => Array
-                (
-                    [PROPERTY] => case
-                    [NAME] => Причина
-                    [TYPE] => S
-                    [SORT] => 500
-                )
-
-            [1] => Array
-                (
-                    [PROPERTY] => dateBegin
-                    [NAME] => Дата начала
-                    [TYPE] => S
-                    [SORT] => 500
-                )
-
-            [2] => Array
-                (
-                    [PROPERTY] => dateEnd
-                    [NAME] => Дата окончания
-                    [TYPE] => S
-                    [SORT] => 500
-                )
-
-            [3] => Array
-                (
-                    [PROPERTY] => employee
-                    [NAME] => Сотрудник
-                    [TYPE] => N
-                    [SORT] => 500
-                )
-
-            [4] => Array
-                (
-                    [PROPERTY] => type
-                    [NAME] => Тип
-                    [TYPE] => S
-                    [SORT] => 500
-                )
-
-            [5] => Array
-                (
-                    [PROPERTY] => department
-                    [NAME] => Подразделение
-                    [TYPE] => S
-                    [SORT] => 500
-                )
-
-            [6] => Array
-                (
-                    [PROPERTY] => step
-                    [NAME] => Шаг действия
-                    [TYPE] => S
-                    [SORT] => 500
-                )
-
-            [7] => Array
-                (
-                    [PROPERTY] => where
-                    [NAME] => Куда летим
-                    [TYPE] => S
-                    [SORT] => 500
-                )
-
-            [8] => Array
-                (
-                    [PROPERTY] => departingTime
-                    [NAME] => Дата/время отправления
-                    [TYPE] => S
-                    [SORT] => 500
-                )
-
-            [9] => Array
-                (
-                    [PROPERTY] => arrivingTime
-                    [NAME] => Дата/время прибытия
-                    [TYPE] => S
-                    [SORT] => 500
-                )
-
-            [10] => Array
-                (
-                    [PROPERTY] => purpose
-                    [NAME] => Цель командировки
-                    [TYPE] => S
-                    [SORT] => 500
-                )
-
-            [11] => Array
-                (
-                    [PROPERTY] => tickets
-                    [NAME] => Билеты
-                    [TYPE] => F
-                    [SORT] => 500
-                )
-
-            [12] => Array
-                (
-                    [PROPERTY] => booking
-                    [NAME] => Бронь гостиницы
-                    [TYPE] => F
-                    [SORT] => 500
-                )
-
-            [13] => Array
-                (
-                    [PROPERTY] => boardingTickets
-                    [NAME] => Посадочные талоны
-                    [TYPE] => F
-                    [SORT] => 500
-                )
-
-        )
-
-    [time] => Array
-        (
-            [start] => 1669380931.8788
-            [finish] => 1669380932.3336
-            [duration] => 0.45477914810181
-            [processing] => 0.0052549839019775
-            [date_start] => 2022-11-25T15:55:31+03:00
-            [date_finish] => 2022-11-25T15:55:32+03:00
-        )
-
-)
-
-------------------------
-
-------------------------
-2022.11.25 15:57:52
-$_REQUEST
-Array
-(
-    [event] => ONIMBOTMESSAGEADD
-    [data] => Array
-        (
-            [BOT] => Array
-                (
-                    [82490] => Array
-                        (
-                            [domain] => corp.estelab.ru
-                            [member_id] => 124ff83138e5ff3838db5f0214c6284a
-                            [application_token] => 16fc2b5f7189c9cfdf7586e4181433f1
-                            [AUTH] => Array
-                                (
-                                    [domain] => corp.estelab.ru
-                                    [member_id] => 124ff83138e5ff3838db5f0214c6284a
-                                    [application_token] => 16fc2b5f7189c9cfdf7586e4181433f1
-                                )
-
-                            [BOT_ID] => 82490
-                            [BOT_CODE] => AssistantBot
-                        )
-
-                )
-
-            [PARAMS] => Array
-                (
-                    [FROM_USER_ID] => 79910
-                    [TO_USER_ID] => 82490
-                    [MESSAGE] => меню
-                    [TEMPLATE_ID] => temp70
-                    [MESSAGE_TYPE] => P
-                    [SKIP_COMMAND] => N
-                    [SKIP_CONNECTOR] => N
-                    [IMPORTANT_CONNECTOR] => N
-                    [SILENT_CONNECTOR] => N
-                    [AUTHOR_ID] => 79910
-                    [CHAT_ID] => 128859
-                    [COMMAND_CONTEXT] => TEXTAREA
-                    [DIALOG_ID] => 79910
-                    [MESSAGE_ID] => 13264547
-                    [CHAT_TYPE] => P
-                    [LANGUAGE] => ru
-                )
-
-            [USER] => Array
-                (
-                    [ID] => 79910
-                    [NAME] => Петр Никитин
-                    [FIRST_NAME] => Петр
-                    [LAST_NAME] => Никитин
-                    [WORK_POSITION] => PHP программист
-                    [GENDER] => M
-                    [IS_BOT] => N
-                    [IS_CONNECTOR] => N
-                    [IS_NETWORK] => N
-                    [IS_EXTRANET] => N
-                )
-
-        )
-
-    [ts] => 1669381072
-    [auth] => Array
-        (
-            [access_token] => e0c98063005f274c0007ddab00013826000007b84b6d2f87d4e4791f3c12a4f57f468b
-            [expires] => 1669384672
-            [expires_in] => 3600
-            [scope] => crm,im,imbot,catalog,landing,landing_cloud,placement,lists,forum,rpa,pull,pull_channel,mobile,telephony,call,delivery,messageservice,mailservice,cashbox,disk,pay_system,documentgenerator,bizproc,user,user_brief,user_basic,user.userfield,entity,imopenlines,userconsent,rating,smile,userfieldconfig,calendar,log,sonet_group,timeman,task,tasks_extended,department,contact_center,iblock,intranet,configuration.import,salescenter,socialnetwork,tasks,sale
-            [domain] => corp.estelab.ru
-            [server_endpoint] => https://oauth.bitrix.info/rest/
-            [status] => L
-            [client_endpoint] => https://corp.estelab.ru/rest/
-            [member_id] => 124ff83138e5ff3838db5f0214c6284a
-            [user_id] => 79910
-            [refresh_token] => d048a863005f274c0007ddab00013826000007377b5005084363ec8a35884758b78bc2
-            [application_token] => 16fc2b5f7189c9cfdf7586e4181433f1
-        )
-
-)
-
-------------------------
-
-------------------------
-2022.11.25 15:57:52
-properties
-Array
-(
-    [result] => Array
-        (
-            [0] => Array
-                (
-                    [PROPERTY] => case
-                    [NAME] => Причина
-                    [TYPE] => S
-                    [SORT] => 500
-                )
-
-            [1] => Array
-                (
-                    [PROPERTY] => dateBegin
-                    [NAME] => Дата начала
-                    [TYPE] => S
-                    [SORT] => 500
-                )
-
-            [2] => Array
-                (
-                    [PROPERTY] => dateEnd
-                    [NAME] => Дата окончания
-                    [TYPE] => S
-                    [SORT] => 500
-                )
-
-            [3] => Array
-                (
-                    [PROPERTY] => employee
-                    [NAME] => Сотрудник
-                    [TYPE] => N
-                    [SORT] => 500
-                )
-
-            [4] => Array
-                (
-                    [PROPERTY] => type
-                    [NAME] => Тип
-                    [TYPE] => S
-                    [SORT] => 500
-                )
-
-            [5] => Array
-                (
-                    [PROPERTY] => department
-                    [NAME] => Подразделение
-                    [TYPE] => S
-                    [SORT] => 500
-                )
-
-            [6] => Array
-                (
-                    [PROPERTY] => step
-                    [NAME] => Шаг действия
-                    [TYPE] => S
-                    [SORT] => 500
-                )
-
-            [7] => Array
-                (
-                    [PROPERTY] => where
-                    [NAME] => Куда летим
-                    [TYPE] => S
-                    [SORT] => 500
-                )
-
-            [8] => Array
-                (
-                    [PROPERTY] => departingTime
-                    [NAME] => Дата/время отправления
-                    [TYPE] => S
-                    [SORT] => 500
-                )
-
-            [9] => Array
-                (
-                    [PROPERTY] => arrivingTime
-                    [NAME] => Дата/время прибытия
-                    [TYPE] => S
-                    [SORT] => 500
-                )
-
-            [10] => Array
-                (
-                    [PROPERTY] => purpose
-                    [NAME] => Цель командировки
-                    [TYPE] => S
-                    [SORT] => 500
-                )
-
-            [11] => Array
-                (
-                    [PROPERTY] => tickets
-                    [NAME] => Билеты
-                    [TYPE] => F
-                    [SORT] => 500
-                )
-
-            [12] => Array
-                (
-                    [PROPERTY] => booking
-                    [NAME] => Бронь гостиницы
-                    [TYPE] => F
-                    [SORT] => 500
-                )
-
-            [13] => Array
-                (
-                    [PROPERTY] => boardingTickets
-                    [NAME] => Посадочные талоны
-                    [TYPE] => F
-                    [SORT] => 500
-                )
-
-        )
-
-    [time] => Array
-        (
-            [start] => 1669381072.3404
-            [finish] => 1669381072.5048
-            [duration] => 0.16441297531128
-            [processing] => 0.004641056060791
-            [date_start] => 2022-11-25T15:57:52+03:00
-            [date_finish] => 2022-11-25T15:57:52+03:00
-        )
-
-)
-
-------------------------
-
-------------------------
-2022.11.25 15:57:54
+2022.11.25 17:20:08
 AssistantBot command add
 Array
 (
@@ -474,7 +22,7 @@ Array
             [COMMAND_ID] => 147
             [COMMAND_PARAMS] => fill business trip
             [COMMAND_CONTEXT] => KEYBOARD
-            [MESSAGE_ID] => 13264548
+            [MESSAGE_ID] => 13265968
         )
 
 )
@@ -482,219 +30,168 @@ Array
 ------------------------
 
 ------------------------
-2022.11.25 15:57:57
-$_REQUEST
+2022.11.25 17:20:17
+itemsInfo
 Array
 (
-    [event] => ONIMBOTMESSAGEADD
-    [data] => Array
+    [0] => Array
         (
-            [BOT] => Array
+            [ID] => 466658
+            [TIMESTAMP_X] => 2022-11-25T17:20:11+03:00
+            [MODIFIED_BY] => 79910
+            [DATE_CREATE] => 2022-11-25T17:20:11+03:00
+            [CREATED_BY] => 79910
+            [ACTIVE] => Y
+            [DATE_ACTIVE_FROM] => 
+            [DATE_ACTIVE_TO] => 
+            [SORT] => 500
+            [NAME] => user_79910_заполняем данные о предстоящей командировке:
+            [PREVIEW_PICTURE] => 
+            [PREVIEW_TEXT] => 
+            [DETAIL_PICTURE] => 
+            [DETAIL_TEXT] => 
+            [CODE] => 
+            [ENTITY] => bot_assistant
+            [SECTION] => 
+            [PROPERTY_VALUES] => Array
                 (
-                    [82490] => Array
-                        (
-                            [domain] => corp.estelab.ru
-                            [member_id] => 124ff83138e5ff3838db5f0214c6284a
-                            [application_token] => 16fc2b5f7189c9cfdf7586e4181433f1
-                            [AUTH] => Array
-                                (
-                                    [domain] => corp.estelab.ru
-                                    [member_id] => 124ff83138e5ff3838db5f0214c6284a
-                                    [application_token] => 16fc2b5f7189c9cfdf7586e4181433f1
-                                )
-
-                            [BOT_ID] => 82490
-                            [BOT_CODE] => AssistantBot
-                        )
-
-                )
-
-            [PARAMS] => Array
-                (
-                    [FROM_USER_ID] => 79910
-                    [TO_USER_ID] => 82490
-                    [MESSAGE] => заполняем данные о предстоящей командировке:
-                    [TEMPLATE_ID] => temp71
-                    [MESSAGE_TYPE] => P
-                    [SKIP_COMMAND] => N
-                    [SKIP_CONNECTOR] => N
-                    [IMPORTANT_CONNECTOR] => N
-                    [SILENT_CONNECTOR] => N
-                    [AUTHOR_ID] => 79910
-                    [CHAT_ID] => 128859
-                    [COMMAND_CONTEXT] => TEXTAREA
-                    [DIALOG_ID] => 79910
-                    [MESSAGE_ID] => 13264550
-                    [CHAT_TYPE] => P
-                    [LANGUAGE] => ru
-                )
-
-            [USER] => Array
-                (
-                    [ID] => 79910
-                    [NAME] => Петр Никитин
-                    [FIRST_NAME] => Петр
-                    [LAST_NAME] => Никитин
-                    [WORK_POSITION] => PHP программист
-                    [GENDER] => M
-                    [IS_BOT] => N
-                    [IS_CONNECTOR] => N
-                    [IS_NETWORK] => N
-                    [IS_EXTRANET] => N
+                    [case] => 
+                    [dateBegin] => 
+                    [dateEnd] => 
+                    [employee] => 
+                    [type] => 
+                    [department] => 
+                    [step] => 1
+                    [where] => 
+                    [departingTime] => 
+                    [arrivingTime] => 
+                    [purpose] => 
+                    [tickets] => 
+                    [booking] => 
+                    [boardingTickets] => 
+                    [command] => businessTrip
                 )
 
         )
 
-    [ts] => 1669381077
-    [auth] => Array
+    [1] => Array
         (
-            [access_token] => e5c98063005f274c0007ddab000138260000079f8ffe649c5da39e50a5b57f4305d412
-            [expires] => 1669384677
-            [expires_in] => 3600
-            [scope] => crm,im,imbot,catalog,landing,landing_cloud,placement,lists,forum,rpa,pull,pull_channel,mobile,telephony,call,delivery,messageservice,mailservice,cashbox,disk,pay_system,documentgenerator,bizproc,user,user_brief,user_basic,user.userfield,entity,imopenlines,userconsent,rating,smile,userfieldconfig,calendar,log,sonet_group,timeman,task,tasks_extended,department,contact_center,iblock,intranet,configuration.import,salescenter,socialnetwork,tasks,sale
-            [domain] => corp.estelab.ru
-            [server_endpoint] => https://oauth.bitrix.info/rest/
-            [status] => L
-            [client_endpoint] => https://corp.estelab.ru/rest/
-            [member_id] => 124ff83138e5ff3838db5f0214c6284a
-            [user_id] => 79910
-            [refresh_token] => d548a863005f274c0007ddab00013826000007d43226c23f7ba444534878d747321d9c
-            [application_token] => 16fc2b5f7189c9cfdf7586e4181433f1
-        )
-
-)
-
-------------------------
-
-------------------------
-2022.11.25 15:57:57
-properties
-Array
-(
-    [result] => Array
-        (
-            [0] => Array
+            [ID] => 466625
+            [TIMESTAMP_X] => 2022-11-25T13:08:19+03:00
+            [MODIFIED_BY] => 74295
+            [DATE_CREATE] => 2022-11-25T13:07:17+03:00
+            [CREATED_BY] => 74295
+            [ACTIVE] => Y
+            [DATE_ACTIVE_FROM] => 
+            [DATE_ACTIVE_TO] => 
+            [SORT] => 500
+            [NAME] => user_74295_заполняем процесс отсутствие:
+            [PREVIEW_PICTURE] => 
+            [PREVIEW_TEXT] => 
+            [DETAIL_PICTURE] => 
+            [DETAIL_TEXT] => 
+            [CODE] => 
+            [ENTITY] => bot_assistant
+            [SECTION] => 
+            [PROPERTY_VALUES] => Array
                 (
-                    [PROPERTY] => case
-                    [NAME] => Причина
-                    [TYPE] => S
-                    [SORT] => 500
-                )
-
-            [1] => Array
-                (
-                    [PROPERTY] => dateBegin
-                    [NAME] => Дата начала
-                    [TYPE] => S
-                    [SORT] => 500
-                )
-
-            [2] => Array
-                (
-                    [PROPERTY] => dateEnd
-                    [NAME] => Дата окончания
-                    [TYPE] => S
-                    [SORT] => 500
-                )
-
-            [3] => Array
-                (
-                    [PROPERTY] => employee
-                    [NAME] => Сотрудник
-                    [TYPE] => N
-                    [SORT] => 500
-                )
-
-            [4] => Array
-                (
-                    [PROPERTY] => type
-                    [NAME] => Тип
-                    [TYPE] => S
-                    [SORT] => 500
-                )
-
-            [5] => Array
-                (
-                    [PROPERTY] => department
-                    [NAME] => Подразделение
-                    [TYPE] => S
-                    [SORT] => 500
-                )
-
-            [6] => Array
-                (
-                    [PROPERTY] => step
-                    [NAME] => Шаг действия
-                    [TYPE] => S
-                    [SORT] => 500
-                )
-
-            [7] => Array
-                (
-                    [PROPERTY] => where
-                    [NAME] => Куда летим
-                    [TYPE] => S
-                    [SORT] => 500
-                )
-
-            [8] => Array
-                (
-                    [PROPERTY] => departingTime
-                    [NAME] => Дата/время отправления
-                    [TYPE] => S
-                    [SORT] => 500
-                )
-
-            [9] => Array
-                (
-                    [PROPERTY] => arrivingTime
-                    [NAME] => Дата/время прибытия
-                    [TYPE] => S
-                    [SORT] => 500
-                )
-
-            [10] => Array
-                (
-                    [PROPERTY] => purpose
-                    [NAME] => Цель командировки
-                    [TYPE] => S
-                    [SORT] => 500
-                )
-
-            [11] => Array
-                (
-                    [PROPERTY] => tickets
-                    [NAME] => Билеты
-                    [TYPE] => F
-                    [SORT] => 500
-                )
-
-            [12] => Array
-                (
-                    [PROPERTY] => booking
-                    [NAME] => Бронь гостиницы
-                    [TYPE] => F
-                    [SORT] => 500
-                )
-
-            [13] => Array
-                (
-                    [PROPERTY] => boardingTickets
-                    [NAME] => Посадочные талоны
-                    [TYPE] => F
-                    [SORT] => 500
+                    [case] => ропроро
+                    [dateBegin] => 11.11.2022
+                    [dateEnd] => 
+                    [employee] => 
+                    [type] => 
+                    [department] => 
+                    [step] => 3
+                    [where] => 
+                    [departingTime] => 
+                    [arrivingTime] => 
+                    [purpose] => 
+                    [tickets] => 
+                    [booking] => 
+                    [boardingTickets] => 
+                    [command] => 
                 )
 
         )
 
-    [time] => Array
+    [2] => Array
         (
-            [start] => 1669381077.2792
-            [finish] => 1669381077.4915
-            [duration] => 0.2122950553894
-            [processing] => 0.0078940391540527
-            [date_start] => 2022-11-25T15:57:57+03:00
-            [date_finish] => 2022-11-25T15:57:57+03:00
+            [ID] => 466623
+            [TIMESTAMP_X] => 2022-11-25T13:01:23+03:00
+            [MODIFIED_BY] => 81981
+            [DATE_CREATE] => 2022-11-25T13:00:19+03:00
+            [CREATED_BY] => 81981
+            [ACTIVE] => Y
+            [DATE_ACTIVE_FROM] => 
+            [DATE_ACTIVE_TO] => 
+            [SORT] => 500
+            [NAME] => user_81981_заполняем процесс отсутствие:
+            [PREVIEW_PICTURE] => 
+            [PREVIEW_TEXT] => 
+            [DETAIL_PICTURE] => 
+            [DETAIL_TEXT] => 
+            [CODE] => 
+            [ENTITY] => bot_assistant
+            [SECTION] => 
+            [PROPERTY_VALUES] => Array
+                (
+                    [case] => тест
+                    [dateBegin] => 11.10.2022
+                    [dateEnd] => 20.10.202
+                    [employee] => 
+                    [type] => 760
+                    [department] => 768
+                    [step] => 5
+                    [where] => 
+                    [departingTime] => 
+                    [arrivingTime] => 
+                    [purpose] => 
+                    [tickets] => 
+                    [booking] => 
+                    [boardingTickets] => 
+                    [command] => 
+                )
+
+        )
+
+    [3] => Array
+        (
+            [ID] => 466514
+            [TIMESTAMP_X] => 2022-11-25T10:12:53+03:00
+            [MODIFIED_BY] => 69643
+            [DATE_CREATE] => 2022-11-25T10:12:50+03:00
+            [CREATED_BY] => 69643
+            [ACTIVE] => Y
+            [DATE_ACTIVE_FROM] => 
+            [DATE_ACTIVE_TO] => 
+            [SORT] => 500
+            [NAME] => user_69643_заполняем процесс отсутствие:
+            [PREVIEW_PICTURE] => 
+            [PREVIEW_TEXT] => 
+            [DETAIL_PICTURE] => 
+            [DETAIL_TEXT] => 
+            [CODE] => 
+            [ENTITY] => bot_assistant
+            [SECTION] => 
+            [PROPERTY_VALUES] => Array
+                (
+                    [case] => йув
+                    [dateBegin] => 
+                    [dateEnd] => 
+                    [employee] => 
+                    [type] => 
+                    [department] => 
+                    [step] => 2
+                    [where] => 
+                    [departingTime] => 
+                    [arrivingTime] => 
+                    [purpose] => 
+                    [tickets] => 
+                    [booking] => 
+                    [boardingTickets] => 
+                    [command] => 
+                )
+
         )
 
 )
@@ -702,671 +199,11 @@ Array
 ------------------------
 
 ------------------------
-2022.11.25 16:01:14
-$_REQUEST
-Array
-(
-    [event] => ONIMBOTMESSAGEADD
-    [data] => Array
-        (
-            [BOT] => Array
-                (
-                    [82490] => Array
-                        (
-                            [domain] => corp.estelab.ru
-                            [member_id] => 124ff83138e5ff3838db5f0214c6284a
-                            [application_token] => 16fc2b5f7189c9cfdf7586e4181433f1
-                            [AUTH] => Array
-                                (
-                                    [domain] => corp.estelab.ru
-                                    [member_id] => 124ff83138e5ff3838db5f0214c6284a
-                                    [application_token] => 16fc2b5f7189c9cfdf7586e4181433f1
-                                )
-
-                            [BOT_ID] => 82490
-                            [BOT_CODE] => AssistantBot
-                        )
-
-                )
-
-            [PARAMS] => Array
-                (
-                    [FROM_USER_ID] => 79910
-                    [TO_USER_ID] => 82490
-                    [MESSAGE] => меню
-                    [TEMPLATE_ID] => temp72
-                    [MESSAGE_TYPE] => P
-                    [SKIP_COMMAND] => N
-                    [SKIP_CONNECTOR] => N
-                    [IMPORTANT_CONNECTOR] => N
-                    [SILENT_CONNECTOR] => N
-                    [AUTHOR_ID] => 79910
-                    [CHAT_ID] => 128859
-                    [COMMAND_CONTEXT] => TEXTAREA
-                    [DIALOG_ID] => 79910
-                    [MESSAGE_ID] => 13264612
-                    [CHAT_TYPE] => P
-                    [LANGUAGE] => ru
-                )
-
-            [USER] => Array
-                (
-                    [ID] => 79910
-                    [NAME] => Петр Никитин
-                    [FIRST_NAME] => Петр
-                    [LAST_NAME] => Никитин
-                    [WORK_POSITION] => PHP программист
-                    [GENDER] => M
-                    [IS_BOT] => N
-                    [IS_CONNECTOR] => N
-                    [IS_NETWORK] => N
-                    [IS_EXTRANET] => N
-                )
-
-        )
-
-    [ts] => 1669381274
-    [auth] => Array
-        (
-            [access_token] => aaca8063005f274c0007ddab00013826000007b64db18ca761a2204477e0746430e2d7
-            [expires] => 1669384874
-            [expires_in] => 3600
-            [scope] => crm,im,imbot,catalog,landing,landing_cloud,placement,lists,forum,rpa,pull,pull_channel,mobile,telephony,call,delivery,messageservice,mailservice,cashbox,disk,pay_system,documentgenerator,bizproc,user,user_brief,user_basic,user.userfield,entity,imopenlines,userconsent,rating,smile,userfieldconfig,calendar,log,sonet_group,timeman,task,tasks_extended,department,contact_center,iblock,intranet,configuration.import,salescenter,socialnetwork,tasks,sale
-            [domain] => corp.estelab.ru
-            [server_endpoint] => https://oauth.bitrix.info/rest/
-            [status] => L
-            [client_endpoint] => https://corp.estelab.ru/rest/
-            [member_id] => 124ff83138e5ff3838db5f0214c6284a
-            [user_id] => 79910
-            [refresh_token] => 9a49a863005f274c0007ddab000138260000075a602aa8f8782dd82501640a0e9e01d0
-            [application_token] => 16fc2b5f7189c9cfdf7586e4181433f1
-        )
-
-)
-
-------------------------
-
-------------------------
-2022.11.25 16:01:14
-properties
-Array
-(
-    [result] => Array
-        (
-            [0] => Array
-                (
-                    [PROPERTY] => case
-                    [NAME] => Причина
-                    [TYPE] => S
-                    [SORT] => 500
-                )
-
-            [1] => Array
-                (
-                    [PROPERTY] => dateBegin
-                    [NAME] => Дата начала
-                    [TYPE] => S
-                    [SORT] => 500
-                )
-
-            [2] => Array
-                (
-                    [PROPERTY] => dateEnd
-                    [NAME] => Дата окончания
-                    [TYPE] => S
-                    [SORT] => 500
-                )
-
-            [3] => Array
-                (
-                    [PROPERTY] => employee
-                    [NAME] => Сотрудник
-                    [TYPE] => N
-                    [SORT] => 500
-                )
-
-            [4] => Array
-                (
-                    [PROPERTY] => type
-                    [NAME] => Тип
-                    [TYPE] => S
-                    [SORT] => 500
-                )
-
-            [5] => Array
-                (
-                    [PROPERTY] => department
-                    [NAME] => Подразделение
-                    [TYPE] => S
-                    [SORT] => 500
-                )
-
-            [6] => Array
-                (
-                    [PROPERTY] => step
-                    [NAME] => Шаг действия
-                    [TYPE] => S
-                    [SORT] => 500
-                )
-
-            [7] => Array
-                (
-                    [PROPERTY] => where
-                    [NAME] => Куда летим
-                    [TYPE] => S
-                    [SORT] => 500
-                )
-
-            [8] => Array
-                (
-                    [PROPERTY] => departingTime
-                    [NAME] => Дата/время отправления
-                    [TYPE] => S
-                    [SORT] => 500
-                )
-
-            [9] => Array
-                (
-                    [PROPERTY] => arrivingTime
-                    [NAME] => Дата/время прибытия
-                    [TYPE] => S
-                    [SORT] => 500
-                )
-
-            [10] => Array
-                (
-                    [PROPERTY] => purpose
-                    [NAME] => Цель командировки
-                    [TYPE] => S
-                    [SORT] => 500
-                )
-
-            [11] => Array
-                (
-                    [PROPERTY] => tickets
-                    [NAME] => Билеты
-                    [TYPE] => F
-                    [SORT] => 500
-                )
-
-            [12] => Array
-                (
-                    [PROPERTY] => booking
-                    [NAME] => Бронь гостиницы
-                    [TYPE] => F
-                    [SORT] => 500
-                )
-
-            [13] => Array
-                (
-                    [PROPERTY] => boardingTickets
-                    [NAME] => Посадочные талоны
-                    [TYPE] => F
-                    [SORT] => 500
-                )
-
-        )
-
-    [time] => Array
-        (
-            [start] => 1669381274.6731
-            [finish] => 1669381274.8628
-            [duration] => 0.18968391418457
-            [processing] => 0.0045409202575684
-            [date_start] => 2022-11-25T16:01:14+03:00
-            [date_finish] => 2022-11-25T16:01:14+03:00
-        )
-
-)
-
-------------------------
-
-------------------------
-2022.11.25 16:01:20
-$_REQUEST
-Array
-(
-    [event] => ONIMBOTMESSAGEADD
-    [data] => Array
-        (
-            [BOT] => Array
-                (
-                    [82490] => Array
-                        (
-                            [domain] => corp.estelab.ru
-                            [member_id] => 124ff83138e5ff3838db5f0214c6284a
-                            [application_token] => 16fc2b5f7189c9cfdf7586e4181433f1
-                            [AUTH] => Array
-                                (
-                                    [domain] => corp.estelab.ru
-                                    [member_id] => 124ff83138e5ff3838db5f0214c6284a
-                                    [application_token] => 16fc2b5f7189c9cfdf7586e4181433f1
-                                )
-
-                            [BOT_ID] => 82490
-                            [BOT_CODE] => AssistantBot
-                        )
-
-                )
-
-            [PARAMS] => Array
-                (
-                    [FROM_USER_ID] => 79910
-                    [TO_USER_ID] => 82490
-                    [MESSAGE] => привет
-                    [TEMPLATE_ID] => temp73
-                    [MESSAGE_TYPE] => P
-                    [SKIP_COMMAND] => N
-                    [SKIP_CONNECTOR] => N
-                    [IMPORTANT_CONNECTOR] => N
-                    [SILENT_CONNECTOR] => N
-                    [AUTHOR_ID] => 79910
-                    [CHAT_ID] => 128859
-                    [COMMAND_CONTEXT] => TEXTAREA
-                    [DIALOG_ID] => 79910
-                    [MESSAGE_ID] => 13264614
-                    [CHAT_TYPE] => P
-                    [LANGUAGE] => ru
-                )
-
-            [USER] => Array
-                (
-                    [ID] => 79910
-                    [NAME] => Петр Никитин
-                    [FIRST_NAME] => Петр
-                    [LAST_NAME] => Никитин
-                    [WORK_POSITION] => PHP программист
-                    [GENDER] => M
-                    [IS_BOT] => N
-                    [IS_CONNECTOR] => N
-                    [IS_NETWORK] => N
-                    [IS_EXTRANET] => N
-                )
-
-        )
-
-    [ts] => 1669381280
-    [auth] => Array
-        (
-            [access_token] => b0ca8063005f274c0007ddab00013826000007fb74411c2815a7317615e7670140a23b
-            [expires] => 1669384880
-            [expires_in] => 3600
-            [scope] => crm,im,imbot,catalog,landing,landing_cloud,placement,lists,forum,rpa,pull,pull_channel,mobile,telephony,call,delivery,messageservice,mailservice,cashbox,disk,pay_system,documentgenerator,bizproc,user,user_brief,user_basic,user.userfield,entity,imopenlines,userconsent,rating,smile,userfieldconfig,calendar,log,sonet_group,timeman,task,tasks_extended,department,contact_center,iblock,intranet,configuration.import,salescenter,socialnetwork,tasks,sale
-            [domain] => corp.estelab.ru
-            [server_endpoint] => https://oauth.bitrix.info/rest/
-            [status] => L
-            [client_endpoint] => https://corp.estelab.ru/rest/
-            [member_id] => 124ff83138e5ff3838db5f0214c6284a
-            [user_id] => 79910
-            [refresh_token] => a049a863005f274c0007ddab00013826000007685ed0e2d113fba16b2d8f24813a0cb3
-            [application_token] => 16fc2b5f7189c9cfdf7586e4181433f1
-        )
-
-)
-
-------------------------
-
-------------------------
-2022.11.25 16:01:20
-properties
-Array
-(
-    [result] => Array
-        (
-            [0] => Array
-                (
-                    [PROPERTY] => case
-                    [NAME] => Причина
-                    [TYPE] => S
-                    [SORT] => 500
-                )
-
-            [1] => Array
-                (
-                    [PROPERTY] => dateBegin
-                    [NAME] => Дата начала
-                    [TYPE] => S
-                    [SORT] => 500
-                )
-
-            [2] => Array
-                (
-                    [PROPERTY] => dateEnd
-                    [NAME] => Дата окончания
-                    [TYPE] => S
-                    [SORT] => 500
-                )
-
-            [3] => Array
-                (
-                    [PROPERTY] => employee
-                    [NAME] => Сотрудник
-                    [TYPE] => N
-                    [SORT] => 500
-                )
-
-            [4] => Array
-                (
-                    [PROPERTY] => type
-                    [NAME] => Тип
-                    [TYPE] => S
-                    [SORT] => 500
-                )
-
-            [5] => Array
-                (
-                    [PROPERTY] => department
-                    [NAME] => Подразделение
-                    [TYPE] => S
-                    [SORT] => 500
-                )
-
-            [6] => Array
-                (
-                    [PROPERTY] => step
-                    [NAME] => Шаг действия
-                    [TYPE] => S
-                    [SORT] => 500
-                )
-
-            [7] => Array
-                (
-                    [PROPERTY] => where
-                    [NAME] => Куда летим
-                    [TYPE] => S
-                    [SORT] => 500
-                )
-
-            [8] => Array
-                (
-                    [PROPERTY] => departingTime
-                    [NAME] => Дата/время отправления
-                    [TYPE] => S
-                    [SORT] => 500
-                )
-
-            [9] => Array
-                (
-                    [PROPERTY] => arrivingTime
-                    [NAME] => Дата/время прибытия
-                    [TYPE] => S
-                    [SORT] => 500
-                )
-
-            [10] => Array
-                (
-                    [PROPERTY] => purpose
-                    [NAME] => Цель командировки
-                    [TYPE] => S
-                    [SORT] => 500
-                )
-
-            [11] => Array
-                (
-                    [PROPERTY] => tickets
-                    [NAME] => Билеты
-                    [TYPE] => F
-                    [SORT] => 500
-                )
-
-            [12] => Array
-                (
-                    [PROPERTY] => booking
-                    [NAME] => Бронь гостиницы
-                    [TYPE] => F
-                    [SORT] => 500
-                )
-
-            [13] => Array
-                (
-                    [PROPERTY] => boardingTickets
-                    [NAME] => Посадочные талоны
-                    [TYPE] => F
-                    [SORT] => 500
-                )
-
-        )
-
-    [time] => Array
-        (
-            [start] => 1669381280.3141
-            [finish] => 1669381280.4906
-            [duration] => 0.17650413513184
-            [processing] => 0.0044879913330078
-            [date_start] => 2022-11-25T16:01:20+03:00
-            [date_finish] => 2022-11-25T16:01:20+03:00
-        )
-
-)
-
-------------------------
-
-------------------------
-2022.11.25 16:01:26
-$_REQUEST
-Array
-(
-    [event] => ONIMBOTMESSAGEADD
-    [data] => Array
-        (
-            [BOT] => Array
-                (
-                    [82490] => Array
-                        (
-                            [domain] => corp.estelab.ru
-                            [member_id] => 124ff83138e5ff3838db5f0214c6284a
-                            [application_token] => 16fc2b5f7189c9cfdf7586e4181433f1
-                            [AUTH] => Array
-                                (
-                                    [domain] => corp.estelab.ru
-                                    [member_id] => 124ff83138e5ff3838db5f0214c6284a
-                                    [application_token] => 16fc2b5f7189c9cfdf7586e4181433f1
-                                )
-
-                            [BOT_ID] => 82490
-                            [BOT_CODE] => AssistantBot
-                        )
-
-                )
-
-            [PARAMS] => Array
-                (
-                    [FROM_USER_ID] => 79910
-                    [TO_USER_ID] => 82490
-                    [MESSAGE] => меню
-                    [TEMPLATE_ID] => temp74
-                    [MESSAGE_TYPE] => P
-                    [SKIP_COMMAND] => N
-                    [SKIP_CONNECTOR] => N
-                    [IMPORTANT_CONNECTOR] => N
-                    [SILENT_CONNECTOR] => N
-                    [AUTHOR_ID] => 79910
-                    [CHAT_ID] => 128859
-                    [COMMAND_CONTEXT] => TEXTAREA
-                    [DIALOG_ID] => 79910
-                    [MESSAGE_ID] => 13264616
-                    [CHAT_TYPE] => P
-                    [LANGUAGE] => ru
-                )
-
-            [USER] => Array
-                (
-                    [ID] => 79910
-                    [NAME] => Петр Никитин
-                    [FIRST_NAME] => Петр
-                    [LAST_NAME] => Никитин
-                    [WORK_POSITION] => PHP программист
-                    [GENDER] => M
-                    [IS_BOT] => N
-                    [IS_CONNECTOR] => N
-                    [IS_NETWORK] => N
-                    [IS_EXTRANET] => N
-                )
-
-        )
-
-    [ts] => 1669381286
-    [auth] => Array
-        (
-            [access_token] => b6ca8063005f274c0007ddab00013826000007fa98bf6c388865f0bc8eb4610ada7868
-            [expires] => 1669384886
-            [expires_in] => 3600
-            [scope] => crm,im,imbot,catalog,landing,landing_cloud,placement,lists,forum,rpa,pull,pull_channel,mobile,telephony,call,delivery,messageservice,mailservice,cashbox,disk,pay_system,documentgenerator,bizproc,user,user_brief,user_basic,user.userfield,entity,imopenlines,userconsent,rating,smile,userfieldconfig,calendar,log,sonet_group,timeman,task,tasks_extended,department,contact_center,iblock,intranet,configuration.import,salescenter,socialnetwork,tasks,sale
-            [domain] => corp.estelab.ru
-            [server_endpoint] => https://oauth.bitrix.info/rest/
-            [status] => L
-            [client_endpoint] => https://corp.estelab.ru/rest/
-            [member_id] => 124ff83138e5ff3838db5f0214c6284a
-            [user_id] => 79910
-            [refresh_token] => a649a863005f274c0007ddab0001382600000774a53baad3b67d51bb84a24f89bc47b6
-            [application_token] => 16fc2b5f7189c9cfdf7586e4181433f1
-        )
-
-)
-
-------------------------
-
-------------------------
-2022.11.25 16:01:26
-properties
-Array
-(
-    [result] => Array
-        (
-            [0] => Array
-                (
-                    [PROPERTY] => case
-                    [NAME] => Причина
-                    [TYPE] => S
-                    [SORT] => 500
-                )
-
-            [1] => Array
-                (
-                    [PROPERTY] => dateBegin
-                    [NAME] => Дата начала
-                    [TYPE] => S
-                    [SORT] => 500
-                )
-
-            [2] => Array
-                (
-                    [PROPERTY] => dateEnd
-                    [NAME] => Дата окончания
-                    [TYPE] => S
-                    [SORT] => 500
-                )
-
-            [3] => Array
-                (
-                    [PROPERTY] => employee
-                    [NAME] => Сотрудник
-                    [TYPE] => N
-                    [SORT] => 500
-                )
-
-            [4] => Array
-                (
-                    [PROPERTY] => type
-                    [NAME] => Тип
-                    [TYPE] => S
-                    [SORT] => 500
-                )
-
-            [5] => Array
-                (
-                    [PROPERTY] => department
-                    [NAME] => Подразделение
-                    [TYPE] => S
-                    [SORT] => 500
-                )
-
-            [6] => Array
-                (
-                    [PROPERTY] => step
-                    [NAME] => Шаг действия
-                    [TYPE] => S
-                    [SORT] => 500
-                )
-
-            [7] => Array
-                (
-                    [PROPERTY] => where
-                    [NAME] => Куда летим
-                    [TYPE] => S
-                    [SORT] => 500
-                )
-
-            [8] => Array
-                (
-                    [PROPERTY] => departingTime
-                    [NAME] => Дата/время отправления
-                    [TYPE] => S
-                    [SORT] => 500
-                )
-
-            [9] => Array
-                (
-                    [PROPERTY] => arrivingTime
-                    [NAME] => Дата/время прибытия
-                    [TYPE] => S
-                    [SORT] => 500
-                )
-
-            [10] => Array
-                (
-                    [PROPERTY] => purpose
-                    [NAME] => Цель командировки
-                    [TYPE] => S
-                    [SORT] => 500
-                )
-
-            [11] => Array
-                (
-                    [PROPERTY] => tickets
-                    [NAME] => Билеты
-                    [TYPE] => F
-                    [SORT] => 500
-                )
-
-            [12] => Array
-                (
-                    [PROPERTY] => booking
-                    [NAME] => Бронь гостиницы
-                    [TYPE] => F
-                    [SORT] => 500
-                )
-
-            [13] => Array
-                (
-                    [PROPERTY] => boardingTickets
-                    [NAME] => Посадочные талоны
-                    [TYPE] => F
-                    [SORT] => 500
-                )
-
-        )
-
-    [time] => Array
-        (
-            [start] => 1669381286.2666
-            [finish] => 1669381286.418
-            [duration] => 0.15137386322021
-            [processing] => 0.0045819282531738
-            [date_start] => 2022-11-25T16:01:26+03:00
-            [date_finish] => 2022-11-25T16:01:26+03:00
-        )
-
-)
-
-------------------------
-
-------------------------
-2022.11.25 16:01:29
+2022.11.25 17:34:36
 AssistantBot command add
 Array
 (
-    [145] => Array
+    [147] => Array
         (
             [domain] => corp.estelab.ru
             [member_id] => 124ff83138e5ff3838db5f0214c6284a
@@ -1380,11 +217,11 @@ Array
 
             [BOT_ID] => 82490
             [BOT_CODE] => AssistantBot
-            [COMMAND] => absence
-            [COMMAND_ID] => 145
-            [COMMAND_PARAMS] => absence and processing
+            [COMMAND] => businessTrip
+            [COMMAND_ID] => 147
+            [COMMAND_PARAMS] => fill business trip
             [COMMAND_CONTEXT] => KEYBOARD
-            [MESSAGE_ID] => 13264617
+            [MESSAGE_ID] => 13266208
         )
 
 )
@@ -1392,2459 +229,11 @@ Array
 ------------------------
 
 ------------------------
-2022.11.25 16:01:33
-$_REQUEST
-Array
-(
-    [event] => ONIMBOTMESSAGEADD
-    [data] => Array
-        (
-            [BOT] => Array
-                (
-                    [82490] => Array
-                        (
-                            [domain] => corp.estelab.ru
-                            [member_id] => 124ff83138e5ff3838db5f0214c6284a
-                            [application_token] => 16fc2b5f7189c9cfdf7586e4181433f1
-                            [AUTH] => Array
-                                (
-                                    [domain] => corp.estelab.ru
-                                    [member_id] => 124ff83138e5ff3838db5f0214c6284a
-                                    [application_token] => 16fc2b5f7189c9cfdf7586e4181433f1
-                                )
-
-                            [BOT_ID] => 82490
-                            [BOT_CODE] => AssistantBot
-                        )
-
-                )
-
-            [PARAMS] => Array
-                (
-                    [FROM_USER_ID] => 79910
-                    [TO_USER_ID] => 82490
-                    [MESSAGE] => заполняем процесс отсутствие:
-                    [TEMPLATE_ID] => temp75
-                    [MESSAGE_TYPE] => P
-                    [SKIP_COMMAND] => N
-                    [SKIP_CONNECTOR] => N
-                    [IMPORTANT_CONNECTOR] => N
-                    [SILENT_CONNECTOR] => N
-                    [AUTHOR_ID] => 79910
-                    [CHAT_ID] => 128859
-                    [COMMAND_CONTEXT] => TEXTAREA
-                    [DIALOG_ID] => 79910
-                    [MESSAGE_ID] => 13264620
-                    [CHAT_TYPE] => P
-                    [LANGUAGE] => ru
-                )
-
-            [USER] => Array
-                (
-                    [ID] => 79910
-                    [NAME] => Петр Никитин
-                    [FIRST_NAME] => Петр
-                    [LAST_NAME] => Никитин
-                    [WORK_POSITION] => PHP программист
-                    [GENDER] => M
-                    [IS_BOT] => N
-                    [IS_CONNECTOR] => N
-                    [IS_NETWORK] => N
-                    [IS_EXTRANET] => N
-                )
-
-        )
-
-    [ts] => 1669381293
-    [auth] => Array
-        (
-            [access_token] => bdca8063005f274c0007ddab00013826000007979245dfd5098e23dd7e29387a59b3d4
-            [expires] => 1669384893
-            [expires_in] => 3600
-            [scope] => crm,im,imbot,catalog,landing,landing_cloud,placement,lists,forum,rpa,pull,pull_channel,mobile,telephony,call,delivery,messageservice,mailservice,cashbox,disk,pay_system,documentgenerator,bizproc,user,user_brief,user_basic,user.userfield,entity,imopenlines,userconsent,rating,smile,userfieldconfig,calendar,log,sonet_group,timeman,task,tasks_extended,department,contact_center,iblock,intranet,configuration.import,salescenter,socialnetwork,tasks,sale
-            [domain] => corp.estelab.ru
-            [server_endpoint] => https://oauth.bitrix.info/rest/
-            [status] => L
-            [client_endpoint] => https://corp.estelab.ru/rest/
-            [member_id] => 124ff83138e5ff3838db5f0214c6284a
-            [user_id] => 79910
-            [refresh_token] => ad49a863005f274c0007ddab000138260000079b9d7ca0fc5c1678cc5f445b4b262ecf
-            [application_token] => 16fc2b5f7189c9cfdf7586e4181433f1
-        )
-
-)
-
-------------------------
-
-------------------------
-2022.11.25 16:01:34
-properties
-Array
-(
-    [result] => Array
-        (
-            [0] => Array
-                (
-                    [PROPERTY] => case
-                    [NAME] => Причина
-                    [TYPE] => S
-                    [SORT] => 500
-                )
-
-            [1] => Array
-                (
-                    [PROPERTY] => dateBegin
-                    [NAME] => Дата начала
-                    [TYPE] => S
-                    [SORT] => 500
-                )
-
-            [2] => Array
-                (
-                    [PROPERTY] => dateEnd
-                    [NAME] => Дата окончания
-                    [TYPE] => S
-                    [SORT] => 500
-                )
-
-            [3] => Array
-                (
-                    [PROPERTY] => employee
-                    [NAME] => Сотрудник
-                    [TYPE] => N
-                    [SORT] => 500
-                )
-
-            [4] => Array
-                (
-                    [PROPERTY] => type
-                    [NAME] => Тип
-                    [TYPE] => S
-                    [SORT] => 500
-                )
-
-            [5] => Array
-                (
-                    [PROPERTY] => department
-                    [NAME] => Подразделение
-                    [TYPE] => S
-                    [SORT] => 500
-                )
-
-            [6] => Array
-                (
-                    [PROPERTY] => step
-                    [NAME] => Шаг действия
-                    [TYPE] => S
-                    [SORT] => 500
-                )
-
-            [7] => Array
-                (
-                    [PROPERTY] => where
-                    [NAME] => Куда летим
-                    [TYPE] => S
-                    [SORT] => 500
-                )
-
-            [8] => Array
-                (
-                    [PROPERTY] => departingTime
-                    [NAME] => Дата/время отправления
-                    [TYPE] => S
-                    [SORT] => 500
-                )
-
-            [9] => Array
-                (
-                    [PROPERTY] => arrivingTime
-                    [NAME] => Дата/время прибытия
-                    [TYPE] => S
-                    [SORT] => 500
-                )
-
-            [10] => Array
-                (
-                    [PROPERTY] => purpose
-                    [NAME] => Цель командировки
-                    [TYPE] => S
-                    [SORT] => 500
-                )
-
-            [11] => Array
-                (
-                    [PROPERTY] => tickets
-                    [NAME] => Билеты
-                    [TYPE] => F
-                    [SORT] => 500
-                )
-
-            [12] => Array
-                (
-                    [PROPERTY] => booking
-                    [NAME] => Бронь гостиницы
-                    [TYPE] => F
-                    [SORT] => 500
-                )
-
-            [13] => Array
-                (
-                    [PROPERTY] => boardingTickets
-                    [NAME] => Посадочные талоны
-                    [TYPE] => F
-                    [SORT] => 500
-                )
-
-        )
-
-    [time] => Array
-        (
-            [start] => 1669381293.8175
-            [finish] => 1669381293.9995
-            [duration] => 0.18194913864136
-            [processing] => 0.0050299167633057
-            [date_start] => 2022-11-25T16:01:33+03:00
-            [date_finish] => 2022-11-25T16:01:33+03:00
-        )
-
-)
-
-------------------------
-
-------------------------
-2022.11.25 16:01:42
-$_REQUEST
-Array
-(
-    [event] => ONIMBOTMESSAGEADD
-    [data] => Array
-        (
-            [BOT] => Array
-                (
-                    [82490] => Array
-                        (
-                            [domain] => corp.estelab.ru
-                            [member_id] => 124ff83138e5ff3838db5f0214c6284a
-                            [application_token] => 16fc2b5f7189c9cfdf7586e4181433f1
-                            [AUTH] => Array
-                                (
-                                    [domain] => corp.estelab.ru
-                                    [member_id] => 124ff83138e5ff3838db5f0214c6284a
-                                    [application_token] => 16fc2b5f7189c9cfdf7586e4181433f1
-                                )
-
-                            [BOT_ID] => 82490
-                            [BOT_CODE] => AssistantBot
-                        )
-
-                )
-
-            [PARAMS] => Array
-                (
-                    [FROM_USER_ID] => 79910
-                    [TO_USER_ID] => 82490
-                    [MESSAGE] => тест
-                    [TEMPLATE_ID] => temp76
-                    [MESSAGE_TYPE] => P
-                    [SKIP_COMMAND] => N
-                    [SKIP_CONNECTOR] => N
-                    [IMPORTANT_CONNECTOR] => N
-                    [SILENT_CONNECTOR] => N
-                    [AUTHOR_ID] => 79910
-                    [CHAT_ID] => 128859
-                    [COMMAND_CONTEXT] => TEXTAREA
-                    [DIALOG_ID] => 79910
-                    [MESSAGE_ID] => 13264630
-                    [CHAT_TYPE] => P
-                    [LANGUAGE] => ru
-                )
-
-            [USER] => Array
-                (
-                    [ID] => 79910
-                    [NAME] => Петр Никитин
-                    [FIRST_NAME] => Петр
-                    [LAST_NAME] => Никитин
-                    [WORK_POSITION] => PHP программист
-                    [GENDER] => M
-                    [IS_BOT] => N
-                    [IS_CONNECTOR] => N
-                    [IS_NETWORK] => N
-                    [IS_EXTRANET] => N
-                )
-
-        )
-
-    [ts] => 1669381302
-    [auth] => Array
-        (
-            [access_token] => c6ca8063005f274c0007ddab000138260000072e74c95d499db6a0a6f561aad754e8bd
-            [expires] => 1669384902
-            [expires_in] => 3600
-            [scope] => crm,im,imbot,catalog,landing,landing_cloud,placement,lists,forum,rpa,pull,pull_channel,mobile,telephony,call,delivery,messageservice,mailservice,cashbox,disk,pay_system,documentgenerator,bizproc,user,user_brief,user_basic,user.userfield,entity,imopenlines,userconsent,rating,smile,userfieldconfig,calendar,log,sonet_group,timeman,task,tasks_extended,department,contact_center,iblock,intranet,configuration.import,salescenter,socialnetwork,tasks,sale
-            [domain] => corp.estelab.ru
-            [server_endpoint] => https://oauth.bitrix.info/rest/
-            [status] => L
-            [client_endpoint] => https://corp.estelab.ru/rest/
-            [member_id] => 124ff83138e5ff3838db5f0214c6284a
-            [user_id] => 79910
-            [refresh_token] => b649a863005f274c0007ddab00013826000007d42f367c0c68aa694a3785430fe31a82
-            [application_token] => 16fc2b5f7189c9cfdf7586e4181433f1
-        )
-
-)
-
-------------------------
-
-------------------------
-2022.11.25 16:01:42
-properties
-Array
-(
-    [result] => Array
-        (
-            [0] => Array
-                (
-                    [PROPERTY] => case
-                    [NAME] => Причина
-                    [TYPE] => S
-                    [SORT] => 500
-                )
-
-            [1] => Array
-                (
-                    [PROPERTY] => dateBegin
-                    [NAME] => Дата начала
-                    [TYPE] => S
-                    [SORT] => 500
-                )
-
-            [2] => Array
-                (
-                    [PROPERTY] => dateEnd
-                    [NAME] => Дата окончания
-                    [TYPE] => S
-                    [SORT] => 500
-                )
-
-            [3] => Array
-                (
-                    [PROPERTY] => employee
-                    [NAME] => Сотрудник
-                    [TYPE] => N
-                    [SORT] => 500
-                )
-
-            [4] => Array
-                (
-                    [PROPERTY] => type
-                    [NAME] => Тип
-                    [TYPE] => S
-                    [SORT] => 500
-                )
-
-            [5] => Array
-                (
-                    [PROPERTY] => department
-                    [NAME] => Подразделение
-                    [TYPE] => S
-                    [SORT] => 500
-                )
-
-            [6] => Array
-                (
-                    [PROPERTY] => step
-                    [NAME] => Шаг действия
-                    [TYPE] => S
-                    [SORT] => 500
-                )
-
-            [7] => Array
-                (
-                    [PROPERTY] => where
-                    [NAME] => Куда летим
-                    [TYPE] => S
-                    [SORT] => 500
-                )
-
-            [8] => Array
-                (
-                    [PROPERTY] => departingTime
-                    [NAME] => Дата/время отправления
-                    [TYPE] => S
-                    [SORT] => 500
-                )
-
-            [9] => Array
-                (
-                    [PROPERTY] => arrivingTime
-                    [NAME] => Дата/время прибытия
-                    [TYPE] => S
-                    [SORT] => 500
-                )
-
-            [10] => Array
-                (
-                    [PROPERTY] => purpose
-                    [NAME] => Цель командировки
-                    [TYPE] => S
-                    [SORT] => 500
-                )
-
-            [11] => Array
-                (
-                    [PROPERTY] => tickets
-                    [NAME] => Билеты
-                    [TYPE] => F
-                    [SORT] => 500
-                )
-
-            [12] => Array
-                (
-                    [PROPERTY] => booking
-                    [NAME] => Бронь гостиницы
-                    [TYPE] => F
-                    [SORT] => 500
-                )
-
-            [13] => Array
-                (
-                    [PROPERTY] => boardingTickets
-                    [NAME] => Посадочные талоны
-                    [TYPE] => F
-                    [SORT] => 500
-                )
-
-        )
-
-    [time] => Array
-        (
-            [start] => 1669381302.5588
-            [finish] => 1669381302.7176
-            [duration] => 0.15882897377014
-            [processing] => 0.0050370693206787
-            [date_start] => 2022-11-25T16:01:42+03:00
-            [date_finish] => 2022-11-25T16:01:42+03:00
-        )
-
-)
-
-------------------------
-
-------------------------
-2022.11.25 16:02:00
-$_REQUEST
-Array
-(
-    [event] => ONIMBOTMESSAGEADD
-    [data] => Array
-        (
-            [BOT] => Array
-                (
-                    [82490] => Array
-                        (
-                            [domain] => corp.estelab.ru
-                            [member_id] => 124ff83138e5ff3838db5f0214c6284a
-                            [application_token] => 16fc2b5f7189c9cfdf7586e4181433f1
-                            [AUTH] => Array
-                                (
-                                    [domain] => corp.estelab.ru
-                                    [member_id] => 124ff83138e5ff3838db5f0214c6284a
-                                    [application_token] => 16fc2b5f7189c9cfdf7586e4181433f1
-                                )
-
-                            [BOT_ID] => 82490
-                            [BOT_CODE] => AssistantBot
-                        )
-
-                )
-
-            [PARAMS] => Array
-                (
-                    [FROM_USER_ID] => 79910
-                    [TO_USER_ID] => 82490
-                    [MESSAGE] => 25.11.2022 10:30
-                    [TEMPLATE_ID] => temp77
-                    [MESSAGE_TYPE] => P
-                    [PARAMS] => Array
-                        (
-                            [DATE_TEXT] => Array
-                                (
-                                    [0] => 25.11.2022 10:30
-                                )
-
-                            [DATE_TS] => Array
-                                (
-                                    [0] => 1669361400
-                                )
-
-                        )
-
-                    [SKIP_COMMAND] => N
-                    [SKIP_CONNECTOR] => N
-                    [IMPORTANT_CONNECTOR] => N
-                    [SILENT_CONNECTOR] => N
-                    [AUTHOR_ID] => 79910
-                    [CHAT_ID] => 128859
-                    [COMMAND_CONTEXT] => TEXTAREA
-                    [DIALOG_ID] => 79910
-                    [MESSAGE_ID] => 13264635
-                    [CHAT_TYPE] => P
-                    [LANGUAGE] => ru
-                )
-
-            [USER] => Array
-                (
-                    [ID] => 79910
-                    [NAME] => Петр Никитин
-                    [FIRST_NAME] => Петр
-                    [LAST_NAME] => Никитин
-                    [WORK_POSITION] => PHP программист
-                    [GENDER] => M
-                    [IS_BOT] => N
-                    [IS_CONNECTOR] => N
-                    [IS_NETWORK] => N
-                    [IS_EXTRANET] => N
-                )
-
-        )
-
-    [ts] => 1669381320
-    [auth] => Array
-        (
-            [access_token] => d8ca8063005f274c0007ddab0001382600000722d3b48b789b0557e8008cb56ed75256
-            [expires] => 1669384920
-            [expires_in] => 3600
-            [scope] => crm,im,imbot,catalog,landing,landing_cloud,placement,lists,forum,rpa,pull,pull_channel,mobile,telephony,call,delivery,messageservice,mailservice,cashbox,disk,pay_system,documentgenerator,bizproc,user,user_brief,user_basic,user.userfield,entity,imopenlines,userconsent,rating,smile,userfieldconfig,calendar,log,sonet_group,timeman,task,tasks_extended,department,contact_center,iblock,intranet,configuration.import,salescenter,socialnetwork,tasks,sale
-            [domain] => corp.estelab.ru
-            [server_endpoint] => https://oauth.bitrix.info/rest/
-            [status] => L
-            [client_endpoint] => https://corp.estelab.ru/rest/
-            [member_id] => 124ff83138e5ff3838db5f0214c6284a
-            [user_id] => 79910
-            [refresh_token] => c849a863005f274c0007ddab00013826000007f77b580e59eb5ca165d260acef1ff201
-            [application_token] => 16fc2b5f7189c9cfdf7586e4181433f1
-        )
-
-)
-
-------------------------
-
-------------------------
-2022.11.25 16:02:00
-properties
-Array
-(
-    [result] => Array
-        (
-            [0] => Array
-                (
-                    [PROPERTY] => case
-                    [NAME] => Причина
-                    [TYPE] => S
-                    [SORT] => 500
-                )
-
-            [1] => Array
-                (
-                    [PROPERTY] => dateBegin
-                    [NAME] => Дата начала
-                    [TYPE] => S
-                    [SORT] => 500
-                )
-
-            [2] => Array
-                (
-                    [PROPERTY] => dateEnd
-                    [NAME] => Дата окончания
-                    [TYPE] => S
-                    [SORT] => 500
-                )
-
-            [3] => Array
-                (
-                    [PROPERTY] => employee
-                    [NAME] => Сотрудник
-                    [TYPE] => N
-                    [SORT] => 500
-                )
-
-            [4] => Array
-                (
-                    [PROPERTY] => type
-                    [NAME] => Тип
-                    [TYPE] => S
-                    [SORT] => 500
-                )
-
-            [5] => Array
-                (
-                    [PROPERTY] => department
-                    [NAME] => Подразделение
-                    [TYPE] => S
-                    [SORT] => 500
-                )
-
-            [6] => Array
-                (
-                    [PROPERTY] => step
-                    [NAME] => Шаг действия
-                    [TYPE] => S
-                    [SORT] => 500
-                )
-
-            [7] => Array
-                (
-                    [PROPERTY] => where
-                    [NAME] => Куда летим
-                    [TYPE] => S
-                    [SORT] => 500
-                )
-
-            [8] => Array
-                (
-                    [PROPERTY] => departingTime
-                    [NAME] => Дата/время отправления
-                    [TYPE] => S
-                    [SORT] => 500
-                )
-
-            [9] => Array
-                (
-                    [PROPERTY] => arrivingTime
-                    [NAME] => Дата/время прибытия
-                    [TYPE] => S
-                    [SORT] => 500
-                )
-
-            [10] => Array
-                (
-                    [PROPERTY] => purpose
-                    [NAME] => Цель командировки
-                    [TYPE] => S
-                    [SORT] => 500
-                )
-
-            [11] => Array
-                (
-                    [PROPERTY] => tickets
-                    [NAME] => Билеты
-                    [TYPE] => F
-                    [SORT] => 500
-                )
-
-            [12] => Array
-                (
-                    [PROPERTY] => booking
-                    [NAME] => Бронь гостиницы
-                    [TYPE] => F
-                    [SORT] => 500
-                )
-
-            [13] => Array
-                (
-                    [PROPERTY] => boardingTickets
-                    [NAME] => Посадочные талоны
-                    [TYPE] => F
-                    [SORT] => 500
-                )
-
-        )
-
-    [time] => Array
-        (
-            [start] => 1669381320.4982
-            [finish] => 1669381320.6559
-            [duration] => 0.15772104263306
-            [processing] => 0.0048751831054688
-            [date_start] => 2022-11-25T16:02:00+03:00
-            [date_finish] => 2022-11-25T16:02:00+03:00
-        )
-
-)
-
-------------------------
-
-------------------------
-2022.11.25 16:02:12
-$_REQUEST
-Array
-(
-    [event] => ONIMBOTMESSAGEADD
-    [data] => Array
-        (
-            [BOT] => Array
-                (
-                    [82490] => Array
-                        (
-                            [domain] => corp.estelab.ru
-                            [member_id] => 124ff83138e5ff3838db5f0214c6284a
-                            [application_token] => 16fc2b5f7189c9cfdf7586e4181433f1
-                            [AUTH] => Array
-                                (
-                                    [domain] => corp.estelab.ru
-                                    [member_id] => 124ff83138e5ff3838db5f0214c6284a
-                                    [application_token] => 16fc2b5f7189c9cfdf7586e4181433f1
-                                )
-
-                            [BOT_ID] => 82490
-                            [BOT_CODE] => AssistantBot
-                        )
-
-                )
-
-            [PARAMS] => Array
-                (
-                    [FROM_USER_ID] => 79910
-                    [TO_USER_ID] => 82490
-                    [MESSAGE] => 25.11.2022 10:40
-                    [TEMPLATE_ID] => temp78
-                    [MESSAGE_TYPE] => P
-                    [PARAMS] => Array
-                        (
-                            [DATE_TEXT] => Array
-                                (
-                                    [0] => 25.11.2022 10:40
-                                )
-
-                            [DATE_TS] => Array
-                                (
-                                    [0] => 1669362000
-                                )
-
-                        )
-
-                    [SKIP_COMMAND] => N
-                    [SKIP_CONNECTOR] => N
-                    [IMPORTANT_CONNECTOR] => N
-                    [SILENT_CONNECTOR] => N
-                    [AUTHOR_ID] => 79910
-                    [CHAT_ID] => 128859
-                    [COMMAND_CONTEXT] => TEXTAREA
-                    [DIALOG_ID] => 79910
-                    [MESSAGE_ID] => 13264646
-                    [CHAT_TYPE] => P
-                    [LANGUAGE] => ru
-                )
-
-            [USER] => Array
-                (
-                    [ID] => 79910
-                    [NAME] => Петр Никитин
-                    [FIRST_NAME] => Петр
-                    [LAST_NAME] => Никитин
-                    [WORK_POSITION] => PHP программист
-                    [GENDER] => M
-                    [IS_BOT] => N
-                    [IS_CONNECTOR] => N
-                    [IS_NETWORK] => N
-                    [IS_EXTRANET] => N
-                )
-
-        )
-
-    [ts] => 1669381332
-    [auth] => Array
-        (
-            [access_token] => e4ca8063005f274c0007ddab00013826000007a72e068e41d6cd51c5d5003d4a7158f5
-            [expires] => 1669384932
-            [expires_in] => 3600
-            [scope] => crm,im,imbot,catalog,landing,landing_cloud,placement,lists,forum,rpa,pull,pull_channel,mobile,telephony,call,delivery,messageservice,mailservice,cashbox,disk,pay_system,documentgenerator,bizproc,user,user_brief,user_basic,user.userfield,entity,imopenlines,userconsent,rating,smile,userfieldconfig,calendar,log,sonet_group,timeman,task,tasks_extended,department,contact_center,iblock,intranet,configuration.import,salescenter,socialnetwork,tasks,sale
-            [domain] => corp.estelab.ru
-            [server_endpoint] => https://oauth.bitrix.info/rest/
-            [status] => L
-            [client_endpoint] => https://corp.estelab.ru/rest/
-            [member_id] => 124ff83138e5ff3838db5f0214c6284a
-            [user_id] => 79910
-            [refresh_token] => d449a863005f274c0007ddab00013826000007bee5476f0fe59a5cd7c5e355c1dedb17
-            [application_token] => 16fc2b5f7189c9cfdf7586e4181433f1
-        )
-
-)
-
-------------------------
-
-------------------------
-2022.11.25 16:02:12
-properties
-Array
-(
-    [result] => Array
-        (
-            [0] => Array
-                (
-                    [PROPERTY] => case
-                    [NAME] => Причина
-                    [TYPE] => S
-                    [SORT] => 500
-                )
-
-            [1] => Array
-                (
-                    [PROPERTY] => dateBegin
-                    [NAME] => Дата начала
-                    [TYPE] => S
-                    [SORT] => 500
-                )
-
-            [2] => Array
-                (
-                    [PROPERTY] => dateEnd
-                    [NAME] => Дата окончания
-                    [TYPE] => S
-                    [SORT] => 500
-                )
-
-            [3] => Array
-                (
-                    [PROPERTY] => employee
-                    [NAME] => Сотрудник
-                    [TYPE] => N
-                    [SORT] => 500
-                )
-
-            [4] => Array
-                (
-                    [PROPERTY] => type
-                    [NAME] => Тип
-                    [TYPE] => S
-                    [SORT] => 500
-                )
-
-            [5] => Array
-                (
-                    [PROPERTY] => department
-                    [NAME] => Подразделение
-                    [TYPE] => S
-                    [SORT] => 500
-                )
-
-            [6] => Array
-                (
-                    [PROPERTY] => step
-                    [NAME] => Шаг действия
-                    [TYPE] => S
-                    [SORT] => 500
-                )
-
-            [7] => Array
-                (
-                    [PROPERTY] => where
-                    [NAME] => Куда летим
-                    [TYPE] => S
-                    [SORT] => 500
-                )
-
-            [8] => Array
-                (
-                    [PROPERTY] => departingTime
-                    [NAME] => Дата/время отправления
-                    [TYPE] => S
-                    [SORT] => 500
-                )
-
-            [9] => Array
-                (
-                    [PROPERTY] => arrivingTime
-                    [NAME] => Дата/время прибытия
-                    [TYPE] => S
-                    [SORT] => 500
-                )
-
-            [10] => Array
-                (
-                    [PROPERTY] => purpose
-                    [NAME] => Цель командировки
-                    [TYPE] => S
-                    [SORT] => 500
-                )
-
-            [11] => Array
-                (
-                    [PROPERTY] => tickets
-                    [NAME] => Билеты
-                    [TYPE] => F
-                    [SORT] => 500
-                )
-
-            [12] => Array
-                (
-                    [PROPERTY] => booking
-                    [NAME] => Бронь гостиницы
-                    [TYPE] => F
-                    [SORT] => 500
-                )
-
-            [13] => Array
-                (
-                    [PROPERTY] => boardingTickets
-                    [NAME] => Посадочные талоны
-                    [TYPE] => F
-                    [SORT] => 500
-                )
-
-        )
-
-    [time] => Array
-        (
-            [start] => 1669381332.2968
-            [finish] => 1669381332.4687
-            [duration] => 0.17192506790161
-            [processing] => 0.0046608448028564
-            [date_start] => 2022-11-25T16:02:12+03:00
-            [date_finish] => 2022-11-25T16:02:12+03:00
-        )
-
-)
-
-------------------------
-
-------------------------
-2022.11.25 16:02:16
-$_REQUEST
-Array
-(
-    [event] => ONIMBOTMESSAGEADD
-    [data] => Array
-        (
-            [BOT] => Array
-                (
-                    [82490] => Array
-                        (
-                            [domain] => corp.estelab.ru
-                            [member_id] => 124ff83138e5ff3838db5f0214c6284a
-                            [application_token] => 16fc2b5f7189c9cfdf7586e4181433f1
-                            [AUTH] => Array
-                                (
-                                    [domain] => corp.estelab.ru
-                                    [member_id] => 124ff83138e5ff3838db5f0214c6284a
-                                    [application_token] => 16fc2b5f7189c9cfdf7586e4181433f1
-                                )
-
-                            [BOT_ID] => 82490
-                            [BOT_CODE] => AssistantBot
-                        )
-
-                )
-
-            [PARAMS] => Array
-                (
-                    [FROM_USER_ID] => 79910
-                    [TO_USER_ID] => 82490
-                    [MESSAGE] => 762
-                    [TEMPLATE_ID] => temp79
-                    [MESSAGE_TYPE] => P
-                    [SKIP_COMMAND] => N
-                    [SKIP_CONNECTOR] => N
-                    [IMPORTANT_CONNECTOR] => N
-                    [SILENT_CONNECTOR] => N
-                    [AUTHOR_ID] => 79910
-                    [CHAT_ID] => 128859
-                    [COMMAND_CONTEXT] => TEXTAREA
-                    [DIALOG_ID] => 79910
-                    [MESSAGE_ID] => 13264649
-                    [CHAT_TYPE] => P
-                    [LANGUAGE] => ru
-                )
-
-            [USER] => Array
-                (
-                    [ID] => 79910
-                    [NAME] => Петр Никитин
-                    [FIRST_NAME] => Петр
-                    [LAST_NAME] => Никитин
-                    [WORK_POSITION] => PHP программист
-                    [GENDER] => M
-                    [IS_BOT] => N
-                    [IS_CONNECTOR] => N
-                    [IS_NETWORK] => N
-                    [IS_EXTRANET] => N
-                )
-
-        )
-
-    [ts] => 1669381336
-    [auth] => Array
-        (
-            [access_token] => e8ca8063005f274c0007ddab00013826000007a0d383db4ef665d48235c7be6c5d0f9a
-            [expires] => 1669384936
-            [expires_in] => 3600
-            [scope] => crm,im,imbot,catalog,landing,landing_cloud,placement,lists,forum,rpa,pull,pull_channel,mobile,telephony,call,delivery,messageservice,mailservice,cashbox,disk,pay_system,documentgenerator,bizproc,user,user_brief,user_basic,user.userfield,entity,imopenlines,userconsent,rating,smile,userfieldconfig,calendar,log,sonet_group,timeman,task,tasks_extended,department,contact_center,iblock,intranet,configuration.import,salescenter,socialnetwork,tasks,sale
-            [domain] => corp.estelab.ru
-            [server_endpoint] => https://oauth.bitrix.info/rest/
-            [status] => L
-            [client_endpoint] => https://corp.estelab.ru/rest/
-            [member_id] => 124ff83138e5ff3838db5f0214c6284a
-            [user_id] => 79910
-            [refresh_token] => d849a863005f274c0007ddab00013826000007e5f6b226e285cbd531072f6364eaa699
-            [application_token] => 16fc2b5f7189c9cfdf7586e4181433f1
-        )
-
-)
-
-------------------------
-
-------------------------
-2022.11.25 16:02:16
-properties
-Array
-(
-    [result] => Array
-        (
-            [0] => Array
-                (
-                    [PROPERTY] => case
-                    [NAME] => Причина
-                    [TYPE] => S
-                    [SORT] => 500
-                )
-
-            [1] => Array
-                (
-                    [PROPERTY] => dateBegin
-                    [NAME] => Дата начала
-                    [TYPE] => S
-                    [SORT] => 500
-                )
-
-            [2] => Array
-                (
-                    [PROPERTY] => dateEnd
-                    [NAME] => Дата окончания
-                    [TYPE] => S
-                    [SORT] => 500
-                )
-
-            [3] => Array
-                (
-                    [PROPERTY] => employee
-                    [NAME] => Сотрудник
-                    [TYPE] => N
-                    [SORT] => 500
-                )
-
-            [4] => Array
-                (
-                    [PROPERTY] => type
-                    [NAME] => Тип
-                    [TYPE] => S
-                    [SORT] => 500
-                )
-
-            [5] => Array
-                (
-                    [PROPERTY] => department
-                    [NAME] => Подразделение
-                    [TYPE] => S
-                    [SORT] => 500
-                )
-
-            [6] => Array
-                (
-                    [PROPERTY] => step
-                    [NAME] => Шаг действия
-                    [TYPE] => S
-                    [SORT] => 500
-                )
-
-            [7] => Array
-                (
-                    [PROPERTY] => where
-                    [NAME] => Куда летим
-                    [TYPE] => S
-                    [SORT] => 500
-                )
-
-            [8] => Array
-                (
-                    [PROPERTY] => departingTime
-                    [NAME] => Дата/время отправления
-                    [TYPE] => S
-                    [SORT] => 500
-                )
-
-            [9] => Array
-                (
-                    [PROPERTY] => arrivingTime
-                    [NAME] => Дата/время прибытия
-                    [TYPE] => S
-                    [SORT] => 500
-                )
-
-            [10] => Array
-                (
-                    [PROPERTY] => purpose
-                    [NAME] => Цель командировки
-                    [TYPE] => S
-                    [SORT] => 500
-                )
-
-            [11] => Array
-                (
-                    [PROPERTY] => tickets
-                    [NAME] => Билеты
-                    [TYPE] => F
-                    [SORT] => 500
-                )
-
-            [12] => Array
-                (
-                    [PROPERTY] => booking
-                    [NAME] => Бронь гостиницы
-                    [TYPE] => F
-                    [SORT] => 500
-                )
-
-            [13] => Array
-                (
-                    [PROPERTY] => boardingTickets
-                    [NAME] => Посадочные талоны
-                    [TYPE] => F
-                    [SORT] => 500
-                )
-
-        )
-
-    [time] => Array
-        (
-            [start] => 1669381336.5609
-            [finish] => 1669381336.7725
-            [duration] => 0.21160697937012
-            [processing] => 0.0049269199371338
-            [date_start] => 2022-11-25T16:02:16+03:00
-            [date_finish] => 2022-11-25T16:02:16+03:00
-        )
-
-)
-
-------------------------
-
-------------------------
-2022.11.25 16:02:20
-$_REQUEST
-Array
-(
-    [event] => ONIMBOTMESSAGEADD
-    [data] => Array
-        (
-            [BOT] => Array
-                (
-                    [82490] => Array
-                        (
-                            [domain] => corp.estelab.ru
-                            [member_id] => 124ff83138e5ff3838db5f0214c6284a
-                            [application_token] => 16fc2b5f7189c9cfdf7586e4181433f1
-                            [AUTH] => Array
-                                (
-                                    [domain] => corp.estelab.ru
-                                    [member_id] => 124ff83138e5ff3838db5f0214c6284a
-                                    [application_token] => 16fc2b5f7189c9cfdf7586e4181433f1
-                                )
-
-                            [BOT_ID] => 82490
-                            [BOT_CODE] => AssistantBot
-                        )
-
-                )
-
-            [PARAMS] => Array
-                (
-                    [FROM_USER_ID] => 79910
-                    [TO_USER_ID] => 82490
-                    [MESSAGE] => 2214
-                    [TEMPLATE_ID] => temp80
-                    [MESSAGE_TYPE] => P
-                    [SKIP_COMMAND] => N
-                    [SKIP_CONNECTOR] => N
-                    [IMPORTANT_CONNECTOR] => N
-                    [SILENT_CONNECTOR] => N
-                    [AUTHOR_ID] => 79910
-                    [CHAT_ID] => 128859
-                    [COMMAND_CONTEXT] => TEXTAREA
-                    [DIALOG_ID] => 79910
-                    [MESSAGE_ID] => 13264652
-                    [CHAT_TYPE] => P
-                    [LANGUAGE] => ru
-                )
-
-            [USER] => Array
-                (
-                    [ID] => 79910
-                    [NAME] => Петр Никитин
-                    [FIRST_NAME] => Петр
-                    [LAST_NAME] => Никитин
-                    [WORK_POSITION] => PHP программист
-                    [GENDER] => M
-                    [IS_BOT] => N
-                    [IS_CONNECTOR] => N
-                    [IS_NETWORK] => N
-                    [IS_EXTRANET] => N
-                )
-
-        )
-
-    [ts] => 1669381340
-    [auth] => Array
-        (
-            [access_token] => ecca8063005f274c0007ddab00013826000007cca5e0cccc047a2e21bc3fcace4c98b0
-            [expires] => 1669384940
-            [expires_in] => 3600
-            [scope] => crm,im,imbot,catalog,landing,landing_cloud,placement,lists,forum,rpa,pull,pull_channel,mobile,telephony,call,delivery,messageservice,mailservice,cashbox,disk,pay_system,documentgenerator,bizproc,user,user_brief,user_basic,user.userfield,entity,imopenlines,userconsent,rating,smile,userfieldconfig,calendar,log,sonet_group,timeman,task,tasks_extended,department,contact_center,iblock,intranet,configuration.import,salescenter,socialnetwork,tasks,sale
-            [domain] => corp.estelab.ru
-            [server_endpoint] => https://oauth.bitrix.info/rest/
-            [status] => L
-            [client_endpoint] => https://corp.estelab.ru/rest/
-            [member_id] => 124ff83138e5ff3838db5f0214c6284a
-            [user_id] => 79910
-            [refresh_token] => dc49a863005f274c0007ddab00013826000007ead61838e172fefa20a147d02a2f90e0
-            [application_token] => 16fc2b5f7189c9cfdf7586e4181433f1
-        )
-
-)
-
-------------------------
-
-------------------------
-2022.11.25 16:02:20
-properties
-Array
-(
-    [result] => Array
-        (
-            [0] => Array
-                (
-                    [PROPERTY] => case
-                    [NAME] => Причина
-                    [TYPE] => S
-                    [SORT] => 500
-                )
-
-            [1] => Array
-                (
-                    [PROPERTY] => dateBegin
-                    [NAME] => Дата начала
-                    [TYPE] => S
-                    [SORT] => 500
-                )
-
-            [2] => Array
-                (
-                    [PROPERTY] => dateEnd
-                    [NAME] => Дата окончания
-                    [TYPE] => S
-                    [SORT] => 500
-                )
-
-            [3] => Array
-                (
-                    [PROPERTY] => employee
-                    [NAME] => Сотрудник
-                    [TYPE] => N
-                    [SORT] => 500
-                )
-
-            [4] => Array
-                (
-                    [PROPERTY] => type
-                    [NAME] => Тип
-                    [TYPE] => S
-                    [SORT] => 500
-                )
-
-            [5] => Array
-                (
-                    [PROPERTY] => department
-                    [NAME] => Подразделение
-                    [TYPE] => S
-                    [SORT] => 500
-                )
-
-            [6] => Array
-                (
-                    [PROPERTY] => step
-                    [NAME] => Шаг действия
-                    [TYPE] => S
-                    [SORT] => 500
-                )
-
-            [7] => Array
-                (
-                    [PROPERTY] => where
-                    [NAME] => Куда летим
-                    [TYPE] => S
-                    [SORT] => 500
-                )
-
-            [8] => Array
-                (
-                    [PROPERTY] => departingTime
-                    [NAME] => Дата/время отправления
-                    [TYPE] => S
-                    [SORT] => 500
-                )
-
-            [9] => Array
-                (
-                    [PROPERTY] => arrivingTime
-                    [NAME] => Дата/время прибытия
-                    [TYPE] => S
-                    [SORT] => 500
-                )
-
-            [10] => Array
-                (
-                    [PROPERTY] => purpose
-                    [NAME] => Цель командировки
-                    [TYPE] => S
-                    [SORT] => 500
-                )
-
-            [11] => Array
-                (
-                    [PROPERTY] => tickets
-                    [NAME] => Билеты
-                    [TYPE] => F
-                    [SORT] => 500
-                )
-
-            [12] => Array
-                (
-                    [PROPERTY] => booking
-                    [NAME] => Бронь гостиницы
-                    [TYPE] => F
-                    [SORT] => 500
-                )
-
-            [13] => Array
-                (
-                    [PROPERTY] => boardingTickets
-                    [NAME] => Посадочные талоны
-                    [TYPE] => F
-                    [SORT] => 500
-                )
-
-        )
-
-    [time] => Array
-        (
-            [start] => 1669381340.4119
-            [finish] => 1669381340.5981
-            [duration] => 0.18616008758545
-            [processing] => 0.0045180320739746
-            [date_start] => 2022-11-25T16:02:20+03:00
-            [date_finish] => 2022-11-25T16:02:20+03:00
-        )
-
-)
-
-------------------------
-
-------------------------
-2022.11.25 16:02:26
-$_REQUEST
-Array
-(
-    [event] => ONIMBOTMESSAGEADD
-    [data] => Array
-        (
-            [BOT] => Array
-                (
-                    [82490] => Array
-                        (
-                            [domain] => corp.estelab.ru
-                            [member_id] => 124ff83138e5ff3838db5f0214c6284a
-                            [application_token] => 16fc2b5f7189c9cfdf7586e4181433f1
-                            [AUTH] => Array
-                                (
-                                    [domain] => corp.estelab.ru
-                                    [member_id] => 124ff83138e5ff3838db5f0214c6284a
-                                    [application_token] => 16fc2b5f7189c9cfdf7586e4181433f1
-                                )
-
-                            [BOT_ID] => 82490
-                            [BOT_CODE] => AssistantBot
-                        )
-
-                )
-
-            [PARAMS] => Array
-                (
-                    [FROM_USER_ID] => 79910
-                    [TO_USER_ID] => 82490
-                    [MESSAGE] => вношу данные об отсутствии
-                    [TEMPLATE_ID] => temp81
-                    [MESSAGE_TYPE] => P
-                    [SKIP_COMMAND] => N
-                    [SKIP_CONNECTOR] => N
-                    [IMPORTANT_CONNECTOR] => N
-                    [SILENT_CONNECTOR] => N
-                    [AUTHOR_ID] => 79910
-                    [CHAT_ID] => 128859
-                    [COMMAND_CONTEXT] => TEXTAREA
-                    [DIALOG_ID] => 79910
-                    [MESSAGE_ID] => 13264654
-                    [CHAT_TYPE] => P
-                    [LANGUAGE] => ru
-                )
-
-            [USER] => Array
-                (
-                    [ID] => 79910
-                    [NAME] => Петр Никитин
-                    [FIRST_NAME] => Петр
-                    [LAST_NAME] => Никитин
-                    [WORK_POSITION] => PHP программист
-                    [GENDER] => M
-                    [IS_BOT] => N
-                    [IS_CONNECTOR] => N
-                    [IS_NETWORK] => N
-                    [IS_EXTRANET] => N
-                )
-
-        )
-
-    [ts] => 1669381346
-    [auth] => Array
-        (
-            [access_token] => f2ca8063005f274c0007ddab000138260000077139d75a72e2284201cff312de2dfaea
-            [expires] => 1669384946
-            [expires_in] => 3600
-            [scope] => crm,im,imbot,catalog,landing,landing_cloud,placement,lists,forum,rpa,pull,pull_channel,mobile,telephony,call,delivery,messageservice,mailservice,cashbox,disk,pay_system,documentgenerator,bizproc,user,user_brief,user_basic,user.userfield,entity,imopenlines,userconsent,rating,smile,userfieldconfig,calendar,log,sonet_group,timeman,task,tasks_extended,department,contact_center,iblock,intranet,configuration.import,salescenter,socialnetwork,tasks,sale
-            [domain] => corp.estelab.ru
-            [server_endpoint] => https://oauth.bitrix.info/rest/
-            [status] => L
-            [client_endpoint] => https://corp.estelab.ru/rest/
-            [member_id] => 124ff83138e5ff3838db5f0214c6284a
-            [user_id] => 79910
-            [refresh_token] => e249a863005f274c0007ddab00013826000007b475c989105ac172706b8b58e0f2b4d3
-            [application_token] => 16fc2b5f7189c9cfdf7586e4181433f1
-        )
-
-)
-
-------------------------
-
-------------------------
-2022.11.25 16:02:26
-properties
-Array
-(
-    [result] => Array
-        (
-            [0] => Array
-                (
-                    [PROPERTY] => case
-                    [NAME] => Причина
-                    [TYPE] => S
-                    [SORT] => 500
-                )
-
-            [1] => Array
-                (
-                    [PROPERTY] => dateBegin
-                    [NAME] => Дата начала
-                    [TYPE] => S
-                    [SORT] => 500
-                )
-
-            [2] => Array
-                (
-                    [PROPERTY] => dateEnd
-                    [NAME] => Дата окончания
-                    [TYPE] => S
-                    [SORT] => 500
-                )
-
-            [3] => Array
-                (
-                    [PROPERTY] => employee
-                    [NAME] => Сотрудник
-                    [TYPE] => N
-                    [SORT] => 500
-                )
-
-            [4] => Array
-                (
-                    [PROPERTY] => type
-                    [NAME] => Тип
-                    [TYPE] => S
-                    [SORT] => 500
-                )
-
-            [5] => Array
-                (
-                    [PROPERTY] => department
-                    [NAME] => Подразделение
-                    [TYPE] => S
-                    [SORT] => 500
-                )
-
-            [6] => Array
-                (
-                    [PROPERTY] => step
-                    [NAME] => Шаг действия
-                    [TYPE] => S
-                    [SORT] => 500
-                )
-
-            [7] => Array
-                (
-                    [PROPERTY] => where
-                    [NAME] => Куда летим
-                    [TYPE] => S
-                    [SORT] => 500
-                )
-
-            [8] => Array
-                (
-                    [PROPERTY] => departingTime
-                    [NAME] => Дата/время отправления
-                    [TYPE] => S
-                    [SORT] => 500
-                )
-
-            [9] => Array
-                (
-                    [PROPERTY] => arrivingTime
-                    [NAME] => Дата/время прибытия
-                    [TYPE] => S
-                    [SORT] => 500
-                )
-
-            [10] => Array
-                (
-                    [PROPERTY] => purpose
-                    [NAME] => Цель командировки
-                    [TYPE] => S
-                    [SORT] => 500
-                )
-
-            [11] => Array
-                (
-                    [PROPERTY] => tickets
-                    [NAME] => Билеты
-                    [TYPE] => F
-                    [SORT] => 500
-                )
-
-            [12] => Array
-                (
-                    [PROPERTY] => booking
-                    [NAME] => Бронь гостиницы
-                    [TYPE] => F
-                    [SORT] => 500
-                )
-
-            [13] => Array
-                (
-                    [PROPERTY] => boardingTickets
-                    [NAME] => Посадочные талоны
-                    [TYPE] => F
-                    [SORT] => 500
-                )
-
-        )
-
-    [time] => Array
-        (
-            [start] => 1669381346.3893
-            [finish] => 1669381346.5722
-            [duration] => 0.1828510761261
-            [processing] => 0.0051429271697998
-            [date_start] => 2022-11-25T16:02:26+03:00
-            [date_finish] => 2022-11-25T16:02:26+03:00
-        )
-
-)
-
-------------------------
-
-------------------------
-2022.11.25 16:02:59
-$_REQUEST
-Array
-(
-    [event] => ONIMBOTMESSAGEADD
-    [data] => Array
-        (
-            [BOT] => Array
-                (
-                    [82490] => Array
-                        (
-                            [domain] => corp.estelab.ru
-                            [member_id] => 124ff83138e5ff3838db5f0214c6284a
-                            [application_token] => 16fc2b5f7189c9cfdf7586e4181433f1
-                            [AUTH] => Array
-                                (
-                                    [domain] => corp.estelab.ru
-                                    [member_id] => 124ff83138e5ff3838db5f0214c6284a
-                                    [application_token] => 16fc2b5f7189c9cfdf7586e4181433f1
-                                )
-
-                            [BOT_ID] => 82490
-                            [BOT_CODE] => AssistantBot
-                        )
-
-                )
-
-            [PARAMS] => Array
-                (
-                    [MESSAGE_TYPE] => P
-                    [FROM_USER_ID] => 32896
-                    [DIALOG_ID] => 32896
-                    [MESSAGE] => Привет
-                    [TEMPLATE_ID] => 08e25621-801a-4e73-95ec-96f213f1c89e
-                    [TO_USER_ID] => 82490
-                    [SKIP_COMMAND] => N
-                    [SKIP_CONNECTOR] => N
-                    [IMPORTANT_CONNECTOR] => N
-                    [SILENT_CONNECTOR] => N
-                    [AUTHOR_ID] => 32896
-                    [CHAT_ID] => 129768
-                    [COMMAND_CONTEXT] => TEXTAREA
-                    [MESSAGE_ID] => 13264665
-                    [CHAT_TYPE] => P
-                    [LANGUAGE] => ru
-                )
-
-            [USER] => Array
-                (
-                    [ID] => 32896
-                    [NAME] => Екатерина Сосевич
-                    [FIRST_NAME] => Екатерина
-                    [LAST_NAME] => Сосевич
-                    [WORK_POSITION] => Скрам-мастер ЗС 
-                    [GENDER] => F
-                    [IS_BOT] => N
-                    [IS_CONNECTOR] => N
-                    [IS_NETWORK] => N
-                    [IS_EXTRANET] => N
-                )
-
-        )
-
-    [ts] => 1669381379
-    [auth] => Array
-        (
-            [access_token] => 13cb8063005f274c0007ddab000080800000077a7ca57bdd1b7020b3b1a9112dbd701a
-            [expires] => 1669384979
-            [expires_in] => 3600
-            [scope] => crm,im,imbot,catalog,landing,landing_cloud,placement,lists,forum,rpa,pull,pull_channel,mobile,telephony,call,delivery,messageservice,mailservice,cashbox,disk,pay_system,documentgenerator,bizproc,user,user_brief,user_basic,user.userfield,entity,imopenlines,userconsent,rating,smile,userfieldconfig,calendar,log,sonet_group,timeman,task,tasks_extended,department,contact_center,iblock,intranet,configuration.import,salescenter,socialnetwork,tasks,sale
-            [domain] => corp.estelab.ru
-            [server_endpoint] => https://oauth.bitrix.info/rest/
-            [status] => L
-            [client_endpoint] => https://corp.estelab.ru/rest/
-            [member_id] => 124ff83138e5ff3838db5f0214c6284a
-            [user_id] => 32896
-            [refresh_token] => 034aa863005f274c0007ddab000080800000073e94bc8f3bb9ab43c5f58d75fd7d067e
-            [application_token] => 16fc2b5f7189c9cfdf7586e4181433f1
-        )
-
-)
-
-------------------------
-
-------------------------
-2022.11.25 16:02:59
-properties
-Array
-(
-    [result] => Array
-        (
-            [0] => Array
-                (
-                    [PROPERTY] => case
-                    [NAME] => Причина
-                    [TYPE] => S
-                    [SORT] => 500
-                )
-
-            [1] => Array
-                (
-                    [PROPERTY] => dateBegin
-                    [NAME] => Дата начала
-                    [TYPE] => S
-                    [SORT] => 500
-                )
-
-            [2] => Array
-                (
-                    [PROPERTY] => dateEnd
-                    [NAME] => Дата окончания
-                    [TYPE] => S
-                    [SORT] => 500
-                )
-
-            [3] => Array
-                (
-                    [PROPERTY] => employee
-                    [NAME] => Сотрудник
-                    [TYPE] => N
-                    [SORT] => 500
-                )
-
-            [4] => Array
-                (
-                    [PROPERTY] => type
-                    [NAME] => Тип
-                    [TYPE] => S
-                    [SORT] => 500
-                )
-
-            [5] => Array
-                (
-                    [PROPERTY] => department
-                    [NAME] => Подразделение
-                    [TYPE] => S
-                    [SORT] => 500
-                )
-
-            [6] => Array
-                (
-                    [PROPERTY] => step
-                    [NAME] => Шаг действия
-                    [TYPE] => S
-                    [SORT] => 500
-                )
-
-            [7] => Array
-                (
-                    [PROPERTY] => where
-                    [NAME] => Куда летим
-                    [TYPE] => S
-                    [SORT] => 500
-                )
-
-            [8] => Array
-                (
-                    [PROPERTY] => departingTime
-                    [NAME] => Дата/время отправления
-                    [TYPE] => S
-                    [SORT] => 500
-                )
-
-            [9] => Array
-                (
-                    [PROPERTY] => arrivingTime
-                    [NAME] => Дата/время прибытия
-                    [TYPE] => S
-                    [SORT] => 500
-                )
-
-            [10] => Array
-                (
-                    [PROPERTY] => purpose
-                    [NAME] => Цель командировки
-                    [TYPE] => S
-                    [SORT] => 500
-                )
-
-            [11] => Array
-                (
-                    [PROPERTY] => tickets
-                    [NAME] => Билеты
-                    [TYPE] => F
-                    [SORT] => 500
-                )
-
-            [12] => Array
-                (
-                    [PROPERTY] => booking
-                    [NAME] => Бронь гостиницы
-                    [TYPE] => F
-                    [SORT] => 500
-                )
-
-            [13] => Array
-                (
-                    [PROPERTY] => boardingTickets
-                    [NAME] => Посадочные талоны
-                    [TYPE] => F
-                    [SORT] => 500
-                )
-
-        )
-
-    [time] => Array
-        (
-            [start] => 1669381379.336
-            [finish] => 1669381379.5019
-            [duration] => 0.16592502593994
-            [processing] => 0.0073180198669434
-            [date_start] => 2022-11-25T16:02:59+03:00
-            [date_finish] => 2022-11-25T16:02:59+03:00
-        )
-
-)
-
-------------------------
-
-------------------------
-2022.11.25 16:03:02
-$_REQUEST
-Array
-(
-    [event] => ONIMBOTMESSAGEADD
-    [data] => Array
-        (
-            [BOT] => Array
-                (
-                    [82490] => Array
-                        (
-                            [domain] => corp.estelab.ru
-                            [member_id] => 124ff83138e5ff3838db5f0214c6284a
-                            [application_token] => 16fc2b5f7189c9cfdf7586e4181433f1
-                            [AUTH] => Array
-                                (
-                                    [domain] => corp.estelab.ru
-                                    [member_id] => 124ff83138e5ff3838db5f0214c6284a
-                                    [application_token] => 16fc2b5f7189c9cfdf7586e4181433f1
-                                )
-
-                            [BOT_ID] => 82490
-                            [BOT_CODE] => AssistantBot
-                        )
-
-                )
-
-            [PARAMS] => Array
-                (
-                    [MESSAGE_TYPE] => P
-                    [FROM_USER_ID] => 32896
-                    [DIALOG_ID] => 32896
-                    [MESSAGE] => меню
-                    [TEMPLATE_ID] => 5c0d4df4-f4b3-403c-8974-e50b0997d0f3
-                    [TO_USER_ID] => 82490
-                    [SKIP_COMMAND] => N
-                    [SKIP_CONNECTOR] => N
-                    [IMPORTANT_CONNECTOR] => N
-                    [SILENT_CONNECTOR] => N
-                    [AUTHOR_ID] => 32896
-                    [CHAT_ID] => 129768
-                    [COMMAND_CONTEXT] => TEXTAREA
-                    [MESSAGE_ID] => 13264668
-                    [CHAT_TYPE] => P
-                    [LANGUAGE] => ru
-                )
-
-            [USER] => Array
-                (
-                    [ID] => 32896
-                    [NAME] => Екатерина Сосевич
-                    [FIRST_NAME] => Екатерина
-                    [LAST_NAME] => Сосевич
-                    [WORK_POSITION] => Скрам-мастер ЗС 
-                    [GENDER] => F
-                    [IS_BOT] => N
-                    [IS_CONNECTOR] => N
-                    [IS_NETWORK] => N
-                    [IS_EXTRANET] => N
-                )
-
-        )
-
-    [ts] => 1669381382
-    [auth] => Array
-        (
-            [access_token] => 16cb8063005f274c0007ddab00008080000007cfc8686bb0b466e02992e1416e43b8f3
-            [expires] => 1669384982
-            [expires_in] => 3600
-            [scope] => crm,im,imbot,catalog,landing,landing_cloud,placement,lists,forum,rpa,pull,pull_channel,mobile,telephony,call,delivery,messageservice,mailservice,cashbox,disk,pay_system,documentgenerator,bizproc,user,user_brief,user_basic,user.userfield,entity,imopenlines,userconsent,rating,smile,userfieldconfig,calendar,log,sonet_group,timeman,task,tasks_extended,department,contact_center,iblock,intranet,configuration.import,salescenter,socialnetwork,tasks,sale
-            [domain] => corp.estelab.ru
-            [server_endpoint] => https://oauth.bitrix.info/rest/
-            [status] => L
-            [client_endpoint] => https://corp.estelab.ru/rest/
-            [member_id] => 124ff83138e5ff3838db5f0214c6284a
-            [user_id] => 32896
-            [refresh_token] => 064aa863005f274c0007ddab00008080000007d4692bc7f1aa8a61b966f2a62b8d9300
-            [application_token] => 16fc2b5f7189c9cfdf7586e4181433f1
-        )
-
-)
-
-------------------------
-
-------------------------
-2022.11.25 16:03:02
-properties
-Array
-(
-    [result] => Array
-        (
-            [0] => Array
-                (
-                    [PROPERTY] => case
-                    [NAME] => Причина
-                    [TYPE] => S
-                    [SORT] => 500
-                )
-
-            [1] => Array
-                (
-                    [PROPERTY] => dateBegin
-                    [NAME] => Дата начала
-                    [TYPE] => S
-                    [SORT] => 500
-                )
-
-            [2] => Array
-                (
-                    [PROPERTY] => dateEnd
-                    [NAME] => Дата окончания
-                    [TYPE] => S
-                    [SORT] => 500
-                )
-
-            [3] => Array
-                (
-                    [PROPERTY] => employee
-                    [NAME] => Сотрудник
-                    [TYPE] => N
-                    [SORT] => 500
-                )
-
-            [4] => Array
-                (
-                    [PROPERTY] => type
-                    [NAME] => Тип
-                    [TYPE] => S
-                    [SORT] => 500
-                )
-
-            [5] => Array
-                (
-                    [PROPERTY] => department
-                    [NAME] => Подразделение
-                    [TYPE] => S
-                    [SORT] => 500
-                )
-
-            [6] => Array
-                (
-                    [PROPERTY] => step
-                    [NAME] => Шаг действия
-                    [TYPE] => S
-                    [SORT] => 500
-                )
-
-            [7] => Array
-                (
-                    [PROPERTY] => where
-                    [NAME] => Куда летим
-                    [TYPE] => S
-                    [SORT] => 500
-                )
-
-            [8] => Array
-                (
-                    [PROPERTY] => departingTime
-                    [NAME] => Дата/время отправления
-                    [TYPE] => S
-                    [SORT] => 500
-                )
-
-            [9] => Array
-                (
-                    [PROPERTY] => arrivingTime
-                    [NAME] => Дата/время прибытия
-                    [TYPE] => S
-                    [SORT] => 500
-                )
-
-            [10] => Array
-                (
-                    [PROPERTY] => purpose
-                    [NAME] => Цель командировки
-                    [TYPE] => S
-                    [SORT] => 500
-                )
-
-            [11] => Array
-                (
-                    [PROPERTY] => tickets
-                    [NAME] => Билеты
-                    [TYPE] => F
-                    [SORT] => 500
-                )
-
-            [12] => Array
-                (
-                    [PROPERTY] => booking
-                    [NAME] => Бронь гостиницы
-                    [TYPE] => F
-                    [SORT] => 500
-                )
-
-            [13] => Array
-                (
-                    [PROPERTY] => boardingTickets
-                    [NAME] => Посадочные талоны
-                    [TYPE] => F
-                    [SORT] => 500
-                )
-
-        )
-
-    [time] => Array
-        (
-            [start] => 1669381382.1979
-            [finish] => 1669381382.3532
-            [duration] => 0.15528011322021
-            [processing] => 0.0050551891326904
-            [date_start] => 2022-11-25T16:03:02+03:00
-            [date_finish] => 2022-11-25T16:03:02+03:00
-        )
-
-)
-
-------------------------
-
-------------------------
-2022.11.25 16:05:30
-$_REQUEST
-Array
-(
-    [event] => ONIMBOTMESSAGEADD
-    [data] => Array
-        (
-            [BOT] => Array
-                (
-                    [82490] => Array
-                        (
-                            [domain] => corp.estelab.ru
-                            [member_id] => 124ff83138e5ff3838db5f0214c6284a
-                            [application_token] => 16fc2b5f7189c9cfdf7586e4181433f1
-                            [AUTH] => Array
-                                (
-                                    [domain] => corp.estelab.ru
-                                    [member_id] => 124ff83138e5ff3838db5f0214c6284a
-                                    [application_token] => 16fc2b5f7189c9cfdf7586e4181433f1
-                                )
-
-                            [BOT_ID] => 82490
-                            [BOT_CODE] => AssistantBot
-                        )
-
-                )
-
-            [PARAMS] => Array
-                (
-                    [FROM_USER_ID] => 68277
-                    [TO_USER_ID] => 82490
-                    [MESSAGE] => привет
-                    [TEMPLATE_ID] => temp51
-                    [MESSAGE_TYPE] => P
-                    [SKIP_COMMAND] => N
-                    [SKIP_CONNECTOR] => N
-                    [IMPORTANT_CONNECTOR] => N
-                    [SILENT_CONNECTOR] => N
-                    [AUTHOR_ID] => 68277
-                    [CHAT_ID] => 128865
-                    [COMMAND_CONTEXT] => TEXTAREA
-                    [DIALOG_ID] => 68277
-                    [MESSAGE_ID] => 13264715
-                    [CHAT_TYPE] => P
-                    [LANGUAGE] => ru
-                )
-
-            [USER] => Array
-                (
-                    [ID] => 68277
-                    [NAME] => Светлана Жураховская
-                    [FIRST_NAME] => Светлана
-                    [LAST_NAME] => Жураховская
-                    [WORK_POSITION] => Специалист по контенту
-                    [GENDER] => M
-                    [IS_BOT] => N
-                    [IS_CONNECTOR] => N
-                    [IS_NETWORK] => N
-                    [IS_EXTRANET] => N
-                )
-
-        )
-
-    [ts] => 1669381530
-    [auth] => Array
-        (
-            [access_token] => aacb8063005f274c0007ddab00010ab50000072c9ce687ff369e0cbc6de6b624f9bcfe
-            [expires] => 1669385130
-            [expires_in] => 3600
-            [scope] => crm,im,imbot,catalog,landing,landing_cloud,placement,lists,forum,rpa,pull,pull_channel,mobile,telephony,call,delivery,messageservice,mailservice,cashbox,disk,pay_system,documentgenerator,bizproc,user,user_brief,user_basic,user.userfield,entity,imopenlines,userconsent,rating,smile,userfieldconfig,calendar,log,sonet_group,timeman,task,tasks_extended,department,contact_center,iblock,intranet,configuration.import,salescenter,socialnetwork,tasks,sale
-            [domain] => corp.estelab.ru
-            [server_endpoint] => https://oauth.bitrix.info/rest/
-            [status] => L
-            [client_endpoint] => https://corp.estelab.ru/rest/
-            [member_id] => 124ff83138e5ff3838db5f0214c6284a
-            [user_id] => 68277
-            [refresh_token] => 9a4aa863005f274c0007ddab00010ab500000727ff182a7306915c43117dbaac34437c
-            [application_token] => 16fc2b5f7189c9cfdf7586e4181433f1
-        )
-
-)
-
-------------------------
-
-------------------------
-2022.11.25 16:05:30
-properties
-Array
-(
-    [result] => Array
-        (
-            [0] => Array
-                (
-                    [PROPERTY] => case
-                    [NAME] => Причина
-                    [TYPE] => S
-                    [SORT] => 500
-                )
-
-            [1] => Array
-                (
-                    [PROPERTY] => dateBegin
-                    [NAME] => Дата начала
-                    [TYPE] => S
-                    [SORT] => 500
-                )
-
-            [2] => Array
-                (
-                    [PROPERTY] => dateEnd
-                    [NAME] => Дата окончания
-                    [TYPE] => S
-                    [SORT] => 500
-                )
-
-            [3] => Array
-                (
-                    [PROPERTY] => employee
-                    [NAME] => Сотрудник
-                    [TYPE] => N
-                    [SORT] => 500
-                )
-
-            [4] => Array
-                (
-                    [PROPERTY] => type
-                    [NAME] => Тип
-                    [TYPE] => S
-                    [SORT] => 500
-                )
-
-            [5] => Array
-                (
-                    [PROPERTY] => department
-                    [NAME] => Подразделение
-                    [TYPE] => S
-                    [SORT] => 500
-                )
-
-            [6] => Array
-                (
-                    [PROPERTY] => step
-                    [NAME] => Шаг действия
-                    [TYPE] => S
-                    [SORT] => 500
-                )
-
-            [7] => Array
-                (
-                    [PROPERTY] => where
-                    [NAME] => Куда летим
-                    [TYPE] => S
-                    [SORT] => 500
-                )
-
-            [8] => Array
-                (
-                    [PROPERTY] => departingTime
-                    [NAME] => Дата/время отправления
-                    [TYPE] => S
-                    [SORT] => 500
-                )
-
-            [9] => Array
-                (
-                    [PROPERTY] => arrivingTime
-                    [NAME] => Дата/время прибытия
-                    [TYPE] => S
-                    [SORT] => 500
-                )
-
-            [10] => Array
-                (
-                    [PROPERTY] => purpose
-                    [NAME] => Цель командировки
-                    [TYPE] => S
-                    [SORT] => 500
-                )
-
-            [11] => Array
-                (
-                    [PROPERTY] => tickets
-                    [NAME] => Билеты
-                    [TYPE] => F
-                    [SORT] => 500
-                )
-
-            [12] => Array
-                (
-                    [PROPERTY] => booking
-                    [NAME] => Бронь гостиницы
-                    [TYPE] => F
-                    [SORT] => 500
-                )
-
-            [13] => Array
-                (
-                    [PROPERTY] => boardingTickets
-                    [NAME] => Посадочные талоны
-                    [TYPE] => F
-                    [SORT] => 500
-                )
-
-        )
-
-    [time] => Array
-        (
-            [start] => 1669381530.5707
-            [finish] => 1669381530.7728
-            [duration] => 0.20210599899292
-            [processing] => 0.0068299770355225
-            [date_start] => 2022-11-25T16:05:30+03:00
-            [date_finish] => 2022-11-25T16:05:30+03:00
-        )
-
-)
-
-------------------------
-
-------------------------
-2022.11.25 16:05:36
-$_REQUEST
-Array
-(
-    [event] => ONIMBOTMESSAGEADD
-    [data] => Array
-        (
-            [BOT] => Array
-                (
-                    [82490] => Array
-                        (
-                            [domain] => corp.estelab.ru
-                            [member_id] => 124ff83138e5ff3838db5f0214c6284a
-                            [application_token] => 16fc2b5f7189c9cfdf7586e4181433f1
-                            [AUTH] => Array
-                                (
-                                    [domain] => corp.estelab.ru
-                                    [member_id] => 124ff83138e5ff3838db5f0214c6284a
-                                    [application_token] => 16fc2b5f7189c9cfdf7586e4181433f1
-                                )
-
-                            [BOT_ID] => 82490
-                            [BOT_CODE] => AssistantBot
-                        )
-
-                )
-
-            [PARAMS] => Array
-                (
-                    [FROM_USER_ID] => 68277
-                    [TO_USER_ID] => 82490
-                    [MESSAGE] => меню
-                    [TEMPLATE_ID] => temp52
-                    [MESSAGE_TYPE] => P
-                    [SKIP_COMMAND] => N
-                    [SKIP_CONNECTOR] => N
-                    [IMPORTANT_CONNECTOR] => N
-                    [SILENT_CONNECTOR] => N
-                    [AUTHOR_ID] => 68277
-                    [CHAT_ID] => 128865
-                    [COMMAND_CONTEXT] => TEXTAREA
-                    [DIALOG_ID] => 68277
-                    [MESSAGE_ID] => 13264717
-                    [CHAT_TYPE] => P
-                    [LANGUAGE] => ru
-                )
-
-            [USER] => Array
-                (
-                    [ID] => 68277
-                    [NAME] => Светлана Жураховская
-                    [FIRST_NAME] => Светлана
-                    [LAST_NAME] => Жураховская
-                    [WORK_POSITION] => Специалист по контенту
-                    [GENDER] => M
-                    [IS_BOT] => N
-                    [IS_CONNECTOR] => N
-                    [IS_NETWORK] => N
-                    [IS_EXTRANET] => N
-                )
-
-        )
-
-    [ts] => 1669381536
-    [auth] => Array
-        (
-            [access_token] => b0cb8063005f274c0007ddab00010ab5000007e1e21a9d9f76fcdc3d6c90d6d26d0ef8
-            [expires] => 1669385136
-            [expires_in] => 3600
-            [scope] => crm,im,imbot,catalog,landing,landing_cloud,placement,lists,forum,rpa,pull,pull_channel,mobile,telephony,call,delivery,messageservice,mailservice,cashbox,disk,pay_system,documentgenerator,bizproc,user,user_brief,user_basic,user.userfield,entity,imopenlines,userconsent,rating,smile,userfieldconfig,calendar,log,sonet_group,timeman,task,tasks_extended,department,contact_center,iblock,intranet,configuration.import,salescenter,socialnetwork,tasks,sale
-            [domain] => corp.estelab.ru
-            [server_endpoint] => https://oauth.bitrix.info/rest/
-            [status] => L
-            [client_endpoint] => https://corp.estelab.ru/rest/
-            [member_id] => 124ff83138e5ff3838db5f0214c6284a
-            [user_id] => 68277
-            [refresh_token] => a04aa863005f274c0007ddab00010ab50000075c66aaf504251a3cab9470be6e1636f0
-            [application_token] => 16fc2b5f7189c9cfdf7586e4181433f1
-        )
-
-)
-
-------------------------
-
-------------------------
-2022.11.25 16:05:37
-properties
-Array
-(
-    [result] => Array
-        (
-            [0] => Array
-                (
-                    [PROPERTY] => case
-                    [NAME] => Причина
-                    [TYPE] => S
-                    [SORT] => 500
-                )
-
-            [1] => Array
-                (
-                    [PROPERTY] => dateBegin
-                    [NAME] => Дата начала
-                    [TYPE] => S
-                    [SORT] => 500
-                )
-
-            [2] => Array
-                (
-                    [PROPERTY] => dateEnd
-                    [NAME] => Дата окончания
-                    [TYPE] => S
-                    [SORT] => 500
-                )
-
-            [3] => Array
-                (
-                    [PROPERTY] => employee
-                    [NAME] => Сотрудник
-                    [TYPE] => N
-                    [SORT] => 500
-                )
-
-            [4] => Array
-                (
-                    [PROPERTY] => type
-                    [NAME] => Тип
-                    [TYPE] => S
-                    [SORT] => 500
-                )
-
-            [5] => Array
-                (
-                    [PROPERTY] => department
-                    [NAME] => Подразделение
-                    [TYPE] => S
-                    [SORT] => 500
-                )
-
-            [6] => Array
-                (
-                    [PROPERTY] => step
-                    [NAME] => Шаг действия
-                    [TYPE] => S
-                    [SORT] => 500
-                )
-
-            [7] => Array
-                (
-                    [PROPERTY] => where
-                    [NAME] => Куда летим
-                    [TYPE] => S
-                    [SORT] => 500
-                )
-
-            [8] => Array
-                (
-                    [PROPERTY] => departingTime
-                    [NAME] => Дата/время отправления
-                    [TYPE] => S
-                    [SORT] => 500
-                )
-
-            [9] => Array
-                (
-                    [PROPERTY] => arrivingTime
-                    [NAME] => Дата/время прибытия
-                    [TYPE] => S
-                    [SORT] => 500
-                )
-
-            [10] => Array
-                (
-                    [PROPERTY] => purpose
-                    [NAME] => Цель командировки
-                    [TYPE] => S
-                    [SORT] => 500
-                )
-
-            [11] => Array
-                (
-                    [PROPERTY] => tickets
-                    [NAME] => Билеты
-                    [TYPE] => F
-                    [SORT] => 500
-                )
-
-            [12] => Array
-                (
-                    [PROPERTY] => booking
-                    [NAME] => Бронь гостиницы
-                    [TYPE] => F
-                    [SORT] => 500
-                )
-
-            [13] => Array
-                (
-                    [PROPERTY] => boardingTickets
-                    [NAME] => Посадочные талоны
-                    [TYPE] => F
-                    [SORT] => 500
-                )
-
-        )
-
-    [time] => Array
-        (
-            [start] => 1669381536.8695
-            [finish] => 1669381537.042
-            [duration] => 0.17246294021606
-            [processing] => 0.0051469802856445
-            [date_start] => 2022-11-25T16:05:36+03:00
-            [date_finish] => 2022-11-25T16:05:37+03:00
-        )
-
-)
-
-------------------------
-
-------------------------
-2022.11.25 16:05:41
+2022.11.25 17:35:31
 AssistantBot command add
 Array
 (
-    [145] => Array
+    [147] => Array
         (
             [domain] => corp.estelab.ru
             [member_id] => 124ff83138e5ff3838db5f0214c6284a
@@ -3858,11 +247,1731 @@ Array
 
             [BOT_ID] => 82490
             [BOT_CODE] => AssistantBot
-            [COMMAND] => absence
-            [COMMAND_ID] => 145
-            [COMMAND_PARAMS] => absence and processing
+            [COMMAND] => businessTrip
+            [COMMAND_ID] => 147
+            [COMMAND_PARAMS] => fill business trip
             [COMMAND_CONTEXT] => KEYBOARD
-            [MESSAGE_ID] => 13264718
+            [MESSAGE_ID] => 13266221
+        )
+
+)
+
+------------------------
+
+------------------------
+2022.11.25 17:35:38
+itemsInfo
+Array
+(
+    [0] => Array
+        (
+            [ID] => 466660
+            [TIMESTAMP_X] => 2022-11-25T17:35:34+03:00
+            [MODIFIED_BY] => 79910
+            [DATE_CREATE] => 2022-11-25T17:35:34+03:00
+            [CREATED_BY] => 79910
+            [ACTIVE] => Y
+            [DATE_ACTIVE_FROM] => 
+            [DATE_ACTIVE_TO] => 
+            [SORT] => 500
+            [NAME] => user_79910_заполняем данные о предстоящей командировке:
+            [PREVIEW_PICTURE] => 
+            [PREVIEW_TEXT] => 
+            [DETAIL_PICTURE] => 
+            [DETAIL_TEXT] => 
+            [CODE] => 
+            [ENTITY] => bot_assistant
+            [SECTION] => 
+            [PROPERTY_VALUES] => Array
+                (
+                    [case] => 
+                    [dateBegin] => 
+                    [dateEnd] => 
+                    [employee] => 
+                    [type] => 
+                    [department] => 
+                    [step] => 1
+                    [where] => 
+                    [departingTime] => 
+                    [arrivingTime] => 
+                    [purpose] => 
+                    [tickets] => 
+                    [booking] => 
+                    [boardingTickets] => 
+                    [command] => businessTrip
+                )
+
+        )
+
+    [1] => Array
+        (
+            [ID] => 466625
+            [TIMESTAMP_X] => 2022-11-25T13:08:19+03:00
+            [MODIFIED_BY] => 74295
+            [DATE_CREATE] => 2022-11-25T13:07:17+03:00
+            [CREATED_BY] => 74295
+            [ACTIVE] => Y
+            [DATE_ACTIVE_FROM] => 
+            [DATE_ACTIVE_TO] => 
+            [SORT] => 500
+            [NAME] => user_74295_заполняем процесс отсутствие:
+            [PREVIEW_PICTURE] => 
+            [PREVIEW_TEXT] => 
+            [DETAIL_PICTURE] => 
+            [DETAIL_TEXT] => 
+            [CODE] => 
+            [ENTITY] => bot_assistant
+            [SECTION] => 
+            [PROPERTY_VALUES] => Array
+                (
+                    [case] => ропроро
+                    [dateBegin] => 11.11.2022
+                    [dateEnd] => 
+                    [employee] => 
+                    [type] => 
+                    [department] => 
+                    [step] => 3
+                    [where] => 
+                    [departingTime] => 
+                    [arrivingTime] => 
+                    [purpose] => 
+                    [tickets] => 
+                    [booking] => 
+                    [boardingTickets] => 
+                    [command] => 
+                )
+
+        )
+
+    [2] => Array
+        (
+            [ID] => 466623
+            [TIMESTAMP_X] => 2022-11-25T13:01:23+03:00
+            [MODIFIED_BY] => 81981
+            [DATE_CREATE] => 2022-11-25T13:00:19+03:00
+            [CREATED_BY] => 81981
+            [ACTIVE] => Y
+            [DATE_ACTIVE_FROM] => 
+            [DATE_ACTIVE_TO] => 
+            [SORT] => 500
+            [NAME] => user_81981_заполняем процесс отсутствие:
+            [PREVIEW_PICTURE] => 
+            [PREVIEW_TEXT] => 
+            [DETAIL_PICTURE] => 
+            [DETAIL_TEXT] => 
+            [CODE] => 
+            [ENTITY] => bot_assistant
+            [SECTION] => 
+            [PROPERTY_VALUES] => Array
+                (
+                    [case] => тест
+                    [dateBegin] => 11.10.2022
+                    [dateEnd] => 20.10.202
+                    [employee] => 
+                    [type] => 760
+                    [department] => 768
+                    [step] => 5
+                    [where] => 
+                    [departingTime] => 
+                    [arrivingTime] => 
+                    [purpose] => 
+                    [tickets] => 
+                    [booking] => 
+                    [boardingTickets] => 
+                    [command] => 
+                )
+
+        )
+
+    [3] => Array
+        (
+            [ID] => 466514
+            [TIMESTAMP_X] => 2022-11-25T10:12:53+03:00
+            [MODIFIED_BY] => 69643
+            [DATE_CREATE] => 2022-11-25T10:12:50+03:00
+            [CREATED_BY] => 69643
+            [ACTIVE] => Y
+            [DATE_ACTIVE_FROM] => 
+            [DATE_ACTIVE_TO] => 
+            [SORT] => 500
+            [NAME] => user_69643_заполняем процесс отсутствие:
+            [PREVIEW_PICTURE] => 
+            [PREVIEW_TEXT] => 
+            [DETAIL_PICTURE] => 
+            [DETAIL_TEXT] => 
+            [CODE] => 
+            [ENTITY] => bot_assistant
+            [SECTION] => 
+            [PROPERTY_VALUES] => Array
+                (
+                    [case] => йув
+                    [dateBegin] => 
+                    [dateEnd] => 
+                    [employee] => 
+                    [type] => 
+                    [department] => 
+                    [step] => 2
+                    [where] => 
+                    [departingTime] => 
+                    [arrivingTime] => 
+                    [purpose] => 
+                    [tickets] => 
+                    [booking] => 
+                    [boardingTickets] => 
+                    [command] => 
+                )
+
+        )
+
+)
+
+------------------------
+
+------------------------
+2022.11.25 17:35:40
+itemsInfo
+Array
+(
+    [0] => Array
+        (
+            [ID] => 466660
+            [TIMESTAMP_X] => 2022-11-25T17:35:38+03:00
+            [MODIFIED_BY] => 79910
+            [DATE_CREATE] => 2022-11-25T17:35:34+03:00
+            [CREATED_BY] => 79910
+            [ACTIVE] => Y
+            [DATE_ACTIVE_FROM] => 
+            [DATE_ACTIVE_TO] => 
+            [SORT] => 500
+            [NAME] => user_79910_заполняем данные о предстоящей командировке:
+            [PREVIEW_PICTURE] => 
+            [PREVIEW_TEXT] => 
+            [DETAIL_PICTURE] => 
+            [DETAIL_TEXT] => 
+            [CODE] => 
+            [ENTITY] => bot_assistant
+            [SECTION] => 
+            [PROPERTY_VALUES] => Array
+                (
+                    [case] => 
+                    [dateBegin] => 
+                    [dateEnd] => 
+                    [employee] => 
+                    [type] => 
+                    [department] => 
+                    [step] => 2
+                    [where] => цуупвафыиыв
+                    [departingTime] => 
+                    [arrivingTime] => 
+                    [purpose] => 
+                    [tickets] => 
+                    [booking] => 
+                    [boardingTickets] => 
+                    [command] => businessTrip
+                )
+
+        )
+
+    [1] => Array
+        (
+            [ID] => 466625
+            [TIMESTAMP_X] => 2022-11-25T13:08:19+03:00
+            [MODIFIED_BY] => 74295
+            [DATE_CREATE] => 2022-11-25T13:07:17+03:00
+            [CREATED_BY] => 74295
+            [ACTIVE] => Y
+            [DATE_ACTIVE_FROM] => 
+            [DATE_ACTIVE_TO] => 
+            [SORT] => 500
+            [NAME] => user_74295_заполняем процесс отсутствие:
+            [PREVIEW_PICTURE] => 
+            [PREVIEW_TEXT] => 
+            [DETAIL_PICTURE] => 
+            [DETAIL_TEXT] => 
+            [CODE] => 
+            [ENTITY] => bot_assistant
+            [SECTION] => 
+            [PROPERTY_VALUES] => Array
+                (
+                    [case] => ропроро
+                    [dateBegin] => 11.11.2022
+                    [dateEnd] => 
+                    [employee] => 
+                    [type] => 
+                    [department] => 
+                    [step] => 3
+                    [where] => 
+                    [departingTime] => 
+                    [arrivingTime] => 
+                    [purpose] => 
+                    [tickets] => 
+                    [booking] => 
+                    [boardingTickets] => 
+                    [command] => 
+                )
+
+        )
+
+    [2] => Array
+        (
+            [ID] => 466623
+            [TIMESTAMP_X] => 2022-11-25T13:01:23+03:00
+            [MODIFIED_BY] => 81981
+            [DATE_CREATE] => 2022-11-25T13:00:19+03:00
+            [CREATED_BY] => 81981
+            [ACTIVE] => Y
+            [DATE_ACTIVE_FROM] => 
+            [DATE_ACTIVE_TO] => 
+            [SORT] => 500
+            [NAME] => user_81981_заполняем процесс отсутствие:
+            [PREVIEW_PICTURE] => 
+            [PREVIEW_TEXT] => 
+            [DETAIL_PICTURE] => 
+            [DETAIL_TEXT] => 
+            [CODE] => 
+            [ENTITY] => bot_assistant
+            [SECTION] => 
+            [PROPERTY_VALUES] => Array
+                (
+                    [case] => тест
+                    [dateBegin] => 11.10.2022
+                    [dateEnd] => 20.10.202
+                    [employee] => 
+                    [type] => 760
+                    [department] => 768
+                    [step] => 5
+                    [where] => 
+                    [departingTime] => 
+                    [arrivingTime] => 
+                    [purpose] => 
+                    [tickets] => 
+                    [booking] => 
+                    [boardingTickets] => 
+                    [command] => 
+                )
+
+        )
+
+    [3] => Array
+        (
+            [ID] => 466514
+            [TIMESTAMP_X] => 2022-11-25T10:12:53+03:00
+            [MODIFIED_BY] => 69643
+            [DATE_CREATE] => 2022-11-25T10:12:50+03:00
+            [CREATED_BY] => 69643
+            [ACTIVE] => Y
+            [DATE_ACTIVE_FROM] => 
+            [DATE_ACTIVE_TO] => 
+            [SORT] => 500
+            [NAME] => user_69643_заполняем процесс отсутствие:
+            [PREVIEW_PICTURE] => 
+            [PREVIEW_TEXT] => 
+            [DETAIL_PICTURE] => 
+            [DETAIL_TEXT] => 
+            [CODE] => 
+            [ENTITY] => bot_assistant
+            [SECTION] => 
+            [PROPERTY_VALUES] => Array
+                (
+                    [case] => йув
+                    [dateBegin] => 
+                    [dateEnd] => 
+                    [employee] => 
+                    [type] => 
+                    [department] => 
+                    [step] => 2
+                    [where] => 
+                    [departingTime] => 
+                    [arrivingTime] => 
+                    [purpose] => 
+                    [tickets] => 
+                    [booking] => 
+                    [boardingTickets] => 
+                    [command] => 
+                )
+
+        )
+
+)
+
+------------------------
+
+------------------------
+2022.11.25 17:35:45
+itemsInfo
+Array
+(
+    [0] => Array
+        (
+            [ID] => 466660
+            [TIMESTAMP_X] => 2022-11-25T17:35:41+03:00
+            [MODIFIED_BY] => 79910
+            [DATE_CREATE] => 2022-11-25T17:35:34+03:00
+            [CREATED_BY] => 79910
+            [ACTIVE] => Y
+            [DATE_ACTIVE_FROM] => 
+            [DATE_ACTIVE_TO] => 
+            [SORT] => 500
+            [NAME] => user_79910_заполняем данные о предстоящей командировке:
+            [PREVIEW_PICTURE] => 
+            [PREVIEW_TEXT] => 
+            [DETAIL_PICTURE] => 
+            [DETAIL_TEXT] => 
+            [CODE] => 
+            [ENTITY] => bot_assistant
+            [SECTION] => 
+            [PROPERTY_VALUES] => Array
+                (
+                    [case] => 
+                    [dateBegin] => 
+                    [dateEnd] => 
+                    [employee] => 
+                    [type] => 
+                    [department] => 
+                    [step] => 3
+                    [where] => цуупвафыиыв
+                    [departingTime] => 21
+                    [arrivingTime] => 
+                    [purpose] => 
+                    [tickets] => 
+                    [booking] => 
+                    [boardingTickets] => 
+                    [command] => businessTrip
+                )
+
+        )
+
+    [1] => Array
+        (
+            [ID] => 466625
+            [TIMESTAMP_X] => 2022-11-25T13:08:19+03:00
+            [MODIFIED_BY] => 74295
+            [DATE_CREATE] => 2022-11-25T13:07:17+03:00
+            [CREATED_BY] => 74295
+            [ACTIVE] => Y
+            [DATE_ACTIVE_FROM] => 
+            [DATE_ACTIVE_TO] => 
+            [SORT] => 500
+            [NAME] => user_74295_заполняем процесс отсутствие:
+            [PREVIEW_PICTURE] => 
+            [PREVIEW_TEXT] => 
+            [DETAIL_PICTURE] => 
+            [DETAIL_TEXT] => 
+            [CODE] => 
+            [ENTITY] => bot_assistant
+            [SECTION] => 
+            [PROPERTY_VALUES] => Array
+                (
+                    [case] => ропроро
+                    [dateBegin] => 11.11.2022
+                    [dateEnd] => 
+                    [employee] => 
+                    [type] => 
+                    [department] => 
+                    [step] => 3
+                    [where] => 
+                    [departingTime] => 
+                    [arrivingTime] => 
+                    [purpose] => 
+                    [tickets] => 
+                    [booking] => 
+                    [boardingTickets] => 
+                    [command] => 
+                )
+
+        )
+
+    [2] => Array
+        (
+            [ID] => 466623
+            [TIMESTAMP_X] => 2022-11-25T13:01:23+03:00
+            [MODIFIED_BY] => 81981
+            [DATE_CREATE] => 2022-11-25T13:00:19+03:00
+            [CREATED_BY] => 81981
+            [ACTIVE] => Y
+            [DATE_ACTIVE_FROM] => 
+            [DATE_ACTIVE_TO] => 
+            [SORT] => 500
+            [NAME] => user_81981_заполняем процесс отсутствие:
+            [PREVIEW_PICTURE] => 
+            [PREVIEW_TEXT] => 
+            [DETAIL_PICTURE] => 
+            [DETAIL_TEXT] => 
+            [CODE] => 
+            [ENTITY] => bot_assistant
+            [SECTION] => 
+            [PROPERTY_VALUES] => Array
+                (
+                    [case] => тест
+                    [dateBegin] => 11.10.2022
+                    [dateEnd] => 20.10.202
+                    [employee] => 
+                    [type] => 760
+                    [department] => 768
+                    [step] => 5
+                    [where] => 
+                    [departingTime] => 
+                    [arrivingTime] => 
+                    [purpose] => 
+                    [tickets] => 
+                    [booking] => 
+                    [boardingTickets] => 
+                    [command] => 
+                )
+
+        )
+
+    [3] => Array
+        (
+            [ID] => 466514
+            [TIMESTAMP_X] => 2022-11-25T10:12:53+03:00
+            [MODIFIED_BY] => 69643
+            [DATE_CREATE] => 2022-11-25T10:12:50+03:00
+            [CREATED_BY] => 69643
+            [ACTIVE] => Y
+            [DATE_ACTIVE_FROM] => 
+            [DATE_ACTIVE_TO] => 
+            [SORT] => 500
+            [NAME] => user_69643_заполняем процесс отсутствие:
+            [PREVIEW_PICTURE] => 
+            [PREVIEW_TEXT] => 
+            [DETAIL_PICTURE] => 
+            [DETAIL_TEXT] => 
+            [CODE] => 
+            [ENTITY] => bot_assistant
+            [SECTION] => 
+            [PROPERTY_VALUES] => Array
+                (
+                    [case] => йув
+                    [dateBegin] => 
+                    [dateEnd] => 
+                    [employee] => 
+                    [type] => 
+                    [department] => 
+                    [step] => 2
+                    [where] => 
+                    [departingTime] => 
+                    [arrivingTime] => 
+                    [purpose] => 
+                    [tickets] => 
+                    [booking] => 
+                    [boardingTickets] => 
+                    [command] => 
+                )
+
+        )
+
+)
+
+------------------------
+
+------------------------
+2022.11.25 17:35:59
+itemsInfo
+Array
+(
+    [0] => Array
+        (
+            [ID] => 466660
+            [TIMESTAMP_X] => 2022-11-25T17:35:45+03:00
+            [MODIFIED_BY] => 79910
+            [DATE_CREATE] => 2022-11-25T17:35:34+03:00
+            [CREATED_BY] => 79910
+            [ACTIVE] => Y
+            [DATE_ACTIVE_FROM] => 
+            [DATE_ACTIVE_TO] => 
+            [SORT] => 500
+            [NAME] => user_79910_заполняем данные о предстоящей командировке:
+            [PREVIEW_PICTURE] => 
+            [PREVIEW_TEXT] => 
+            [DETAIL_PICTURE] => 
+            [DETAIL_TEXT] => 
+            [CODE] => 
+            [ENTITY] => bot_assistant
+            [SECTION] => 
+            [PROPERTY_VALUES] => Array
+                (
+                    [case] => 
+                    [dateBegin] => 
+                    [dateEnd] => 
+                    [employee] => 
+                    [type] => 
+                    [department] => 
+                    [step] => 4
+                    [where] => цуупвафыиыв
+                    [departingTime] => 21
+                    [arrivingTime] => 32
+                    [purpose] => 
+                    [tickets] => 
+                    [booking] => 
+                    [boardingTickets] => 
+                    [command] => businessTrip
+                )
+
+        )
+
+    [1] => Array
+        (
+            [ID] => 466625
+            [TIMESTAMP_X] => 2022-11-25T13:08:19+03:00
+            [MODIFIED_BY] => 74295
+            [DATE_CREATE] => 2022-11-25T13:07:17+03:00
+            [CREATED_BY] => 74295
+            [ACTIVE] => Y
+            [DATE_ACTIVE_FROM] => 
+            [DATE_ACTIVE_TO] => 
+            [SORT] => 500
+            [NAME] => user_74295_заполняем процесс отсутствие:
+            [PREVIEW_PICTURE] => 
+            [PREVIEW_TEXT] => 
+            [DETAIL_PICTURE] => 
+            [DETAIL_TEXT] => 
+            [CODE] => 
+            [ENTITY] => bot_assistant
+            [SECTION] => 
+            [PROPERTY_VALUES] => Array
+                (
+                    [case] => ропроро
+                    [dateBegin] => 11.11.2022
+                    [dateEnd] => 
+                    [employee] => 
+                    [type] => 
+                    [department] => 
+                    [step] => 3
+                    [where] => 
+                    [departingTime] => 
+                    [arrivingTime] => 
+                    [purpose] => 
+                    [tickets] => 
+                    [booking] => 
+                    [boardingTickets] => 
+                    [command] => 
+                )
+
+        )
+
+    [2] => Array
+        (
+            [ID] => 466623
+            [TIMESTAMP_X] => 2022-11-25T13:01:23+03:00
+            [MODIFIED_BY] => 81981
+            [DATE_CREATE] => 2022-11-25T13:00:19+03:00
+            [CREATED_BY] => 81981
+            [ACTIVE] => Y
+            [DATE_ACTIVE_FROM] => 
+            [DATE_ACTIVE_TO] => 
+            [SORT] => 500
+            [NAME] => user_81981_заполняем процесс отсутствие:
+            [PREVIEW_PICTURE] => 
+            [PREVIEW_TEXT] => 
+            [DETAIL_PICTURE] => 
+            [DETAIL_TEXT] => 
+            [CODE] => 
+            [ENTITY] => bot_assistant
+            [SECTION] => 
+            [PROPERTY_VALUES] => Array
+                (
+                    [case] => тест
+                    [dateBegin] => 11.10.2022
+                    [dateEnd] => 20.10.202
+                    [employee] => 
+                    [type] => 760
+                    [department] => 768
+                    [step] => 5
+                    [where] => 
+                    [departingTime] => 
+                    [arrivingTime] => 
+                    [purpose] => 
+                    [tickets] => 
+                    [booking] => 
+                    [boardingTickets] => 
+                    [command] => 
+                )
+
+        )
+
+    [3] => Array
+        (
+            [ID] => 466514
+            [TIMESTAMP_X] => 2022-11-25T10:12:53+03:00
+            [MODIFIED_BY] => 69643
+            [DATE_CREATE] => 2022-11-25T10:12:50+03:00
+            [CREATED_BY] => 69643
+            [ACTIVE] => Y
+            [DATE_ACTIVE_FROM] => 
+            [DATE_ACTIVE_TO] => 
+            [SORT] => 500
+            [NAME] => user_69643_заполняем процесс отсутствие:
+            [PREVIEW_PICTURE] => 
+            [PREVIEW_TEXT] => 
+            [DETAIL_PICTURE] => 
+            [DETAIL_TEXT] => 
+            [CODE] => 
+            [ENTITY] => bot_assistant
+            [SECTION] => 
+            [PROPERTY_VALUES] => Array
+                (
+                    [case] => йув
+                    [dateBegin] => 
+                    [dateEnd] => 
+                    [employee] => 
+                    [type] => 
+                    [department] => 
+                    [step] => 2
+                    [where] => 
+                    [departingTime] => 
+                    [arrivingTime] => 
+                    [purpose] => 
+                    [tickets] => 
+                    [booking] => 
+                    [boardingTickets] => 
+                    [command] => 
+                )
+
+        )
+
+)
+
+------------------------
+
+------------------------
+2022.11.25 17:35:59
+Внесенные данные:
+Array
+(
+    [0] => Array
+        (
+            [ID] => 466660
+            [TIMESTAMP_X] => 2022-11-25T17:35:59+03:00
+            [MODIFIED_BY] => 79910
+            [DATE_CREATE] => 2022-11-25T17:35:34+03:00
+            [CREATED_BY] => 79910
+            [ACTIVE] => Y
+            [DATE_ACTIVE_FROM] => 
+            [DATE_ACTIVE_TO] => 
+            [SORT] => 500
+            [NAME] => user_79910_заполняем данные о предстоящей командировке:
+            [PREVIEW_PICTURE] => 
+            [PREVIEW_TEXT] => 
+            [DETAIL_PICTURE] => 
+            [DETAIL_TEXT] => 
+            [CODE] => 
+            [ENTITY] => bot_assistant
+            [SECTION] => 
+            [PROPERTY_VALUES] => Array
+                (
+                    [case] => 
+                    [dateBegin] => 
+                    [dateEnd] => 
+                    [employee] => 
+                    [type] => 
+                    [department] => 
+                    [step] => 4
+                    [where] => цуупвафыиыв
+                    [departingTime] => 21
+                    [arrivingTime] => 32
+                    [purpose] => ваиаиваиваив
+                    [tickets] => 
+                    [booking] => 
+                    [boardingTickets] => 
+                    [command] => businessTrip
+                )
+
+        )
+
+    [1] => Array
+        (
+            [ID] => 466625
+            [TIMESTAMP_X] => 2022-11-25T13:08:19+03:00
+            [MODIFIED_BY] => 74295
+            [DATE_CREATE] => 2022-11-25T13:07:17+03:00
+            [CREATED_BY] => 74295
+            [ACTIVE] => Y
+            [DATE_ACTIVE_FROM] => 
+            [DATE_ACTIVE_TO] => 
+            [SORT] => 500
+            [NAME] => user_74295_заполняем процесс отсутствие:
+            [PREVIEW_PICTURE] => 
+            [PREVIEW_TEXT] => 
+            [DETAIL_PICTURE] => 
+            [DETAIL_TEXT] => 
+            [CODE] => 
+            [ENTITY] => bot_assistant
+            [SECTION] => 
+            [PROPERTY_VALUES] => Array
+                (
+                    [case] => ропроро
+                    [dateBegin] => 11.11.2022
+                    [dateEnd] => 
+                    [employee] => 
+                    [type] => 
+                    [department] => 
+                    [step] => 3
+                    [where] => 
+                    [departingTime] => 
+                    [arrivingTime] => 
+                    [purpose] => 
+                    [tickets] => 
+                    [booking] => 
+                    [boardingTickets] => 
+                    [command] => 
+                )
+
+        )
+
+    [2] => Array
+        (
+            [ID] => 466623
+            [TIMESTAMP_X] => 2022-11-25T13:01:23+03:00
+            [MODIFIED_BY] => 81981
+            [DATE_CREATE] => 2022-11-25T13:00:19+03:00
+            [CREATED_BY] => 81981
+            [ACTIVE] => Y
+            [DATE_ACTIVE_FROM] => 
+            [DATE_ACTIVE_TO] => 
+            [SORT] => 500
+            [NAME] => user_81981_заполняем процесс отсутствие:
+            [PREVIEW_PICTURE] => 
+            [PREVIEW_TEXT] => 
+            [DETAIL_PICTURE] => 
+            [DETAIL_TEXT] => 
+            [CODE] => 
+            [ENTITY] => bot_assistant
+            [SECTION] => 
+            [PROPERTY_VALUES] => Array
+                (
+                    [case] => тест
+                    [dateBegin] => 11.10.2022
+                    [dateEnd] => 20.10.202
+                    [employee] => 
+                    [type] => 760
+                    [department] => 768
+                    [step] => 5
+                    [where] => 
+                    [departingTime] => 
+                    [arrivingTime] => 
+                    [purpose] => 
+                    [tickets] => 
+                    [booking] => 
+                    [boardingTickets] => 
+                    [command] => 
+                )
+
+        )
+
+    [3] => Array
+        (
+            [ID] => 466514
+            [TIMESTAMP_X] => 2022-11-25T10:12:53+03:00
+            [MODIFIED_BY] => 69643
+            [DATE_CREATE] => 2022-11-25T10:12:50+03:00
+            [CREATED_BY] => 69643
+            [ACTIVE] => Y
+            [DATE_ACTIVE_FROM] => 
+            [DATE_ACTIVE_TO] => 
+            [SORT] => 500
+            [NAME] => user_69643_заполняем процесс отсутствие:
+            [PREVIEW_PICTURE] => 
+            [PREVIEW_TEXT] => 
+            [DETAIL_PICTURE] => 
+            [DETAIL_TEXT] => 
+            [CODE] => 
+            [ENTITY] => bot_assistant
+            [SECTION] => 
+            [PROPERTY_VALUES] => Array
+                (
+                    [case] => йув
+                    [dateBegin] => 
+                    [dateEnd] => 
+                    [employee] => 
+                    [type] => 
+                    [department] => 
+                    [step] => 2
+                    [where] => 
+                    [departingTime] => 
+                    [arrivingTime] => 
+                    [purpose] => 
+                    [tickets] => 
+                    [booking] => 
+                    [boardingTickets] => 
+                    [command] => 
+                )
+
+        )
+
+)
+
+------------------------
+
+------------------------
+2022.11.25 17:36:51
+AssistantBot command add
+Array
+(
+    [147] => Array
+        (
+            [domain] => corp.estelab.ru
+            [member_id] => 124ff83138e5ff3838db5f0214c6284a
+            [application_token] => 16fc2b5f7189c9cfdf7586e4181433f1
+            [AUTH] => Array
+                (
+                    [domain] => corp.estelab.ru
+                    [member_id] => 124ff83138e5ff3838db5f0214c6284a
+                    [application_token] => 16fc2b5f7189c9cfdf7586e4181433f1
+                )
+
+            [BOT_ID] => 82490
+            [BOT_CODE] => AssistantBot
+            [COMMAND] => businessTrip
+            [COMMAND_ID] => 147
+            [COMMAND_PARAMS] => fill business trip
+            [COMMAND_CONTEXT] => KEYBOARD
+            [MESSAGE_ID] => 13266250
+        )
+
+)
+
+------------------------
+
+------------------------
+2022.11.25 17:36:59
+itemsInfo
+Array
+(
+    [0] => Array
+        (
+            [ID] => 466661
+            [TIMESTAMP_X] => 2022-11-25T17:36:54+03:00
+            [MODIFIED_BY] => 79910
+            [DATE_CREATE] => 2022-11-25T17:36:54+03:00
+            [CREATED_BY] => 79910
+            [ACTIVE] => Y
+            [DATE_ACTIVE_FROM] => 
+            [DATE_ACTIVE_TO] => 
+            [SORT] => 500
+            [NAME] => user_79910_заполняем данные о предстоящей командировке:
+            [PREVIEW_PICTURE] => 
+            [PREVIEW_TEXT] => 
+            [DETAIL_PICTURE] => 
+            [DETAIL_TEXT] => 
+            [CODE] => 
+            [ENTITY] => bot_assistant
+            [SECTION] => 
+            [PROPERTY_VALUES] => Array
+                (
+                    [case] => 
+                    [dateBegin] => 
+                    [dateEnd] => 
+                    [employee] => 
+                    [type] => 
+                    [department] => 
+                    [step] => 1
+                    [where] => 
+                    [departingTime] => 
+                    [arrivingTime] => 
+                    [purpose] => 
+                    [tickets] => 
+                    [booking] => 
+                    [boardingTickets] => 
+                    [command] => businessTrip
+                )
+
+        )
+
+    [1] => Array
+        (
+            [ID] => 466625
+            [TIMESTAMP_X] => 2022-11-25T13:08:19+03:00
+            [MODIFIED_BY] => 74295
+            [DATE_CREATE] => 2022-11-25T13:07:17+03:00
+            [CREATED_BY] => 74295
+            [ACTIVE] => Y
+            [DATE_ACTIVE_FROM] => 
+            [DATE_ACTIVE_TO] => 
+            [SORT] => 500
+            [NAME] => user_74295_заполняем процесс отсутствие:
+            [PREVIEW_PICTURE] => 
+            [PREVIEW_TEXT] => 
+            [DETAIL_PICTURE] => 
+            [DETAIL_TEXT] => 
+            [CODE] => 
+            [ENTITY] => bot_assistant
+            [SECTION] => 
+            [PROPERTY_VALUES] => Array
+                (
+                    [case] => ропроро
+                    [dateBegin] => 11.11.2022
+                    [dateEnd] => 
+                    [employee] => 
+                    [type] => 
+                    [department] => 
+                    [step] => 3
+                    [where] => 
+                    [departingTime] => 
+                    [arrivingTime] => 
+                    [purpose] => 
+                    [tickets] => 
+                    [booking] => 
+                    [boardingTickets] => 
+                    [command] => 
+                )
+
+        )
+
+    [2] => Array
+        (
+            [ID] => 466623
+            [TIMESTAMP_X] => 2022-11-25T13:01:23+03:00
+            [MODIFIED_BY] => 81981
+            [DATE_CREATE] => 2022-11-25T13:00:19+03:00
+            [CREATED_BY] => 81981
+            [ACTIVE] => Y
+            [DATE_ACTIVE_FROM] => 
+            [DATE_ACTIVE_TO] => 
+            [SORT] => 500
+            [NAME] => user_81981_заполняем процесс отсутствие:
+            [PREVIEW_PICTURE] => 
+            [PREVIEW_TEXT] => 
+            [DETAIL_PICTURE] => 
+            [DETAIL_TEXT] => 
+            [CODE] => 
+            [ENTITY] => bot_assistant
+            [SECTION] => 
+            [PROPERTY_VALUES] => Array
+                (
+                    [case] => тест
+                    [dateBegin] => 11.10.2022
+                    [dateEnd] => 20.10.202
+                    [employee] => 
+                    [type] => 760
+                    [department] => 768
+                    [step] => 5
+                    [where] => 
+                    [departingTime] => 
+                    [arrivingTime] => 
+                    [purpose] => 
+                    [tickets] => 
+                    [booking] => 
+                    [boardingTickets] => 
+                    [command] => 
+                )
+
+        )
+
+    [3] => Array
+        (
+            [ID] => 466514
+            [TIMESTAMP_X] => 2022-11-25T10:12:53+03:00
+            [MODIFIED_BY] => 69643
+            [DATE_CREATE] => 2022-11-25T10:12:50+03:00
+            [CREATED_BY] => 69643
+            [ACTIVE] => Y
+            [DATE_ACTIVE_FROM] => 
+            [DATE_ACTIVE_TO] => 
+            [SORT] => 500
+            [NAME] => user_69643_заполняем процесс отсутствие:
+            [PREVIEW_PICTURE] => 
+            [PREVIEW_TEXT] => 
+            [DETAIL_PICTURE] => 
+            [DETAIL_TEXT] => 
+            [CODE] => 
+            [ENTITY] => bot_assistant
+            [SECTION] => 
+            [PROPERTY_VALUES] => Array
+                (
+                    [case] => йув
+                    [dateBegin] => 
+                    [dateEnd] => 
+                    [employee] => 
+                    [type] => 
+                    [department] => 
+                    [step] => 2
+                    [where] => 
+                    [departingTime] => 
+                    [arrivingTime] => 
+                    [purpose] => 
+                    [tickets] => 
+                    [booking] => 
+                    [boardingTickets] => 
+                    [command] => 
+                )
+
+        )
+
+)
+
+------------------------
+
+------------------------
+2022.11.25 17:37:02
+itemsInfo
+Array
+(
+    [0] => Array
+        (
+            [ID] => 466661
+            [TIMESTAMP_X] => 2022-11-25T17:36:59+03:00
+            [MODIFIED_BY] => 79910
+            [DATE_CREATE] => 2022-11-25T17:36:54+03:00
+            [CREATED_BY] => 79910
+            [ACTIVE] => Y
+            [DATE_ACTIVE_FROM] => 
+            [DATE_ACTIVE_TO] => 
+            [SORT] => 500
+            [NAME] => user_79910_заполняем данные о предстоящей командировке:
+            [PREVIEW_PICTURE] => 
+            [PREVIEW_TEXT] => 
+            [DETAIL_PICTURE] => 
+            [DETAIL_TEXT] => 
+            [CODE] => 
+            [ENTITY] => bot_assistant
+            [SECTION] => 
+            [PROPERTY_VALUES] => Array
+                (
+                    [case] => 
+                    [dateBegin] => 
+                    [dateEnd] => 
+                    [employee] => 
+                    [type] => 
+                    [department] => 
+                    [step] => 2
+                    [where] => питер
+                    [departingTime] => 
+                    [arrivingTime] => 
+                    [purpose] => 
+                    [tickets] => 
+                    [booking] => 
+                    [boardingTickets] => 
+                    [command] => businessTrip
+                )
+
+        )
+
+    [1] => Array
+        (
+            [ID] => 466625
+            [TIMESTAMP_X] => 2022-11-25T13:08:19+03:00
+            [MODIFIED_BY] => 74295
+            [DATE_CREATE] => 2022-11-25T13:07:17+03:00
+            [CREATED_BY] => 74295
+            [ACTIVE] => Y
+            [DATE_ACTIVE_FROM] => 
+            [DATE_ACTIVE_TO] => 
+            [SORT] => 500
+            [NAME] => user_74295_заполняем процесс отсутствие:
+            [PREVIEW_PICTURE] => 
+            [PREVIEW_TEXT] => 
+            [DETAIL_PICTURE] => 
+            [DETAIL_TEXT] => 
+            [CODE] => 
+            [ENTITY] => bot_assistant
+            [SECTION] => 
+            [PROPERTY_VALUES] => Array
+                (
+                    [case] => ропроро
+                    [dateBegin] => 11.11.2022
+                    [dateEnd] => 
+                    [employee] => 
+                    [type] => 
+                    [department] => 
+                    [step] => 3
+                    [where] => 
+                    [departingTime] => 
+                    [arrivingTime] => 
+                    [purpose] => 
+                    [tickets] => 
+                    [booking] => 
+                    [boardingTickets] => 
+                    [command] => 
+                )
+
+        )
+
+    [2] => Array
+        (
+            [ID] => 466623
+            [TIMESTAMP_X] => 2022-11-25T13:01:23+03:00
+            [MODIFIED_BY] => 81981
+            [DATE_CREATE] => 2022-11-25T13:00:19+03:00
+            [CREATED_BY] => 81981
+            [ACTIVE] => Y
+            [DATE_ACTIVE_FROM] => 
+            [DATE_ACTIVE_TO] => 
+            [SORT] => 500
+            [NAME] => user_81981_заполняем процесс отсутствие:
+            [PREVIEW_PICTURE] => 
+            [PREVIEW_TEXT] => 
+            [DETAIL_PICTURE] => 
+            [DETAIL_TEXT] => 
+            [CODE] => 
+            [ENTITY] => bot_assistant
+            [SECTION] => 
+            [PROPERTY_VALUES] => Array
+                (
+                    [case] => тест
+                    [dateBegin] => 11.10.2022
+                    [dateEnd] => 20.10.202
+                    [employee] => 
+                    [type] => 760
+                    [department] => 768
+                    [step] => 5
+                    [where] => 
+                    [departingTime] => 
+                    [arrivingTime] => 
+                    [purpose] => 
+                    [tickets] => 
+                    [booking] => 
+                    [boardingTickets] => 
+                    [command] => 
+                )
+
+        )
+
+    [3] => Array
+        (
+            [ID] => 466514
+            [TIMESTAMP_X] => 2022-11-25T10:12:53+03:00
+            [MODIFIED_BY] => 69643
+            [DATE_CREATE] => 2022-11-25T10:12:50+03:00
+            [CREATED_BY] => 69643
+            [ACTIVE] => Y
+            [DATE_ACTIVE_FROM] => 
+            [DATE_ACTIVE_TO] => 
+            [SORT] => 500
+            [NAME] => user_69643_заполняем процесс отсутствие:
+            [PREVIEW_PICTURE] => 
+            [PREVIEW_TEXT] => 
+            [DETAIL_PICTURE] => 
+            [DETAIL_TEXT] => 
+            [CODE] => 
+            [ENTITY] => bot_assistant
+            [SECTION] => 
+            [PROPERTY_VALUES] => Array
+                (
+                    [case] => йув
+                    [dateBegin] => 
+                    [dateEnd] => 
+                    [employee] => 
+                    [type] => 
+                    [department] => 
+                    [step] => 2
+                    [where] => 
+                    [departingTime] => 
+                    [arrivingTime] => 
+                    [purpose] => 
+                    [tickets] => 
+                    [booking] => 
+                    [boardingTickets] => 
+                    [command] => 
+                )
+
+        )
+
+)
+
+------------------------
+
+------------------------
+2022.11.25 17:37:05
+itemsInfo
+Array
+(
+    [0] => Array
+        (
+            [ID] => 466661
+            [TIMESTAMP_X] => 2022-11-25T17:37:02+03:00
+            [MODIFIED_BY] => 79910
+            [DATE_CREATE] => 2022-11-25T17:36:54+03:00
+            [CREATED_BY] => 79910
+            [ACTIVE] => Y
+            [DATE_ACTIVE_FROM] => 
+            [DATE_ACTIVE_TO] => 
+            [SORT] => 500
+            [NAME] => user_79910_заполняем данные о предстоящей командировке:
+            [PREVIEW_PICTURE] => 
+            [PREVIEW_TEXT] => 
+            [DETAIL_PICTURE] => 
+            [DETAIL_TEXT] => 
+            [CODE] => 
+            [ENTITY] => bot_assistant
+            [SECTION] => 
+            [PROPERTY_VALUES] => Array
+                (
+                    [case] => 
+                    [dateBegin] => 
+                    [dateEnd] => 
+                    [employee] => 
+                    [type] => 
+                    [department] => 
+                    [step] => 3
+                    [where] => питер
+                    [departingTime] => 2121
+                    [arrivingTime] => 
+                    [purpose] => 
+                    [tickets] => 
+                    [booking] => 
+                    [boardingTickets] => 
+                    [command] => businessTrip
+                )
+
+        )
+
+    [1] => Array
+        (
+            [ID] => 466625
+            [TIMESTAMP_X] => 2022-11-25T13:08:19+03:00
+            [MODIFIED_BY] => 74295
+            [DATE_CREATE] => 2022-11-25T13:07:17+03:00
+            [CREATED_BY] => 74295
+            [ACTIVE] => Y
+            [DATE_ACTIVE_FROM] => 
+            [DATE_ACTIVE_TO] => 
+            [SORT] => 500
+            [NAME] => user_74295_заполняем процесс отсутствие:
+            [PREVIEW_PICTURE] => 
+            [PREVIEW_TEXT] => 
+            [DETAIL_PICTURE] => 
+            [DETAIL_TEXT] => 
+            [CODE] => 
+            [ENTITY] => bot_assistant
+            [SECTION] => 
+            [PROPERTY_VALUES] => Array
+                (
+                    [case] => ропроро
+                    [dateBegin] => 11.11.2022
+                    [dateEnd] => 
+                    [employee] => 
+                    [type] => 
+                    [department] => 
+                    [step] => 3
+                    [where] => 
+                    [departingTime] => 
+                    [arrivingTime] => 
+                    [purpose] => 
+                    [tickets] => 
+                    [booking] => 
+                    [boardingTickets] => 
+                    [command] => 
+                )
+
+        )
+
+    [2] => Array
+        (
+            [ID] => 466623
+            [TIMESTAMP_X] => 2022-11-25T13:01:23+03:00
+            [MODIFIED_BY] => 81981
+            [DATE_CREATE] => 2022-11-25T13:00:19+03:00
+            [CREATED_BY] => 81981
+            [ACTIVE] => Y
+            [DATE_ACTIVE_FROM] => 
+            [DATE_ACTIVE_TO] => 
+            [SORT] => 500
+            [NAME] => user_81981_заполняем процесс отсутствие:
+            [PREVIEW_PICTURE] => 
+            [PREVIEW_TEXT] => 
+            [DETAIL_PICTURE] => 
+            [DETAIL_TEXT] => 
+            [CODE] => 
+            [ENTITY] => bot_assistant
+            [SECTION] => 
+            [PROPERTY_VALUES] => Array
+                (
+                    [case] => тест
+                    [dateBegin] => 11.10.2022
+                    [dateEnd] => 20.10.202
+                    [employee] => 
+                    [type] => 760
+                    [department] => 768
+                    [step] => 5
+                    [where] => 
+                    [departingTime] => 
+                    [arrivingTime] => 
+                    [purpose] => 
+                    [tickets] => 
+                    [booking] => 
+                    [boardingTickets] => 
+                    [command] => 
+                )
+
+        )
+
+    [3] => Array
+        (
+            [ID] => 466514
+            [TIMESTAMP_X] => 2022-11-25T10:12:53+03:00
+            [MODIFIED_BY] => 69643
+            [DATE_CREATE] => 2022-11-25T10:12:50+03:00
+            [CREATED_BY] => 69643
+            [ACTIVE] => Y
+            [DATE_ACTIVE_FROM] => 
+            [DATE_ACTIVE_TO] => 
+            [SORT] => 500
+            [NAME] => user_69643_заполняем процесс отсутствие:
+            [PREVIEW_PICTURE] => 
+            [PREVIEW_TEXT] => 
+            [DETAIL_PICTURE] => 
+            [DETAIL_TEXT] => 
+            [CODE] => 
+            [ENTITY] => bot_assistant
+            [SECTION] => 
+            [PROPERTY_VALUES] => Array
+                (
+                    [case] => йув
+                    [dateBegin] => 
+                    [dateEnd] => 
+                    [employee] => 
+                    [type] => 
+                    [department] => 
+                    [step] => 2
+                    [where] => 
+                    [departingTime] => 
+                    [arrivingTime] => 
+                    [purpose] => 
+                    [tickets] => 
+                    [booking] => 
+                    [boardingTickets] => 
+                    [command] => 
+                )
+
+        )
+
+)
+
+------------------------
+
+------------------------
+2022.11.25 17:37:11
+itemsInfo
+Array
+(
+    [0] => Array
+        (
+            [ID] => 466661
+            [TIMESTAMP_X] => 2022-11-25T17:37:05+03:00
+            [MODIFIED_BY] => 79910
+            [DATE_CREATE] => 2022-11-25T17:36:54+03:00
+            [CREATED_BY] => 79910
+            [ACTIVE] => Y
+            [DATE_ACTIVE_FROM] => 
+            [DATE_ACTIVE_TO] => 
+            [SORT] => 500
+            [NAME] => user_79910_заполняем данные о предстоящей командировке:
+            [PREVIEW_PICTURE] => 
+            [PREVIEW_TEXT] => 
+            [DETAIL_PICTURE] => 
+            [DETAIL_TEXT] => 
+            [CODE] => 
+            [ENTITY] => bot_assistant
+            [SECTION] => 
+            [PROPERTY_VALUES] => Array
+                (
+                    [case] => 
+                    [dateBegin] => 
+                    [dateEnd] => 
+                    [employee] => 
+                    [type] => 
+                    [department] => 
+                    [step] => 4
+                    [where] => питер
+                    [departingTime] => 2121
+                    [arrivingTime] => 2123
+                    [purpose] => 
+                    [tickets] => 
+                    [booking] => 
+                    [boardingTickets] => 
+                    [command] => businessTrip
+                )
+
+        )
+
+    [1] => Array
+        (
+            [ID] => 466625
+            [TIMESTAMP_X] => 2022-11-25T13:08:19+03:00
+            [MODIFIED_BY] => 74295
+            [DATE_CREATE] => 2022-11-25T13:07:17+03:00
+            [CREATED_BY] => 74295
+            [ACTIVE] => Y
+            [DATE_ACTIVE_FROM] => 
+            [DATE_ACTIVE_TO] => 
+            [SORT] => 500
+            [NAME] => user_74295_заполняем процесс отсутствие:
+            [PREVIEW_PICTURE] => 
+            [PREVIEW_TEXT] => 
+            [DETAIL_PICTURE] => 
+            [DETAIL_TEXT] => 
+            [CODE] => 
+            [ENTITY] => bot_assistant
+            [SECTION] => 
+            [PROPERTY_VALUES] => Array
+                (
+                    [case] => ропроро
+                    [dateBegin] => 11.11.2022
+                    [dateEnd] => 
+                    [employee] => 
+                    [type] => 
+                    [department] => 
+                    [step] => 3
+                    [where] => 
+                    [departingTime] => 
+                    [arrivingTime] => 
+                    [purpose] => 
+                    [tickets] => 
+                    [booking] => 
+                    [boardingTickets] => 
+                    [command] => 
+                )
+
+        )
+
+    [2] => Array
+        (
+            [ID] => 466623
+            [TIMESTAMP_X] => 2022-11-25T13:01:23+03:00
+            [MODIFIED_BY] => 81981
+            [DATE_CREATE] => 2022-11-25T13:00:19+03:00
+            [CREATED_BY] => 81981
+            [ACTIVE] => Y
+            [DATE_ACTIVE_FROM] => 
+            [DATE_ACTIVE_TO] => 
+            [SORT] => 500
+            [NAME] => user_81981_заполняем процесс отсутствие:
+            [PREVIEW_PICTURE] => 
+            [PREVIEW_TEXT] => 
+            [DETAIL_PICTURE] => 
+            [DETAIL_TEXT] => 
+            [CODE] => 
+            [ENTITY] => bot_assistant
+            [SECTION] => 
+            [PROPERTY_VALUES] => Array
+                (
+                    [case] => тест
+                    [dateBegin] => 11.10.2022
+                    [dateEnd] => 20.10.202
+                    [employee] => 
+                    [type] => 760
+                    [department] => 768
+                    [step] => 5
+                    [where] => 
+                    [departingTime] => 
+                    [arrivingTime] => 
+                    [purpose] => 
+                    [tickets] => 
+                    [booking] => 
+                    [boardingTickets] => 
+                    [command] => 
+                )
+
+        )
+
+    [3] => Array
+        (
+            [ID] => 466514
+            [TIMESTAMP_X] => 2022-11-25T10:12:53+03:00
+            [MODIFIED_BY] => 69643
+            [DATE_CREATE] => 2022-11-25T10:12:50+03:00
+            [CREATED_BY] => 69643
+            [ACTIVE] => Y
+            [DATE_ACTIVE_FROM] => 
+            [DATE_ACTIVE_TO] => 
+            [SORT] => 500
+            [NAME] => user_69643_заполняем процесс отсутствие:
+            [PREVIEW_PICTURE] => 
+            [PREVIEW_TEXT] => 
+            [DETAIL_PICTURE] => 
+            [DETAIL_TEXT] => 
+            [CODE] => 
+            [ENTITY] => bot_assistant
+            [SECTION] => 
+            [PROPERTY_VALUES] => Array
+                (
+                    [case] => йув
+                    [dateBegin] => 
+                    [dateEnd] => 
+                    [employee] => 
+                    [type] => 
+                    [department] => 
+                    [step] => 2
+                    [where] => 
+                    [departingTime] => 
+                    [arrivingTime] => 
+                    [purpose] => 
+                    [tickets] => 
+                    [booking] => 
+                    [boardingTickets] => 
+                    [command] => 
+                )
+
+        )
+
+)
+
+------------------------
+
+------------------------
+2022.11.25 17:37:11
+Внесенные данные:
+Array
+(
+    [0] => Array
+        (
+            [ID] => 466661
+            [TIMESTAMP_X] => 2022-11-25T17:37:11+03:00
+            [MODIFIED_BY] => 79910
+            [DATE_CREATE] => 2022-11-25T17:36:54+03:00
+            [CREATED_BY] => 79910
+            [ACTIVE] => Y
+            [DATE_ACTIVE_FROM] => 
+            [DATE_ACTIVE_TO] => 
+            [SORT] => 500
+            [NAME] => user_79910_заполняем данные о предстоящей командировке:
+            [PREVIEW_PICTURE] => 
+            [PREVIEW_TEXT] => 
+            [DETAIL_PICTURE] => 
+            [DETAIL_TEXT] => 
+            [CODE] => 
+            [ENTITY] => bot_assistant
+            [SECTION] => 
+            [PROPERTY_VALUES] => Array
+                (
+                    [case] => 
+                    [dateBegin] => 
+                    [dateEnd] => 
+                    [employee] => 
+                    [type] => 
+                    [department] => 
+                    [step] => 4
+                    [where] => питер
+                    [departingTime] => 2121
+                    [arrivingTime] => 2123
+                    [purpose] => цель
+                    [tickets] => 
+                    [booking] => 
+                    [boardingTickets] => 
+                    [command] => businessTrip
+                )
+
+        )
+
+    [1] => Array
+        (
+            [ID] => 466625
+            [TIMESTAMP_X] => 2022-11-25T13:08:19+03:00
+            [MODIFIED_BY] => 74295
+            [DATE_CREATE] => 2022-11-25T13:07:17+03:00
+            [CREATED_BY] => 74295
+            [ACTIVE] => Y
+            [DATE_ACTIVE_FROM] => 
+            [DATE_ACTIVE_TO] => 
+            [SORT] => 500
+            [NAME] => user_74295_заполняем процесс отсутствие:
+            [PREVIEW_PICTURE] => 
+            [PREVIEW_TEXT] => 
+            [DETAIL_PICTURE] => 
+            [DETAIL_TEXT] => 
+            [CODE] => 
+            [ENTITY] => bot_assistant
+            [SECTION] => 
+            [PROPERTY_VALUES] => Array
+                (
+                    [case] => ропроро
+                    [dateBegin] => 11.11.2022
+                    [dateEnd] => 
+                    [employee] => 
+                    [type] => 
+                    [department] => 
+                    [step] => 3
+                    [where] => 
+                    [departingTime] => 
+                    [arrivingTime] => 
+                    [purpose] => 
+                    [tickets] => 
+                    [booking] => 
+                    [boardingTickets] => 
+                    [command] => 
+                )
+
+        )
+
+    [2] => Array
+        (
+            [ID] => 466623
+            [TIMESTAMP_X] => 2022-11-25T13:01:23+03:00
+            [MODIFIED_BY] => 81981
+            [DATE_CREATE] => 2022-11-25T13:00:19+03:00
+            [CREATED_BY] => 81981
+            [ACTIVE] => Y
+            [DATE_ACTIVE_FROM] => 
+            [DATE_ACTIVE_TO] => 
+            [SORT] => 500
+            [NAME] => user_81981_заполняем процесс отсутствие:
+            [PREVIEW_PICTURE] => 
+            [PREVIEW_TEXT] => 
+            [DETAIL_PICTURE] => 
+            [DETAIL_TEXT] => 
+            [CODE] => 
+            [ENTITY] => bot_assistant
+            [SECTION] => 
+            [PROPERTY_VALUES] => Array
+                (
+                    [case] => тест
+                    [dateBegin] => 11.10.2022
+                    [dateEnd] => 20.10.202
+                    [employee] => 
+                    [type] => 760
+                    [department] => 768
+                    [step] => 5
+                    [where] => 
+                    [departingTime] => 
+                    [arrivingTime] => 
+                    [purpose] => 
+                    [tickets] => 
+                    [booking] => 
+                    [boardingTickets] => 
+                    [command] => 
+                )
+
+        )
+
+    [3] => Array
+        (
+            [ID] => 466514
+            [TIMESTAMP_X] => 2022-11-25T10:12:53+03:00
+            [MODIFIED_BY] => 69643
+            [DATE_CREATE] => 2022-11-25T10:12:50+03:00
+            [CREATED_BY] => 69643
+            [ACTIVE] => Y
+            [DATE_ACTIVE_FROM] => 
+            [DATE_ACTIVE_TO] => 
+            [SORT] => 500
+            [NAME] => user_69643_заполняем процесс отсутствие:
+            [PREVIEW_PICTURE] => 
+            [PREVIEW_TEXT] => 
+            [DETAIL_PICTURE] => 
+            [DETAIL_TEXT] => 
+            [CODE] => 
+            [ENTITY] => bot_assistant
+            [SECTION] => 
+            [PROPERTY_VALUES] => Array
+                (
+                    [case] => йув
+                    [dateBegin] => 
+                    [dateEnd] => 
+                    [employee] => 
+                    [type] => 
+                    [department] => 
+                    [step] => 2
+                    [where] => 
+                    [departingTime] => 
+                    [arrivingTime] => 
+                    [purpose] => 
+                    [tickets] => 
+                    [booking] => 
+                    [boardingTickets] => 
+                    [command] => 
+                )
+
         )
 
 )
