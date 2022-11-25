@@ -16,6 +16,7 @@ if (!isset($appsConfig[$_REQUEST['auth']['application_token']])) {
     return false;
 }
 writeToLog($_REQUEST, '$_REQUEST');
+writeToLog(getEntityItemProperties($entityCode), 'properties');
 // writeToLog($_REQUEST['data']['PARAMS']['DIALOG_ID'], $title = 'DIALOG_ID');
 $messageFromUser = trim(mb_strtolower($_REQUEST['data']['PARAMS']['MESSAGE']));
 $userId = $_REQUEST['data']['USER']['ID'];
