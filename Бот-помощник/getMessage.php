@@ -39,38 +39,40 @@ $iBlockFields = restCommand('lists.field.get', array(
     'IBLOCK_ID' => 119,
 ), $_REQUEST["auth"]);
 
-// info about procuration
-// $arProcuration = [
-//     [0] => [
-//         ['ID'] => 2240,
-//         ['VALUE'] => 'нет',
-//     ],
+/**
+ * info about procuration
+$arProcuration = [
+    [0] => [
+        ['ID'] => 2240,
+        ['VALUE'] => 'нет',
+    ],
 
-//     [1] => [
-//         ['ID'] => 2241,
-//         ['VALUE'] => 'КЛВ',
-//     ],
+    [1] => [
+        ['ID'] => 2241,
+        ['VALUE'] => 'КЛВ',
+    ],
 
-//     [2] => [
-//         ['ID'] => 2242,
-//         ['VALUE'] => 'ИП',
-//     ],
+    [2] => [
+        ['ID'] => 2242,
+        ['VALUE'] => 'ИП',
+    ],
 
-//     [3] => [
-//         ['ID'] => 2243,
-//         ['VALUE'] => 'Эстелаб',
-//     ],
+    [3] => [
+        ['ID'] => 2243,
+        ['VALUE'] => 'Эстелаб',
+    ],
 
-//     [4] => [
-//         ['ID'] => 2244,
-//         ['VALUE'] => 'ИНЭЛКО',
-//     ],
+    [4] => [
+        ['ID'] => 2244,
+        ['VALUE'] => 'ИНЭЛКО',
+    ],
 
-//     [5] => [
-//         ['ID'] => 2245,
-//         ['VALUE'] => 'Лидер',
-//     ],
-// ];
+    [5] => [
+        ['ID'] => 2245,
+        ['VALUE'] => 'Лидер',
+    ],
+];
+ */
 
 $departments = $iBlockFields['result']['PROPERTY_855']['DISPLAY_VALUES_FORM'];
 $departmentInfo = '';
@@ -98,6 +100,8 @@ if ($messageFromUser == 'привет') {
     $itemsInfo = $arItemsInfo['result'];
     // writeToLog($itemsInfo, 'itemsInfo After deleting');
 } elseif ($messageFromUser == 'заполняем процесс отсутствие:') {
+    deleteEntityItem($entityCode, $userId);
+
     $item = addEntityItem($entityCode, 'user_' . $userId . '_' . $messageFromUser);
     $itemId = $item['result'];
     updateEntityItem($entityCode, $itemId, 'general_step', '1');
@@ -114,6 +118,8 @@ if ($messageFromUser == 'привет') {
     $itemsInfo = $arItemsInfo['result'];
     // writeToLog($itemsInfo, 'заполняем процесс отсутствие:');
 } elseif ($messageFromUser == 'заполняем данные о предстоящей командировке:') {
+    deleteEntityItem($entityCode, $userId);
+
     $item = addEntityItem($entityCode, 'user_' . $userId . '_' . $messageFromUser);
     $itemId = $item['result'];
     updateEntityItem($entityCode, $itemId, 'general_step', '1');
@@ -125,6 +131,8 @@ if ($messageFromUser == 'привет') {
         'attach' => $attach,
     );
 } elseif ($messageFromUser == 'заполняем данные для вызова курьера:') {
+    deleteEntityItem($entityCode, $userId);
+    
     $item = addEntityItem($entityCode, 'user_' . $userId . '_' . $messageFromUser);
     $itemId = $item['result'];
     updateEntityItem($entityCode, $itemId, 'general_step', '1');
@@ -174,7 +182,7 @@ if ($messageFromUser == 'привет') {
     $rpaTypeId = 15;
     $title = $itemsInfo[0]['PROPERTY_VALUES']['courier_call_title'];
     $from = $itemsInfo[0]['PROPERTY_VALUES']['courier_call_from'];
-    $to = $itemsInfo[0]['PROPERTY_VALUES']['courier_call_to'];    
+    $to = $itemsInfo[0]['PROPERTY_VALUES']['courier_call_to'];
     $sender_contact = $itemsInfo[0]['PROPERTY_VALUES']['courier_call_sender_contact'];
     $sender_phone = $itemsInfo[0]['PROPERTY_VALUES']['courier_call_sender_phone'];
     $recipient_contact = $itemsInfo[0]['PROPERTY_VALUES']['courier_call_recipient_contact'];
