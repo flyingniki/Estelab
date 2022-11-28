@@ -2,7 +2,7 @@
 
 if ($step == 1) {
     updateEntityItem($entityCode, $currentItemId, 'courier_call_title', $messageFromUser);
-    updateEntityItem($entityCode, $currentItemId, 'general_step', '2');
+    updateEntityItem($entityCode, $currentItemId, 'general_step', $step + 1);
     $arItemsInfo = getEntityItems($entityCode);
     $itemsInfo = $arItemsInfo['result'];
     // writeToLog($itemsInfo, 'itemsNewInfo');
@@ -13,7 +13,7 @@ if ($step == 1) {
     );
 } elseif ($step == 2) {
     updateEntityItem($entityCode, $currentItemId, 'courier_call_from', $messageFromUser);
-    updateEntityItem($entityCode, $currentItemId, 'general_step', '3');
+    updateEntityItem($entityCode, $currentItemId, 'general_step', $step + 1);
     $arItemsInfo = getEntityItems($entityCode);
     $itemsInfo = $arItemsInfo['result'];
     // writeToLog($itemsInfo, 'itemsNewInfo');
@@ -24,7 +24,7 @@ if ($step == 1) {
     );
 } elseif ($step == 3) {
     updateEntityItem($entityCode, $currentItemId, 'courier_call_to', $messageFromUser);
-    updateEntityItem($entityCode, $currentItemId, 'general_step', '4');
+    updateEntityItem($entityCode, $currentItemId, 'general_step', $step + 1);
     $arItemsInfo = getEntityItems($entityCode);
     $itemsInfo = $arItemsInfo['result'];
     // writeToLog($itemsInfo, 'itemsNewInfo');
@@ -35,7 +35,7 @@ if ($step == 1) {
     );
 } elseif ($step == 4) {
     updateEntityItem($entityCode, $currentItemId, 'courier_call_sender_contact', $messageFromUser);
-    updateEntityItem($entityCode, $currentItemId, 'general_step', '5');
+    updateEntityItem($entityCode, $currentItemId, 'general_step', $step + 1);
     $arItemsInfo = getEntityItems($entityCode);
     $itemsInfo = $arItemsInfo['result'];
     // writeToLog($itemsInfo, 'itemsNewInfo');
@@ -46,7 +46,7 @@ if ($step == 1) {
     );
 } elseif ($step == 5) {
     updateEntityItem($entityCode, $currentItemId, 'courier_call_sender_phone', $messageFromUser);
-    updateEntityItem($entityCode, $currentItemId, 'general_step', '6');
+    updateEntityItem($entityCode, $currentItemId, 'general_step', $step + 1);
     $arItemsInfo = getEntityItems($entityCode);
     $itemsInfo = $arItemsInfo['result'];
     // writeToLog($itemsInfo, 'itemsNewInfo');
@@ -57,7 +57,7 @@ if ($step == 1) {
     );
 } elseif ($step == 6) {
     updateEntityItem($entityCode, $currentItemId, 'courier_call_recipient_contact', $messageFromUser);
-    updateEntityItem($entityCode, $currentItemId, 'general_step', '7');
+    updateEntityItem($entityCode, $currentItemId, 'general_step', $step + 1);
     $arItemsInfo = getEntityItems($entityCode);
     $itemsInfo = $arItemsInfo['result'];
     // writeToLog($itemsInfo, 'itemsNewInfo');
@@ -68,7 +68,7 @@ if ($step == 1) {
     );
 } elseif ($step == 7) {
     updateEntityItem($entityCode, $currentItemId, 'courier_call_recipient_phone', $messageFromUser);
-    updateEntityItem($entityCode, $currentItemId, 'general_step', '8');
+    updateEntityItem($entityCode, $currentItemId, 'general_step', $step + 1);
     $arItemsInfo = getEntityItems($entityCode);
     $itemsInfo = $arItemsInfo['result'];
     // writeToLog($itemsInfo, 'itemsNewInfo');
@@ -79,7 +79,7 @@ if ($step == 1) {
     );
 } elseif ($step == 8) {
     updateEntityItem($entityCode, $currentItemId, 'courier_call_pickup_date', $messageFromUser);
-    updateEntityItem($entityCode, $currentItemId, 'general_step', '9');
+    updateEntityItem($entityCode, $currentItemId, 'general_step', $step + 1);
     $arItemsInfo = getEntityItems($entityCode);
     $itemsInfo = $arItemsInfo['result'];
     // writeToLog($itemsInfo, 'itemsNewInfo');
@@ -90,7 +90,7 @@ if ($step == 1) {
     );
 } elseif ($step == 9) {
     updateEntityItem($entityCode, $currentItemId, 'courier_call_weight', $messageFromUser);
-    updateEntityItem($entityCode, $currentItemId, 'general_step', '10');
+    updateEntityItem($entityCode, $currentItemId, 'general_step', $step + 1);
     $arItemsInfo = getEntityItems($entityCode);
     $itemsInfo = $arItemsInfo['result'];
     // writeToLog($itemsInfo, 'itemsNewInfo');
@@ -101,7 +101,7 @@ if ($step == 1) {
     );
 } elseif ($step == 10) {
     updateEntityItem($entityCode, $currentItemId, 'courier_call_dimensions', $messageFromUser);
-    updateEntityItem($entityCode, $currentItemId, 'general_step', '11');
+    updateEntityItem($entityCode, $currentItemId, 'general_step', $step + 1);
     $arItemsInfo = getEntityItems($entityCode);
     $itemsInfo = $arItemsInfo['result'];
     // writeToLog($itemsInfo, 'itemsNewInfo');
@@ -112,7 +112,7 @@ if ($step == 1) {
     );
 } elseif ($step == 11) {
     updateEntityItem($entityCode, $currentItemId, 'courier_call_procuration', $messageFromUser);
-    updateEntityItem($entityCode, $currentItemId, 'general_step', '12');
+    updateEntityItem($entityCode, $currentItemId, 'general_step', $step + 1);
     $arItemsInfo = getEntityItems($entityCode);
     $itemsInfo = $arItemsInfo['result'];
     // writeToLog($itemsInfo, 'itemsNewInfo');
@@ -123,7 +123,7 @@ if ($step == 1) {
     );
 } elseif ($step == 12) {
     updateEntityItem($entityCode, $currentItemId, 'courier_call_declared_value', $messageFromUser);
-    updateEntityItem($entityCode, $currentItemId, 'general_step', '13');
+    updateEntityItem($entityCode, $currentItemId, 'general_step', $step + 1);
     $arItemsInfo = getEntityItems($entityCode);
     $itemsInfo = $arItemsInfo['result'];
     // writeToLog($itemsInfo, 'itemsNewInfo');

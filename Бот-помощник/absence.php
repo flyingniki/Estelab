@@ -3,7 +3,7 @@
 // по шагам
 if ($step == 1) {
     updateEntityItem($entityCode, $currentItemId, 'absence_case', $messageFromUser);
-    updateEntityItem($entityCode, $currentItemId, 'general_step', '2');
+    updateEntityItem($entityCode, $currentItemId, 'general_step', $step + 1);
     $arItemsInfo = getEntityItems($entityCode);
     $itemsInfo = $arItemsInfo['result'];
     // writeToLog($itemsInfo, 'itemsNewInfo');
@@ -14,7 +14,7 @@ if ($step == 1) {
     );
 } elseif ($step == 2) {
     updateEntityItem($entityCode, $currentItemId, 'absence_date_begin', $messageFromUser);
-    updateEntityItem($entityCode, $currentItemId, 'general_step', '3');
+    updateEntityItem($entityCode, $currentItemId, 'general_step', $step + 1);
     $arItemsInfo = getEntityItems($entityCode);
     $itemsInfo = $arItemsInfo['result'];
     // writeToLog($itemsInfo, 'itemsNewInfo');
@@ -25,7 +25,7 @@ if ($step == 1) {
     );
 } elseif ($step == 3) {
     updateEntityItem($entityCode, $currentItemId, 'absence_date_end', $messageFromUser);
-    updateEntityItem($entityCode, $currentItemId, 'general_step', '4');
+    updateEntityItem($entityCode, $currentItemId, 'general_step', $step + 1);
     $arItemsInfo = getEntityItems($entityCode);
     $itemsInfo = $arItemsInfo['result'];
     // writeToLog($itemsInfo, 'itemsNewInfo');
@@ -36,7 +36,7 @@ if ($step == 1) {
     );
 } elseif ($step == 4) {
     updateEntityItem($entityCode, $currentItemId, 'absence_type', $messageFromUser);
-    updateEntityItem($entityCode, $currentItemId, 'general_step', '5');
+    updateEntityItem($entityCode, $currentItemId, 'general_step', $step + 1);
     $arItemsInfo = getEntityItems($entityCode);
     $itemsInfo = $arItemsInfo['result'];
     // writeToLog($itemsInfo, 'itemsNewInfo');
