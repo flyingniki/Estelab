@@ -62,3 +62,29 @@ function businessTrip($rpaTypeId, $userId, $where, $departingTime, $arrivingTime
     ), $_REQUEST["auth"]);
     return $result;
 }
+
+/**
+ * Добавляем элемент RPA Вызов курьера
+ */
+function courierCall($rpaTypeId, $title, $from, $to, $sender_contact, $sender_phone, $recipient_contact, $recipient_phone, $pickup_date, $weight, $dimensions, $procuration, $declared_value, $comment)
+{
+    $result = restCommand('rpa.item.add', array(
+        'typeId' => $rpaTypeId,
+        'fields' => array(
+            'UF_RPA_15_NAME' => $title,
+            'UF_RPA_15_1663760824400' => $from,
+            'UF_RPA_15_1663760835551' => $to,
+            'UF_RPA_15_1663930746' => $sender_contact,
+            'UF_RPA_15_1669113982' => $sender_phone,
+            'UF_RPA_15_1663930778' => $recipient_contact,
+            'UF_RPA_15_1669114021' => $recipient_phone,
+            'UF_RPA_15_1663760848635' => $pickup_date,
+            'UF_RPA_15_1663760916425' => $weight,
+            'UF_RPA_15_1663760943055' => $dimensions,
+            'UF_RPA_15_1663760963155' => $procuration,
+            'UF_RPA_15_1663761028407' => $declared_value,
+            'UF_RPA_15_1663761338815' => $comment,
+        ),
+    ), $_REQUEST["auth"]);
+    return $result;
+}

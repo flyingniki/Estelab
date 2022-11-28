@@ -22,7 +22,16 @@ foreach ($_REQUEST['data']['COMMAND'] as $command) {
         $result = restCommand('imbot.command.answer', array(
             "COMMAND_ID" => $command['COMMAND_ID'],
             "MESSAGE_ID" => $command['MESSAGE_ID'],
-            "MESSAGE" => "[b]Внеси информацию о командировке[/b]
+            "MESSAGE" => "[b]Внеси информацию о предстоящей командировке[/b]
+             \n Если готов, [send={$commandText}]кликай![/send]",
+        ), $_REQUEST["auth"]);
+    } elseif ($command['COMMAND'] == 'courierCall') {
+        $commandText = 'Заполняем данные для вызова курьера:';
+        $commandText = mb_strtolower($commandText);
+        $result = restCommand('imbot.command.answer', array(
+            "COMMAND_ID" => $command['COMMAND_ID'],
+            "MESSAGE_ID" => $command['MESSAGE_ID'],
+            "MESSAGE" => "[b]Внеси данные для вызова курьера[/b]
              \n Если готов, [send={$commandText}]кликай![/send]",
         ), $_REQUEST["auth"]);
     }

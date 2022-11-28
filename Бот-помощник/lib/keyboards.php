@@ -16,5 +16,13 @@ $keyboardMain = array(
         "BG_COLOR" => "#7B68EE",
         "TEXT_COLOR" => "#fff",
         "DISPLAY" => "LINE",
+    ),
+    array(
+        "TEXT" => "Вызов курьера",
+        'COMMAND' => 'courierCall',
+        "COMMAND_PARAMS" => "fill courier call",
+        "BG_COLOR" => "#FF00FF",
+        "TEXT_COLOR" => "#fff",
+        "DISPLAY" => "LINE",
     ), 
 );

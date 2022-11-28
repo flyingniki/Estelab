@@ -4,9 +4,9 @@
  * Бот-помощник по порталу
  */
 
-require_once __DIR__ . '/defaultFunctions.php';
-require_once __DIR__ . '/myFunctions.php';
-require_once __DIR__ . '/keyboards.php';
+require_once __DIR__ . '/functions/defaultFunctions.php';
+require_once __DIR__ . '/functions/myFunctions.php';
+require_once __DIR__ . '/lib/keyboards.php';
 
 $entityCode = 'bot_assistant';
 $entityName = 'Assistant Bot';
@@ -25,15 +25,15 @@ if ($_REQUEST['event'] == 'ONIMBOTMESSAGEADD') {
 // receive event "open private dialog with bot" or "join bot to group chat"
 else {
     if ($_REQUEST['event'] == 'ONIMBOTJOINCHAT') {
-        require_once __DIR__ . '/joinChat.php';
+        require_once __DIR__ . '/lib/joinChat.php';
     } // receive event "delete chat-bot"
     else {
         if ($_REQUEST['event'] == 'ONIMBOTDELETE') {
-            require_once __DIR__ . '/botDelete.php';
+            require_once __DIR__ . '/lib/botDelete.php';
         } // receive event "Application install"
         else {
             if ($_REQUEST['event'] == 'ONAPPINSTALL') {
-                require_once __DIR__ . '/appInstall.php';
+                require_once __DIR__ . '/lib/appInstall.php';
             }
         }
     }

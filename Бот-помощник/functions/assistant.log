@@ -1,0 +1,1704 @@
+
+------------------------
+2022.11.28 16:35:53
+itemsInfo
+Array
+(
+    [0] => Array
+        (
+            [ID] => 467058
+            [TIMESTAMP_X] => 2022-11-28T16:35:30+03:00
+            [MODIFIED_BY] => 79910
+            [DATE_CREATE] => 2022-11-28T16:35:28+03:00
+            [CREATED_BY] => 79910
+            [ACTIVE] => Y
+            [DATE_ACTIVE_FROM] => 
+            [DATE_ACTIVE_TO] => 
+            [SORT] => 500
+            [NAME] => user_79910_заполняем данные для вызова курьера:
+            [PREVIEW_PICTURE] => 
+            [PREVIEW_TEXT] => 
+            [DETAIL_PICTURE] => 
+            [DETAIL_TEXT] => 
+            [CODE] => 
+            [ENTITY] => bot_assistant
+            [SECTION] => 
+            [PROPERTY_VALUES] => Array
+                (
+                    [general_step] => 2
+                    [general_command] => courierCall
+                    [absence_case] => 
+                    [absence_date_begin] => 
+                    [absence_date_end] => 
+                    [absence_employee] => 
+                    [absence_type] => 
+                    [absence_department] => 
+                    [business_trip_where] => 
+                    [business_trip_departing_time] => 
+                    [business_trip_arriving_time] => 
+                    [business_trip_purpose] => 
+                    [business_trip_tickets] => 
+                    [business_trip_booking] => 
+                    [business_trip_boarding_tickets] => 
+                    [courier_call_title] => safasfasfa
+                    [courier_call_from] => 
+                    [courier_call_to] => 
+                    [courier_call_sender_contact] => 
+                    [courier_call_sender_phone] => 
+                    [courier_call_recipient_contact] => 
+                    [courier_call_recipient_phone] => 
+                    [courier_call_pickup_date] => 
+                    [courier_call_weight] => 
+                    [courier_call_dimensions] => 
+                    [courier_call_procuration] => 
+                    [courier_call_declared_value] => 
+                    [courier_call_comment] => 
+                )
+
+        )
+
+)
+
+------------------------
+
+------------------------
+2022.11.28 16:35:58
+itemsInfo
+Array
+(
+    [0] => Array
+        (
+            [ID] => 467058
+            [TIMESTAMP_X] => 2022-11-28T16:35:53+03:00
+            [MODIFIED_BY] => 79910
+            [DATE_CREATE] => 2022-11-28T16:35:28+03:00
+            [CREATED_BY] => 79910
+            [ACTIVE] => Y
+            [DATE_ACTIVE_FROM] => 
+            [DATE_ACTIVE_TO] => 
+            [SORT] => 500
+            [NAME] => user_79910_заполняем данные для вызова курьера:
+            [PREVIEW_PICTURE] => 
+            [PREVIEW_TEXT] => 
+            [DETAIL_PICTURE] => 
+            [DETAIL_TEXT] => 
+            [CODE] => 
+            [ENTITY] => bot_assistant
+            [SECTION] => 
+            [PROPERTY_VALUES] => Array
+                (
+                    [general_step] => 3
+                    [general_command] => courierCall
+                    [absence_case] => 
+                    [absence_date_begin] => 
+                    [absence_date_end] => 
+                    [absence_employee] => 
+                    [absence_type] => 
+                    [absence_department] => 
+                    [business_trip_where] => 
+                    [business_trip_departing_time] => 
+                    [business_trip_arriving_time] => 
+                    [business_trip_purpose] => 
+                    [business_trip_tickets] => 
+                    [business_trip_booking] => 
+                    [business_trip_boarding_tickets] => 
+                    [courier_call_title] => safasfasfa
+                    [courier_call_from] => msk
+                    [courier_call_to] => 
+                    [courier_call_sender_contact] => 
+                    [courier_call_sender_phone] => 
+                    [courier_call_recipient_contact] => 
+                    [courier_call_recipient_phone] => 
+                    [courier_call_pickup_date] => 
+                    [courier_call_weight] => 
+                    [courier_call_dimensions] => 
+                    [courier_call_procuration] => 
+                    [courier_call_declared_value] => 
+                    [courier_call_comment] => 
+                )
+
+        )
+
+)
+
+------------------------
+
+------------------------
+2022.11.28 16:36:01
+itemsInfo
+Array
+(
+    [0] => Array
+        (
+            [ID] => 467058
+            [TIMESTAMP_X] => 2022-11-28T16:35:58+03:00
+            [MODIFIED_BY] => 79910
+            [DATE_CREATE] => 2022-11-28T16:35:28+03:00
+            [CREATED_BY] => 79910
+            [ACTIVE] => Y
+            [DATE_ACTIVE_FROM] => 
+            [DATE_ACTIVE_TO] => 
+            [SORT] => 500
+            [NAME] => user_79910_заполняем данные для вызова курьера:
+            [PREVIEW_PICTURE] => 
+            [PREVIEW_TEXT] => 
+            [DETAIL_PICTURE] => 
+            [DETAIL_TEXT] => 
+            [CODE] => 
+            [ENTITY] => bot_assistant
+            [SECTION] => 
+            [PROPERTY_VALUES] => Array
+                (
+                    [general_step] => 4
+                    [general_command] => courierCall
+                    [absence_case] => 
+                    [absence_date_begin] => 
+                    [absence_date_end] => 
+                    [absence_employee] => 
+                    [absence_type] => 
+                    [absence_department] => 
+                    [business_trip_where] => 
+                    [business_trip_departing_time] => 
+                    [business_trip_arriving_time] => 
+                    [business_trip_purpose] => 
+                    [business_trip_tickets] => 
+                    [business_trip_booking] => 
+                    [business_trip_boarding_tickets] => 
+                    [courier_call_title] => safasfasfa
+                    [courier_call_from] => msk
+                    [courier_call_to] => piter
+                    [courier_call_sender_contact] => 
+                    [courier_call_sender_phone] => 
+                    [courier_call_recipient_contact] => 
+                    [courier_call_recipient_phone] => 
+                    [courier_call_pickup_date] => 
+                    [courier_call_weight] => 
+                    [courier_call_dimensions] => 
+                    [courier_call_procuration] => 
+                    [courier_call_declared_value] => 
+                    [courier_call_comment] => 
+                )
+
+        )
+
+)
+
+------------------------
+
+------------------------
+2022.11.28 16:36:06
+itemsInfo
+Array
+(
+    [0] => Array
+        (
+            [ID] => 467058
+            [TIMESTAMP_X] => 2022-11-28T16:36:01+03:00
+            [MODIFIED_BY] => 79910
+            [DATE_CREATE] => 2022-11-28T16:35:28+03:00
+            [CREATED_BY] => 79910
+            [ACTIVE] => Y
+            [DATE_ACTIVE_FROM] => 
+            [DATE_ACTIVE_TO] => 
+            [SORT] => 500
+            [NAME] => user_79910_заполняем данные для вызова курьера:
+            [PREVIEW_PICTURE] => 
+            [PREVIEW_TEXT] => 
+            [DETAIL_PICTURE] => 
+            [DETAIL_TEXT] => 
+            [CODE] => 
+            [ENTITY] => bot_assistant
+            [SECTION] => 
+            [PROPERTY_VALUES] => Array
+                (
+                    [general_step] => 5
+                    [general_command] => courierCall
+                    [absence_case] => 
+                    [absence_date_begin] => 
+                    [absence_date_end] => 
+                    [absence_employee] => 
+                    [absence_type] => 
+                    [absence_department] => 
+                    [business_trip_where] => 
+                    [business_trip_departing_time] => 
+                    [business_trip_arriving_time] => 
+                    [business_trip_purpose] => 
+                    [business_trip_tickets] => 
+                    [business_trip_booking] => 
+                    [business_trip_boarding_tickets] => 
+                    [courier_call_title] => safasfasfa
+                    [courier_call_from] => msk
+                    [courier_call_to] => piter
+                    [courier_call_sender_contact] => sdgdsgsd
+                    [courier_call_sender_phone] => 
+                    [courier_call_recipient_contact] => 
+                    [courier_call_recipient_phone] => 
+                    [courier_call_pickup_date] => 
+                    [courier_call_weight] => 
+                    [courier_call_dimensions] => 
+                    [courier_call_procuration] => 
+                    [courier_call_declared_value] => 
+                    [courier_call_comment] => 
+                )
+
+        )
+
+)
+
+------------------------
+
+------------------------
+2022.11.28 16:36:09
+itemsInfo
+Array
+(
+    [0] => Array
+        (
+            [ID] => 467058
+            [TIMESTAMP_X] => 2022-11-28T16:36:06+03:00
+            [MODIFIED_BY] => 79910
+            [DATE_CREATE] => 2022-11-28T16:35:28+03:00
+            [CREATED_BY] => 79910
+            [ACTIVE] => Y
+            [DATE_ACTIVE_FROM] => 
+            [DATE_ACTIVE_TO] => 
+            [SORT] => 500
+            [NAME] => user_79910_заполняем данные для вызова курьера:
+            [PREVIEW_PICTURE] => 
+            [PREVIEW_TEXT] => 
+            [DETAIL_PICTURE] => 
+            [DETAIL_TEXT] => 
+            [CODE] => 
+            [ENTITY] => bot_assistant
+            [SECTION] => 
+            [PROPERTY_VALUES] => Array
+                (
+                    [general_step] => 6
+                    [general_command] => courierCall
+                    [absence_case] => 
+                    [absence_date_begin] => 
+                    [absence_date_end] => 
+                    [absence_employee] => 
+                    [absence_type] => 
+                    [absence_department] => 
+                    [business_trip_where] => 
+                    [business_trip_departing_time] => 
+                    [business_trip_arriving_time] => 
+                    [business_trip_purpose] => 
+                    [business_trip_tickets] => 
+                    [business_trip_booking] => 
+                    [business_trip_boarding_tickets] => 
+                    [courier_call_title] => safasfasfa
+                    [courier_call_from] => msk
+                    [courier_call_to] => piter
+                    [courier_call_sender_contact] => sdgdsgsd
+                    [courier_call_sender_phone] => 534534346
+                    [courier_call_recipient_contact] => 
+                    [courier_call_recipient_phone] => 
+                    [courier_call_pickup_date] => 
+                    [courier_call_weight] => 
+                    [courier_call_dimensions] => 
+                    [courier_call_procuration] => 
+                    [courier_call_declared_value] => 
+                    [courier_call_comment] => 
+                )
+
+        )
+
+)
+
+------------------------
+
+------------------------
+2022.11.28 16:36:11
+itemsInfo
+Array
+(
+    [0] => Array
+        (
+            [ID] => 467058
+            [TIMESTAMP_X] => 2022-11-28T16:36:09+03:00
+            [MODIFIED_BY] => 79910
+            [DATE_CREATE] => 2022-11-28T16:35:28+03:00
+            [CREATED_BY] => 79910
+            [ACTIVE] => Y
+            [DATE_ACTIVE_FROM] => 
+            [DATE_ACTIVE_TO] => 
+            [SORT] => 500
+            [NAME] => user_79910_заполняем данные для вызова курьера:
+            [PREVIEW_PICTURE] => 
+            [PREVIEW_TEXT] => 
+            [DETAIL_PICTURE] => 
+            [DETAIL_TEXT] => 
+            [CODE] => 
+            [ENTITY] => bot_assistant
+            [SECTION] => 
+            [PROPERTY_VALUES] => Array
+                (
+                    [general_step] => 7
+                    [general_command] => courierCall
+                    [absence_case] => 
+                    [absence_date_begin] => 
+                    [absence_date_end] => 
+                    [absence_employee] => 
+                    [absence_type] => 
+                    [absence_department] => 
+                    [business_trip_where] => 
+                    [business_trip_departing_time] => 
+                    [business_trip_arriving_time] => 
+                    [business_trip_purpose] => 
+                    [business_trip_tickets] => 
+                    [business_trip_booking] => 
+                    [business_trip_boarding_tickets] => 
+                    [courier_call_title] => safasfasfa
+                    [courier_call_from] => msk
+                    [courier_call_to] => piter
+                    [courier_call_sender_contact] => sdgdsgsd
+                    [courier_call_sender_phone] => 534534346
+                    [courier_call_recipient_contact] => vsdvsdvlskgvbdls;fv
+                    [courier_call_recipient_phone] => 
+                    [courier_call_pickup_date] => 
+                    [courier_call_weight] => 
+                    [courier_call_dimensions] => 
+                    [courier_call_procuration] => 
+                    [courier_call_declared_value] => 
+                    [courier_call_comment] => 
+                )
+
+        )
+
+)
+
+------------------------
+
+------------------------
+2022.11.28 16:36:18
+itemsInfo
+Array
+(
+    [0] => Array
+        (
+            [ID] => 467058
+            [TIMESTAMP_X] => 2022-11-28T16:36:11+03:00
+            [MODIFIED_BY] => 79910
+            [DATE_CREATE] => 2022-11-28T16:35:28+03:00
+            [CREATED_BY] => 79910
+            [ACTIVE] => Y
+            [DATE_ACTIVE_FROM] => 
+            [DATE_ACTIVE_TO] => 
+            [SORT] => 500
+            [NAME] => user_79910_заполняем данные для вызова курьера:
+            [PREVIEW_PICTURE] => 
+            [PREVIEW_TEXT] => 
+            [DETAIL_PICTURE] => 
+            [DETAIL_TEXT] => 
+            [CODE] => 
+            [ENTITY] => bot_assistant
+            [SECTION] => 
+            [PROPERTY_VALUES] => Array
+                (
+                    [general_step] => 8
+                    [general_command] => courierCall
+                    [absence_case] => 
+                    [absence_date_begin] => 
+                    [absence_date_end] => 
+                    [absence_employee] => 
+                    [absence_type] => 
+                    [absence_department] => 
+                    [business_trip_where] => 
+                    [business_trip_departing_time] => 
+                    [business_trip_arriving_time] => 
+                    [business_trip_purpose] => 
+                    [business_trip_tickets] => 
+                    [business_trip_booking] => 
+                    [business_trip_boarding_tickets] => 
+                    [courier_call_title] => safasfasfa
+                    [courier_call_from] => msk
+                    [courier_call_to] => piter
+                    [courier_call_sender_contact] => sdgdsgsd
+                    [courier_call_sender_phone] => 534534346
+                    [courier_call_recipient_contact] => vsdvsdvlskgvbdls;fv
+                    [courier_call_recipient_phone] => 080989080
+                    [courier_call_pickup_date] => 
+                    [courier_call_weight] => 
+                    [courier_call_dimensions] => 
+                    [courier_call_procuration] => 
+                    [courier_call_declared_value] => 
+                    [courier_call_comment] => 
+                )
+
+        )
+
+)
+
+------------------------
+
+------------------------
+2022.11.28 16:36:22
+itemsInfo
+Array
+(
+    [0] => Array
+        (
+            [ID] => 467058
+            [TIMESTAMP_X] => 2022-11-28T16:36:18+03:00
+            [MODIFIED_BY] => 79910
+            [DATE_CREATE] => 2022-11-28T16:35:28+03:00
+            [CREATED_BY] => 79910
+            [ACTIVE] => Y
+            [DATE_ACTIVE_FROM] => 
+            [DATE_ACTIVE_TO] => 
+            [SORT] => 500
+            [NAME] => user_79910_заполняем данные для вызова курьера:
+            [PREVIEW_PICTURE] => 
+            [PREVIEW_TEXT] => 
+            [DETAIL_PICTURE] => 
+            [DETAIL_TEXT] => 
+            [CODE] => 
+            [ENTITY] => bot_assistant
+            [SECTION] => 
+            [PROPERTY_VALUES] => Array
+                (
+                    [general_step] => 9
+                    [general_command] => courierCall
+                    [absence_case] => 
+                    [absence_date_begin] => 
+                    [absence_date_end] => 
+                    [absence_employee] => 
+                    [absence_type] => 
+                    [absence_department] => 
+                    [business_trip_where] => 
+                    [business_trip_departing_time] => 
+                    [business_trip_arriving_time] => 
+                    [business_trip_purpose] => 
+                    [business_trip_tickets] => 
+                    [business_trip_booking] => 
+                    [business_trip_boarding_tickets] => 
+                    [courier_call_title] => safasfasfa
+                    [courier_call_from] => msk
+                    [courier_call_to] => piter
+                    [courier_call_sender_contact] => sdgdsgsd
+                    [courier_call_sender_phone] => 534534346
+                    [courier_call_recipient_contact] => vsdvsdvlskgvbdls;fv
+                    [courier_call_recipient_phone] => 080989080
+                    [courier_call_pickup_date] => 29.11.2022
+                    [courier_call_weight] => 
+                    [courier_call_dimensions] => 
+                    [courier_call_procuration] => 
+                    [courier_call_declared_value] => 
+                    [courier_call_comment] => 
+                )
+
+        )
+
+)
+
+------------------------
+
+------------------------
+2022.11.28 16:36:25
+itemsInfo
+Array
+(
+    [0] => Array
+        (
+            [ID] => 467058
+            [TIMESTAMP_X] => 2022-11-28T16:36:22+03:00
+            [MODIFIED_BY] => 79910
+            [DATE_CREATE] => 2022-11-28T16:35:28+03:00
+            [CREATED_BY] => 79910
+            [ACTIVE] => Y
+            [DATE_ACTIVE_FROM] => 
+            [DATE_ACTIVE_TO] => 
+            [SORT] => 500
+            [NAME] => user_79910_заполняем данные для вызова курьера:
+            [PREVIEW_PICTURE] => 
+            [PREVIEW_TEXT] => 
+            [DETAIL_PICTURE] => 
+            [DETAIL_TEXT] => 
+            [CODE] => 
+            [ENTITY] => bot_assistant
+            [SECTION] => 
+            [PROPERTY_VALUES] => Array
+                (
+                    [general_step] => 10
+                    [general_command] => courierCall
+                    [absence_case] => 
+                    [absence_date_begin] => 
+                    [absence_date_end] => 
+                    [absence_employee] => 
+                    [absence_type] => 
+                    [absence_department] => 
+                    [business_trip_where] => 
+                    [business_trip_departing_time] => 
+                    [business_trip_arriving_time] => 
+                    [business_trip_purpose] => 
+                    [business_trip_tickets] => 
+                    [business_trip_booking] => 
+                    [business_trip_boarding_tickets] => 
+                    [courier_call_title] => safasfasfa
+                    [courier_call_from] => msk
+                    [courier_call_to] => piter
+                    [courier_call_sender_contact] => sdgdsgsd
+                    [courier_call_sender_phone] => 534534346
+                    [courier_call_recipient_contact] => vsdvsdvlskgvbdls;fv
+                    [courier_call_recipient_phone] => 080989080
+                    [courier_call_pickup_date] => 29.11.2022
+                    [courier_call_weight] => 312312
+                    [courier_call_dimensions] => 
+                    [courier_call_procuration] => 
+                    [courier_call_declared_value] => 
+                    [courier_call_comment] => 
+                )
+
+        )
+
+)
+
+------------------------
+
+------------------------
+2022.11.28 16:36:28
+itemsInfo
+Array
+(
+    [0] => Array
+        (
+            [ID] => 467058
+            [TIMESTAMP_X] => 2022-11-28T16:36:25+03:00
+            [MODIFIED_BY] => 79910
+            [DATE_CREATE] => 2022-11-28T16:35:28+03:00
+            [CREATED_BY] => 79910
+            [ACTIVE] => Y
+            [DATE_ACTIVE_FROM] => 
+            [DATE_ACTIVE_TO] => 
+            [SORT] => 500
+            [NAME] => user_79910_заполняем данные для вызова курьера:
+            [PREVIEW_PICTURE] => 
+            [PREVIEW_TEXT] => 
+            [DETAIL_PICTURE] => 
+            [DETAIL_TEXT] => 
+            [CODE] => 
+            [ENTITY] => bot_assistant
+            [SECTION] => 
+            [PROPERTY_VALUES] => Array
+                (
+                    [general_step] => 11
+                    [general_command] => courierCall
+                    [absence_case] => 
+                    [absence_date_begin] => 
+                    [absence_date_end] => 
+                    [absence_employee] => 
+                    [absence_type] => 
+                    [absence_department] => 
+                    [business_trip_where] => 
+                    [business_trip_departing_time] => 
+                    [business_trip_arriving_time] => 
+                    [business_trip_purpose] => 
+                    [business_trip_tickets] => 
+                    [business_trip_booking] => 
+                    [business_trip_boarding_tickets] => 
+                    [courier_call_title] => safasfasfa
+                    [courier_call_from] => msk
+                    [courier_call_to] => piter
+                    [courier_call_sender_contact] => sdgdsgsd
+                    [courier_call_sender_phone] => 534534346
+                    [courier_call_recipient_contact] => vsdvsdvlskgvbdls;fv
+                    [courier_call_recipient_phone] => 080989080
+                    [courier_call_pickup_date] => 29.11.2022
+                    [courier_call_weight] => 312312
+                    [courier_call_dimensions] => 321
+                    [courier_call_procuration] => 
+                    [courier_call_declared_value] => 
+                    [courier_call_comment] => 
+                )
+
+        )
+
+)
+
+------------------------
+
+------------------------
+2022.11.28 16:36:31
+itemsInfo
+Array
+(
+    [0] => Array
+        (
+            [ID] => 467058
+            [TIMESTAMP_X] => 2022-11-28T16:36:28+03:00
+            [MODIFIED_BY] => 79910
+            [DATE_CREATE] => 2022-11-28T16:35:28+03:00
+            [CREATED_BY] => 79910
+            [ACTIVE] => Y
+            [DATE_ACTIVE_FROM] => 
+            [DATE_ACTIVE_TO] => 
+            [SORT] => 500
+            [NAME] => user_79910_заполняем данные для вызова курьера:
+            [PREVIEW_PICTURE] => 
+            [PREVIEW_TEXT] => 
+            [DETAIL_PICTURE] => 
+            [DETAIL_TEXT] => 
+            [CODE] => 
+            [ENTITY] => bot_assistant
+            [SECTION] => 
+            [PROPERTY_VALUES] => Array
+                (
+                    [general_step] => 12
+                    [general_command] => courierCall
+                    [absence_case] => 
+                    [absence_date_begin] => 
+                    [absence_date_end] => 
+                    [absence_employee] => 
+                    [absence_type] => 
+                    [absence_department] => 
+                    [business_trip_where] => 
+                    [business_trip_departing_time] => 
+                    [business_trip_arriving_time] => 
+                    [business_trip_purpose] => 
+                    [business_trip_tickets] => 
+                    [business_trip_booking] => 
+                    [business_trip_boarding_tickets] => 
+                    [courier_call_title] => safasfasfa
+                    [courier_call_from] => msk
+                    [courier_call_to] => piter
+                    [courier_call_sender_contact] => sdgdsgsd
+                    [courier_call_sender_phone] => 534534346
+                    [courier_call_recipient_contact] => vsdvsdvlskgvbdls;fv
+                    [courier_call_recipient_phone] => 080989080
+                    [courier_call_pickup_date] => 29.11.2022
+                    [courier_call_weight] => 312312
+                    [courier_call_dimensions] => 321
+                    [courier_call_procuration] => 3213
+                    [courier_call_declared_value] => 
+                    [courier_call_comment] => 
+                )
+
+        )
+
+)
+
+------------------------
+
+------------------------
+2022.11.28 16:36:35
+itemsInfo
+Array
+(
+    [0] => Array
+        (
+            [ID] => 467058
+            [TIMESTAMP_X] => 2022-11-28T16:36:31+03:00
+            [MODIFIED_BY] => 79910
+            [DATE_CREATE] => 2022-11-28T16:35:28+03:00
+            [CREATED_BY] => 79910
+            [ACTIVE] => Y
+            [DATE_ACTIVE_FROM] => 
+            [DATE_ACTIVE_TO] => 
+            [SORT] => 500
+            [NAME] => user_79910_заполняем данные для вызова курьера:
+            [PREVIEW_PICTURE] => 
+            [PREVIEW_TEXT] => 
+            [DETAIL_PICTURE] => 
+            [DETAIL_TEXT] => 
+            [CODE] => 
+            [ENTITY] => bot_assistant
+            [SECTION] => 
+            [PROPERTY_VALUES] => Array
+                (
+                    [general_step] => 13
+                    [general_command] => courierCall
+                    [absence_case] => 
+                    [absence_date_begin] => 
+                    [absence_date_end] => 
+                    [absence_employee] => 
+                    [absence_type] => 
+                    [absence_department] => 
+                    [business_trip_where] => 
+                    [business_trip_departing_time] => 
+                    [business_trip_arriving_time] => 
+                    [business_trip_purpose] => 
+                    [business_trip_tickets] => 
+                    [business_trip_booking] => 
+                    [business_trip_boarding_tickets] => 
+                    [courier_call_title] => safasfasfa
+                    [courier_call_from] => msk
+                    [courier_call_to] => piter
+                    [courier_call_sender_contact] => sdgdsgsd
+                    [courier_call_sender_phone] => 534534346
+                    [courier_call_recipient_contact] => vsdvsdvlskgvbdls;fv
+                    [courier_call_recipient_phone] => 080989080
+                    [courier_call_pickup_date] => 29.11.2022
+                    [courier_call_weight] => 312312
+                    [courier_call_dimensions] => 321
+                    [courier_call_procuration] => 3213
+                    [courier_call_declared_value] => 1234213
+                    [courier_call_comment] => 
+                )
+
+        )
+
+)
+
+------------------------
+
+------------------------
+2022.11.28 16:36:35
+Внесенные данные:
+Array
+(
+    [0] => Array
+        (
+            [ID] => 467058
+            [TIMESTAMP_X] => 2022-11-28T16:36:35+03:00
+            [MODIFIED_BY] => 79910
+            [DATE_CREATE] => 2022-11-28T16:35:28+03:00
+            [CREATED_BY] => 79910
+            [ACTIVE] => Y
+            [DATE_ACTIVE_FROM] => 
+            [DATE_ACTIVE_TO] => 
+            [SORT] => 500
+            [NAME] => user_79910_заполняем данные для вызова курьера:
+            [PREVIEW_PICTURE] => 
+            [PREVIEW_TEXT] => 
+            [DETAIL_PICTURE] => 
+            [DETAIL_TEXT] => 
+            [CODE] => 
+            [ENTITY] => bot_assistant
+            [SECTION] => 
+            [PROPERTY_VALUES] => Array
+                (
+                    [general_step] => 13
+                    [general_command] => courierCall
+                    [absence_case] => 
+                    [absence_date_begin] => 
+                    [absence_date_end] => 
+                    [absence_employee] => 
+                    [absence_type] => 
+                    [absence_department] => 
+                    [business_trip_where] => 
+                    [business_trip_departing_time] => 
+                    [business_trip_arriving_time] => 
+                    [business_trip_purpose] => 
+                    [business_trip_tickets] => 
+                    [business_trip_booking] => 
+                    [business_trip_boarding_tickets] => 
+                    [courier_call_title] => safasfasfa
+                    [courier_call_from] => msk
+                    [courier_call_to] => piter
+                    [courier_call_sender_contact] => sdgdsgsd
+                    [courier_call_sender_phone] => 534534346
+                    [courier_call_recipient_contact] => vsdvsdvlskgvbdls;fv
+                    [courier_call_recipient_phone] => 080989080
+                    [courier_call_pickup_date] => 29.11.2022
+                    [courier_call_weight] => 312312
+                    [courier_call_dimensions] => 321
+                    [courier_call_procuration] => 3213
+                    [courier_call_declared_value] => 1234213
+                    [courier_call_comment] => 312312dsffgvsdflgbkjkdfgb
+                )
+
+        )
+
+)
+
+------------------------
+
+------------------------
+2022.11.28 16:38:13
+AssistantBot command add
+Array
+(
+    [148] => Array
+        (
+            [domain] => corp.estelab.ru
+            [member_id] => 124ff83138e5ff3838db5f0214c6284a
+            [application_token] => 16fc2b5f7189c9cfdf7586e4181433f1
+            [AUTH] => Array
+                (
+                    [domain] => corp.estelab.ru
+                    [member_id] => 124ff83138e5ff3838db5f0214c6284a
+                    [application_token] => 16fc2b5f7189c9cfdf7586e4181433f1
+                )
+
+            [BOT_ID] => 82490
+            [BOT_CODE] => AssistantBot
+            [COMMAND] => courierCall
+            [COMMAND_ID] => 148
+            [COMMAND_PARAMS] => fill courier call
+            [COMMAND_CONTEXT] => KEYBOARD
+            [MESSAGE_ID] => 13285827
+        )
+
+)
+
+------------------------
+
+------------------------
+2022.11.28 16:38:19
+itemsInfo
+Array
+(
+    [0] => Array
+        (
+            [ID] => 467060
+            [TIMESTAMP_X] => 2022-11-28T16:38:16+03:00
+            [MODIFIED_BY] => 79910
+            [DATE_CREATE] => 2022-11-28T16:38:16+03:00
+            [CREATED_BY] => 79910
+            [ACTIVE] => Y
+            [DATE_ACTIVE_FROM] => 
+            [DATE_ACTIVE_TO] => 
+            [SORT] => 500
+            [NAME] => user_79910_заполняем данные для вызова курьера:
+            [PREVIEW_PICTURE] => 
+            [PREVIEW_TEXT] => 
+            [DETAIL_PICTURE] => 
+            [DETAIL_TEXT] => 
+            [CODE] => 
+            [ENTITY] => bot_assistant
+            [SECTION] => 
+            [PROPERTY_VALUES] => Array
+                (
+                    [general_step] => 1
+                    [general_command] => courierCall
+                    [absence_case] => 
+                    [absence_date_begin] => 
+                    [absence_date_end] => 
+                    [absence_employee] => 
+                    [absence_type] => 
+                    [absence_department] => 
+                    [business_trip_where] => 
+                    [business_trip_departing_time] => 
+                    [business_trip_arriving_time] => 
+                    [business_trip_purpose] => 
+                    [business_trip_tickets] => 
+                    [business_trip_booking] => 
+                    [business_trip_boarding_tickets] => 
+                    [courier_call_title] => 
+                    [courier_call_from] => 
+                    [courier_call_to] => 
+                    [courier_call_sender_contact] => 
+                    [courier_call_sender_phone] => 
+                    [courier_call_recipient_contact] => 
+                    [courier_call_recipient_phone] => 
+                    [courier_call_pickup_date] => 
+                    [courier_call_weight] => 
+                    [courier_call_dimensions] => 
+                    [courier_call_procuration] => 
+                    [courier_call_declared_value] => 
+                    [courier_call_comment] => 
+                )
+
+        )
+
+)
+
+------------------------
+
+------------------------
+2022.11.28 16:38:26
+itemsInfo
+Array
+(
+    [0] => Array
+        (
+            [ID] => 467060
+            [TIMESTAMP_X] => 2022-11-28T16:38:19+03:00
+            [MODIFIED_BY] => 79910
+            [DATE_CREATE] => 2022-11-28T16:38:16+03:00
+            [CREATED_BY] => 79910
+            [ACTIVE] => Y
+            [DATE_ACTIVE_FROM] => 
+            [DATE_ACTIVE_TO] => 
+            [SORT] => 500
+            [NAME] => user_79910_заполняем данные для вызова курьера:
+            [PREVIEW_PICTURE] => 
+            [PREVIEW_TEXT] => 
+            [DETAIL_PICTURE] => 
+            [DETAIL_TEXT] => 
+            [CODE] => 
+            [ENTITY] => bot_assistant
+            [SECTION] => 
+            [PROPERTY_VALUES] => Array
+                (
+                    [general_step] => 2
+                    [general_command] => courierCall
+                    [absence_case] => 
+                    [absence_date_begin] => 
+                    [absence_date_end] => 
+                    [absence_employee] => 
+                    [absence_type] => 
+                    [absence_department] => 
+                    [business_trip_where] => 
+                    [business_trip_departing_time] => 
+                    [business_trip_arriving_time] => 
+                    [business_trip_purpose] => 
+                    [business_trip_tickets] => 
+                    [business_trip_booking] => 
+                    [business_trip_boarding_tickets] => 
+                    [courier_call_title] => test
+                    [courier_call_from] => 
+                    [courier_call_to] => 
+                    [courier_call_sender_contact] => 
+                    [courier_call_sender_phone] => 
+                    [courier_call_recipient_contact] => 
+                    [courier_call_recipient_phone] => 
+                    [courier_call_pickup_date] => 
+                    [courier_call_weight] => 
+                    [courier_call_dimensions] => 
+                    [courier_call_procuration] => 
+                    [courier_call_declared_value] => 
+                    [courier_call_comment] => 
+                )
+
+        )
+
+)
+
+------------------------
+
+------------------------
+2022.11.28 16:38:31
+itemsInfo
+Array
+(
+    [0] => Array
+        (
+            [ID] => 467060
+            [TIMESTAMP_X] => 2022-11-28T16:38:27+03:00
+            [MODIFIED_BY] => 79910
+            [DATE_CREATE] => 2022-11-28T16:38:16+03:00
+            [CREATED_BY] => 79910
+            [ACTIVE] => Y
+            [DATE_ACTIVE_FROM] => 
+            [DATE_ACTIVE_TO] => 
+            [SORT] => 500
+            [NAME] => user_79910_заполняем данные для вызова курьера:
+            [PREVIEW_PICTURE] => 
+            [PREVIEW_TEXT] => 
+            [DETAIL_PICTURE] => 
+            [DETAIL_TEXT] => 
+            [CODE] => 
+            [ENTITY] => bot_assistant
+            [SECTION] => 
+            [PROPERTY_VALUES] => Array
+                (
+                    [general_step] => 3
+                    [general_command] => courierCall
+                    [absence_case] => 
+                    [absence_date_begin] => 
+                    [absence_date_end] => 
+                    [absence_employee] => 
+                    [absence_type] => 
+                    [absence_department] => 
+                    [business_trip_where] => 
+                    [business_trip_departing_time] => 
+                    [business_trip_arriving_time] => 
+                    [business_trip_purpose] => 
+                    [business_trip_tickets] => 
+                    [business_trip_booking] => 
+                    [business_trip_boarding_tickets] => 
+                    [courier_call_title] => test
+                    [courier_call_from] => mow
+                    [courier_call_to] => 
+                    [courier_call_sender_contact] => 
+                    [courier_call_sender_phone] => 
+                    [courier_call_recipient_contact] => 
+                    [courier_call_recipient_phone] => 
+                    [courier_call_pickup_date] => 
+                    [courier_call_weight] => 
+                    [courier_call_dimensions] => 
+                    [courier_call_procuration] => 
+                    [courier_call_declared_value] => 
+                    [courier_call_comment] => 
+                )
+
+        )
+
+)
+
+------------------------
+
+------------------------
+2022.11.28 16:38:36
+itemsInfo
+Array
+(
+    [0] => Array
+        (
+            [ID] => 467060
+            [TIMESTAMP_X] => 2022-11-28T16:38:31+03:00
+            [MODIFIED_BY] => 79910
+            [DATE_CREATE] => 2022-11-28T16:38:16+03:00
+            [CREATED_BY] => 79910
+            [ACTIVE] => Y
+            [DATE_ACTIVE_FROM] => 
+            [DATE_ACTIVE_TO] => 
+            [SORT] => 500
+            [NAME] => user_79910_заполняем данные для вызова курьера:
+            [PREVIEW_PICTURE] => 
+            [PREVIEW_TEXT] => 
+            [DETAIL_PICTURE] => 
+            [DETAIL_TEXT] => 
+            [CODE] => 
+            [ENTITY] => bot_assistant
+            [SECTION] => 
+            [PROPERTY_VALUES] => Array
+                (
+                    [general_step] => 4
+                    [general_command] => courierCall
+                    [absence_case] => 
+                    [absence_date_begin] => 
+                    [absence_date_end] => 
+                    [absence_employee] => 
+                    [absence_type] => 
+                    [absence_department] => 
+                    [business_trip_where] => 
+                    [business_trip_departing_time] => 
+                    [business_trip_arriving_time] => 
+                    [business_trip_purpose] => 
+                    [business_trip_tickets] => 
+                    [business_trip_booking] => 
+                    [business_trip_boarding_tickets] => 
+                    [courier_call_title] => test
+                    [courier_call_from] => mow
+                    [courier_call_to] => spb
+                    [courier_call_sender_contact] => 
+                    [courier_call_sender_phone] => 
+                    [courier_call_recipient_contact] => 
+                    [courier_call_recipient_phone] => 
+                    [courier_call_pickup_date] => 
+                    [courier_call_weight] => 
+                    [courier_call_dimensions] => 
+                    [courier_call_procuration] => 
+                    [courier_call_declared_value] => 
+                    [courier_call_comment] => 
+                )
+
+        )
+
+)
+
+------------------------
+
+------------------------
+2022.11.28 16:38:40
+itemsInfo
+Array
+(
+    [0] => Array
+        (
+            [ID] => 467060
+            [TIMESTAMP_X] => 2022-11-28T16:38:36+03:00
+            [MODIFIED_BY] => 79910
+            [DATE_CREATE] => 2022-11-28T16:38:16+03:00
+            [CREATED_BY] => 79910
+            [ACTIVE] => Y
+            [DATE_ACTIVE_FROM] => 
+            [DATE_ACTIVE_TO] => 
+            [SORT] => 500
+            [NAME] => user_79910_заполняем данные для вызова курьера:
+            [PREVIEW_PICTURE] => 
+            [PREVIEW_TEXT] => 
+            [DETAIL_PICTURE] => 
+            [DETAIL_TEXT] => 
+            [CODE] => 
+            [ENTITY] => bot_assistant
+            [SECTION] => 
+            [PROPERTY_VALUES] => Array
+                (
+                    [general_step] => 5
+                    [general_command] => courierCall
+                    [absence_case] => 
+                    [absence_date_begin] => 
+                    [absence_date_end] => 
+                    [absence_employee] => 
+                    [absence_type] => 
+                    [absence_department] => 
+                    [business_trip_where] => 
+                    [business_trip_departing_time] => 
+                    [business_trip_arriving_time] => 
+                    [business_trip_purpose] => 
+                    [business_trip_tickets] => 
+                    [business_trip_booking] => 
+                    [business_trip_boarding_tickets] => 
+                    [courier_call_title] => test
+                    [courier_call_from] => mow
+                    [courier_call_to] => spb
+                    [courier_call_sender_contact] => petr
+                    [courier_call_sender_phone] => 
+                    [courier_call_recipient_contact] => 
+                    [courier_call_recipient_phone] => 
+                    [courier_call_pickup_date] => 
+                    [courier_call_weight] => 
+                    [courier_call_dimensions] => 
+                    [courier_call_procuration] => 
+                    [courier_call_declared_value] => 
+                    [courier_call_comment] => 
+                )
+
+        )
+
+)
+
+------------------------
+
+------------------------
+2022.11.28 16:38:46
+itemsInfo
+Array
+(
+    [0] => Array
+        (
+            [ID] => 467060
+            [TIMESTAMP_X] => 2022-11-28T16:38:40+03:00
+            [MODIFIED_BY] => 79910
+            [DATE_CREATE] => 2022-11-28T16:38:16+03:00
+            [CREATED_BY] => 79910
+            [ACTIVE] => Y
+            [DATE_ACTIVE_FROM] => 
+            [DATE_ACTIVE_TO] => 
+            [SORT] => 500
+            [NAME] => user_79910_заполняем данные для вызова курьера:
+            [PREVIEW_PICTURE] => 
+            [PREVIEW_TEXT] => 
+            [DETAIL_PICTURE] => 
+            [DETAIL_TEXT] => 
+            [CODE] => 
+            [ENTITY] => bot_assistant
+            [SECTION] => 
+            [PROPERTY_VALUES] => Array
+                (
+                    [general_step] => 6
+                    [general_command] => courierCall
+                    [absence_case] => 
+                    [absence_date_begin] => 
+                    [absence_date_end] => 
+                    [absence_employee] => 
+                    [absence_type] => 
+                    [absence_department] => 
+                    [business_trip_where] => 
+                    [business_trip_departing_time] => 
+                    [business_trip_arriving_time] => 
+                    [business_trip_purpose] => 
+                    [business_trip_tickets] => 
+                    [business_trip_booking] => 
+                    [business_trip_boarding_tickets] => 
+                    [courier_call_title] => test
+                    [courier_call_from] => mow
+                    [courier_call_to] => spb
+                    [courier_call_sender_contact] => petr
+                    [courier_call_sender_phone] => 123
+                    [courier_call_recipient_contact] => 
+                    [courier_call_recipient_phone] => 
+                    [courier_call_pickup_date] => 
+                    [courier_call_weight] => 
+                    [courier_call_dimensions] => 
+                    [courier_call_procuration] => 
+                    [courier_call_declared_value] => 
+                    [courier_call_comment] => 
+                )
+
+        )
+
+)
+
+------------------------
+
+------------------------
+2022.11.28 16:38:51
+itemsInfo
+Array
+(
+    [0] => Array
+        (
+            [ID] => 467060
+            [TIMESTAMP_X] => 2022-11-28T16:38:46+03:00
+            [MODIFIED_BY] => 79910
+            [DATE_CREATE] => 2022-11-28T16:38:16+03:00
+            [CREATED_BY] => 79910
+            [ACTIVE] => Y
+            [DATE_ACTIVE_FROM] => 
+            [DATE_ACTIVE_TO] => 
+            [SORT] => 500
+            [NAME] => user_79910_заполняем данные для вызова курьера:
+            [PREVIEW_PICTURE] => 
+            [PREVIEW_TEXT] => 
+            [DETAIL_PICTURE] => 
+            [DETAIL_TEXT] => 
+            [CODE] => 
+            [ENTITY] => bot_assistant
+            [SECTION] => 
+            [PROPERTY_VALUES] => Array
+                (
+                    [general_step] => 7
+                    [general_command] => courierCall
+                    [absence_case] => 
+                    [absence_date_begin] => 
+                    [absence_date_end] => 
+                    [absence_employee] => 
+                    [absence_type] => 
+                    [absence_department] => 
+                    [business_trip_where] => 
+                    [business_trip_departing_time] => 
+                    [business_trip_arriving_time] => 
+                    [business_trip_purpose] => 
+                    [business_trip_tickets] => 
+                    [business_trip_booking] => 
+                    [business_trip_boarding_tickets] => 
+                    [courier_call_title] => test
+                    [courier_call_from] => mow
+                    [courier_call_to] => spb
+                    [courier_call_sender_contact] => petr
+                    [courier_call_sender_phone] => 123
+                    [courier_call_recipient_contact] => antoni
+                    [courier_call_recipient_phone] => 
+                    [courier_call_pickup_date] => 
+                    [courier_call_weight] => 
+                    [courier_call_dimensions] => 
+                    [courier_call_procuration] => 
+                    [courier_call_declared_value] => 
+                    [courier_call_comment] => 
+                )
+
+        )
+
+)
+
+------------------------
+
+------------------------
+2022.11.28 16:38:57
+itemsInfo
+Array
+(
+    [0] => Array
+        (
+            [ID] => 467060
+            [TIMESTAMP_X] => 2022-11-28T16:38:51+03:00
+            [MODIFIED_BY] => 79910
+            [DATE_CREATE] => 2022-11-28T16:38:16+03:00
+            [CREATED_BY] => 79910
+            [ACTIVE] => Y
+            [DATE_ACTIVE_FROM] => 
+            [DATE_ACTIVE_TO] => 
+            [SORT] => 500
+            [NAME] => user_79910_заполняем данные для вызова курьера:
+            [PREVIEW_PICTURE] => 
+            [PREVIEW_TEXT] => 
+            [DETAIL_PICTURE] => 
+            [DETAIL_TEXT] => 
+            [CODE] => 
+            [ENTITY] => bot_assistant
+            [SECTION] => 
+            [PROPERTY_VALUES] => Array
+                (
+                    [general_step] => 8
+                    [general_command] => courierCall
+                    [absence_case] => 
+                    [absence_date_begin] => 
+                    [absence_date_end] => 
+                    [absence_employee] => 
+                    [absence_type] => 
+                    [absence_department] => 
+                    [business_trip_where] => 
+                    [business_trip_departing_time] => 
+                    [business_trip_arriving_time] => 
+                    [business_trip_purpose] => 
+                    [business_trip_tickets] => 
+                    [business_trip_booking] => 
+                    [business_trip_boarding_tickets] => 
+                    [courier_call_title] => test
+                    [courier_call_from] => mow
+                    [courier_call_to] => spb
+                    [courier_call_sender_contact] => petr
+                    [courier_call_sender_phone] => 123
+                    [courier_call_recipient_contact] => antoni
+                    [courier_call_recipient_phone] => 3456777
+                    [courier_call_pickup_date] => 
+                    [courier_call_weight] => 
+                    [courier_call_dimensions] => 
+                    [courier_call_procuration] => 
+                    [courier_call_declared_value] => 
+                    [courier_call_comment] => 
+                )
+
+        )
+
+)
+
+------------------------
+
+------------------------
+2022.11.28 16:39:01
+itemsInfo
+Array
+(
+    [0] => Array
+        (
+            [ID] => 467060
+            [TIMESTAMP_X] => 2022-11-28T16:38:57+03:00
+            [MODIFIED_BY] => 79910
+            [DATE_CREATE] => 2022-11-28T16:38:16+03:00
+            [CREATED_BY] => 79910
+            [ACTIVE] => Y
+            [DATE_ACTIVE_FROM] => 
+            [DATE_ACTIVE_TO] => 
+            [SORT] => 500
+            [NAME] => user_79910_заполняем данные для вызова курьера:
+            [PREVIEW_PICTURE] => 
+            [PREVIEW_TEXT] => 
+            [DETAIL_PICTURE] => 
+            [DETAIL_TEXT] => 
+            [CODE] => 
+            [ENTITY] => bot_assistant
+            [SECTION] => 
+            [PROPERTY_VALUES] => Array
+                (
+                    [general_step] => 9
+                    [general_command] => courierCall
+                    [absence_case] => 
+                    [absence_date_begin] => 
+                    [absence_date_end] => 
+                    [absence_employee] => 
+                    [absence_type] => 
+                    [absence_department] => 
+                    [business_trip_where] => 
+                    [business_trip_departing_time] => 
+                    [business_trip_arriving_time] => 
+                    [business_trip_purpose] => 
+                    [business_trip_tickets] => 
+                    [business_trip_booking] => 
+                    [business_trip_boarding_tickets] => 
+                    [courier_call_title] => test
+                    [courier_call_from] => mow
+                    [courier_call_to] => spb
+                    [courier_call_sender_contact] => petr
+                    [courier_call_sender_phone] => 123
+                    [courier_call_recipient_contact] => antoni
+                    [courier_call_recipient_phone] => 3456777
+                    [courier_call_pickup_date] => 28.11.2022
+                    [courier_call_weight] => 
+                    [courier_call_dimensions] => 
+                    [courier_call_procuration] => 
+                    [courier_call_declared_value] => 
+                    [courier_call_comment] => 
+                )
+
+        )
+
+)
+
+------------------------
+
+------------------------
+2022.11.28 16:39:07
+itemsInfo
+Array
+(
+    [0] => Array
+        (
+            [ID] => 467060
+            [TIMESTAMP_X] => 2022-11-28T16:39:01+03:00
+            [MODIFIED_BY] => 79910
+            [DATE_CREATE] => 2022-11-28T16:38:16+03:00
+            [CREATED_BY] => 79910
+            [ACTIVE] => Y
+            [DATE_ACTIVE_FROM] => 
+            [DATE_ACTIVE_TO] => 
+            [SORT] => 500
+            [NAME] => user_79910_заполняем данные для вызова курьера:
+            [PREVIEW_PICTURE] => 
+            [PREVIEW_TEXT] => 
+            [DETAIL_PICTURE] => 
+            [DETAIL_TEXT] => 
+            [CODE] => 
+            [ENTITY] => bot_assistant
+            [SECTION] => 
+            [PROPERTY_VALUES] => Array
+                (
+                    [general_step] => 10
+                    [general_command] => courierCall
+                    [absence_case] => 
+                    [absence_date_begin] => 
+                    [absence_date_end] => 
+                    [absence_employee] => 
+                    [absence_type] => 
+                    [absence_department] => 
+                    [business_trip_where] => 
+                    [business_trip_departing_time] => 
+                    [business_trip_arriving_time] => 
+                    [business_trip_purpose] => 
+                    [business_trip_tickets] => 
+                    [business_trip_booking] => 
+                    [business_trip_boarding_tickets] => 
+                    [courier_call_title] => test
+                    [courier_call_from] => mow
+                    [courier_call_to] => spb
+                    [courier_call_sender_contact] => petr
+                    [courier_call_sender_phone] => 123
+                    [courier_call_recipient_contact] => antoni
+                    [courier_call_recipient_phone] => 3456777
+                    [courier_call_pickup_date] => 28.11.2022
+                    [courier_call_weight] => 455
+                    [courier_call_dimensions] => 
+                    [courier_call_procuration] => 
+                    [courier_call_declared_value] => 
+                    [courier_call_comment] => 
+                )
+
+        )
+
+)
+
+------------------------
+
+------------------------
+2022.11.28 16:39:14
+itemsInfo
+Array
+(
+    [0] => Array
+        (
+            [ID] => 467060
+            [TIMESTAMP_X] => 2022-11-28T16:39:07+03:00
+            [MODIFIED_BY] => 79910
+            [DATE_CREATE] => 2022-11-28T16:38:16+03:00
+            [CREATED_BY] => 79910
+            [ACTIVE] => Y
+            [DATE_ACTIVE_FROM] => 
+            [DATE_ACTIVE_TO] => 
+            [SORT] => 500
+            [NAME] => user_79910_заполняем данные для вызова курьера:
+            [PREVIEW_PICTURE] => 
+            [PREVIEW_TEXT] => 
+            [DETAIL_PICTURE] => 
+            [DETAIL_TEXT] => 
+            [CODE] => 
+            [ENTITY] => bot_assistant
+            [SECTION] => 
+            [PROPERTY_VALUES] => Array
+                (
+                    [general_step] => 11
+                    [general_command] => courierCall
+                    [absence_case] => 
+                    [absence_date_begin] => 
+                    [absence_date_end] => 
+                    [absence_employee] => 
+                    [absence_type] => 
+                    [absence_department] => 
+                    [business_trip_where] => 
+                    [business_trip_departing_time] => 
+                    [business_trip_arriving_time] => 
+                    [business_trip_purpose] => 
+                    [business_trip_tickets] => 
+                    [business_trip_booking] => 
+                    [business_trip_boarding_tickets] => 
+                    [courier_call_title] => test
+                    [courier_call_from] => mow
+                    [courier_call_to] => spb
+                    [courier_call_sender_contact] => petr
+                    [courier_call_sender_phone] => 123
+                    [courier_call_recipient_contact] => antoni
+                    [courier_call_recipient_phone] => 3456777
+                    [courier_call_pickup_date] => 28.11.2022
+                    [courier_call_weight] => 455
+                    [courier_call_dimensions] => 123x54
+                    [courier_call_procuration] => 
+                    [courier_call_declared_value] => 
+                    [courier_call_comment] => 
+                )
+
+        )
+
+)
+
+------------------------
+
+------------------------
+2022.11.28 16:39:19
+itemsInfo
+Array
+(
+    [0] => Array
+        (
+            [ID] => 467060
+            [TIMESTAMP_X] => 2022-11-28T16:39:14+03:00
+            [MODIFIED_BY] => 79910
+            [DATE_CREATE] => 2022-11-28T16:38:16+03:00
+            [CREATED_BY] => 79910
+            [ACTIVE] => Y
+            [DATE_ACTIVE_FROM] => 
+            [DATE_ACTIVE_TO] => 
+            [SORT] => 500
+            [NAME] => user_79910_заполняем данные для вызова курьера:
+            [PREVIEW_PICTURE] => 
+            [PREVIEW_TEXT] => 
+            [DETAIL_PICTURE] => 
+            [DETAIL_TEXT] => 
+            [CODE] => 
+            [ENTITY] => bot_assistant
+            [SECTION] => 
+            [PROPERTY_VALUES] => Array
+                (
+                    [general_step] => 12
+                    [general_command] => courierCall
+                    [absence_case] => 
+                    [absence_date_begin] => 
+                    [absence_date_end] => 
+                    [absence_employee] => 
+                    [absence_type] => 
+                    [absence_department] => 
+                    [business_trip_where] => 
+                    [business_trip_departing_time] => 
+                    [business_trip_arriving_time] => 
+                    [business_trip_purpose] => 
+                    [business_trip_tickets] => 
+                    [business_trip_booking] => 
+                    [business_trip_boarding_tickets] => 
+                    [courier_call_title] => test
+                    [courier_call_from] => mow
+                    [courier_call_to] => spb
+                    [courier_call_sender_contact] => petr
+                    [courier_call_sender_phone] => 123
+                    [courier_call_recipient_contact] => antoni
+                    [courier_call_recipient_phone] => 3456777
+                    [courier_call_pickup_date] => 28.11.2022
+                    [courier_call_weight] => 455
+                    [courier_call_dimensions] => 123x54
+                    [courier_call_procuration] => 2240
+                    [courier_call_declared_value] => 
+                    [courier_call_comment] => 
+                )
+
+        )
+
+)
+
+------------------------
+
+------------------------
+2022.11.28 16:39:22
+itemsInfo
+Array
+(
+    [0] => Array
+        (
+            [ID] => 467060
+            [TIMESTAMP_X] => 2022-11-28T16:39:19+03:00
+            [MODIFIED_BY] => 79910
+            [DATE_CREATE] => 2022-11-28T16:38:16+03:00
+            [CREATED_BY] => 79910
+            [ACTIVE] => Y
+            [DATE_ACTIVE_FROM] => 
+            [DATE_ACTIVE_TO] => 
+            [SORT] => 500
+            [NAME] => user_79910_заполняем данные для вызова курьера:
+            [PREVIEW_PICTURE] => 
+            [PREVIEW_TEXT] => 
+            [DETAIL_PICTURE] => 
+            [DETAIL_TEXT] => 
+            [CODE] => 
+            [ENTITY] => bot_assistant
+            [SECTION] => 
+            [PROPERTY_VALUES] => Array
+                (
+                    [general_step] => 13
+                    [general_command] => courierCall
+                    [absence_case] => 
+                    [absence_date_begin] => 
+                    [absence_date_end] => 
+                    [absence_employee] => 
+                    [absence_type] => 
+                    [absence_department] => 
+                    [business_trip_where] => 
+                    [business_trip_departing_time] => 
+                    [business_trip_arriving_time] => 
+                    [business_trip_purpose] => 
+                    [business_trip_tickets] => 
+                    [business_trip_booking] => 
+                    [business_trip_boarding_tickets] => 
+                    [courier_call_title] => test
+                    [courier_call_from] => mow
+                    [courier_call_to] => spb
+                    [courier_call_sender_contact] => petr
+                    [courier_call_sender_phone] => 123
+                    [courier_call_recipient_contact] => antoni
+                    [courier_call_recipient_phone] => 3456777
+                    [courier_call_pickup_date] => 28.11.2022
+                    [courier_call_weight] => 455
+                    [courier_call_dimensions] => 123x54
+                    [courier_call_procuration] => 2240
+                    [courier_call_declared_value] => 455
+                    [courier_call_comment] => 
+                )
+
+        )
+
+)
+
+------------------------
+
+------------------------
+2022.11.28 16:39:22
+Внесенные данные:
+Array
+(
+    [0] => Array
+        (
+            [ID] => 467060
+            [TIMESTAMP_X] => 2022-11-28T16:39:22+03:00
+            [MODIFIED_BY] => 79910
+            [DATE_CREATE] => 2022-11-28T16:38:16+03:00
+            [CREATED_BY] => 79910
+            [ACTIVE] => Y
+            [DATE_ACTIVE_FROM] => 
+            [DATE_ACTIVE_TO] => 
+            [SORT] => 500
+            [NAME] => user_79910_заполняем данные для вызова курьера:
+            [PREVIEW_PICTURE] => 
+            [PREVIEW_TEXT] => 
+            [DETAIL_PICTURE] => 
+            [DETAIL_TEXT] => 
+            [CODE] => 
+            [ENTITY] => bot_assistant
+            [SECTION] => 
+            [PROPERTY_VALUES] => Array
+                (
+                    [general_step] => 13
+                    [general_command] => courierCall
+                    [absence_case] => 
+                    [absence_date_begin] => 
+                    [absence_date_end] => 
+                    [absence_employee] => 
+                    [absence_type] => 
+                    [absence_department] => 
+                    [business_trip_where] => 
+                    [business_trip_departing_time] => 
+                    [business_trip_arriving_time] => 
+                    [business_trip_purpose] => 
+                    [business_trip_tickets] => 
+                    [business_trip_booking] => 
+                    [business_trip_boarding_tickets] => 
+                    [courier_call_title] => test
+                    [courier_call_from] => mow
+                    [courier_call_to] => spb
+                    [courier_call_sender_contact] => petr
+                    [courier_call_sender_phone] => 123
+                    [courier_call_recipient_contact] => antoni
+                    [courier_call_recipient_phone] => 3456777
+                    [courier_call_pickup_date] => 28.11.2022
+                    [courier_call_weight] => 455
+                    [courier_call_dimensions] => 123x54
+                    [courier_call_procuration] => 2240
+                    [courier_call_declared_value] => 455
+                    [courier_call_comment] => vjkdfhvkjdshvjkdsf
+                )
+
+        )
+
+)
+
+------------------------
