@@ -85,7 +85,7 @@ if ($step == 1) {
     // writeToLog($itemsInfo, 'itemsNewInfo');
     $attach[] = array("MESSAGE" => '[send=меню]Вернуться в начало[/send]');
     $arResult = array(
-        'report' => "[b]Дата забора:[/b] {$messageFromUser}. Далее заполните вес:",
+        'report' => "[b]Дата забора:[/b] {$messageFromUser}. Далее заполните вес, кг:",
         'attach' => $attach,
     );
 } elseif ($step == 9) {
@@ -96,7 +96,7 @@ if ($step == 1) {
     // writeToLog($itemsInfo, 'itemsNewInfo');
     $attach[] = array("MESSAGE" => '[send=меню]Вернуться в начало[/send]');
     $arResult = array(
-        'report' => "[b]Вес:[/b] {$messageFromUser}. Далее заполните габариты:",
+        'report' => "[b]Вес:[/b] {$messageFromUser}. Далее заполните габариты в формате NNxNxNN, см:",
         'attach' => $attach,
     );
 } elseif ($step == 10) {
@@ -107,7 +107,13 @@ if ($step == 1) {
     // writeToLog($itemsInfo, 'itemsNewInfo');
     $attach[] = array("MESSAGE" => '[send=меню]Вернуться в начало[/send]');
     $arResult = array(
-        'report' => "[b]Габариты:[/b] {$messageFromUser}. Далее заполните доверенность:",
+        'report' => "[b]Габариты:[/b] {$messageFromUser}. Далее выберите тип доверенности:\n
+         [send=2240]нет[/send] \n 
+         [send=2241]КЛВ[/send] \n 
+         [send=2242]ИП[/send] \n 
+         [send=2243]Эстелаб[/send] \n 
+         [send=2244]ИНЭЛКО[/send] \n 
+         [send=2245]Лидер[/send] \n",
         'attach' => $attach,
     );
 } elseif ($step == 11) {
@@ -118,7 +124,7 @@ if ($step == 1) {
     // writeToLog($itemsInfo, 'itemsNewInfo');
     $attach[] = array("MESSAGE" => '[send=меню]Вернуться в начало[/send]');
     $arResult = array(
-        'report' => "[b]Доверенность:[/b] {$messageFromUser}. Далее заполните объявленную стоимость:",
+        'report' => "[b]Доверенность:[/b] {$messageFromUser}. Далее заполните объявленную стоимость, руб.:",
         'attach' => $attach,
     );
 } elseif ($step == 12) {
@@ -129,7 +135,7 @@ if ($step == 1) {
     // writeToLog($itemsInfo, 'itemsNewInfo');
     $attach[] = array("MESSAGE" => '[send=меню]Вернуться в начало[/send]');
     $arResult = array(
-        'report' => "[b]Объявленная стоимость:[/b] {$messageFromUser}. Далее заполните комментарий:",
+        'report' => "[b]Объявленная стоимость, руб.:[/b] {$messageFromUser}. Далее заполните комментарий:",
         'attach' => $attach,
     );
 } elseif ($step == 13) {

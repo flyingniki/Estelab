@@ -39,41 +39,6 @@ $iBlockFields = restCommand('lists.field.get', array(
     'IBLOCK_ID' => 119,
 ), $_REQUEST["auth"]);
 
-/**
- * info about procuration
-$arProcuration = [
-    [0] => [
-        ['ID'] => 2240,
-        ['VALUE'] => 'нет',
-    ],
-
-    [1] => [
-        ['ID'] => 2241,
-        ['VALUE'] => 'КЛВ',
-    ],
-
-    [2] => [
-        ['ID'] => 2242,
-        ['VALUE'] => 'ИП',
-    ],
-
-    [3] => [
-        ['ID'] => 2243,
-        ['VALUE'] => 'Эстелаб',
-    ],
-
-    [4] => [
-        ['ID'] => 2244,
-        ['VALUE'] => 'ИНЭЛКО',
-    ],
-
-    [5] => [
-        ['ID'] => 2245,
-        ['VALUE'] => 'Лидер',
-    ],
-];
- */
-
 $departments = $iBlockFields['result']['PROPERTY_855']['DISPLAY_VALUES_FORM'];
 $departmentInfo = '';
 foreach ($departments as $departmentId => $departmentValue) {
@@ -132,7 +97,7 @@ if ($messageFromUser == 'привет') {
     );
 } elseif ($messageFromUser == 'заполняем данные для вызова курьера:') {
     deleteEntityItem($entityCode, $userId);
-    
+
     $item = addEntityItem($entityCode, 'user_' . $userId . '_' . $messageFromUser);
     $itemId = $item['result'];
     updateEntityItem($entityCode, $itemId, 'general_step', '1');
