@@ -28,3 +28,14 @@ foreach ($users as $user) {
         $arErrorsTmp
     );
 }
+
+CModule::IncludeModule('im');
+foreach ($users as $user) {
+    $arFields = array(
+        "MESSAGE_TYPE" => "P",
+        "TO_USER_ID" => $user,
+        "FROM_USER_ID" => 610,
+        "MESSAGE" => "Зайди на эту [url=https://corp.estelab.ru/company/otsenka-kachestva-raboty-s-sotssetyami/]страничку[/url] для анализа оценок качества"
+    );
+    CIMMessenger::Add($arFields);
+}
