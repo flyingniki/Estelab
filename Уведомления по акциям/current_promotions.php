@@ -22,7 +22,7 @@ foreach ($items as $item) {
         // print_r($stageId);
         $itemId = $item->getId();
         $title = $item->getUfCrm_15_1634318596049();
-        $descriprion = $item->getUfCrm_15_1634311135();
+        $description = $item->getUfCrm_15_1634311135();
         $start = $item->getUfCrm_15_1634304482849();
         $startTime = $start->toString();
         $end = $item->getUfCrm_15_1634304505488();
@@ -31,10 +31,10 @@ foreach ($items as $item) {
         if ($direction == '129383') {
             // print_r($title);
             // print_r($direction);
-            // print_r($descriprion);
+            // print_r($description);
             //print_r(strtotime($startTime);
             //print_r($endTime);            
-            $allActions .= $title . '[BR]';
+            $allActions .= '[b]' . $title . '[/b][BR][i]Описание:[BR]' . $description . '[/i][BR]';
             if (strtotime($start) == strtotime($end)) {
                 $actionsOneDay .= $title . '[BR]';
                 $allActions = str_replace($title, '', $allActions);
@@ -47,7 +47,6 @@ foreach ($items as $item) {
     }
 }
 
-// ищем в нужном подразделении сотрудника с открытым рабочим днем в графике
 $arDepartments = [
     'Клиника' => [5073, 4959, 7676, 5377, 7389]
 ];
