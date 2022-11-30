@@ -28,19 +28,3 @@ foreach ($users as $user) {
         $arErrorsTmp
     );
 }
-
-$arSelect = array("ID", "NAME", "PROPERTY_3503", "PROPERTY_3504");
-$arFilter = array("IBLOCK_ID" => 443);
-$res = CIBlockElement::GetList(array(), $arFilter, false, array(), $arSelect);
-while ($ob = $res->GetNextElement()) {
-    $arFields = $ob->GetFields();
-    $grades[] = $arFields['PROPERTY_3503_VALUE'];
-    $comments[] = $arFields['PROPERTY_3504_VALUE'];
-    $elements[] = $ob;
-}
-if (count($elements) === 3) {
-    $gradesSum = array_sum($grades);
-    $averageGrade = $gradesSum / count($elements);
-}
-print_r($averageGrade);
-print_r($comments);
