@@ -3,8 +3,8 @@
 if ($step == 1) {
     updateEntityItem($entityCode, $currentItemId, 'courier_call_title', $messageFromUser);
     updateEntityItem($entityCode, $currentItemId, 'general_step', $step + 1);
-    $arItemsInfo = getEntityItems($entityCode);
-    $itemsInfo = $arItemsInfo['result'];
+    // $arItemsInfo = getEntityItems($entityCode);
+    // $itemsInfo = $arItemsInfo['result'];
     // writeToLog($itemsInfo, 'itemsNewInfo');
     $attach[] = array("MESSAGE" => '[send=меню]Вернуться в начало[/send]');
     $arResult = array(
@@ -14,8 +14,8 @@ if ($step == 1) {
 } elseif ($step == 2) {
     updateEntityItem($entityCode, $currentItemId, 'courier_call_from', $messageFromUser);
     updateEntityItem($entityCode, $currentItemId, 'general_step', $step + 1);
-    $arItemsInfo = getEntityItems($entityCode);
-    $itemsInfo = $arItemsInfo['result'];
+    // $arItemsInfo = getEntityItems($entityCode);
+    // $itemsInfo = $arItemsInfo['result'];
     // writeToLog($itemsInfo, 'itemsNewInfo');
     $attach[] = array("MESSAGE" => '[send=меню]Вернуться в начало[/send]');
     $arResult = array(
@@ -25,8 +25,8 @@ if ($step == 1) {
 } elseif ($step == 3) {
     updateEntityItem($entityCode, $currentItemId, 'courier_call_to', $messageFromUser);
     updateEntityItem($entityCode, $currentItemId, 'general_step', $step + 1);
-    $arItemsInfo = getEntityItems($entityCode);
-    $itemsInfo = $arItemsInfo['result'];
+    // $arItemsInfo = getEntityItems($entityCode);
+    // $itemsInfo = $arItemsInfo['result'];
     // writeToLog($itemsInfo, 'itemsNewInfo');
     $attach[] = array("MESSAGE" => '[send=меню]Вернуться в начало[/send]');
     $arResult = array(
@@ -36,8 +36,8 @@ if ($step == 1) {
 } elseif ($step == 4) {
     updateEntityItem($entityCode, $currentItemId, 'courier_call_sender_contact', $messageFromUser);
     updateEntityItem($entityCode, $currentItemId, 'general_step', $step + 1);
-    $arItemsInfo = getEntityItems($entityCode);
-    $itemsInfo = $arItemsInfo['result'];
+    // $arItemsInfo = getEntityItems($entityCode);
+    // $itemsInfo = $arItemsInfo['result'];
     // writeToLog($itemsInfo, 'itemsNewInfo');
     $attach[] = array("MESSAGE" => '[send=меню]Вернуться в начало[/send]');
     $arResult = array(
@@ -47,8 +47,8 @@ if ($step == 1) {
 } elseif ($step == 5) {
     updateEntityItem($entityCode, $currentItemId, 'courier_call_sender_phone', $messageFromUser);
     updateEntityItem($entityCode, $currentItemId, 'general_step', $step + 1);
-    $arItemsInfo = getEntityItems($entityCode);
-    $itemsInfo = $arItemsInfo['result'];
+    // $arItemsInfo = getEntityItems($entityCode);
+    // $itemsInfo = $arItemsInfo['result'];
     // writeToLog($itemsInfo, 'itemsNewInfo');
     $attach[] = array("MESSAGE" => '[send=меню]Вернуться в начало[/send]');
     $arResult = array(
@@ -58,8 +58,8 @@ if ($step == 1) {
 } elseif ($step == 6) {
     updateEntityItem($entityCode, $currentItemId, 'courier_call_recipient_contact', $messageFromUser);
     updateEntityItem($entityCode, $currentItemId, 'general_step', $step + 1);
-    $arItemsInfo = getEntityItems($entityCode);
-    $itemsInfo = $arItemsInfo['result'];
+    // $arItemsInfo = getEntityItems($entityCode);
+    // $itemsInfo = $arItemsInfo['result'];
     // writeToLog($itemsInfo, 'itemsNewInfo');
     $attach[] = array("MESSAGE" => '[send=меню]Вернуться в начало[/send]');
     $arResult = array(
@@ -69,8 +69,8 @@ if ($step == 1) {
 } elseif ($step == 7) {
     updateEntityItem($entityCode, $currentItemId, 'courier_call_recipient_phone', $messageFromUser);
     updateEntityItem($entityCode, $currentItemId, 'general_step', $step + 1);
-    $arItemsInfo = getEntityItems($entityCode);
-    $itemsInfo = $arItemsInfo['result'];
+    // $arItemsInfo = getEntityItems($entityCode);
+    // $itemsInfo = $arItemsInfo['result'];
     // writeToLog($itemsInfo, 'itemsNewInfo');
     $attach[] = array("MESSAGE" => '[send=меню]Вернуться в начало[/send]');
     $arResult = array(
@@ -80,8 +80,8 @@ if ($step == 1) {
 } elseif ($step == 8) {
     updateEntityItem($entityCode, $currentItemId, 'courier_call_pickup_date', $messageFromUser);
     updateEntityItem($entityCode, $currentItemId, 'general_step', $step + 1);
-    $arItemsInfo = getEntityItems($entityCode);
-    $itemsInfo = $arItemsInfo['result'];
+    // $arItemsInfo = getEntityItems($entityCode);
+    // $itemsInfo = $arItemsInfo['result'];
     // writeToLog($itemsInfo, 'itemsNewInfo');
     $attach[] = array("MESSAGE" => '[send=меню]Вернуться в начало[/send]');
     $arResult = array(
@@ -91,8 +91,8 @@ if ($step == 1) {
 } elseif ($step == 9) {
     updateEntityItem($entityCode, $currentItemId, 'courier_call_weight', $messageFromUser);
     updateEntityItem($entityCode, $currentItemId, 'general_step', $step + 1);
-    $arItemsInfo = getEntityItems($entityCode);
-    $itemsInfo = $arItemsInfo['result'];
+    // $arItemsInfo = getEntityItems($entityCode);
+    // $itemsInfo = $arItemsInfo['result'];
     // writeToLog($itemsInfo, 'itemsNewInfo');
     $attach[] = array("MESSAGE" => '[send=меню]Вернуться в начало[/send]');
     $arResult = array(
@@ -102,8 +102,8 @@ if ($step == 1) {
 } elseif ($step == 10) {
     updateEntityItem($entityCode, $currentItemId, 'courier_call_dimensions', $messageFromUser);
     updateEntityItem($entityCode, $currentItemId, 'general_step', $step + 1);
-    $arItemsInfo = getEntityItems($entityCode);
-    $itemsInfo = $arItemsInfo['result'];
+    // $arItemsInfo = getEntityItems($entityCode);
+    // $itemsInfo = $arItemsInfo['result'];
     // writeToLog($itemsInfo, 'itemsNewInfo');
     $attach[] = array("MESSAGE" => '[send=меню]Вернуться в начало[/send]');
     $arResult = array(
@@ -119,8 +119,8 @@ if ($step == 1) {
 } elseif ($step == 11) {
     updateEntityItem($entityCode, $currentItemId, 'courier_call_procuration', $messageFromUser);
     updateEntityItem($entityCode, $currentItemId, 'general_step', $step + 1);
-    $arItemsInfo = getEntityItems($entityCode);
-    $itemsInfo = $arItemsInfo['result'];
+    // $arItemsInfo = getEntityItems($entityCode);
+    // $itemsInfo = $arItemsInfo['result'];
     // writeToLog($itemsInfo, 'itemsNewInfo');
     $attach[] = array("MESSAGE" => '[send=меню]Вернуться в начало[/send]');
     $arResult = array(
@@ -130,8 +130,8 @@ if ($step == 1) {
 } elseif ($step == 12) {
     updateEntityItem($entityCode, $currentItemId, 'courier_call_declared_value', $messageFromUser);
     updateEntityItem($entityCode, $currentItemId, 'general_step', $step + 1);
-    $arItemsInfo = getEntityItems($entityCode);
-    $itemsInfo = $arItemsInfo['result'];
+    // $arItemsInfo = getEntityItems($entityCode);
+    // $itemsInfo = $arItemsInfo['result'];
     // writeToLog($itemsInfo, 'itemsNewInfo');
     $attach[] = array("MESSAGE" => '[send=меню]Вернуться в начало[/send]');
     $arResult = array(
@@ -145,7 +145,7 @@ if ($step == 1) {
     writeToLog($itemsInfo, 'Внесенные данные:');
     $title = $itemsInfo[0]['PROPERTY_VALUES']['courier_call_title'];
     $from = $itemsInfo[0]['PROPERTY_VALUES']['courier_call_from'];
-    $to = $itemsInfo[0]['PROPERTY_VALUES']['courier_call_to'];    
+    $to = $itemsInfo[0]['PROPERTY_VALUES']['courier_call_to'];
     $sender_contact = $itemsInfo[0]['PROPERTY_VALUES']['courier_call_sender_contact'];
     $sender_phone = $itemsInfo[0]['PROPERTY_VALUES']['courier_call_sender_phone'];
     $recipient_contact = $itemsInfo[0]['PROPERTY_VALUES']['courier_call_recipient_contact'];
@@ -159,20 +159,20 @@ if ($step == 1) {
     $attach[] = array("MESSAGE" => '[send=меню]Вернуться в начало[/send]');
     $arResult = array(
         'report' => "[b]Внесенные данные:[/b]\n
-[b]Название:[/b] {$title}\n
-[b]Откуда забрать:[/b] {$from}\n
-[b]Куда доставить:[/b] {$to}\n
-[b]Контакт отправителя:[/b] {$sender_contact}\n
-[b]Телефон отправителя:[/b] {$sender_phone}\n
-[b]Контакт получателя:[/b] {$recipient_contact}\n
-[b]Телефон получателя:[/b] {$recipient_phone}\n
-[b]Дата забора:[/b] {$pickup_date}\n
-[b]Вес:[/b] {$weight}\n
-[b]Габариты:[/b] {$dimensions}\n
-[b]Доверенность:[/b] {$procuration}\n
-[b]Объявленная стоимость:[/b] {$declared_value}\n
-[b]Комментарий:[/b] {$comment}\n
-[b]Если все верно, [send=вношу данные для вызова курьера]вносим[/send][/b]",
+                        [b]Название:[/b] {$title}\n
+                        [b]Откуда забрать:[/b] {$from}\n
+                        [b]Куда доставить:[/b] {$to}\n
+                        [b]Контакт отправителя:[/b] {$sender_contact}\n
+                        [b]Телефон отправителя:[/b] {$sender_phone}\n
+                        [b]Контакт получателя:[/b] {$recipient_contact}\n
+                        [b]Телефон получателя:[/b] {$recipient_phone}\n
+                        [b]Дата забора:[/b] {$pickup_date}\n
+                        [b]Вес:[/b] {$weight}\n
+                        [b]Габариты:[/b] {$dimensions}\n
+                        [b]Доверенность:[/b] {$procuration}\n
+                        [b]Объявленная стоимость:[/b] {$declared_value}\n
+                        [b]Комментарий:[/b] {$comment}\n
+                        [b]Если все верно, [send=вношу данные для вызова курьера]вносим[/send][/b]",
         'attach' => $attach,
     );
 }

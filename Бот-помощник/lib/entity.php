@@ -23,6 +23,7 @@ $arProperties = [
         ['department', 'Подразделение', 'S'],
     ],
     'business_trip' => [
+        ['employee', 'Сотрудник', 'N'],
         ['where', 'Куда летим', 'S'],
         ['departing_time', 'Дата/время отправления', 'S'],
         ['arriving_time', 'Дата/время прибытия', 'S'],

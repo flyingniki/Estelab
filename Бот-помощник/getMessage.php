@@ -50,13 +50,13 @@ $iBlockElements = restCommand('lists.element.get', array(
     'IBLOCK_TYPE_ID' => 'lists',
     'IBLOCK_ID' => 362,
 ), $_REQUEST["auth"]);
-writeToLog($iBlockFields, 'relations');
+// writeToLog($iBlockFields, 'relations');
 $arRelations = $iBlockElements['result'];
 $relationInfo = '';
 foreach ($arRelations as $relation) {
     $relationInfo .= '[send=' . $relation['ID'] . ']' . $relation['NAME'] . '[/send] [BR]';
 }
-writeToLog($relationInfo, 'relationInfo');
+// writeToLog($relationInfo, 'relationInfo');
 
 if ($messageFromUser == 'привет') {
     deleteEntityItem($entityCode, $userId);
@@ -105,7 +105,7 @@ if ($messageFromUser == 'привет') {
     // writeToLog($item, 'EntityItem step 1');
     $attach[] = array("MESSAGE" => '[send=меню]Вернуться в начало[/send]');
     $arResult = array(
-        'report' => 'Куда:',
+        'report' => 'Введите имя и фамилию сотрудника:',
         'attach' => $attach,
     );
 } elseif ($messageFromUser == 'заполняем данные для вызова курьера:') {
@@ -155,12 +155,13 @@ if ($messageFromUser == 'привет') {
     $arItemsInfo = getEntityItems($entityCode);
     $itemsInfo = $arItemsInfo['result'];
     $rpaTypeId = 7;
+    $employee = $itemsInfo[0]['PROPERTY_VALUES']['business_trip_employee'];
     $where = $itemsInfo[0]['PROPERTY_VALUES']['business_trip_where'];
     $departingTime = $itemsInfo[0]['PROPERTY_VALUES']['business_trip_departing_time'];
     $arrivingTime = $itemsInfo[0]['PROPERTY_VALUES']['business_trip_arriving_time'];
     $purpose = $itemsInfo[0]['PROPERTY_VALUES']['business_trip_purpose'];
     // writeToLog($userId, 'userId');
-    businessTrip($rpaTypeId, $userId, $where, $departingTime, $arrivingTime, $purpose);
+    businessTrip($rpaTypeId, $employee, $where, $departingTime, $arrivingTime, $purpose);
 
     $attach[] = array("MESSAGE" => '[send=меню]Вернуться в начало[/send]');
     $arResult = array(

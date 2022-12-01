@@ -18,6 +18,9 @@ $keyboardMain = array(
         "DISPLAY" => "LINE",
     ),
     array(
+        "TYPE" => "NEWLINE"
+    ),
+    array(
         "TEXT" => "Вызов курьера",
         'COMMAND' => 'courierCall',
         "COMMAND_PARAMS" => "fill courier call",
@@ -29,7 +32,7 @@ $keyboardMain = array(
         "TEXT" => "Внутреннее обучение",
         'COMMAND' => 'internalTraining',
         "COMMAND_PARAMS" => "fill internal training",
-        "BG_COLOR" => "#00FF00",
+        "BG_COLOR" => "#32CD32",
         "TEXT_COLOR" => "#fff",
         "DISPLAY" => "LINE",
     ),

@@ -106,3 +106,29 @@ function internalTraining($Smart_Type_ID, $title, $task_description, $relation, 
     ), $_REQUEST["auth"]);
     return $result;
 }
+
+/**
+ * Поиск ID сотрудника по имени и фамилии
+ */
+function getUserId($fullName)
+{
+    $fullName = mb_strtolower($fullName);
+    $sort = 'id';
+    $order = "ASC";
+    $stringItems = explode(" ", $fullName);
+    $name = $stringItems[0];
+    $lastName = $stringItems[1];
+    $arUserInfo = restCommand('user.get', array(
+        'sort' => $sort,
+        'order' => $order,
+        'FILTER' => array("ACTIVE" => "Y", "GROUPS_ID" => array(11), "NAME" => $name, "LAST_NAME" => $lastName),
+        'ADMIN_MODE' => true,
+    ), $_REQUEST["auth"]);
+    $userInfo = $arUserInfo['result'];
+    if (!empty($userInfo)) {
+        $userId = $userInfo[0]['ID'];
+        return $userId;
+    } else {
+        return null;
+    }
+}
