@@ -116,7 +116,7 @@ foreach ($arGrades as $dateGrades) {
   }
 }
 $gradeSum = array_sum($grades);
-if (count($elements) % 3 == 0) {
+if (count($elements) != 0 && count($elements) % 3 == 0) {
   $averageGrade = round($gradeSum / count($elements), 2);
 }
 ?>
