@@ -88,3 +88,21 @@ function courierCall($rpaTypeId, $title, $from, $to, $sender_contact, $sender_ph
     ), $_REQUEST["auth"]);
     return $result;
 }
+
+/**
+ * Добавляем элемент СП Внутреннее обучение
+ */
+function internalTraining($Smart_Type_ID, $title, $task_description, $relation, $employee, $link)
+{
+    $result = restCommand('crm.item.add', array(
+        'entityTypeId' => $Smart_Type_ID,
+        'fields' => [
+            'title' => $title,
+            'UfCrm_27_1642002369' => $task_description,
+            'UfCrm_27_1641906223' => $relation,
+            'UfCrm_27_1641906382' => $employee,
+            'UfCrm_27_1655390003' => $link,
+        ],
+    ), $_REQUEST["auth"]);
+    return $result;
+}

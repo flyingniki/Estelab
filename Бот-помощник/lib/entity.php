@@ -46,6 +46,13 @@ $arProperties = [
         ['declared_value', 'Объявленная стоимость', 'N'],
         ['comment', 'Комментарий', 'S'],
     ],
+    'internal_training' => [
+        ['title', 'Название', 'S'],
+        ['task_description', 'Описание проблемы/задачи', 'S'],
+        ['relation', 'К чему относится', 'N'],
+        ['employee', 'Сотрудник', 'N'],
+        ['link', 'Ссылка', 'S'],
+    ],
 ];
 
 foreach ($arProperties as $actionName => $arProperty) {

@@ -48,6 +48,7 @@ $botId = $result['result'];
 $commandAbsenceId = registerCommand($botId, $handlerBackUrl, 'absence', 'Отсутствие и переработка', 'some text');
 $commandBusinessTripId = registerCommand($botId, $handlerBackUrl, 'businessTrip', 'Командировка', 'some text');
 $commandCourierCallId = registerCommand($botId, $handlerBackUrl, 'courierCall', 'Вызов курьера', 'some text');
+$commandInternalTrainingId = registerCommand($botId, $handlerBackUrl, 'internalTraining', 'Внутреннее обучение', 'some text');
 
 // save params
 $appsConfig[$_REQUEST['auth']['application_token']] = array(
@@ -55,10 +56,11 @@ $appsConfig[$_REQUEST['auth']['application_token']] = array(
     'COMMAND_ABSENCE' => $commandAbsenceId,
     'COMMAND_BUSINESS_TRIP' => $commandBusinessTripId,
     'COMMAND_COURIER_CALL' => $commandCourierCallId,
+    'COMMAND_INTERNAL_TRAINING' => $commandInternalTrainingId,
     'LANGUAGE_ID' => $_REQUEST['data']['LANGUAGE_ID'],
     'AUTH' => $_REQUEST['auth'],
 );
 saveParams($appsConfig);
 
 // write debug log
-writeToLog(array($botId, $commandAbsenceId, $commandBusinessTripId, $commandCourierCallId), 'Assistant register');
+writeToLog(array($botId, $commandAbsenceId, $commandBusinessTripId, $commandCourierCallId, $commandInternalTrainingId), 'Assistant register');

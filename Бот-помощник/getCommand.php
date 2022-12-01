@@ -34,6 +34,15 @@ foreach ($_REQUEST['data']['COMMAND'] as $command) {
             "MESSAGE" => "[b]Внеси данные для вызова курьера[/b]
              \n Если готов, [send={$commandText}]кликай![/send]",
         ), $_REQUEST["auth"]);
+    } elseif ($command['COMMAND'] == 'internalTraining') {
+        $commandText = 'Заполняем данные для внутреннего обучения:';
+        $commandText = mb_strtolower($commandText);
+        $result = restCommand('imbot.command.answer', array(
+            "COMMAND_ID" => $command['COMMAND_ID'],
+            "MESSAGE_ID" => $command['MESSAGE_ID'],
+            "MESSAGE" => "[b]Внеси данные для внутреннего обучения[/b]
+             \n Если готов, [send={$commandText}]кликай![/send]",
+        ), $_REQUEST["auth"]);
     }
 
     // write debug log

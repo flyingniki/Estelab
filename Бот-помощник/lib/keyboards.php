@@ -4,7 +4,7 @@ $keyboardMain = array(
     array(
         "TEXT" => "Отсутствие и переработка",
         'COMMAND' => 'absence',
-        "COMMAND_PARAMS" => "absence and processing",
+        "COMMAND_PARAMS" => "fill absence and processing",
         "BG_COLOR" => "#00BFFF",
         "TEXT_COLOR" => "#fff",
         "DISPLAY" => "LINE",
@@ -24,5 +24,13 @@ $keyboardMain = array(
         "BG_COLOR" => "#FF00FF",
         "TEXT_COLOR" => "#fff",
         "DISPLAY" => "LINE",
-    ), 
+    ),
+    array(
+        "TEXT" => "Внутреннее обучение",
+        'COMMAND' => 'internalTraining',
+        "COMMAND_PARAMS" => "fill internal training",
+        "BG_COLOR" => "#00FF00",
+        "TEXT_COLOR" => "#fff",
+        "DISPLAY" => "LINE",
+    ),
 );

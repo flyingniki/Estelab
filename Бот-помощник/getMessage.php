@@ -45,6 +45,19 @@ foreach ($departments as $departmentId => $departmentValue) {
     $departmentInfo .= '[send=' . $departmentId . ']' . $departmentValue . '[/send] [BR]';
 }
 
+// info about relations
+$iBlockElements = restCommand('lists.element.get', array(
+    'IBLOCK_TYPE_ID' => 'lists',
+    'IBLOCK_ID' => 362,
+), $_REQUEST["auth"]);
+writeToLog($iBlockFields, 'relations');
+$arRelations = $iBlockElements['result'];
+$relationInfo = '';
+foreach ($arRelations as $relation) {
+    $relationInfo .= '[send=' . $relation['ID'] . ']' . $relation['NAME'] . '[/send] [BR]';
+}
+writeToLog($relationInfo, 'relationInfo');
+
 if ($messageFromUser == 'привет') {
     deleteEntityItem($entityCode, $userId);
 
@@ -102,6 +115,19 @@ if ($messageFromUser == 'привет') {
     $itemId = $item['result'];
     updateEntityItem($entityCode, $itemId, 'general_step', '1');
     updateEntityItem($entityCode, $itemId, 'general_command', 'courierCall');
+    // writeToLog($item, 'EntityItem step 1');
+    $attach[] = array("MESSAGE" => '[send=меню]Вернуться в начало[/send]');
+    $arResult = array(
+        'report' => 'Название:',
+        'attach' => $attach,
+    );
+} elseif ($messageFromUser == 'заполняем данные для внутреннего обучения:') {
+    deleteEntityItem($entityCode, $userId);
+
+    $item = addEntityItem($entityCode, 'user_' . $userId . '_' . $messageFromUser);
+    $itemId = $item['result'];
+    updateEntityItem($entityCode, $itemId, 'general_step', '1');
+    updateEntityItem($entityCode, $itemId, 'general_command', 'internalTraining');
     // writeToLog($item, 'EntityItem step 1');
     $attach[] = array("MESSAGE" => '[send=меню]Вернуться в начало[/send]');
     $arResult = array(
@@ -166,6 +192,23 @@ if ($messageFromUser == 'привет') {
         'report' => 'Данные успешно внесены!',
         'attach' => $attach,
     );
+} elseif ($messageFromUser == 'вношу данные о внутреннем обучении') {
+    $arItemsInfo = getEntityItems($entityCode);
+    $itemsInfo = $arItemsInfo['result'];
+    $Smart_Type_ID = 151;
+    $title = $itemsInfo[0]['PROPERTY_VALUES']['internal_training_title'];
+    $task_description = $itemsInfo[0]['PROPERTY_VALUES']['internal_training_task_description'];
+    $relation = $itemsInfo[0]['PROPERTY_VALUES']['internal_training_relation'];
+    $employee = $itemsInfo[0]['PROPERTY_VALUES']['internal_training_employee'];
+    $link = $itemsInfo[0]['PROPERTY_VALUES']['internal_training_link'];
+    // writeToLog($userId, 'userId');
+    internalTraining($Smart_Type_ID, $title, $task_description, $relation, $employee, $link);
+
+    $attach[] = array("MESSAGE" => '[send=меню]Вернуться в начало[/send]');
+    $arResult = array(
+        'report' => 'Данные успешно внесены!',
+        'attach' => $attach,
+    );
 } else {
     // получаем текущий элемент сущности для определенного пользователя
     $arItemsInfo = getEntityItems($entityCode);
@@ -189,6 +232,8 @@ if ($messageFromUser == 'привет') {
         require_once __DIR__ . '/businessTrip.php';
     } elseif ($command == 'courierCall') {
         require_once __DIR__ . '/courierCall.php';
+    } elseif ($command == 'internalTraining') {
+        require_once __DIR__ . '/internalTraining.php';
     }
 }
 
