@@ -132,3 +132,15 @@ function getUserId($fullName)
         return null;
     }
 }
+
+/**
+ * Получение информации о рабочем дне сотрудника
+ */
+function getShedule($userId)
+{
+    $arFields = array(
+        'USER_ID' => $userId,
+    );
+    $result = restCommand('timeman.settings', $arFields, $_REQUEST["auth"]);
+    return $result;
+}

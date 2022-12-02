@@ -49,6 +49,7 @@ $commandAbsenceId = registerCommand($botId, $handlerBackUrl, 'absence', 'Отс�
 $commandBusinessTripId = registerCommand($botId, $handlerBackUrl, 'businessTrip', 'Командировка', 'some text');
 $commandCourierCallId = registerCommand($botId, $handlerBackUrl, 'courierCall', 'Вызов курьера', 'some text');
 $commandInternalTrainingId = registerCommand($botId, $handlerBackUrl, 'internalTraining', 'Внутреннее обучение', 'some text');
+$commandTimemanEmployeeId = registerCommand($botId, $handlerBackUrl, 'timemanEmployee', 'Рабочий день сотрудника', 'some text');
 
 // save params
 $appsConfig[$_REQUEST['auth']['application_token']] = array(
@@ -57,10 +58,11 @@ $appsConfig[$_REQUEST['auth']['application_token']] = array(
     'COMMAND_BUSINESS_TRIP' => $commandBusinessTripId,
     'COMMAND_COURIER_CALL' => $commandCourierCallId,
     'COMMAND_INTERNAL_TRAINING' => $commandInternalTrainingId,
+    'COMMAND_TIMEMAN_EMPLOYEE' => $commandTimemanEmployeeId,
     'LANGUAGE_ID' => $_REQUEST['data']['LANGUAGE_ID'],
     'AUTH' => $_REQUEST['auth'],
 );
 saveParams($appsConfig);
 
 // write debug log
-writeToLog(array($botId, $commandAbsenceId, $commandBusinessTripId, $commandCourierCallId, $commandInternalTrainingId), 'Assistant register');
+writeToLog(array($botId, $commandAbsenceId, $commandBusinessTripId, $commandCourierCallId, $commandInternalTrainingId, $commandTimemanEmployeeId), 'Assistant register');

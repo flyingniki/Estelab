@@ -27,11 +27,12 @@ if ($step == 1) {
 } elseif ($step == 4) {
     $userId = getUserId($messageFromUser);
     if (isset($userId)) {
+        $messageFromUser = mb_strtoupper($messageFromUser);
         updateEntityItem($entityCode, $currentItemId, 'internal_training_employee', $userId);
         updateEntityItem($entityCode, $currentItemId, 'general_step', $step + 1);
         $attach[] = array("MESSAGE" => '[send=меню]Вернуться в начало[/send]');
         $arResult = array(
-            'report' => "[b]ID сотрудника:[/b] {$messageFromUser}. Далее заполните ссылку:",
+            'report' => "[b]Сотрудник:[/b] {$messageFromUser}, [b]ID:[/b] {$userId}. Далее заполните ссылку:",
             'attach' => $attach,
         );
     } else {

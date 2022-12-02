@@ -3,11 +3,12 @@
 if ($step == 1) {
     $userId = getUserId($messageFromUser);
     if (isset($userId)) {
+        $messageFromUser = mb_strtoupper($messageFromUser);
         updateEntityItem($entityCode, $currentItemId, 'business_trip_employee', $userId);
         updateEntityItem($entityCode, $currentItemId, 'general_step', $step + 1);
         $attach[] = array("MESSAGE" => '[send=меню]Вернуться в начало[/send]');
         $arResult = array(
-            'report' => "[b]ID сотрудника:[/b] {$messageFromUser}. Далее заполните куда:",
+            'report' => "[b]Сотрудник:[/b] {$messageFromUser}, [b]ID:[/b] {$userId}. Далее заполните куда:",
             'attach' => $attach,
         );
     } else {

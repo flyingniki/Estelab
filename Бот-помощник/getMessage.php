@@ -134,6 +134,17 @@ if ($messageFromUser == 'привет') {
         'report' => 'Название:',
         'attach' => $attach,
     );
+} elseif ($messageFromUser == 'проверяем рабочий день сотрудника') {
+    deleteEntityItem($entityCode, $userId);
+
+    $item = addEntityItem($entityCode, 'user_' . $userId . '_' . $messageFromUser);
+    $itemId = $item['result'];
+    updateEntityItem($entityCode, $itemId, 'general_command', 'timemanEmployee');
+    $attach[] = array("MESSAGE" => '[send=меню]Вернуться в начало[/send]');
+    $arResult = array(
+        'report' => 'Имя и фамилия сотрудника:',
+        'attach' => $attach,
+    );
 } elseif ($messageFromUser == 'вношу данные об отсутствии') {
     $arItemsInfo = getEntityItems($entityCode);
     // writeToLog($arItemsInfo, 'вношу данные об отсутствии');
@@ -235,6 +246,8 @@ if ($messageFromUser == 'привет') {
         require_once __DIR__ . '/courierCall.php';
     } elseif ($command == 'internalTraining') {
         require_once __DIR__ . '/internalTraining.php';
+    } elseif ($command == 'timemanEmployee') {
+        require_once __DIR__ . '/timemanEmployee.php';
     }
 }
 
