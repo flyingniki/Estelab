@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form
+      enctype="multipart/form-data"
+      action=""
+      method="POST"
+      class="form_csv"
+    >
+      <input type="hidden" name="MAX_FILE_SIZE" value="30000" />
+      Если через Excel, то должны быть только 2 столбца: <u>Артикул</u> и
+      <u>Цена</u>.<br />
+      Файл должен быть сохранен как <b>CSV (MS-DOS):</b><br /><br />
+      ID инфоблока, где лежат товары:
+      <input name="find_section_section" type="text" value="" />
+      <br />
+      <input name="userfile" type="file" accept=".csv" />
+      <input type="submit" value="Изменить цены" />
+    </form>
+    <br />
+  </body>
+</html>

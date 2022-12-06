@@ -1,0 +1,23 @@
+<?
+$MESS["TIMEMAN_MODULE_NOT_INSTALLED"] = "Das Modul \"Arbeitszeitmanagement\" ist nicht installiert";
+$MESS["TM_SCHEDULE_DELETE_CONFIRM"] = "Möchten Sie \"#SCHEDULE_NAME#\" wirklich löschen?";
+$MESS["TM_SCHEDULE_DELETE_CONFIRM_NO"] = "Abbrechen";
+$MESS["TM_SCHEDULE_DELETE_CONFIRM_TITLE"] = "Aktion bestätigen";
+$MESS["TM_SCHEDULE_DELETE_CONFIRM_YES"] = "Löschen";
+$MESS["TM_SCHEDULE_LIST_ACCESS_DENIED"] = "Sie haben nicht genügend Rechte";
+$MESS["TM_SCHEDULE_LIST_ACTION_DELETE"] = "Löschen";
+$MESS["TM_SCHEDULE_LIST_ACTION_EDIT"] = "Bearbeiten";
+$MESS["TM_SCHEDULE_LIST_ACTION_PLAN"] = "Zeitplan";
+$MESS["TM_SCHEDULE_LIST_ACTION_READ"] = "Anzeigen";
+$MESS["TM_SCHEDULE_LIST_ACTION_SELECT"] = "Aktion auswählen";
+$MESS["TM_SCHEDULE_LIST_ACTION_WORKTIME_STATS"] = "Anwesenheit";
+$MESS["TM_SCHEDULE_LIST_ADD"] = "Dienstplan hinzufügen";
+$MESS["TM_SCHEDULE_LIST_COLUMN_ID"] = "ID";
+$MESS["TM_SCHEDULE_LIST_COLUMN_NAME"] = "Name";
+$MESS["TM_SCHEDULE_LIST_COLUMN_PERIOD"] = "Berichtszeitraum";
+$MESS["TM_SCHEDULE_LIST_COLUMN_SHIFT_COUNT"] = "Anzahl Schichten";
+$MESS["TM_SCHEDULE_LIST_COLUMN_TYPE"] = "Typ";
+$MESS["TM_SCHEDULE_LIST_COLUMN_USER_COUNT"] = "Anzahl Mitarbeiter";
+$MESS["TM_SCHEDULE_LIST_DELETE_CONFIRM"] = "Möchten Sie #SCHEDULE_NAMES# wirklich löschen?";
+$MESS["TM_SCHEDULE_LIST_TITLE"] = "Dienstpläne";
+?>
