@@ -76,9 +76,17 @@ for ($i = 1; $i <= 43; $i++) {
                     <option value="Загараю медленно иногда солнечные ожоги">Загараю медленно иногда солнечные ожоги</option>
                     <option value="Всегда солнечные ожоги, загар слабый, быстро исчезает">Всегда солнечные ожоги, загар слабый, быстро исчезает</option>
                 </select>
+                <select name="question_13" id="question_13" class="dropdown-content">
+                    <option value="">Наличие веснушек</option>
+                    <option value="Лицо">Лицо</option>
+                    <option value="Декольте">Декольте</option>
+                    <option value="Руки">Руки</option>
+                    <option value="Спина">Спина</option>
+                    <option value="Все тело">Все тело</option>
+                </select>
                 <button class="btn-2">Далее</button>
             </div>
-            <input type="submit" value="Отправить">
+            <input type="submit" class="btn-submit" value="Отправить">
         </div>
     </form>
 </body>
