@@ -142,7 +142,7 @@ if ($step == 1) {
     updateEntityItem($entityCode, $currentItemId, 'courier_call_comment', $messageFromUser);
     $arItemsInfo = getEntityItems($entityCode);
     $itemsInfo = $arItemsInfo['result'];
-    writeToLog($itemsInfo, 'Внесенные данные:');
+    // writeToLog($itemsInfo, 'Внесенные данные:');
     $title = $itemsInfo[0]['PROPERTY_VALUES']['courier_call_title'];
     $from = $itemsInfo[0]['PROPERTY_VALUES']['courier_call_from'];
     $to = $itemsInfo[0]['PROPERTY_VALUES']['courier_call_to'];

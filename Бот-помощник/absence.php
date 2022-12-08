@@ -47,8 +47,8 @@ if ($step == 1) {
     );
 } elseif ($step == 5) {
     updateEntityItem($entityCode, $currentItemId, 'absence_department', $messageFromUser);
-    // $arItemsInfo = getEntityItems($entityCode);
-    // $itemsInfo = $arItemsInfo['result'];
+    $arItemsInfo = getEntityItems($entityCode);
+    $itemsInfo = $arItemsInfo['result'];
     // writeToLog($itemsInfo, 'Внесенные данные:');
     $case = $itemsInfo[0]['PROPERTY_VALUES']['absence_case'];
     $dateBegin = $itemsInfo[0]['PROPERTY_VALUES']['absence_date_begin'];

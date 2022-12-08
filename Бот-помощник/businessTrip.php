@@ -55,7 +55,7 @@ if ($step == 1) {
     updateEntityItem($entityCode, $currentItemId, 'business_trip_purpose', $messageFromUser);
     $arItemsInfo = getEntityItems($entityCode);
     $itemsInfo = $arItemsInfo['result'];
-    writeToLog($itemsInfo, 'Внесенные данные:');
+    // writeToLog($itemsInfo, 'Внесенные данные:');
     $employee = $itemsInfo[0]['PROPERTY_VALUES']['business_trip_employee'];
     $where = $itemsInfo[0]['PROPERTY_VALUES']['business_trip_where'];
     $departingTime = $itemsInfo[0]['PROPERTY_VALUES']['business_trip_departing_time'];
