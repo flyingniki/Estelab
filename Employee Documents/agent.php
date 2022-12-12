@@ -60,8 +60,8 @@ foreach ($items_ch3 as $item_ch3) {
             $dateDiff = date_diff(new DateTime($item_ch3_documentIssue), new DateTime())->days;
             //переводим в архив, если срок действия меньше указанного
             if ($dateDiff <= $item_ch6_documentIssueArray[$item_ch3_documentID] && $item_ch6_documentIssueArray[$item_ch3_documentID]) :
-            // $item_ch3->setStageId('DT148_14:SUCCESS');
-            // $result = $item_ch3->save();
+            $item_ch3->setStageId('DT148_14:SUCCESS');
+            $result = $item_ch3->save();
             endif;
         endif;
         //массив со списком документов для каждого ID сотрудника
@@ -85,26 +85,26 @@ foreach ($diff_docs_employees as $item_employeeID => $diff_docs) {
         $result = Container::getInstance()->getRelationManager()->bindItems($parent, $child);
         $workflowTemplateId = 1526;
         $arErrorsTmp = array();
-        // CBPDocument::StartWorkflow(
-        //     $workflowTemplateId,
-        //     array("crm", "Bitrix\Crm\Integration\BizProc\Document\Dynamic", "DYNAMIC_" . $Smart_Type_Ch3_ID . "_" . $new_item_ch3_id),
-        //     array(),
-        //     $arErrorsTmp
-        // );
+        CBPDocument::StartWorkflow(
+            $workflowTemplateId,
+            array("crm", "Bitrix\Crm\Integration\BizProc\Document\Dynamic", "DYNAMIC_" . $Smart_Type_Ch3_ID . "_" . $new_item_ch3_id),
+            array(),
+            $arErrorsTmp
+        );
     }
 }
 
 echo '<pre>';
-echo 'Требуемые документы Ч2 (ID сотрудника => массив с ID документа): <br>';
+echo 'Требуемые документы Ч2 (ID сотрудника => массив [0 => массив ID документов, 1 => ID элемента Ч2]): <br>';
 print_r($arNecessaryDocs_Ch2);
 echo '</pre>';
 
 echo '<pre>';
-echo 'Текущие документы Ч3 (ID сотрудника => массив с ID документа): <br>';
+echo 'Текущие документы Ч3 (ID сотрудника => массив с ID документов): <br>';
 print_r($arCurrentDocs_Ch3);
 echo '</pre>';
 
 echo '<pre>';
 echo 'Разница в документах Ч2 и Ч3 для каждого сотрудника: <br>';
-print_r($diff_docs);
+print_r($diff_docs_employees);
 echo '</pre>';
