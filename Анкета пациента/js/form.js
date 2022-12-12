@@ -58,9 +58,7 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
 
-  form.addEventListener("submit", sendRequest);
-
-  function sendRequest(e) {
+  form.addEventListener("submit", (e) => {
     e.preventDefault();
     e.stopPropagation();
 
@@ -69,12 +67,13 @@ document.addEventListener("DOMContentLoaded", function () {
 
     request.open("POST", form.action);
     request.onreadystatechange = function () {
-      if (request.readyState == 4 && request.status == 200)
+      if (request.readyState == 4 && request.status == 200) {
         form.classList.toggle("hidden");
-      document.querySelector(".success").classList.toggle("hidden");
+        document.querySelector(".success").classList.toggle("hidden");
+      }
     };
     request.send(formData);
-  }
-  
+  });
+
   $(".js-example-basic-multiple").select2();
 });

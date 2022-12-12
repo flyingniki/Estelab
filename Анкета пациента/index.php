@@ -3,7 +3,7 @@
 $user_id = $_GET['id'];
 
 if (isset($_POST['question'])) {
-    $file_name = 'id_' . $user_id . 'txt';
+    $file_name = 'id_' . $user_id . '.txt';
     $file = fopen($file_name, "w");
     $questions = $_POST['question'];
     foreach ($questions as $key => $question) {
@@ -28,7 +28,7 @@ if (isset($_POST['question'])) {
 
 <body>
     <main>
-        <form class="decor" action="form.php" method="post">
+        <form class="decor" action="index.php" method="post">
             <div class="form-left-decoration"></div>
             <div class="form-right-decoration"></div>
             <div class="circle"></div>
