@@ -19,9 +19,12 @@ if ($step == 1) {
 } elseif ($step == 3) {
     updateEntityItem($entityCode, $currentItemId, 'internal_training_relation', $messageFromUser);
     updateEntityItem($entityCode, $currentItemId, 'general_step', $step + 1);
+    $arItemsInfo = getEntityItems($entityCode);
+    $itemsInfo = $arItemsInfo['result'];
+    $relation = $relations[$messageFromUser]['NAME'];
     $attach[] = array("MESSAGE" => '[send=меню]Вернуться в начало[/send]');
     $arResult = array(
-        'report' => "[b]К чему относится:[/b] {$messageFromUser}. Далее введите имя и фамилию сотрудника:",
+        'report' => "[b]К чему относится:[/b] {$relation}. Далее введите имя и фамилию сотрудника:",
         'attach' => $attach,
     );
 } elseif ($step == 4) {
@@ -29,10 +32,19 @@ if ($step == 1) {
     if (isset($userId)) {
         $messageFromUser = mb_strtoupper($messageFromUser);
         updateEntityItem($entityCode, $currentItemId, 'internal_training_employee', $userId);
-        updateEntityItem($entityCode, $currentItemId, 'general_step', $step + 1);
+        $arItemsInfo = getEntityItems($entityCode);
+        $itemsInfo = $arItemsInfo['result'];
+        $title = $itemsInfo[0]['PROPERTY_VALUES']['internal_training_title'];
+        $task_description = $itemsInfo[0]['PROPERTY_VALUES']['internal_training_task_description'];
+        $relation = $relations[$itemsInfo[0]['PROPERTY_VALUES']['internal_training_relation']]['NAME'];
         $attach[] = array("MESSAGE" => '[send=меню]Вернуться в начало[/send]');
         $arResult = array(
-            'report' => "[b]Сотрудник:[/b] {$messageFromUser}, [b]ID:[/b] {$userId}. Далее заполните ссылку:",
+            'report' => "[b]Внесенные данные:[/b]\n
+                        [b]Название:[/b] {$title}\n
+                        [b]Описание проблемы/задачи:[/b] {$task_description}\n
+                        [b]К чему относится:[/b] {$relation}\n
+                        [b]Сотрудник:[/b] {$messageFromUser}\n
+                        [b]Если все верно, [send=вношу данные о внутреннем обучении]вносим[/send][/b]",
             'attach' => $attach,
         );
     } else {
@@ -42,24 +54,4 @@ if ($step == 1) {
             'attach' => $attach,
         );
     }
-} elseif ($step == 5) {
-    updateEntityItem($entityCode, $currentItemId, 'internal_training_link', $messageFromUser);
-    $arItemsInfo = getEntityItems($entityCode);
-    $itemsInfo = $arItemsInfo['result'];
-    $title = $itemsInfo[0]['PROPERTY_VALUES']['internal_training_title'];
-    $task_description = $itemsInfo[0]['PROPERTY_VALUES']['internal_training_task_description'];
-    $relation = $itemsInfo[0]['PROPERTY_VALUES']['internal_training_relation'];
-    $employee = $itemsInfo[0]['PROPERTY_VALUES']['internal_training_employee'];
-    $link = $itemsInfo[0]['PROPERTY_VALUES']['internal_training_link'];
-    $attach[] = array("MESSAGE" => '[send=меню]Вернуться в начало[/send]');
-    $arResult = array(
-        'report' => "[b]Внесенные данные:[/b]\n
-                        [b]Название:[/b] {$title}\n
-                        [b]Описание проблемы/задачи:[/b] {$task_description}\n
-                        [b]К чему относится:[/b] {$relation}\n
-                        [b]Сотрудник:[/b] {$employee}\n
-                        [b]Ссылка:[/b] {$link}\n
-                        [b]Если все верно, [send=вношу данные о внутреннем обучении]вносим[/send][/b]",
-        'attach' => $attach,
-    );
 }

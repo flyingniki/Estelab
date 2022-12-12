@@ -54,9 +54,10 @@ $iBlockElements = restCommand('lists.element.get', array(
 $arRelations = $iBlockElements['result'];
 $relationInfo = '';
 foreach ($arRelations as $relation) {
+    $relations[$relation['ID']] = $relation;
     $relationInfo .= '[send=' . $relation['ID'] . ']' . $relation['NAME'] . '[/send] [BR]';
 }
-// writeToLog($relationInfo, 'relationInfo');
+// writeToLog($relations, 'relations');
 
 if ($messageFromUser == 'привет') {
     deleteEntityItem($entityCode, $userId);

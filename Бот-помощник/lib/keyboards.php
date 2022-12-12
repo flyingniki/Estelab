@@ -36,12 +36,12 @@ $keyboardMain = array(
         "TEXT_COLOR" => "#fff",
         "DISPLAY" => "LINE",
     ),
-    array(
-        "TEXT" => "Рабочий день сотрудника",
-        'COMMAND' => 'timemanEmployee',
-        "COMMAND_PARAMS" => "fill name & last name",
-        "BG_COLOR" => "#D2691E",
-        "TEXT_COLOR" => "#fff",
-        "DISPLAY" => "LINE",
-    ),
+    // array(
+    //     "TEXT" => "Рабочий день сотрудника",
+    //     'COMMAND' => 'timemanEmployee',
+    //     "COMMAND_PARAMS" => "fill name & last name",
+    //     "BG_COLOR" => "#D2691E",
+    //     "TEXT_COLOR" => "#fff",
+    //     "DISPLAY" => "LINE",
+    // ),
 );
