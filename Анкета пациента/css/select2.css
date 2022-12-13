@@ -256,6 +256,7 @@
 .select2-container--default .select2-selection--multiple {
   width: 100%;
   height: auto;
+  min-height: 40px;
   padding: 5px 20px;
   margin-bottom: 10px;
   background: #e9eff6;

@@ -53,7 +53,6 @@ document.addEventListener("DOMContentLoaded", function () {
         option.nextElementSibling.tagName === "DIV"
       ) {
         option.nextElementSibling.classList.toggle("hidden");
-        console.log(option.nextElementSibling.tagName);
       }
     });
   });
