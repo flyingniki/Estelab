@@ -11,8 +11,8 @@ $client_id = intval(filter_input(INPUT_GET, 'client', FILTER_SANITIZE_SPECIAL_CH
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="/patient-form/css/styles.css" />
-    <link rel="stylesheet" href="/patient-form/css/select2.css">
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/select2.css">
     <title>Estelab Form</title>
 </head>
 
@@ -372,8 +372,8 @@ $client_id = intval(filter_input(INPUT_GET, 'client', FILTER_SANITIZE_SPECIAL_CH
         <p>Анкета успешно отправлена</p>
     </div>
 </body>
-<script src="/patient-form/js/form.js"></script>
-<script src="/patient-form/js/jquery.min.js"></script>
-<script src="/patient-form/js/select2.min.js"></script>
+<script src="js/form.js"></script>
+<script src="js/jquery.min.js"></script>
+<script src="js/select2.min.js"></script>
 
 </html>
