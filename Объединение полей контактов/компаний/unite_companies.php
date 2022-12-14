@@ -27,7 +27,7 @@ $companies_slice = array_slice($company_ids, 1000, 1000);
 foreach ($companies_slice as $company) {
     CBPDocument::StartWorkflow(
         $workflowTemplateId,
-        array('crm', 'CCrmDocumentContact', 'CONTACT_' . $company),
+        array('crm', 'CCrmDocumentCompany', 'COMPANY_' . $company),
         array(),
         $arErrorsTmp
     );
