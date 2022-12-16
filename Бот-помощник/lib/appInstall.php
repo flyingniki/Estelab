@@ -58,11 +58,11 @@ $appsConfig[$_REQUEST['auth']['application_token']] = array(
     'COMMAND_BUSINESS_TRIP' => $commandBusinessTripId,
     'COMMAND_COURIER_CALL' => $commandCourierCallId,
     'COMMAND_INTERNAL_TRAINING' => $commandInternalTrainingId,
-    'COMMAND_TIMEMAN_EMPLOYEE' => $commandTimemanEmployeeId,
+    // 'COMMAND_TIMEMAN_EMPLOYEE' => $commandTimemanEmployeeId,
     'LANGUAGE_ID' => $_REQUEST['data']['LANGUAGE_ID'],
     'AUTH' => $_REQUEST['auth'],
 );
 saveParams($appsConfig);
 
 // write debug log
-writeToLog(array($botId, $commandAbsenceId, $commandBusinessTripId, $commandCourierCallId, $commandInternalTrainingId, $commandTimemanEmployeeId), 'Assistant register');
+writeToLog(array($botId, $commandAbsenceId, $commandBusinessTripId, $commandCourierCallId, $commandInternalTrainingId), 'Assistant register');

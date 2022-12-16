@@ -1,12 +1,11 @@
 <?php
 
-function updateMessage($botId, $messageId, $messageText = '', $keyboard = null)
+function updateMessage($botId, $messageId, $messageText = '')
 {
     $arFields = array(
         'BOT_ID' => $botId,
         "MESSAGE_ID" => $messageId,
         "MESSAGE" => $messageText,
-        "KEYBOARD" => $keyboard,
     );
     $result = restCommand('imbot.message.update', $arFields, $_REQUEST["auth"]);
     return $result;
@@ -142,5 +141,17 @@ function getShedule($userId)
         'USER_ID' => $userId,
     );
     $result = restCommand('timeman.settings', $arFields, $_REQUEST["auth"]);
+    return $result;
+}
+
+/**
+ * Получение информации о сотруднике по ID
+ */
+function getUserById($userId)
+{
+    $arFields = array(
+        'ID' => $userId,
+    );
+    $result = restCommand('user.get', $arFields, $_REQUEST["auth"]);
     return $result;
 }

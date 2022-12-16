@@ -33,8 +33,8 @@ $client_id = intval(filter_input(INPUT_GET, 'client', FILTER_SANITIZE_SPECIAL_CH
                     <input type="text" name="question[name]" placeholder="1. Имя">
 
                     <label for="question_2">2. Пол</label>
-                    <select name="question[gender]" id="question_2" class="dropdown-content">
-                        <option value="" selected>...</option>
+                    <select name="question[gender]" id="question_2" class="dropdown-content js-example-basic-single">
+                        <option value="" selected></option>
                         <option value="М">М</option>
                         <option value="Ж">Ж</option>
                     </select>
@@ -46,8 +46,8 @@ $client_id = intval(filter_input(INPUT_GET, 'client', FILTER_SANITIZE_SPECIAL_CH
                     <input type="text" name="question[weight]" placeholder="5. Вес">
 
                     <label for="question_6">6. Тип кожи</label>
-                    <select name="question[skin_type]" id="question_6" class="dropdown-content">
-                        <option value="" selected>...</option>
+                    <select name="question[skin_type]" id="question_6" class="dropdown-content js-example-basic-single">
+                        <option value="" selected></option>
                         <option value="Жирная">Жирная</option>
                         <option value="Сухая">Сухая</option>
                         <option value="Комбинированная">Комбинированная</option>
@@ -63,15 +63,15 @@ $client_id = intval(filter_input(INPUT_GET, 'client', FILTER_SANITIZE_SPECIAL_CH
 
                     <input type="text" name="question[last_tan]" placeholder="8. Дата последнего загара: чч.мм.гггг">
                     <label for="question_9">9. Время на солнце в детстве</label>
-                    <select name="question[time_on_sun_in_childhood]" id="question_9" class="dropdown-content">
-                        <option value="" selected>...</option>
+                    <select name="question[time_on_sun_in_childhood]" id="question_9" class="dropdown-content js-example-basic-single">
+                        <option value="" selected></option>
                         <option value="Часто">Часто</option>
                         <option value="Редко">Редко</option>
                     </select>
 
                     <label for="question_10">10. Время на солнце в настоящее время</label>
-                    <select name="question[time_on_sun_now]" id="question_10" class="dropdown-content">
-                        <option value="" selected>...</option>
+                    <select name="question[time_on_sun_now]" id="question_10" class="dropdown-content js-example-basic-single">
+                        <option value="" selected></option>
                         <option value="Часто">Часто</option>
                         <option value="Редко">Редко</option>
                     </select>
@@ -81,8 +81,8 @@ $client_id = intval(filter_input(INPUT_GET, 'client', FILTER_SANITIZE_SPECIAL_CH
 
                 <div class="form-2 hidden">
                     <label for="question_11">11. Наличие солнечных ожогов</label>
-                    <select name="question[sunburns]" id="question_11" class="dropdown-content">
-                        <option value="" selected>...</option>
+                    <select name="question[sunburns]" id="question_11" class="dropdown-content js-example-basic-single">
+                        <option value="" selected></option>
                         <option value="Загараю быстро без солнечных ожогов">Загараю быстро без солнечных ожогов</option>
                         <option value="Загараю медленно иногда солнечные ожоги">Загараю медленно иногда солнечные ожоги</option>
                         <option value="Всегда солнечные ожоги, загар слабый, быстро исчезает">Всегда солнечные ожоги, загар слабый, быстро исчезает</option>
@@ -99,8 +99,8 @@ $client_id = intval(filter_input(INPUT_GET, 'client', FILTER_SANITIZE_SPECIAL_CH
                     </select>
 
                     <label for="question_13">13. Склонность к образованию рубцов, поствосполительной гиперпигментации</label>
-                    <select name="question[tendency_to_scarring]" id="question_13" class="dropdown-content">
-                        <option value="" selected>...</option>
+                    <select name="question[tendency_to_scarring]" id="question_13" class="dropdown-content js-example-basic-single">
+                        <option value="" selected></option>
                         <option value="Любая травма заживает с рубцом">Любая травма заживает с рубцом</option>
                         <option value="Рубцы только после хирургических вмешательств">Рубцы только после хирургических вмешательств</option>
                         <option value="После любой травмы на долго остаются пигментные пятна">После любой травмы на долго остаются пигментные пятна</option>
@@ -157,13 +157,13 @@ $client_id = intval(filter_input(INPUT_GET, 'client', FILTER_SANITIZE_SPECIAL_CH
 
                     <input type="text" name="question[arterial_pressure]" placeholder="18. Артериальное давление рабочее, мм. рт. ст.">
                     <label for="question_19">19. Гипертоническая болезнь</label>
-                    <select name="question[hypertonic_disease]" id="question_19" class="dropdown-content">
+                    <select name="question[hypertonic_disease]" id="question_19" class="dropdown-content js-example-basic-single">
                         <option value="Нет" selected>Нет</option>
                         <option value="Есть">Есть</option>
                     </select>
 
                     <label for="question_20">20. Сердечно-сосудистые заболевания</label>
-                    <select name="question[cardiovascular_diseases]" id="question_20" class="dropdown-content">
+                    <select name="question[cardiovascular_diseases]" id="question_20" class="dropdown-content js-example-basic-single">
                         <option value="Нет" selected>Нет</option>
                         <option value="Да">Да</option>
                     </select>
@@ -177,7 +177,7 @@ $client_id = intval(filter_input(INPUT_GET, 'client', FILTER_SANITIZE_SPECIAL_CH
 
                 <div class="form-3 hidden">
                     <label for="question_21">21. Плохая свертываемость крови</label>
-                    <select name="question[blood_clotting]" id="question_21" class="dropdown-content">
+                    <select name="question[blood_clotting]" id="question_21" class="dropdown-content js-example-basic-single">
                         <option value="Нет" selected>Нет</option>
                         <option value="Да">Да</option>
                     </select>
@@ -186,7 +186,7 @@ $client_id = intval(filter_input(INPUT_GET, 'client', FILTER_SANITIZE_SPECIAL_CH
                     </div>
 
                     <label for="question_22">22. Заболевания аутоиммунного характера</label>
-                    <select name="question[autoimmune_diseases]" id="question_22" class="dropdown-content">
+                    <select name="question[autoimmune_diseases]" id="question_22" class="dropdown-content js-example-basic-single">
                         <option value="Нет" selected>Нет</option>
                         <option value="Да">Да</option>
                     </select>
@@ -195,7 +195,7 @@ $client_id = intval(filter_input(INPUT_GET, 'client', FILTER_SANITIZE_SPECIAL_CH
                     </div>
 
                     <label for="question_23">23. Онкологические заболевания</label>
-                    <select name="question[oncological_diseases]" id="question_23" class="dropdown-content">
+                    <select name="question[oncological_diseases]" id="question_23" class="dropdown-content js-example-basic-single">
                         <option value="Нет" selected>Нет</option>
                         <option value="Да">Да</option>
                     </select>
@@ -204,7 +204,7 @@ $client_id = intval(filter_input(INPUT_GET, 'client', FILTER_SANITIZE_SPECIAL_CH
                     </div>
 
                     <label for="question_24">24. Неврологические заболевания, эпилепсия</label>
-                    <select name="question[neurological_diseases]" id="question_24" class="dropdown-content">
+                    <select name="question[neurological_diseases]" id="question_24" class="dropdown-content js-example-basic-single">
                         <option value="Нет" selected>Нет</option>
                         <option value="Да">Да</option>
                     </select>
@@ -213,7 +213,7 @@ $client_id = intval(filter_input(INPUT_GET, 'client', FILTER_SANITIZE_SPECIAL_CH
                     </div>
 
                     <label for="question_25">25. Сахарный диабет</label>
-                    <select name="question[diabetes]" id="question_25" class="dropdown-content">
+                    <select name="question[diabetes]" id="question_25" class="dropdown-content js-example-basic-single">
                         <option value="Нет" selected>Нет</option>
                         <option value="Компенсированный">Компенсированный</option>
                         <option value="Некомпенсированный">Некомпенсированный</option>
@@ -224,7 +224,7 @@ $client_id = intval(filter_input(INPUT_GET, 'client', FILTER_SANITIZE_SPECIAL_CH
                     </div>
 
                     <label for="question_26">26. Заболевание печени и почек</label>
-                    <select name="question[liver_kidney_disease]" id="question_26" class="dropdown-content">
+                    <select name="question[liver_kidney_disease]" id="question_26" class="dropdown-content js-example-basic-single">
                         <option value="Нет" selected>Нет</option>
                         <option value="Да">Да</option>
                     </select>
@@ -233,13 +233,13 @@ $client_id = intval(filter_input(INPUT_GET, 'client', FILTER_SANITIZE_SPECIAL_CH
                     </div>
 
                     <label for="question_27">27. ВИЧ, Гепатит</label>
-                    <select name="question[HIV_hepatitis]" id="question_27" class="dropdown-content">
+                    <select name="question[HIV_hepatitis]" id="question_27" class="dropdown-content js-example-basic-single">
                         <option value="Нет" selected>Нет</option>
                         <option value="Да">Да</option>
                     </select>
 
                     <label for="question_28">28. Наличие других хронический заболеваний</label>
-                    <select name="question[chronic_diseases]" id="question_28" class="dropdown-content">
+                    <select name="question[chronic_diseases]" id="question_28" class="dropdown-content js-example-basic-single">
                         <option value="Нет" selected>Нет</option>
                         <option value="Да">Да</option>
                     </select>
@@ -248,7 +248,7 @@ $client_id = intval(filter_input(INPUT_GET, 'client', FILTER_SANITIZE_SPECIAL_CH
                     </div>
 
                     <label for="question_29">29. Беременность, кормление грудью</label>
-                    <select name="question[pregnancy_breastfeeding]" id="question_29" class="dropdown-content">
+                    <select name="question[pregnancy_breastfeeding]" id="question_29" class="dropdown-content js-example-basic-single">
                         <option value="Нет" selected>Нет</option>
                         <option value="Да">Да</option>
                     </select>
@@ -262,7 +262,7 @@ $client_id = intval(filter_input(INPUT_GET, 'client', FILTER_SANITIZE_SPECIAL_CH
                     <input type="text" name="question[number_of_births]" placeholder="31. Кол-во родов">
 
                     <label for="question_32">32. Прием противозачаточных</label>
-                    <select name="question[taking_contraceptives]" id="question_32" class="dropdown-content">
+                    <select name="question[taking_contraceptives]" id="question_32" class="dropdown-content js-example-basic-single">
                         <option value="Нет" selected>Нет</option>
                         <option value="Да">Да</option>
                     </select>
@@ -271,7 +271,7 @@ $client_id = intval(filter_input(INPUT_GET, 'client', FILTER_SANITIZE_SPECIAL_CH
                     </div>
 
                     <label for="question_33">33. Менопауза в возрасте</label>
-                    <select name="question[menopause]" id="question_33" class="dropdown-content">
+                    <select name="question[menopause]" id="question_33" class="dropdown-content js-example-basic-single">
                         <option value="Нет" selected>Нет</option>
                         <option value="Укажите возраст менопаузы">Укажите возраст менопаузы</option>
                     </select>
@@ -280,7 +280,7 @@ $client_id = intval(filter_input(INPUT_GET, 'client', FILTER_SANITIZE_SPECIAL_CH
                     </div>
 
                     <label for="question_34">34. Заместительная гормональная терапия</label>
-                    <select name="question[hormone_replacement_therapy]" id="question_34" class="dropdown-content">
+                    <select name="question[hormone_replacement_therapy]" id="question_34" class="dropdown-content js-example-basic-single">
                         <option value="Нет" selected>Нет</option>
                         <option value="Да">Да</option>
                     </select>
@@ -289,7 +289,7 @@ $client_id = intval(filter_input(INPUT_GET, 'client', FILTER_SANITIZE_SPECIAL_CH
                     </div>
 
                     <label for="question_35">35. Проводились ли пластические операции</label>
-                    <select name="question[plastic_surgery]" id="question_35" class="dropdown-content">
+                    <select name="question[plastic_surgery]" id="question_35" class="dropdown-content js-example-basic-single">
                         <option value="Нет" selected>Нет</option>
                         <option value="Да">Да</option>
                     </select>
@@ -298,7 +298,7 @@ $client_id = intval(filter_input(INPUT_GET, 'client', FILTER_SANITIZE_SPECIAL_CH
                     </div>
 
                     <label for="question_36">36. Наличие аллергических реакций</label>
-                    <select name="question[allergic_reactions]" id="question_36" class="dropdown-content">
+                    <select name="question[allergic_reactions]" id="question_36" class="dropdown-content js-example-basic-single">
                         <option value="Нет" selected>Нет</option>
                         <option value="Да">Да</option>
                     </select>
@@ -307,13 +307,13 @@ $client_id = intval(filter_input(INPUT_GET, 'client', FILTER_SANITIZE_SPECIAL_CH
                     </div>
 
                     <label for="question_37">37. Холодовая аллергия, Криоглобулинемия</label>
-                    <select name="question[cold_allergy]" id="question_37" class="dropdown-content">
+                    <select name="question[cold_allergy]" id="question_37" class="dropdown-content js-example-basic-single">
                         <option value="Нет" selected>Нет</option>
                         <option value="Да">Да</option>
                     </select>
 
                     <label for="question_38">38. Анафилактический шок, отек Квинке, крапивница</label>
-                    <select name="question[anaphylactic_shock]" id="question_38" class="dropdown-content">
+                    <select name="question[anaphylactic_shock]" id="question_38" class="dropdown-content js-example-basic-single">
                         <option value="Нет" selected>Нет</option>
                         <option value="Да">Да</option>
                     </select>
@@ -321,7 +321,7 @@ $client_id = intval(filter_input(INPUT_GET, 'client', FILTER_SANITIZE_SPECIAL_CH
                     <input type="text" name="question[medications_taken]" placeholder="39. Принимаемые лекарственные препараты">
 
                     <label for="question_40">40. Прием антикоагулянтов, антибиотиков, гормонов</label>
-                    <select name="question[anticoagulants]" id="question_40" class="dropdown-content">
+                    <select name="question[anticoagulants]" id="question_40" class="dropdown-content js-example-basic-single">
                         <option value="Нет" selected>Нет</option>
                         <option value="Да">Да</option>
                     </select>
@@ -330,19 +330,19 @@ $client_id = intval(filter_input(INPUT_GET, 'client', FILTER_SANITIZE_SPECIAL_CH
                     </div>
 
                     <label for="question_41">41. Прием препаратов золота</label>
-                    <select name="question[gold_preparations]" id="question_41" class="dropdown-content">
+                    <select name="question[gold_preparations]" id="question_41" class="dropdown-content js-example-basic-single">
                         <option value="Нет" selected>Нет</option>
                         <option value="Да">Да</option>
                     </select>
 
                     <label for="question_42">42. Прием ретиноидов (роаккутан, акнекутан, сотрет, ретиноловый крем)</label>
-                    <select name="question[Taking_retinoids]" id="question_42" class="dropdown-content">
+                    <select name="question[taking_retinoids]" id="question_42" class="dropdown-content js-example-basic-single">
                         <option value="Нет" selected>Нет</option>
                         <option value="Да">Да</option>
                     </select>
 
                     <label for="question_43">43. Наличие имплантов и перманентных и полуперманентных филлеров (Артекол, Биогель) нитей (в т.ч. золотых)</label>
-                    <select name="question[implants_fillers]" id="question_43" class="dropdown-content">
+                    <select name="question[implants_fillers]" id="question_43" class="dropdown-content js-example-basic-single">
                         <option value="Нет" selected>Нет</option>
                         <option value="Да">Да</option>
                     </select>

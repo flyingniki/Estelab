@@ -1,16 +1,5 @@
 <?php
 
-/**
-$item = addEntityItem($entityCode, $itemName);
-$itemId = $item['result'];    
-
-$arItemsInfo = getEntityItems($entityCode);
-$itemsInfo = $arItemsInfo['result'];
-
-$arItemProperties = getEntityItemProperties($entityCode);
-$itemProperties = $arItemProperties['result'];
- */
-
 // check the event - register this application or not
 if (!isset($appsConfig[$_REQUEST['auth']['application_token']])) {
     return false;
@@ -226,7 +215,7 @@ if ($messageFromUser == 'привет') {
     // получаем текущий элемент сущности для определенного пользователя
     $arItemsInfo = getEntityItems($entityCode);
     $itemsInfo = $arItemsInfo['result'];
-    writeToLog($itemsInfo, 'itemsInfo');
+    // writeToLog($itemsInfo, 'itemsInfo');
     foreach ($itemsInfo as $itemInfo) {
         if ($itemInfo['CREATED_BY'] == $userId) {
             $currentItemId = $itemInfo['ID'];

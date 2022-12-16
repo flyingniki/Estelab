@@ -1,22 +1,42 @@
 <?php
 
 if ($step == 1) {
-    $userId = getUserId($messageFromUser);
-    if (isset($userId)) {
-        $messageFromUser = mb_strtoupper($messageFromUser);
-        updateEntityItem($entityCode, $currentItemId, 'business_trip_employee', $userId);
-        updateEntityItem($entityCode, $currentItemId, 'general_step', $step + 1);
-        $attach[] = array("MESSAGE" => '[send=меню]Вернуться в начало[/send]');
-        $arResult = array(
-            'report' => "[b]Сотрудник:[/b] {$messageFromUser}, [b]ID:[/b] {$userId}. Далее заполните куда:",
-            'attach' => $attach,
-        );
+    $userId = filter_var($messageFromUser, FILTER_SANITIZE_NUMBER_INT);
+    if (is_numeric($userId)) {
+        $arUser = getUserById($userId);
+        if (!empty($arUser['result'])) {
+            updateEntityItem($entityCode, $currentItemId, 'business_trip_employee', $userId);
+            updateEntityItem($entityCode, $currentItemId, 'general_step', $step + 1);
+            $attach[] = array("MESSAGE" => '[send=меню]Вернуться в начало[/send]');
+            $arResult = array(
+                'report' => "[b]Сотрудник:[/b] {$messageFromUser}, [b]ID:[/b] {$userId}. Далее заполните куда:",
+                'attach' => $attach,
+            );
+        } else {
+            $attach[] = array("MESSAGE" => '[send=меню]Вернуться в начало[/send]');
+            $arResult = array(
+                'report' => "[b]Некорректно введены имя и фамилия сотрудника:[/b] {$messageFromUser}. Пожалуйста, введите имя и фамилию сотрудника [u]без ошибки[/u]:",
+                'attach' => $attach,
+            );
+        }
     } else {
-        $attach[] = array("MESSAGE" => '[send=меню]Вернуться в начало[/send]');
-        $arResult = array(
-            'report' => "[b]Некорректно введены имя и фамилия сотрудника:[/b] {$messageFromUser}. Пожалуйста, введите имя и фамилию сотрудника [u]без ошибки[/u]:",
-            'attach' => $attach,
-        );
+        $userId = getUserId($messageFromUser);
+        if (isset($userId)) {
+            $messageFromUser = mb_strtoupper($messageFromUser);
+            updateEntityItem($entityCode, $currentItemId, 'business_trip_employee', $userId);
+            updateEntityItem($entityCode, $currentItemId, 'general_step', $step + 1);
+            $attach[] = array("MESSAGE" => '[send=меню]Вернуться в начало[/send]');
+            $arResult = array(
+                'report' => "[b]Сотрудник:[/b] {$messageFromUser}, [b]ID:[/b] {$userId}. Далее заполните куда:",
+                'attach' => $attach,
+            );
+        } else {
+            $attach[] = array("MESSAGE" => '[send=меню]Вернуться в начало[/send]');
+            $arResult = array(
+                'report' => "[b]Некорректно введены имя и фамилия сотрудника:[/b] {$messageFromUser}. Пожалуйста, введите имя и фамилию сотрудника [u]без ошибки[/u]:",
+                'attach' => $attach,
+            );
+        }
     }
 } elseif ($step == 2) {
     updateEntityItem($entityCode, $currentItemId, 'business_trip_where', $messageFromUser);

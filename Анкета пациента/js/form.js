@@ -9,7 +9,7 @@ const btnBack2 = document.querySelector(".btn-2-back");
 const btnForward3 = document.querySelector(".btn-3-forward");
 const btnBack3 = document.querySelector(".btn-3-back");
 const btnBack4 = document.querySelector(".btn-4-back");
-const selects = document.querySelectorAll("select");
+const selects = document.querySelectorAll(".js-example-basic-single");
 const submit = document.querySelector(".btn-submit");
 
 document.addEventListener("DOMContentLoaded", function () {
@@ -46,15 +46,15 @@ document.addEventListener("DOMContentLoaded", function () {
     form3.classList.remove("hidden");
   });
 
-  selects.forEach((option) => {
-    option.addEventListener("click", () => {
-      if (
-        option.value !== "Нет" &&
-        option.nextElementSibling.tagName === "DIV"
-      ) {
-        option.nextElementSibling.classList.toggle("hidden");
+  $(".js-example-basic-single").on("change", function () {
+    let div = $(this).nextAll()[1];
+    if ($(this).nextAll()[1].tagName === "DIV") {
+      if ($(this).val() !== "Нет") {
+        div.classList.toggle("hidden");
+      } else {
+        div.classList.toggle("hidden");
       }
-    });
+    }
   });
 
   form.addEventListener("submit", (e) => {
@@ -75,4 +75,5 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 
   $(".js-example-basic-multiple").select2();
+  $(".js-example-basic-single").select2();
 });
