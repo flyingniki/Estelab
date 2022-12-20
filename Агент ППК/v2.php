@@ -46,11 +46,11 @@
             $newItem = $factory->createItem($arData);
             $res = $newItem->save();
         } else {
-            if (($arPpk[$listItemId]['STAGE'] !== 'DT133_57:FAIL' || $arPpk[$listItemId]['STAGE'] !== 'DT133_57:SUCCESS') && isset($arPpk[$listItemId]['DATE_COMPLETION'])) {
+            if (($arPpk[$listItemId]['STAGE'] !== 'DT133_57:FAIL' && $arPpk[$listItemId]['STAGE'] !== 'DT133_57:SUCCESS') && isset($arPpk[$listItemId]['DATE_COMPLETION'])) {
                 $dateCompletion = $arPpk[$listItemId]['DATE_COMPLETION'];
                 $now = strtotime(date('d.m.Y'));
                 $date = strtotime($dateCompletion);
-                $dateDiff = $date - $now;
+                $dateDiff = $now - $date;
                 $dateDiff = $dateDiff / 86400;
                 switch ($listItem['REPEATING']) {
                     case '1 раз в неделю':
