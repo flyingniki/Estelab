@@ -33,6 +33,23 @@ while ($ob = $res->fetch()) {
     $ppkList[$ob['ID']]['TITLE'] = $ob['NAME'];
     $ppkList[$ob['ID']]['REPEATING'] = $ob['PROPERTY_3433_VALUE'];
     $ppkList[$ob['ID']]['OBJECT'] = $ob['PROPERTY_3434_VALUE'];
+
+    switch ($ppkList[$ob['ID']]['REPEATING']) {
+        case '1 раз в месяц':
+            continue;
+            break;
+        case '2 раза в год':
+            continue;
+            break;
+        case '1 раз в год':
+            continue;
+            break;
+        case '1 раз в 5 лет':
+            continue;
+            break;
+        default:
+            unset($ppkList[$ob['ID']]);
+    }
 }
 
 foreach ($ppkList as $listItemId => $listItem) {
@@ -63,10 +80,6 @@ foreach ($ppkList as $listItemId => $listItem) {
             $dateDiff = $now - $date;
             $dateDiff = $dateDiff / 86400;
             switch ($listItem['REPEATING']) {
-                case '1 раз в неделю':
-                    $interval = 7;
-                    $listItem['INTERVAL'] = '+ 1 week';
-                    break;
                 case '1 раз в месяц':
                     $interval = 30;
                     $listItem['INTERVAL'] = '+ 1 month';
@@ -84,7 +97,7 @@ foreach ($ppkList as $listItemId => $listItem) {
                     $listItem['INTERVAL'] = '+ 5 years';
                     break;
                 default:
-                    unset($ppkList[$listItemId]);
+                    continue;
             }
             if ($dateDiff >= $interval) {
                 $arData = [
