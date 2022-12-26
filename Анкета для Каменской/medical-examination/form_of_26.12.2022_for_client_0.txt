@@ -1,0 +1,3 @@
+question_height_weight_pressure => checked
+question_blood_test => checked
+question_mammography => checked

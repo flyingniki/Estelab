@@ -30,7 +30,9 @@ $client_id = intval(filter_input(INPUT_GET, 'client', FILTER_SANITIZE_SPECIAL_CH
                 </div>
 
                 <div class="form-1">
-                    <input type="text" name="question[name]" placeholder="1. Имя">
+
+                    <label for="question_1">1. Имя</label>
+                    <input type="text" id="question_1" name="question[name]">
 
                     <label for="question_2">2. Пол</label>
                     <select name="question[gender]" id="question_2" class="dropdown-content js-example-basic-single">
@@ -39,11 +41,14 @@ $client_id = intval(filter_input(INPUT_GET, 'client', FILTER_SANITIZE_SPECIAL_CH
                         <option value="Ж">Ж</option>
                     </select>
 
-                    <input type="text" name="question[age]" placeholder="3. Возраст">
+                    <label for="question_3">3. Возраст</label>
+                    <input type="text" id="question_3" name="question[age]">
 
-                    <input type="text" name="question[height]" placeholder="4. Рост">
+                    <label for="question_4">4. Рост</label>
+                    <input type="text" id="question_4" name="question[height]">
 
-                    <input type="text" name="question[weight]" placeholder="5. Вес">
+                    <label for="question_5">5. Вес</label>
+                    <input type="text" id="question_5" name="question[weight]">
 
                     <label for="question_6">6. Тип кожи</label>
                     <select name="question[skin_type]" id="question_6" class="dropdown-content js-example-basic-single">
@@ -55,13 +60,14 @@ $client_id = intval(filter_input(INPUT_GET, 'client', FILTER_SANITIZE_SPECIAL_CH
 
                     <label for="question_7">7. Чувствительность кожи к</label>
                     <select name="question[skin_sensitivity][]" id="question_7" class="dropdown-content js-example-basic-multiple" multiple>
-                        
                         <option value="Ветру">Ветру</option>
                         <option value="Солнцу">Солнцу</option>
                         <option value="Холоду">Холоду</option>
                     </select>
 
-                    <input type="text" name="question[last_tan]" placeholder="8. Дата последнего загара: чч.мм.гггг">
+                    <label for="question_8">8. Дата последнего загара: чч.мм.гггг</label>
+                    <input type="text" id="question_8" name="question[last_tan]">
+
                     <label for="question_9">9. Время на солнце в детстве</label>
                     <select name="question[time_on_sun_in_childhood]" id="question_9" class="dropdown-content js-example-basic-single">
                         <option value="" selected></option>
@@ -80,6 +86,7 @@ $client_id = intval(filter_input(INPUT_GET, 'client', FILTER_SANITIZE_SPECIAL_CH
                 </div>
 
                 <div class="form-2 hidden">
+
                     <label for="question_11">11. Наличие солнечных ожогов</label>
                     <select name="question[sunburns]" id="question_11" class="dropdown-content js-example-basic-single">
                         <option value="" selected></option>
@@ -90,7 +97,6 @@ $client_id = intval(filter_input(INPUT_GET, 'client', FILTER_SANITIZE_SPECIAL_CH
 
                     <label for="question_12">12. Наличие веснушек</label>
                     <select name="question[freckles][]" id="question_12" class="dropdown-content js-example-basic-multiple" multiple>
-                        
                         <option value="Лицо">Лицо</option>
                         <option value="Декольте">Декольте</option>
                         <option value="Руки">Руки</option>
@@ -108,7 +114,6 @@ $client_id = intval(filter_input(INPUT_GET, 'client', FILTER_SANITIZE_SPECIAL_CH
 
                     <label for="question_14">14. Какие косметологические проблемы беспокоят лицо</label>
                     <select name="question[cosmetologic_problems_face][]" id="question_14" class="dropdown-content js-example-basic-multiple" multiple>
-                        
                         <option value="Мимические морщины">Мимические морщины</option>
                         <option value="Потеря тонуса, тургора кожи">Потеря тонуса, тургора кожи</option>
                         <option value="Расширенные поры">Расширенные поры</option>
@@ -119,7 +124,6 @@ $client_id = intval(filter_input(INPUT_GET, 'client', FILTER_SANITIZE_SPECIAL_CH
 
                     <label for="question_15">15. Какие косметологические проблемы беспокоят шея, декольте</label>
                     <select name="question[cosmetologic_problems_neck_decollete][]" id="question_15" class="dropdown-content js-example-basic-multiple" multiple>
-                        
                         <option value="Двойной подбородок">Двойной подбородок</option>
                         <option value="Дряблость">Дряблость</option>
                         <option value="Кольца Венеры (горизонтальные морщины шеи)">Кольца Венеры (горизонтальные морщины шеи)</option>
@@ -128,7 +132,6 @@ $client_id = intval(filter_input(INPUT_GET, 'client', FILTER_SANITIZE_SPECIAL_CH
 
                     <label for="question_16">16. Какие косметологические проблемы беспокоят тело:</label>
                     <select name="question[cosmetologic_problems_body][]" id="question_16" class="dropdown-content js-example-basic-multiple" multiple>
-                        
                         <optgroup label="Локальные жировые отложения">
                             <option value="Живот">Живот</option>
                             <option value="Бедра">Бедра</option>
@@ -146,7 +149,6 @@ $client_id = intval(filter_input(INPUT_GET, 'client', FILTER_SANITIZE_SPECIAL_CH
 
                     <label for="question_17">17. Какие косметологические проблемы беспокоят кисти</label>
                     <select name="question[cosmetologic_problems_hands][]" id="question_17" class="dropdown-content js-example-basic-multiple" multiple>
-                        
                         <option value="Пигментация">Пигментация</option>
                         <option value="Покраснения">Покраснения</option>
                         <option value="Визуализация сухожилий и вен">Визуализация сухожилий и вен</option>
@@ -155,7 +157,9 @@ $client_id = intval(filter_input(INPUT_GET, 'client', FILTER_SANITIZE_SPECIAL_CH
                         <option value="Морщины">Морщины</option>
                     </select>
 
-                    <input type="text" name="question[arterial_pressure]" placeholder="18. Артериальное давление рабочее, мм. рт. ст.">
+                    <label for="question_18">18. Артериальное давление рабочее, мм. рт. ст.</label>
+                    <input type="text" id="question_18" name="question[arterial_pressure]">
+
                     <label for="question_19">19. Гипертоническая болезнь</label>
                     <select name="question[hypertonic_disease]" id="question_19" class="dropdown-content js-example-basic-single">
                         <option value="Нет" selected>Нет</option>
@@ -176,6 +180,7 @@ $client_id = intval(filter_input(INPUT_GET, 'client', FILTER_SANITIZE_SPECIAL_CH
                 </div>
 
                 <div class="form-3 hidden">
+
                     <label for="question_21">21. Плохая свертываемость крови</label>
                     <select name="question[blood_clotting]" id="question_21" class="dropdown-content js-example-basic-single">
                         <option value="Нет" selected>Нет</option>
@@ -253,13 +258,17 @@ $client_id = intval(filter_input(INPUT_GET, 'client', FILTER_SANITIZE_SPECIAL_CH
                         <option value="Да">Да</option>
                     </select>
 
-                    <input type="text" name="question[number_of_pregnancies]" placeholder="30. Кол-во беременностей">
+                    <label for="question_30">30. Кол-во беременностей</label>
+                    <input type="text" id="question_30" name="question[number_of_pregnancies]">
+
                     <button class="btn-3-forward">Далее</button>
                     <button class="btn-3-back">Назад</button>
                 </div>
 
                 <div class="form-4 hidden">
-                    <input type="text" name="question[number_of_births]" placeholder="31. Кол-во родов">
+
+                    <label for="question_31">31. Кол-во родов</label>
+                    <input type="text" id="question_31" name="question[number_of_births]">
 
                     <label for="question_32">32. Прием противозачаточных</label>
                     <select name="question[taking_contraceptives]" id="question_32" class="dropdown-content js-example-basic-single">
@@ -318,7 +327,8 @@ $client_id = intval(filter_input(INPUT_GET, 'client', FILTER_SANITIZE_SPECIAL_CH
                         <option value="Да">Да</option>
                     </select>
 
-                    <input type="text" name="question[medications_taken]" placeholder="39. Принимаемые лекарственные препараты">
+                    <label for="question_39">39. Принимаемые лекарственные препараты</label>
+                    <input type="text" id="question_39" name="question[medications_taken]">
 
                     <label for="question_40">40. Прием антикоагулянтов, антибиотиков, гормонов</label>
                     <select name="question[anticoagulants]" id="question_40" class="dropdown-content js-example-basic-single">
@@ -349,7 +359,6 @@ $client_id = intval(filter_input(INPUT_GET, 'client', FILTER_SANITIZE_SPECIAL_CH
 
                     <label for="question_44">44. Проводимые косметологические процедуры</label>
                     <select name="question[cosmetic procedures][]" id="question_44" class="dropdown-content js-example-basic-multiple" multiple>
-                        
                         <option value="Ботулинотерапия">Ботулинотерапия</option>
                         <option value="Филлеры">Филлеры</option>
                         <option value="Лазерные процедуры">Лазерные процедуры</option>

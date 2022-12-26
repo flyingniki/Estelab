@@ -1,0 +1,56 @@
+body {
+  font-family: Arial, Helvetica, "Helvetica Neue", sans-serif;
+  color: rgb(87, 87, 87);
+}
+
+.main {
+  padding: 5% 20%;
+}
+
+.form-check-input {
+  border: 2px solid rgba(80, 135, 255, 0.671);
+}
+
+.form-check-label {
+  padding-left: 5px;
+}
+
+.info-list {
+  list-style-position: inside;
+}
+
+.info-list ::marker {
+  color: rgba(80, 135, 255, 0.671);
+}
+
+img {
+  float: right;
+  margin-right: 50px;
+}
+
+.form-check .form-check-input {
+  float: none;
+}
+
+.hidden {
+  display: none;
+}
+
+.success {
+  top: 40%;
+  left: 0;
+  right: 0;
+  position: absolute;
+  padding: 10px;
+  max-width: 400px;
+  margin: auto;
+  text-align: center;
+  min-height: 80px;
+  border-width: 0;
+  border-radius: 20px;
+  color: green;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 26px;
+  background: #fff;
+}
