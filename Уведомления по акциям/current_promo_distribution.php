@@ -94,7 +94,7 @@ foreach ($mergedIds as $depName => $arMergedId) {
 $chat = new \CIMChat;
 // сначала выполняем в консоли для создания чата, так как из агента не отрабатывает, затем получаем ID чата и подставляем в код
 // $chatId = $chat->Add(array(
-//     'TITLE' => 'Текущие акции на сайте Estelab.ru',
+//     'TITLE' => 'Текущие акции дистрибьюция на сайте Estelab.ru',
 //     'DESCRIPTION' => 'Описание...',
 //     'COLOR' => 'AQUA', //цвет
 //     'TYPE' => IM_MESSAGE_OPEN, //тип чата
@@ -109,10 +109,10 @@ $startDateTime = strtotime(date('d.m.Y') . ' ' . $startWork);
 $endDateTime = strtotime(date('d.m.Y') . ' ' . $endWork);
 if (($currentTime >= $startDateTime) && ($currentTime <= $endDateTime)) {
     foreach ($openedIds as $empId) {
-        $chat->AddUser(, $empId, false, true, true);
+        $chat->AddUser(132175, $empId, false, true, true);
     }
     $ar = array(
-        "TO_CHAT_ID" => , // ID чата
+        "TO_CHAT_ID" => 132175, // ID чата
         "FROM_USER_ID" => 0,
         "SYSTEM" => Y,
         "MESSAGE"  => $messageDistribution . $link, // Произвольный текст
@@ -121,6 +121,6 @@ if (($currentTime >= $startDateTime) && ($currentTime <= $endDateTime)) {
 } else {
     // удаляем пользователей из чата
     foreach ($openedIds as $empId) {
-        $chat->DeleteUser(, $empId, false, true, true);
+        $chat->DeleteUser(132175, $empId, false, true, true);
     }
 }

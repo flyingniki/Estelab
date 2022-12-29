@@ -53,7 +53,7 @@ foreach ($items as $item) {
 $messageStudio = $titleStudio . $allActionsStudio . $actionsOneDayStudio . $actionsHotStudio;
 
 $arDepartments = [
-    'Студия' => [4966,7342],
+    'Студия' => [4966, 7342],
 ];
 $arSelect = ['ID', 'NAME', 'LAST_NAME'];
 foreach ($arDepartments as $depName => $departmentIds) {
@@ -94,7 +94,7 @@ foreach ($mergedIds as $depName => $arMergedId) {
 $chat = new \CIMChat;
 // сначала выполняем в консоли для создания чата, так как из агента не отрабатывает, затем получаем ID чата и подставляем в код
 // $chatId = $chat->Add(array(
-//     'TITLE' => 'Текущие акции на сайте Estelab.ru',
+//     'TITLE' => 'Текущие акции КЛВ на сайте Estelab.ru',
 //     'DESCRIPTION' => 'Описание...',
 //     'COLOR' => 'AQUA', //цвет
 //     'TYPE' => IM_MESSAGE_OPEN, //тип чата
@@ -109,10 +109,10 @@ $startDateTime = strtotime(date('d.m.Y') . ' ' . $startWork);
 $endDateTime = strtotime(date('d.m.Y') . ' ' . $endWork);
 if (($currentTime >= $startDateTime) && ($currentTime <= $endDateTime)) {
     foreach ($openedIds as $empId) {
-        $chat->AddUser(, $empId, false, true, true);
+        $chat->AddUser(132176, $empId, false, true, true);
     }
     $ar = array(
-        "TO_CHAT_ID" => , // ID чата
+        "TO_CHAT_ID" => 132176, // ID чата
         "FROM_USER_ID" => 0,
         "SYSTEM" => Y,
         "MESSAGE"  => $messageStudio . $link, // Произвольный текст
@@ -121,6 +121,6 @@ if (($currentTime >= $startDateTime) && ($currentTime <= $endDateTime)) {
 } else {
     // удаляем пользователей из чата
     foreach ($openedIds as $empId) {
-        $chat->DeleteUser(, $empId, false, true, true);
+        $chat->DeleteUser(132176, $empId, false, true, true);
     }
 }
