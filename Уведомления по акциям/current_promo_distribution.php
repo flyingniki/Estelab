@@ -16,7 +16,7 @@ $allActionsDistribution = '';
 $actionsOneDayDistribution = '[BR] [b]Действуют только сегодня:[/b] [BR] ';
 $actionsHotDistribution = '[BR][BR] [b]Действуют последний день: [/b] [BR]';
 
-$link = '[BR] [url=https://www.estelab.ru/about/hot-offers/]Текущие акции на сайте Estelab.ru[/url]';
+$link = '[BR] [url=https://beautiful-face-forever.ru/actions/]Текущие акции на сайте КЛВ[/url]';
 
 foreach ($items as $item) {
     $stageId = $item->getStageId();
@@ -94,7 +94,7 @@ foreach ($mergedIds as $depName => $arMergedId) {
 $chat = new \CIMChat;
 // сначала выполняем в консоли для создания чата, так как из агента не отрабатывает, затем получаем ID чата и подставляем в код
 // $chatId = $chat->Add(array(
-//     'TITLE' => 'Текущие акции дистрибьюция на сайте Estelab.ru',
+//     'TITLE' => 'Текущие акции дистрибьюция',
 //     'DESCRIPTION' => 'Описание...',
 //     'COLOR' => 'AQUA', //цвет
 //     'TYPE' => IM_MESSAGE_OPEN, //тип чата
