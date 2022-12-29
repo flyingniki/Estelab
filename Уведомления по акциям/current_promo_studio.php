@@ -11,15 +11,10 @@ $Smart_Type_ID = 155;
 $factory = $container->getFactory($Smart_Type_ID);
 $items = $factory->getItems();
 
-$titleClinic = '[b]Акции клиники на ' . date('d.m.Y') . ':[/b] [BR][BR]';
-$allActionsClinic = '';
-$actionsOneDayClinic = '[BR] [b]Действуют только сегодня:[/b] [BR] ';
-$actionsHotClinic = '[BR] [b]Действуют последний день: [/b] [BR]';
-
-$titleStore = '[b]Акции интернет-магазина на ' . date('d.m.Y') . ':[/b] [BR][BR]';
-$allActionsStore = '';
-$actionsOneDayStore = '[BR] [b]Действуют только сегодня:[/b] [BR] ';
-$actionsHotStore = '[BR][BR] [b]Действуют последний день: [/b] [BR]';
+$titleStudio = '[b]Акции студии на ' . date('d.m.Y') . ':[/b] [BR][BR]';
+$allActionsStudio = '';
+$actionsOneDayStudio = '[BR] [b]Действуют только сегодня:[/b] [BR] ';
+$actionsHotStudio = '[BR] [b]Действуют последний день: [/b] [BR]';
 
 $link = '[BR] [url=https://www.estelab.ru/about/hot-offers/]Текущие акции на сайте Estelab.ru[/url]';
 
@@ -36,46 +31,29 @@ foreach ($items as $item) {
         $end = $item->getUfCrm_15_1634304505488();
         $endTime = $end->toString();
         $direction = $item->getUfCrm_15_1634306670();
-        if ($direction == '129383') { // клиника
+        if ($direction == '401343') { // студия
             // print_r($title);
             // print_r($direction);
             // print_r($description);
             //print_r(strtotime($startTime);
             //print_r($endTime);            
-            $allActionsClinic .= '[b]' . $title . '[/b][BR][i]Описание:[BR]' . $description . '[/i][BR]';
+            $allActionsStudio .= '[b]' . $title . '[/b][BR][i]Описание:[BR]' . $description . '[/i][BR]';
             if (strtotime($start) == strtotime($end)) {
-                $actionsOneDayClinic .= $title . '[BR]';
-                $allActionsClinic = str_replace($title, '', $allActionsClinic);
+                $actionsOneDayStudio .= $title . '[BR]';
+                $allActionsStudio = str_replace($title, '', $allActionsStudio);
             }
             if (strtotime($end) == strtotime(date('d.m.Y'))) {
-                $actionsHotClinic .= $title . '[BR]';
-                $allActionsClinic = str_replace($title, '', $allActionsClinic);
-            }
-        } elseif ($direction == '129385') { // ИМ
-            // print_r($title);
-            // print_r($direction);
-            // print_r($description);
-            //print_r(strtotime($startTime);
-            //print_r($endTime);            
-            $allActionsStore .= '[b]' . $title . '[/b][BR][i]Описание:[BR]' . $description . '[/i][BR]';
-            if (strtotime($start) == strtotime($end)) {
-                $actionsOneDayStore .= $title . '[BR]';
-                $allActionsStore = str_replace($title, '', $allActionsStore);
-            }
-            if (strtotime($end) == strtotime(date('d.m.Y'))) {
-                $actionsHotStore .= $title . '[BR]';
-                $allActionsStore = str_replace($title, '', $allActionsStore);
+                $actionsHotStudio .= $title . '[BR]';
+                $allActionsStudio = str_replace($title, '', $allActionsStudio);
             }
         }
     }
 }
 
-$messageClinic = $titleClinic . $allActionsClinic . $actionsOneDayClinic . $actionsHotClinic;
-$messageStore = $titleStore . $allActionsStore . $actionsOneDayStore . $actionsHotStore;
+$messageStudio = $titleStudio . $allActionsStudio . $actionsOneDayStudio . $actionsHotStudio;
 
 $arDepartments = [
-    'Клиника' => [5073, 4959, 7676, 5377, 7389],
-    'ИМ' => [4551],
+    'Студия' => [4966,7342],
 ];
 $arSelect = ['ID', 'NAME', 'LAST_NAME'];
 foreach ($arDepartments as $depName => $departmentIds) {
@@ -131,18 +109,18 @@ $startDateTime = strtotime(date('d.m.Y') . ' ' . $startWork);
 $endDateTime = strtotime(date('d.m.Y') . ' ' . $endWork);
 if (($currentTime >= $startDateTime) && ($currentTime <= $endDateTime)) {
     foreach ($openedIds as $empId) {
-        $chat->AddUser(129543, $empId, false, true, true);
+        $chat->AddUser(, $empId, false, true, true);
     }
     $ar = array(
-        "TO_CHAT_ID" => 129543, // ID чата
+        "TO_CHAT_ID" => , // ID чата
         "FROM_USER_ID" => 0,
         "SYSTEM" => Y,
-        "MESSAGE"  => $messageClinic . '[BR]' . $messageStore . $link, // Произвольный текст
+        "MESSAGE"  => $messageStudio . $link, // Произвольный текст
     );
     CIMChat::AddMessage($ar);
 } else {
     // удаляем пользователей из чата
     foreach ($openedIds as $empId) {
-        $chat->DeleteUser(129543, $empId, false, true, true);
+        $chat->DeleteUser(, $empId, false, true, true);
     }
 }
