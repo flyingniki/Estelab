@@ -53,7 +53,7 @@ foreach ($items as $item) {
 $messageDistribution = $titleDistribution . $allActionsDistribution . $actionsOneDayDistribution . $actionsHotDistribution;
 
 $arDepartments = [
-    'Дистрибьюция' => [376],
+    'Дистрибьюция' => [376, 6453],
 ];
 $arSelect = ['ID', 'NAME', 'LAST_NAME'];
 foreach ($arDepartments as $depName => $departmentIds) {
