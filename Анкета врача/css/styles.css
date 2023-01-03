@@ -122,7 +122,6 @@ main {
   margin-bottom: 5px;
 }
 .form-inner .btn-submit {
-  display: none;
   margin-top: 30px;
   background: #cf9d6b;
   border-bottom: 4px solid #9a754f;
@@ -153,9 +152,7 @@ main {
   border-radius: 20px;
   font-family: "Roboto", sans-serif;
 }
-.btn-1-forward,
-.btn-2-forward,
-.btn-3-forward {
+.btn-forward{
   line-height: 40px;
   width: 30%;
   padding: 0 5px;
@@ -169,10 +166,7 @@ main {
   cursor: pointer;
   font-size: 18px;
 }
-.btn-1-back,
-.btn-2-back,
-.btn-3-back,
-.btn-4-back {
+.btn-back {
   float: right;
   line-height: 40px;
   width: 30%;
@@ -187,13 +181,8 @@ main {
   cursor: pointer;
   font-size: 18px;
 }
-.btn-1-forward:hover,
-.btn-2-forward:hover,
-.btn-3-forward:hover,
-.btn-1-back:hover,
-.btn-2-back:hover,
-.btn-3-back:hover,
-.btn-4-back:hover {
+.btn-forward:hover,
+.btn-back:hover{
   background: #bb8146;
 }
 .success {
